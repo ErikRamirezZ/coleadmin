@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Repeticiones" items="${repeticioneses}" z="DQfQBobL/JMUbFPTfbYmlpRoZaA=">
+        <table:table data="${repeticioneses}" id="l_com_raze_coleadmin_domain_Repeticiones" path="/repeticioneses" z="z8TQqnijTKd/f8L0SY/RHUgsOwU=">
+            <table:column id="c_com_raze_coleadmin_domain_Repeticiones_cargo" property="cargo" z="btFdKdPjJ+DWj57QuzTS0jPCFfE="/>
+            <table:column id="c_com_raze_coleadmin_domain_Repeticiones_seReqpite" property="seReqpite" z="T7V4dagPJ3/RanaCvcSxFWBLWjU="/>
+            <table:column id="c_com_raze_coleadmin_domain_Repeticiones_numeroVeces" property="numeroVeces" z="7fVv+ePZDMGZz7RN+E5T3vN/3wQ="/>
+            <table:column id="c_com_raze_coleadmin_domain_Repeticiones_usuario" property="usuario" z="awnkpjhZOQCUTUwoqML8dhJ0lFc=" render="false"/>
+            <table:column date="true" dateTimePattern="${repeticiones_fechacreacion_date_format}" id="c_com_raze_coleadmin_domain_Repeticiones_fechaCreacion" property="fechaCreacion" z="HyO1rKcdEPbpiTTWpRb8WfBxY7M=" render="false"/>
+            <table:column date="true" dateTimePattern="${repeticiones_fechamodificacion_date_format}" id="c_com_raze_coleadmin_domain_Repeticiones_fechaModificacion" property="fechaModificacion" z="UfUgz9r5beiT47Sjbvjx2wnBURs=" render="false"/>
+        </table:table>
+    </page:list>
+</div>

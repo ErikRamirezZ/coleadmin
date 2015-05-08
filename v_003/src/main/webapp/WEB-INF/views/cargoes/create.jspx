@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_coleadmin_domain_Cargo" modelAttribute="cargo" path="/cargoes" render="${empty dependencies}" z="n7w8dD3nIdz/TvXPBhQTHmGjEB8=">
+        <field:select field="cuenta" id="c_com_raze_coleadmin_domain_Cargo_cuenta" itemValue="id" items="${cuentas}" path="/cuentas" z="K1oLzThUnU2Fb/tQGudLhQ31jo0="/>
+        <field:select field="tipoConcepto" id="c_com_raze_coleadmin_domain_Cargo_tipoConcepto" items="${tipoconceptoes}" path="tipoconceptoes" z="LcJcFu9xpWTyVGgUVlpwJbhp/fo="/>
+        <field:select field="concepto" id="c_com_raze_coleadmin_domain_Cargo_concepto" itemValue="id" items="${conceptoes}" multiple="true" path="/conceptoes" z="MpdhrrljkSgHuTA1qkmJLbKJ1Y0="/>
+        <field:input field="subtotal" id="c_com_raze_coleadmin_domain_Cargo_subtotal" validationMessageCode="field_invalid_number" z="eEVR75uL/qAfiRmdg40jtvnfdVs="/>
+        <field:input field="total" id="c_com_raze_coleadmin_domain_Cargo_total" validationMessageCode="field_invalid_number" z="m4AgQeYSw+335ky3IJiEyhOiS+w="/>
+        <field:datetime dateTimePattern="${cargo_fechacargo_date_format}" field="fechaCargo" id="c_com_raze_coleadmin_domain_Cargo_fechaCargo" z="bEuixktvRkGlV0MMJljX/WqHpXk="/>
+        <field:select field="pago" id="c_com_raze_coleadmin_domain_Cargo_pago" itemValue="id" items="${pagoes}" path="/pagoes" z="nU0J8ZphRXBg1hWDwcUZsZp0ZdI="/>
+        <field:checkbox field="fuePagoOportuno" id="c_com_raze_coleadmin_domain_Cargo_fuePagoOportuno" z="XUftGuERvCGEM7PB+QLYBgfXmBk="/>
+        <field:datetime dateTimePattern="${cargo_fechapago_date_format}" field="fechaPago" id="c_com_raze_coleadmin_domain_Cargo_fechaPago" z="3BjkhdVLLGwkNKfFQsUPblzYcSs="/>
+        <field:select field="usuario" id="c_com_raze_coleadmin_domain_Cargo_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="VtmD17bngWSQWTTnS3eRYA8Jh+M=" render="false"/>
+        <field:datetime dateTimePattern="${cargo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Cargo_fechaCreacion" z="5ia1OXFIFJMTSPbMv/XlIJnNrkI=" render="false"/>
+        <field:datetime dateTimePattern="${cargo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Cargo_fechaModificacion" z="v8jibHtZMmvhllEFY5nYB5qfyws=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Cargo_activo" z="Oz4GUQskzYNH8+n1K9QKudT7dwE=" render="false"/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Cargo" render="${not empty dependencies}" z="LWbTsVX2i//ErVUT8xQkOed7Whc="/>
+</div>

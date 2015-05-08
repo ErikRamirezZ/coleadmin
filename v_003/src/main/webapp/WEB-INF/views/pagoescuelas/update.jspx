@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_PagoEscuela" modelAttribute="pagoEscuela" path="/pagoescuelas" versionField="Version" z="2Lexw6GwyZjzxFs1yf9v7N9RIv0=">
+        <field:select field="escuela" id="c_com_raze_coleadmin_domain_PagoEscuela_escuela" itemValue="id" items="${escuelas}" path="/escuelas" z="3DlYERrmBcnFZwY2ztFSCf7m9/8="/>
+        <field:datetime dateTimePattern="${pagoEscuela_fechapago_date_format}" field="fechaPago" id="c_com_raze_coleadmin_domain_PagoEscuela_fechaPago" z="ohNPm03eVnkHW90V0oFNKJvlkuM="/>
+        <field:select field="metodoPago" id="c_com_raze_coleadmin_domain_PagoEscuela_metodoPago" items="${metodopagoes}" path="metodopagoes" z="Ika3glT5hAb9iQ10xJ3cxhacaXg="/>
+        <field:textarea field="comprobantePago" id="c_com_raze_coleadmin_domain_PagoEscuela_comprobantePago" z="3+UR5FgLMebqYqdOlTkp4uY5Z7Q="/>
+        <field:select field="usuario" id="c_com_raze_coleadmin_domain_PagoEscuela_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="tZeB/drt09jvhSOTHfA+cOl1rOM=" render="false"/>
+        <field:datetime dateTimePattern="${pagoEscuela_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_PagoEscuela_fechaCreacion" z="D/O7vFOiwXW1i5YltYdfWbVuXZY=" render="false"/>
+        <field:datetime dateTimePattern="${pagoEscuela_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_PagoEscuela_fechaModificacion" z="tzkDqauu8IlJI7aIYE0B/g/U1xs=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_PagoEscuela_activo" z="QFl3iymwpeai2TywQy06w0PmI0Y=" render="false"/>
+    </form:update>
+</div>

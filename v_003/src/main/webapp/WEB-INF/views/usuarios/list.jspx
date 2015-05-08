@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Usuario" items="${usuarios}" z="bWxmMZMqZeNHJTqPS7qfUCUc01s=">
+        <table:table data="${usuarios}" id="l_com_raze_coleadmin_domain_Usuario" path="/usuarios" z="YjxpE3ld7Oj9kMjmJBMrxSvFbzY=">
+            <table:column id="c_com_raze_coleadmin_domain_Usuario_escuela" property="escuela" z="vSMAv0UtOkhWDFDWbHJHmWv9ROA="/>
+            <table:column id="c_com_raze_coleadmin_domain_Usuario_plantel" property="plantel" z="6cfxlk8qmFCgwNX2EKCXuAT77oo="/>
+            <table:column id="c_com_raze_coleadmin_domain_Usuario_nombre" property="nombre" z="Y2XGpNB6A5NXUPQcNhnqMtjjyLI="/>
+            <table:column id="c_com_raze_coleadmin_domain_Usuario_apellidoPaterno" property="apellidoPaterno" z="GR+1896qN1OVCvYQ4R8ETpmAHvI="/>
+            <table:column id="c_com_raze_coleadmin_domain_Usuario_apellidoMaterno" property="apellidoMaterno" z="ov7JW11nythRRmnm2ayOTnvOdj0="/>
+            <table:column date="true" dateTimePattern="${usuario_fechanacimiento_date_format}" id="c_com_raze_coleadmin_domain_Usuario_fechaNacimiento" property="fechaNacimiento" z="ROuv67ehIKUBER6a0BdbC0LWlGE="/>
+        </table:table>
+    </page:list>
+</div>

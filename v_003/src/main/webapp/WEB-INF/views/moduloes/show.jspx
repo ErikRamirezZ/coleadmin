@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Modulo" object="${modulo}" path="/moduloes" z="AswPXn5yEQ0ZB3n1dr6m9uuO5Nk=">
+        <field:display field="nombre" id="s_com_raze_coleadmin_domain_Modulo_nombre" object="${modulo}" z="oHu8vpMkmVj/bOXxjuwUY3V6Rl8="/>
+        <field:display field="descripcion" id="s_com_raze_coleadmin_domain_Modulo_descripcion" object="${modulo}" z="NlQ8RWgbIkTcPE0uiPZAJ7Y4lA4="/>
+        <field:display field="usuario" id="s_com_raze_coleadmin_domain_Modulo_usuario" object="${modulo}" z="h+LP48PYaocfuCBb2o7qoYREwtQ=" render="false"/>
+        <field:display date="true" dateTimePattern="${modulo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Modulo_fechaCreacion" object="${modulo}" z="MUiXAgnnu1quS/GzO8KdahQbjkM=" render="false"/>
+        <field:display date="true" dateTimePattern="${modulo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Modulo_fechaModificacion" object="${modulo}" z="RzjtAwMJZX+t9v3owJoBzeMSaRA=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Modulo_activo" object="${modulo}" z="WsOkJ1kmszIb9QfniXnEmO8ZnTM=" render="false"/>
+    </page:show>
+</div>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_coleadmin_domain_Cuenta" modelAttribute="cuenta" path="/cuentas" render="${empty dependencies}" z="+705GS3lmrg9O+3jw3SNNKL/R7g=">
+        <field:select field="escuela" id="c_com_raze_coleadmin_domain_Cuenta_escuela" itemValue="id" items="${escuelas}" path="/escuelas" z="AxtkW0IOP18hcwAYDaBaqFFr3dY="/>
+        <field:select field="plantel" id="c_com_raze_coleadmin_domain_Cuenta_plantel" itemValue="id" items="${plantels}" path="/plantels" z="Qn4f+vYUEljE/iKgUluncq+hJXA="/>
+        <field:select field="cicloEscolar" id="c_com_raze_coleadmin_domain_Cuenta_cicloEscolar" itemValue="id" items="${cicloescolars}" path="/cicloescolars" z="lexuxVF4E6c6SUTncM6TR5zBGrk="/>
+        <field:select field="curso" id="c_com_raze_coleadmin_domain_Cuenta_curso" itemValue="id" items="${cursoes}" path="/cursoes" z="wFk5IVoMsjV2JxThSPMkl4SVhpM="/>
+        <field:select field="padreTutor" id="c_com_raze_coleadmin_domain_Cuenta_padreTutor" itemValue="id" items="${usuarios}" path="/usuarios" z="z7QWCQEOV+XIsFaLqEZHrn4qmnw="/>
+        <field:select field="alumno" id="c_com_raze_coleadmin_domain_Cuenta_alumno" itemValue="id" items="${usuarios}" path="/usuarios" z="84omi48WfhDGzuGdt/gr5jZIsqM="/>
+        <field:input field="beca" id="c_com_raze_coleadmin_domain_Cuenta_beca" validationMessageCode="field_invalid_integer" z="0wlM60Jd27EwFZLi0EKgq0rWmPg="/>
+        <field:checkbox field="enviarRecordatorios" id="c_com_raze_coleadmin_domain_Cuenta_enviarRecordatorios" z="TFHG+jQbbHg16PXKL+CJ+2AJcLc="/>
+        <field:input field="estatus" id="c_com_raze_coleadmin_domain_Cuenta_estatus" validationMessageCode="field_invalid_integer" z="wDJDBrXzuYyKdDUU0nEyUiQw3YI="/>
+        <field:input field="saldoTotal" id="c_com_raze_coleadmin_domain_Cuenta_saldoTotal" validationMessageCode="field_invalid_number" z="yDYpQr3pEDG5TZcqV3+dYDutpLo="/>
+        <field:select field="usuario" id="c_com_raze_coleadmin_domain_Cuenta_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="5o4EWaKzfYNowyVfNAFny2rBJV8=" render="false"/>
+        <field:datetime dateTimePattern="${cuenta_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaCreacion" z="Joc1krHfFXZq+wwHqLJqlm3ekh4=" render="false"/>
+        <field:datetime dateTimePattern="${cuenta_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaModificacion" z="gkFlfbIab2xYxVYi5VSHbyJbIIk=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Cuenta_activo" z="R/x91SMACDUdgdKI2z1U4CUmcXg=" render="false"/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Cuenta" render="${not empty dependencies}" z="STl/h31Akt2LAOPajAF374adlvI="/>
+</div>

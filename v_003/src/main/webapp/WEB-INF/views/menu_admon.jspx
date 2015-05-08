@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_concepto" z="q47+yZIsplMoAi2nkzl6/2quZ2U=">
+            <menu:item id="i_concepto_new" messageCode="global_menu_new" url="/conceptoes?form" z="vmndKLfQWGkbYjJV7pdoP22m/Y8="/>
+            <menu:item id="i_concepto_list" messageCode="global_menu_list" url="/conceptoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="J68xpxrIKe8vv9ZK7sWZLB4Bikw="/>
+        </menu:category>
+        <menu:category id="c_repeticiones" z="+VCkNHAQYdIQNwNSR7EMGl4gMrc=">
+            <menu:item id="i_repeticiones_new" messageCode="global_menu_new" url="/repeticioneses?form" z="Nyyo24rgyLodikKAaQnjhRQxLd0="/>
+            <menu:item id="i_repeticiones_list" messageCode="global_menu_list" url="/repeticioneses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Zm9scbg4PfVTyRFqDKGPkDQf4fY="/>
+        </menu:category>
+        <menu:category id="c_curso" z="HZkpr/mFg3Jt16a6Bb8jg2ec7GA=">
+            <menu:item id="i_curso_new" messageCode="global_menu_new" url="/cursoes?form" z="i5hb6h9BZQgF9RE9iqqRTA+wGak="/>
+            <menu:item id="i_curso_list" messageCode="global_menu_list" url="/cursoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="H5eRx2vxkuAYrT5z65L2KRROpNs="/>
+        </menu:category>
+        <menu:category id="c_pago" z="h2UgnPj2WSU/mjugjzUwlHsPSsQ=">
+            <menu:item id="i_pago_new" messageCode="global_menu_new" url="/pagoes?form" z="3SDB2cd08x5hp7V8BRB0q8LVu1c="/>
+            <menu:item id="i_pago_list" messageCode="global_menu_list" url="/pagoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="R/c5sEoYqGFTpSWoDZRYHsubCmo="/>
+        </menu:category>
+        <menu:category id="c_configuracioncurso" z="V2qh4sMr9TFdEE2TpO9HGfkPqn4=">
+            <menu:item id="i_configuracioncurso_new" messageCode="global_menu_new" url="/configuracioncursoes?form" z="BjbB7shi7+vVehGmciQAL4DJvv4="/>
+            <menu:item id="i_configuracioncurso_list" messageCode="global_menu_list" url="/configuracioncursoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="thuwO5Nl69RHPNCrOdX/xIiAkpc="/>
+        </menu:category>
+        <menu:category id="c_cicloescolar" z="+oDzKw5fDHInKANyJXffljrska8=">
+            <menu:item id="i_cicloescolar_new" messageCode="global_menu_new" url="/cicloescolars?form" z="vNk0r00IzMoRwBQ8KqCdcLWpNBg="/>
+            <menu:item id="i_cicloescolar_list" messageCode="global_menu_list" url="/cicloescolars?page=1&amp;size=${empty param.size ? 10 : param.size}" z="UB3moWDLbHtsexAQrtbTCkecak0="/>
+        </menu:category>
+        <menu:category id="c_alumnogrupo" z="LQiNL5JUZLTYi0MexWkBiPyda48=">
+            <menu:item id="i_alumnogrupo_new" messageCode="global_menu_new" url="/alumnogrupoes?form" z="vde51tCx7M79V8De1QUTdBbps+g="/>
+            <menu:item id="i_alumnogrupo_list" messageCode="global_menu_list" url="/alumnogrupoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="DDHUR10+7LzYw7701Ny/TzlEy5Y="/>
+        </menu:category>
+        <menu:category id="c_asistencia" z="U8KUS4G/hRPnQKlf5U+8tptB5nM=">
+            <menu:item id="i_asistencia_new" messageCode="global_menu_new" url="/asistencias?form" z="B/2X8L/bhAilMmFb2uqYN5vzmOM="/>
+            <menu:item id="i_asistencia_list" messageCode="global_menu_list" url="/asistencias?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nwuXsP9yXNynlVDpFcaeXkicias="/>
+        </menu:category>
+        <menu:category id="c_grupo" z="aEc7CUb6jPdvenY+zZYtXPTsF6A=">
+            <menu:item id="i_grupo_new" messageCode="global_menu_new" url="/grupoes?form" z="w/Bv5V+m4clKPWr5NSSRzQPz8Nc="/>
+            <menu:item id="i_grupo_list" messageCode="global_menu_list" url="/grupoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="O3uVN41ElSwPLWcQ8uEDcvkEyRc="/>
+        </menu:category>
+        <menu:category id="c_usuario" z="g6oG0656PcsmmvUYeBtpgiQROck=">
+            <menu:item id="i_usuario_new" messageCode="global_menu_new" url="/usuarios?form" z="RG1gCsiZQjg1HLDzXbHKht6yDkw="/>
+            <menu:item id="i_usuario_list" messageCode="global_menu_list" url="/usuarios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="P7ZIPrcTTBR41JYD0QldbYgsZrM="/>
+        </menu:category>
+        <menu:category id="c_cuenta" z="zvzEbahYxrEGyQXWEkR0tM3nYKA=">
+            <menu:item id="i_cuenta_new" messageCode="global_menu_new" url="/cuentas?form" z="+JflC/cJi5sIHAV5tbB5vdVXCGg="/>
+            <menu:item id="i_cuenta_list" messageCode="global_menu_list" url="/cuentas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7S2xNP/pWyOj10jVOlLgo3P57AY="/>
+        </menu:category>
+        <menu:category id="c_configuracionpagoescuela" z="xnoGIsT2g7lQO0+uTpoqzn5G08w=">
+            <menu:item id="i_configuracionpagoescuela_new" messageCode="global_menu_new" url="/configuracionpagoescuelas?form" z="NTpu76qd+1FO+i3GyuwYWC1n/oc="/>
+            <menu:item id="i_configuracionpagoescuela_list" messageCode="global_menu_list" url="/configuracionpagoescuelas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Qe/hvURVEhEmlNeDGyibKu8YZ/w="/>
+        </menu:category>
+    </menu:menu>
+</div>

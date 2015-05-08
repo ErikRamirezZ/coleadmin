@@ -1,0 +1,22 @@
+<div xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+  <spring:message var="app_name" code="application_name" htmlEscape="false" />
+  <spring:message var="title" code="welcome_titlepane" arguments="${app_name}" htmlEscape="false" />
+  
+  <spring:url value="/resources/images/iconathon_federal-government_simple-black_64x64.png" var="admon_url" />
+  <spring:url value="/resources/images/classica_pie-chart_simple-black_96x96.png" var="reports_url" />
+  <spring:url value="/resources/images/iconathon_bribery_simple-black_96x96.png" var="money_url" />
+  <spring:url value="/resources/images/ocha_activity-advocacy_simple-black_96x96.png" var="comunication_url" />
+  
+  <spring:url value="/resources/styles/main_menu.css" var="main_menu_url" />
+  <link rel="stylesheet" type="text/css" href="${main_menu_url}" />
+  
+  <util:panel id="title" title="${title}">
+    <p>
+      Index 2
+    </p>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+  </util:panel>
+</div>

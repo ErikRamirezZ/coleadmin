@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Grupo" items="${grupoes}" z="F85bH7Fm4shgKhTFPuoFvdID44Q=">
+        <table:table data="${grupoes}" id="l_com_raze_coleadmin_domain_Grupo" path="/grupoes" z="cXMamhdbnyhQu9kc2ETZTOBfy0E=">
+            <table:column id="c_com_raze_coleadmin_domain_Grupo_curso" property="curso" z="ZjWm0HDNK417Fl6ogOOSL7bwYKI="/>
+            <table:column id="c_com_raze_coleadmin_domain_Grupo_docente" property="docente" z="jjKjAZPVZIw1s5KzXXuG5ZGgljI="/>
+            <table:column id="c_com_raze_coleadmin_domain_Grupo_salon" property="salon" z="bk3eLZlgNCusyZpqLWpFmhk5TaE="/>
+            <table:column id="c_com_raze_coleadmin_domain_Grupo_nombreGrupo" property="nombreGrupo" z="yNeysNou1FrhHIXuQ4WKkjx4tg4="/>
+            <table:column id="c_com_raze_coleadmin_domain_Grupo_descripcion" property="descripcion" z="01mUMdcy7UA95CVzyuy7xbj2afo="/>
+            <table:column id="c_com_raze_coleadmin_domain_Grupo_usuario" property="usuario" z="h6bkAOa9eokJmadWYvlrrtic7VE=" render="false"/>
+        </table:table>
+    </page:list>
+</div>

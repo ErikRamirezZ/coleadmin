@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Repeticiones" modelAttribute="repeticiones" path="/repeticioneses" versionField="Version" z="2hCgybEaM8E+IHN1sIW+wF+Ehl0=">
+        <field:select field="cargo" id="c_com_raze_coleadmin_domain_Repeticiones_cargo" itemValue="id" items="${cargoes}" path="/cargoes" z="p5+P1Ow2gRJ88AHYhQZz//JvGdA="/>
+        <field:select field="seReqpite" id="c_com_raze_coleadmin_domain_Repeticiones_seReqpite" items="${serepites}" path="serepites" z="xMIrfAswIDUxOF7slcxbguojGZs="/>
+        <field:input field="numeroVeces" id="c_com_raze_coleadmin_domain_Repeticiones_numeroVeces" validationMessageCode="field_invalid_integer" z="SZac13Hyrj1L8/+nmSx9jqYPYn8="/>
+        <field:select field="usuario" id="c_com_raze_coleadmin_domain_Repeticiones_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="Qhc9qAfFry8KkOIr9tD5FsumXe0=" render="false"/>
+        <field:datetime dateTimePattern="${repeticiones_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Repeticiones_fechaCreacion" z="4Lrmn2Z1ibLvJK7tIhB6BkJ6yVg=" render="false"/>
+        <field:datetime dateTimePattern="${repeticiones_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Repeticiones_fechaModificacion" z="HAFJSwMM97vn8YWXmnMN1Bn9Mfs=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Repeticiones_activo" z="+kwocVoyvZs4qV6oYWvMA0GO76Y=" render="false"/>
+    </form:update>
+</div>

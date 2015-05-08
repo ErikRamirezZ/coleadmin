@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Cargo" object="${cargo}" path="/cargoes" z="MtAWMC3wcINnG5M15stcTjALr3c=">
+        <field:display field="cuenta" id="s_com_raze_coleadmin_domain_Cargo_cuenta" object="${cargo}" z="OKQagExg1WeHqp/+VElHDbT1Klo="/>
+        <field:display field="tipoConcepto" id="s_com_raze_coleadmin_domain_Cargo_tipoConcepto" object="${cargo}" z="iSLcCHvD8c6lzBXU7S4XKs6UxT8="/>
+        <field:display field="concepto" id="s_com_raze_coleadmin_domain_Cargo_concepto" object="${cargo}" z="FYWprq4JM44sPce+2wilAyB1gmY="/>
+        <field:display field="subtotal" id="s_com_raze_coleadmin_domain_Cargo_subtotal" object="${cargo}" z="xnmoHy5Tn388Jl8x4asGoUrzGRM="/>
+        <field:display field="total" id="s_com_raze_coleadmin_domain_Cargo_total" object="${cargo}" z="/5z9Mbgoa/2OfSYtL6kVoVoSxiI="/>
+        <field:display date="true" dateTimePattern="${cargo_fechacargo_date_format}" field="fechaCargo" id="s_com_raze_coleadmin_domain_Cargo_fechaCargo" object="${cargo}" z="gOeLAYRVmxLHDY+Cb/wVPxoNVIU="/>
+        <field:display field="pago" id="s_com_raze_coleadmin_domain_Cargo_pago" object="${cargo}" z="LMQ+9EuYNaxCGsfvXXVTudQvUWU="/>
+        <field:display field="fuePagoOportuno" id="s_com_raze_coleadmin_domain_Cargo_fuePagoOportuno" object="${cargo}" z="UNtIXfUcD2jbeGeqbVrZrpvU0yw="/>
+        <field:display date="true" dateTimePattern="${cargo_fechapago_date_format}" field="fechaPago" id="s_com_raze_coleadmin_domain_Cargo_fechaPago" object="${cargo}" z="nqh8vZP8uGuSJ/6od7pDW4D+aEs="/>
+        <field:display field="usuario" id="s_com_raze_coleadmin_domain_Cargo_usuario" object="${cargo}" z="QNZ/0eOkPpaGgwonSV62xhYa6L0=" render="false"/>
+        <field:display date="true" dateTimePattern="${cargo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Cargo_fechaCreacion" object="${cargo}" z="o0HRQr8NxvzHNgqe9PT7/MUW0Cs=" render="false"/>
+        <field:display date="true" dateTimePattern="${cargo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Cargo_fechaModificacion" object="${cargo}" z="RHqtgdjFlFoSIJ6h1NSpfs+wBqs=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Cargo_activo" object="${cargo}" z="ytUFu1kQp8pXVlkU/iYXKOZbhC8=" render="false"/>
+    </page:show>
+</div>

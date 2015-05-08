@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_ConfiguracionCurso" object="${configuracioncurso}" path="/configuracioncursoes" z="lYTiTLwE586bZcUYDzMlSOLIbMY=">
+        <field:display field="curso" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_curso" object="${configuracioncurso}" z="1lrs/sDQ3E6G9XzcgN3PpeZTydo="/>
+        <field:display field="cuotaMensual" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_cuotaMensual" object="${configuracioncurso}" z="U3JheF+Uqf4cjqGdmvmS7TJvbTU="/>
+        <field:display field="cuotaInscripcion" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_cuotaInscripcion" object="${configuracioncurso}" z="QPWtkWQQOqCVuXCu28EdJdn2MGk="/>
+        <field:display field="diaCorte" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_diaCorte" object="${configuracioncurso}" z="SN/I2aahbfgxTmrovKPv4PbimT8="/>
+        <field:display field="diaPago" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_diaPago" object="${configuracioncurso}" z="yKZXdSH35qTwoFxHsytdrMDeV9s="/>
+        <field:display field="numeroDiasParaPagar" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_numeroDiasParaPagar" object="${configuracioncurso}" z="6ak9qvRREm96uefiornyv51L1sg="/>
+        <field:display field="usuario" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_usuario" object="${configuracioncurso}" z="rYQVcJdmJl9CJa+76ut5RH53vB4=" render="false"/>
+        <field:display date="true" dateTimePattern="${configuracionCurso_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_fechaCreacion" object="${configuracioncurso}" z="7YxGiRzglAmp/NyYgFUNIZq0xHk=" render="false"/>
+        <field:display date="true" dateTimePattern="${configuracionCurso_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_fechaModificacion" object="${configuracioncurso}" z="EpMcxLY9JjotrUOWqLHPVbp5Mmk=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_activo" object="${configuracioncurso}" z="0SPKh2bhCWEkp0B1uFVjyGBWS0g=" render="false"/>
+    </page:show>
+</div>

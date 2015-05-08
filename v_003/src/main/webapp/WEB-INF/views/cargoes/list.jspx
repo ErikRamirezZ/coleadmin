@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Cargo" items="${cargoes}" z="aV1+uXxF4SCgxP/S6vK6pyNJb58=">
+        <table:table data="${cargoes}" id="l_com_raze_coleadmin_domain_Cargo" path="/cargoes" z="8UDz5NherjH7bq5NPyEKWvg93wY=">
+            <table:column id="c_com_raze_coleadmin_domain_Cargo_cuenta" property="cuenta" z="QihEWtpwqNbo/K9sl+bo9+OM6fQ="/>
+            <table:column id="c_com_raze_coleadmin_domain_Cargo_tipoConcepto" property="tipoConcepto" z="/AHxv/tUzcTwmRA/+/0NKhPl80A="/>
+            <table:column id="c_com_raze_coleadmin_domain_Cargo_concepto" property="concepto" z="rlw+DvnkGi5ZsCKZ4Hf5F1mmkh4="/>
+            <table:column id="c_com_raze_coleadmin_domain_Cargo_subtotal" property="subtotal" z="6c63wusks/7Aj/JjbdK+2LUO/Kc="/>
+            <table:column id="c_com_raze_coleadmin_domain_Cargo_total" property="total" z="jBpFiiXbMGCYFQtpP2z4hEn/T2U="/>
+            <table:column date="true" dateTimePattern="${cargo_fechacargo_date_format}" id="c_com_raze_coleadmin_domain_Cargo_fechaCargo" property="fechaCargo" z="WBKFgcD5tkKc2qM73II1haV03Yc="/>
+        </table:table>
+    </page:list>
+</div>
