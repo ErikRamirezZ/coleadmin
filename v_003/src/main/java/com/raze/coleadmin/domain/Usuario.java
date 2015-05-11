@@ -1,19 +1,17 @@
 package com.raze.coleadmin.domain;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Version;
@@ -38,12 +36,12 @@ public class Usuario implements UserDetails {
 
 	/**
      */
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Escuela escuela;
 
     /**
      */
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Plantel plantel;
 
     /**
@@ -102,12 +100,12 @@ public class Usuario implements UserDetails {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
-    private Set<Rol> roles = new HashSet<Rol>();
+    @OneToMany
+    private List<Rol> roles = new ArrayList<Rol>();
 
     /**
      */
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Usuario usuario;
 
     /**
@@ -268,11 +266,11 @@ public class Usuario implements UserDetails {
         this.observaciones = observaciones;
     }
 
-	public Set<Rol> getRoles() {
+	public List<Rol> getRoles() {
         return this.roles;
     }
 
-	public void setRoles(Set<Rol> roles) {
+	public void setRoles(List<Rol> roles) {
         this.roles = roles;
     }
 

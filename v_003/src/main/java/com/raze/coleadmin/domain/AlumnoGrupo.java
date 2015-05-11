@@ -47,7 +47,7 @@ public class AlumnoGrupo {
 
     /**
      */
-    @ManyToOne(cascade = {CascadeType.ALL})
+    @ManyToOne
     private Usuario usuario;
 
     /**

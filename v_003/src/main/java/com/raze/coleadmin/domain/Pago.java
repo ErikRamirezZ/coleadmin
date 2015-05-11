@@ -1,27 +1,29 @@
 package com.raze.coleadmin.domain;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-import javax.persistence.ManyToOne;
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.Date;
 import java.util.List;
-import java.util.Set;
-import javax.persistence.CascadeType;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.Version;
-import com.raze.coleadmin.catalog.MetodoPago;
-import flexjson.JSONDeserializer;
-import flexjson.JSONSerializer;
-import javax.persistence.Enumerated;
-import java.util.Date;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Version;
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import com.raze.coleadmin.catalog.MetodoPago;
+
+import flexjson.JSONDeserializer;
+import flexjson.JSONSerializer;
 
 @Entity
 public class Pago {
@@ -33,8 +35,8 @@ public class Pago {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
-    private Set<Cargo> cargo = new HashSet<Cargo>();
+    @OneToMany
+    private List<Cargo> cargo = new ArrayList<Cargo>();
 
     /**
      */
@@ -61,7 +63,7 @@ public class Pago {
 
     /**
      */
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Usuario usuario;
 
     /**
@@ -117,11 +119,11 @@ public class Pago {
         this.cuenta = cuenta;
     }
 
-	public Set<Cargo> getCargo() {
+	public List<Cargo> getCargo() {
         return this.cargo;
     }
 
-	public void setCargo(Set<Cargo> cargo) {
+	public void setCargo(List<Cargo> cargo) {
         this.cargo = cargo;
     }
 

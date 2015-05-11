@@ -1,33 +1,32 @@
 package com.raze.coleadmin.domain;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-import flexjson.JSONDeserializer;
-import flexjson.JSONSerializer;
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.Date;
 import java.util.List;
-import java.util.Set;
-import javax.persistence.CascadeType;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.Version;
-import java.util.Date;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Version;
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import flexjson.JSONDeserializer;
+import flexjson.JSONSerializer;
 
 @Entity
 public class ConfiguracionCurso {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
-    private Set<Curso> curso = new HashSet<Curso>();
+    @ManyToOne
+    private Curso curso;
 
     /**
      */
@@ -51,7 +50,7 @@ public class ConfiguracionCurso {
 
     /**
      */
-    @ManyToOne(cascade = {CascadeType.ALL})
+    @ManyToOne
     private Usuario usuario;
 
     /**
@@ -129,11 +128,11 @@ public class ConfiguracionCurso {
         .use("values", ConfiguracionCurso.class).deserialize(json);
     }
 
-	public Set<Curso> getCurso() {
+	public Curso getCurso() {
         return this.curso;
     }
 
-	public void setCurso(Set<Curso> curso) {
+	public void setCurso(Curso curso) {
         this.curso = curso;
     }
 

@@ -1,17 +1,15 @@
 package com.raze.coleadmin.domain;
 
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Version;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
@@ -35,8 +33,8 @@ public class Rol implements GrantedAuthority {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.MERGE)
-    private Set<Permiso> permisos = new HashSet<Permiso>();
+    @OneToMany
+    private List<Permiso> permisos = new ArrayList<Permiso>();
 
 	public String getNombre() {
         return this.nombre;
@@ -46,11 +44,11 @@ public class Rol implements GrantedAuthority {
         this.nombre = nombre;
     }
 
-	public Set<Permiso> getPermisos() {
+	public List<Permiso> getPermisos() {
         return this.permisos;
     }
 
-	public void setPermisos(Set<Permiso> permisos) {
+	public void setPermisos(List<Permiso> permisos) {
         this.permisos = permisos;
     }
 

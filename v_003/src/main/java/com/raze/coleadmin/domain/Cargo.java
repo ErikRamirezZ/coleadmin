@@ -1,27 +1,30 @@
 package com.raze.coleadmin.domain;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-import javax.persistence.ManyToOne;
-import com.raze.coleadmin.catalog.TipoConcepto;
-import flexjson.JSONDeserializer;
-import flexjson.JSONSerializer;
-import javax.persistence.Enumerated;
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.Date;
 import java.util.List;
-import java.util.Set;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.Version;
-import java.util.Date;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Version;
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import com.raze.coleadmin.catalog.TipoConcepto;
+
+import flexjson.JSONDeserializer;
+import flexjson.JSONSerializer;
 
 @Entity
 public class Cargo {
@@ -38,8 +41,8 @@ public class Cargo {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
-    private Set<Concepto> concepto = new HashSet<Concepto>();
+    @OneToMany
+    private List<Concepto> concepto = new ArrayList<Concepto>();
 
     /**
      */
@@ -137,11 +140,11 @@ public class Cargo {
         this.tipoConcepto = tipoConcepto;
     }
 
-	public Set<Concepto> getConcepto() {
+	public List<Concepto> getConcepto() {
         return this.concepto;
     }
 
-	public void setConcepto(Set<Concepto> concepto) {
+	public void setConcepto(List<Concepto> concepto) {
         this.concepto = concepto;
     }
 

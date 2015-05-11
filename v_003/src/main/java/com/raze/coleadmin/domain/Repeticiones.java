@@ -1,38 +1,34 @@
 package com.raze.coleadmin.domain;
+import java.util.Collection;
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.persistence.Version;
+
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-
-import javax.persistence.ManyToOne;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import com.raze.coleadmin.catalog.SeRepite;
 
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
 
-import javax.persistence.Enumerated;
-
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.persistence.Version;
-
-import org.springframework.format.annotation.DateTimeFormat;
-
 @Entity
 public class Repeticiones {
 
     /**
      */
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Cargo cargo;
 
     /**
@@ -46,7 +42,7 @@ public class Repeticiones {
 
     /**
      */
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Usuario usuario;
 
     /**
