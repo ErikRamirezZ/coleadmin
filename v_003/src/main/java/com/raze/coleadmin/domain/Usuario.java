@@ -38,12 +38,12 @@ public class Usuario implements UserDetails {
 
 	/**
      */
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Escuela escuela;
 
     /**
      */
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Plantel plantel;
 
     /**
@@ -107,7 +107,7 @@ public class Usuario implements UserDetails {
 
     /**
      */
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Usuario usuario;
 
     /**

@@ -1,22 +1,30 @@
 package com.raze.coleadmin.domain;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+
 import com.raze.coleadmin.catalog.TipoEscuela;
+
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Version;
+
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
+
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -41,7 +49,16 @@ public class Escuela {
 
     /**
      */
-    @ManyToOne
+    @Lob
+    private byte[] logo;
+
+    /**
+     */
+    private String contentType;
+
+    /**
+     */
+    @ManyToOne(cascade = CascadeType.ALL)
     private Usuario usuario;
 
     /**
@@ -146,6 +163,22 @@ public class Escuela {
 	public void setRazonSocial(String razonSocial) {
         this.razonSocial = razonSocial;
     }
+
+	public byte[] getLogo() {
+		return logo;
+	}
+
+	public void setLogo(byte[] logo) {
+		this.logo = logo;
+	}
+
+	public String getContentType() {
+		return contentType;
+	}
+
+	public void setContentType(String contentType) {
+		this.contentType = contentType;
+	}
 
 	public Usuario getUsuario() {
         return this.usuario;

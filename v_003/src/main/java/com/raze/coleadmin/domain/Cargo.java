@@ -72,7 +72,7 @@ public class Cargo {
 
     /**
      */
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.ALL})
     private Usuario usuario;
 
     /**

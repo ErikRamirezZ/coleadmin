@@ -1,9 +1,13 @@
 package com.raze.coleadmin.domain;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+
 import com.raze.coleadmin.catalog.TipoConcepto;
+
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Enumerated;
@@ -13,11 +17,14 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Version;
 import javax.persistence.ManyToOne;
+
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
+
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -47,7 +54,7 @@ public class Concepto {
 
     /**
      */
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.ALL})
     private Usuario usuario;
 
     /**

@@ -7,6 +7,7 @@
         <field:select field="tipoEscuela" id="c_com_raze_coleadmin_domain_Escuela_tipoEscuela" items="${tipoescuelas}" path="tipoescuelas" z="KILqEVCjqU2/XjS4bpe0b9niUOw="/>
         <field:input field="nombreEscuela" id="c_com_raze_coleadmin_domain_Escuela_nombreEscuela" z="/fRPzLOrSihx+9ozu7n28HQ84+k="/>
         <field:input field="razonSocial" id="c_com_raze_coleadmin_domain_Escuela_razonSocial" z="Wi2s1wCmXIOvMMdLausqhMGtlek="/>
+        <field:input field="logo" id="c_com_raze_coleadmin_domain_Escuela_logo" type="file" z="djfuJswoDkflcowiJskofkJ7Jik="/>
         <field:select field="usuario" id="c_com_raze_coleadmin_domain_Escuela_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="YmXhyyq56aOodh+kpUuCNURWe6I=" render="false"/>
         <field:datetime dateTimePattern="${escuela_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Escuela_fechaCreacion" z="5w4iP533uBscUwtPymVoTdwEwAA=" render="false"/>
         <field:datetime dateTimePattern="${escuela_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Escuela_fechaModificacion" z="X5lB2t6b7ikCxHVoK6XqrIrT3+4=" render="false"/>

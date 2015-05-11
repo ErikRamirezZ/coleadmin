@@ -51,7 +51,7 @@ public class ConfiguracionCurso {
 
     /**
      */
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.ALL})
     private Usuario usuario;
 
     /**

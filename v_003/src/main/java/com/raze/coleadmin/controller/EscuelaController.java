@@ -1,14 +1,19 @@
 package com.raze.coleadmin.controller;
-import com.raze.coleadmin.catalog.TipoEscuela;
-import com.raze.coleadmin.domain.Escuela;
-import com.raze.coleadmin.service.domain.EscuelaService;
-import com.raze.coleadmin.service.domain.UsuarioService;
+import java.io.ByteArrayInputStream;
+import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 import java.util.List;
+
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+
+import org.apache.commons.io.IOUtils;
 import org.joda.time.format.DateTimeFormat;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.HttpHeaders;
@@ -17,15 +22,24 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.ServletRequestDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.support.ByteArrayMultipartFileEditor;
 import org.springframework.web.util.UriComponentsBuilder;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
+
+import com.raze.coleadmin.catalog.TipoEscuela;
+import com.raze.coleadmin.domain.Escuela;
+import com.raze.coleadmin.service.domain.EscuelaService;
+import com.raze.coleadmin.service.domain.UsuarioService;
 
 @Controller
 @RequestMapping("/escuelas")
@@ -37,17 +51,49 @@ public class EscuelaController {
 	@Autowired
     UsuarioService usuarioService;
 
+	static Logger log = LoggerFactory.getLogger(EscuelaController.class);
+	
+	@InitBinder
+	protected void initBinder(HttpServletRequest request,
+	        ServletRequestDataBinder binder) throws ServletException {
+	    binder.registerCustomEditor(byte[].class,
+	            new ByteArrayMultipartFileEditor());
+	}
+	
 	@RequestMapping(method = RequestMethod.POST, produces = "text/html")
-    public String create(@Valid Escuela escuela, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
+	public String create(@Valid Escuela escuela, BindingResult bindingResult, Model uiModel, 
+	        @RequestParam("logo") MultipartFile logo,
+	        HttpServletRequest httpServletRequest) {
+		log.info("Ya estoy en el controller");
         if (bindingResult.hasErrors()) {
             populateEditForm(uiModel, escuela);
             return "escuelas/create";
         }
+        escuela.setContentType(logo.getContentType());
         uiModel.asMap().clear();
         escuelaService.saveEscuela(escuela);
         return "redirect:/escuelas/" + encodeUrlPathSegment(escuela.getId().toString(), httpServletRequest);
     }
 
+	@RequestMapping(value = "/{id}/image", method = RequestMethod.GET)
+    public String showImage(@PathVariable("id") Long id, HttpServletResponse response, Model model) {
+        Escuela escuela = escuelaService.findEscuela(id);
+        if (escuela != null) {
+            byte[] image = escuela.getLogo();
+            if (image != null) {
+                try {
+                    response.setContentType(escuela.getContentType());
+                    OutputStream out = response.getOutputStream();
+                    IOUtils.copy(new ByteArrayInputStream(image), out);
+                    out.flush();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return null;
+    }
+	
 	@RequestMapping(params = "form", produces = "text/html")
     public String createForm(Model uiModel) {
         populateEditForm(uiModel, new Escuela());

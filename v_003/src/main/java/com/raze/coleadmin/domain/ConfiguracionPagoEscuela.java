@@ -60,7 +60,7 @@ public class ConfiguracionPagoEscuela {
 
     /**
      */
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.ALL})
     private Usuario usuario;
 
     /**

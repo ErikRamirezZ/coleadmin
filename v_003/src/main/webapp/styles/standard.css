@@ -7,23 +7,35 @@ body,div,td {
 }
 
 body {
-	background-color: #fff;
+    background: -webkit-linear-gradient(140deg, #EAF3F8, #38B0ED); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(140deg, #EAF3F8, #38B0ED); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(140deg, #EAF3F8, #38B0ED); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(140deg, #EAF3F8, #38B0ED); /* Standard syntax (must be last) */
 	text-align: center;
 }
 
 #header {
 	margin-bottom: 1em;
+	height: 100px;
+    background: -webkit-linear-gradient(90deg, #2F5846, #547C71); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #2F5846, #547C71); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #2F5846, #547C71); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #2F5846, #547C71); /* Standard syntax (must be last) */
+}
+
+#banner {
+	margin-top: 12px;
+	margin-left: 20px;
 }
 
 #wrapper {
-	width:1024px;
-	min-width: 1024px;
+	width:80%;
 	max-width: 1024px;
 	margin-right: auto;
 	margin-left: auto;
 
 	/* fix max-width incompatibility in IE6 */
-	width:expression(document.body.clientWidth > 1024? "1024": "auto" );
+	width:expression(document.body.clientWidth > 1024? "80%": "auto" );
 	
 	overflow:hidden;
 	display:block;
@@ -65,7 +77,10 @@ body {
 
 #menu h2 {
 	color: #fff;
-	background: #648C1D;
+    background: -webkit-linear-gradient(90deg, #2F5846, #547C71); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #2F5846, #547C71); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #2F5846, #547C71); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #2F5846, #547C71); /* Standard syntax (must be last) */
 	text-transform: uppercase;
 	font-weight:bold;
 	font-size: 12px;

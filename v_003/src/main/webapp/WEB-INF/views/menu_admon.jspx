@@ -15,10 +15,6 @@
             <menu:item id="i_curso_new" messageCode="global_menu_new" url="/cursoes?form" z="i5hb6h9BZQgF9RE9iqqRTA+wGak="/>
             <menu:item id="i_curso_list" messageCode="global_menu_list" url="/cursoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="H5eRx2vxkuAYrT5z65L2KRROpNs="/>
         </menu:category>
-        <menu:category id="c_pago" z="h2UgnPj2WSU/mjugjzUwlHsPSsQ=">
-            <menu:item id="i_pago_new" messageCode="global_menu_new" url="/pagoes?form" z="3SDB2cd08x5hp7V8BRB0q8LVu1c="/>
-            <menu:item id="i_pago_list" messageCode="global_menu_list" url="/pagoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="R/c5sEoYqGFTpSWoDZRYHsubCmo="/>
-        </menu:category>
         <menu:category id="c_configuracioncurso" z="V2qh4sMr9TFdEE2TpO9HGfkPqn4=">
             <menu:item id="i_configuracioncurso_new" messageCode="global_menu_new" url="/configuracioncursoes?form" z="BjbB7shi7+vVehGmciQAL4DJvv4="/>
             <menu:item id="i_configuracioncurso_list" messageCode="global_menu_list" url="/configuracioncursoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="thuwO5Nl69RHPNCrOdX/xIiAkpc="/>
@@ -46,10 +42,6 @@
         <menu:category id="c_cuenta" z="zvzEbahYxrEGyQXWEkR0tM3nYKA=">
             <menu:item id="i_cuenta_new" messageCode="global_menu_new" url="/cuentas?form" z="+JflC/cJi5sIHAV5tbB5vdVXCGg="/>
             <menu:item id="i_cuenta_list" messageCode="global_menu_list" url="/cuentas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7S2xNP/pWyOj10jVOlLgo3P57AY="/>
-        </menu:category>
-        <menu:category id="c_configuracionpagoescuela" z="xnoGIsT2g7lQO0+uTpoqzn5G08w=">
-            <menu:item id="i_configuracionpagoescuela_new" messageCode="global_menu_new" url="/configuracionpagoescuelas?form" z="NTpu76qd+1FO+i3GyuwYWC1n/oc="/>
-            <menu:item id="i_configuracionpagoescuela_list" messageCode="global_menu_list" url="/configuracionpagoescuelas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Qe/hvURVEhEmlNeDGyibKu8YZ/w="/>
         </menu:category>
     </menu:menu>
 </div>

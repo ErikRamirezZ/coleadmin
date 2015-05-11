@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
-    <definition extends="default" name="asistencias/list">
+    <definition extends="administration" name="asistencias/list">
         <put-attribute name="body" value="/WEB-INF/views/asistencias/list.jspx"/>
     </definition>
-<definition extends="default" name="asistencias/show">
+<definition extends="administration" name="asistencias/show">
         <put-attribute name="body" value="/WEB-INF/views/asistencias/show.jspx"/>
     </definition>
-<definition extends="default" name="asistencias/create">
+<definition extends="administration" name="asistencias/create">
         <put-attribute name="body" value="/WEB-INF/views/asistencias/create.jspx"/>
     </definition>
-<definition extends="default" name="asistencias/update">
+<definition extends="administration" name="asistencias/update">
         <put-attribute name="body" value="/WEB-INF/views/asistencias/update.jspx"/>
     </definition>
 </tiles-definitions>

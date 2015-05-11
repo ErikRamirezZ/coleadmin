@@ -61,7 +61,7 @@ public class Pago {
 
     /**
      */
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Usuario usuario;
 
     /**

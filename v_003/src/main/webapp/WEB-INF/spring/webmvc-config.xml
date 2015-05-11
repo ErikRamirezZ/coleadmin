@@ -65,9 +65,9 @@
 
     <!-- Enable this for integration of file upload functionality -->
     <bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="multipartResolver"/>
-<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver" id="tilesViewResolver">
-    <property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView"/>
-  </bean>
+    <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver" id="tilesViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView"/>
+    </bean>
     <bean class="org.springframework.web.servlet.view.tiles2.TilesConfigurer" id="tilesConfigurer">
     <property name="definitions">
       <list>
@@ -76,6 +76,6 @@
         <value>/WEB-INF/views/**/views.xml</value>
       </list>
     </property>
-  </bean>
+    </bean>
 <bean class="com.raze.coleadmin.controller.ApplicationConversionServiceFactoryBean" id="applicationConversionService"/>
 </beans>

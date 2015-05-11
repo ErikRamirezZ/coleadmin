@@ -35,7 +35,7 @@ public class Rol implements GrantedAuthority {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.MERGE)
     private Set<Permiso> permisos = new HashSet<Permiso>();
 
 	public String getNombre() {
