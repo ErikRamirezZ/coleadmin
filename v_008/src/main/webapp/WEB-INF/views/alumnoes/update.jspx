@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Alumno" modelAttribute="alumno" path="/alumnoes" versionField="Version" z="/flZ11xbEU5YrsYS+rTiOt5XPms=">
+        <field:input field="correoE" id="c_com_raze_coleadmin_domain_Alumno_correoE" z="h2zjitWK1aVI5/XJiCeNbTqc+mE="/>
+        <field:input field="nombre" id="c_com_raze_coleadmin_domain_Alumno_nombre" max="30" min="3" required="true" z="EbYMy6pxaq/aEeAtrtJaJVX1Lnw="/>
+        <field:input field="primerApellido" id="c_com_raze_coleadmin_domain_Alumno_primerApellido" max="30" min="3" required="true" z="R9Tmj11BIqsPtehuMYsrP1KnWjs="/>
+        <field:input field="segundoApellido" id="c_com_raze_coleadmin_domain_Alumno_segundoApellido" max="30" min="3" required="true" z="zCCECZDW1vejzvYI+i5HSZ01U+U="/>
+        <field:textarea field="domicilio" id="c_com_raze_coleadmin_domain_Alumno_domicilio" z="WeofdK14GdX2PPZ1nK+7ZnD1PH0="/>
+        <field:input field="ciudad" id="c_com_raze_coleadmin_domain_Alumno_ciudad" z="ndJuB7W8zq6lnhbGaE7erLccc6M="/>
+        <field:input field="telefono" id="c_com_raze_coleadmin_domain_Alumno_telefono" z="OYW4MDBNq+33jRPYOyAHllVFXZg="/>
+        <field:datetime dateTimePattern="${alumno_fechanacimiento_date_format}" field="fechaNacimiento" id="c_com_raze_coleadmin_domain_Alumno_fechaNacimiento" z="9Wo/BHJU3DKp1A3Cad43yMzPymM="/>
+        <field:textarea field="foto" id="c_com_raze_coleadmin_domain_Alumno_foto" z="HRP+KDcYuW1MVTw7DCpngjVAINY="/>
+        <field:input field="contentType" id="c_com_raze_coleadmin_domain_Alumno_contentType" z="+QKbQNy1aQN9JRLVLaj37P8qEoI="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Alumno_idUsuario" validationMessageCode="field_invalid_integer" z="aHWgmMqLb7zUFH5EmLMfe9cLXGQ="/>
+        <field:datetime dateTimePattern="${alumno_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Alumno_fechaCreacion" z="EkD6vCWGDb7JANSH1mo97znZoJo="/>
+        <field:datetime dateTimePattern="${alumno_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Alumno_fechaModificacion" z="CSl7aiNGuT3UUiUjZ1LInSoAgYk="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Alumno_activo" z="C3nNTCgjWjCpVFDRWGhk0K7xcf8="/>
+        <field:input field="curp" id="c_com_raze_coleadmin_domain_Alumno_curp" required="true" z="JNo1sx6auUdzCVh/A7jQeG7tXGg="/>
+        <field:input field="tipoSangre" id="c_com_raze_coleadmin_domain_Alumno_tipoSangre" z="DmqqzEPkLTTrKVm69icbK/PQEbU="/>
+        <field:input field="talla" id="c_com_raze_coleadmin_domain_Alumno_talla" z="XQbenk/oTjkRpLc7PPWwaClEjTA="/>
+        <field:input field="peso" id="c_com_raze_coleadmin_domain_Alumno_peso" z="8oXyDfnxLcsHXqlW+33FOZ+/WfY="/>
+        <field:input field="alergias" id="c_com_raze_coleadmin_domain_Alumno_alergias" z="PWIwKuJ8wRDIGqEanHM+mooHloc="/>
+        <field:textarea field="observaciones" id="c_com_raze_coleadmin_domain_Alumno_observaciones" z="v7BEu+u00td+MUcNKwLLeG1XlaQ="/>
+        <field:select field="escuela" id="c_com_raze_coleadmin_domain_Alumno_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="3+1D3Qqlptxm81a62f0qXNVAJn0="/>
+        <field:select field="plantel" id="c_com_raze_coleadmin_domain_Alumno_plantel" itemValue="id" items="${plantels}" path="/plantels" required="true" z="w59qcKmxx/ftt9DUNVSwAvH2FxI="/>
+    </form:update>
+</div>

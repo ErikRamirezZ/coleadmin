@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_AlumnoGrupo" items="${alumnogrupoes}" z="YLUxfIvTUfItZtFT2LweCd081rI=">
+        <table:table data="${alumnogrupoes}" id="l_com_raze_coleadmin_domain_AlumnoGrupo" path="/alumnogrupoes" z="lKgsun/8gSRad0Rh6ou1HD1f9Lc=">
+            <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_alumno" property="alumno" z="7XthOqWylCxkhusqAOicsq1G4bE="/>
+            <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_grupo" property="grupo" z="WQDdMxQhYGInqe7BZ0wJgjlmOgM="/>
+            <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_tipoEscuela" property="tipoEscuela" z="iumYM9Y6MFkEaWl1APSnl/Xexp0="/>
+            <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_observaciones" property="observaciones" z="IBpieBRwLNjL7WlChVajOVIBV9I="/>
+            <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_idUsuario" property="idUsuario" z="scVJFA+mtQHFVPT8ESPA5cPEA0E="/>
+            <table:column date="true" dateTimePattern="${alumnoGrupo_fechacreacion_date_format}" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaCreacion" property="fechaCreacion" z="F8+7KxpuIj7Tf2Y6j6MzKKz0JAI="/>
+        </table:table>
+    </page:list>
+</div>

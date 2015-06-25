@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Concepto" modelAttribute="concepto" path="/conceptoes" versionField="Version" z="tL/Wx8Y722zPU4vN196zSjjvoko=">
+        <field:select field="tipoConcepto" id="c_com_raze_coleadmin_domain_Concepto_tipoConcepto" items="${tipoconceptoes}" path="tipoconceptoes" z="1aWsq76YnBnPCs1A/oSDosVNuW0="/>
+        <field:input field="nombreConcepto" id="c_com_raze_coleadmin_domain_Concepto_nombreConcepto" z="1JvmCC9ZBlpTKE5nwj6djCn0mXc="/>
+        <field:input field="monto" id="c_com_raze_coleadmin_domain_Concepto_monto" validationMessageCode="field_invalid_number" z="gYoEKNw7BwfgE7Q4Mucv+ohXEW8="/>
+        <field:input field="descripcion" id="c_com_raze_coleadmin_domain_Concepto_descripcion" z="JZ221B1UIid8h5HNCh4UVKk4VPI="/>
+        <field:textarea field="imagen" id="c_com_raze_coleadmin_domain_Concepto_imagen" z="VsIX39LJEgynV5M9d5tlH3zdJtg="/>
+        <field:input field="contentType" id="c_com_raze_coleadmin_domain_Concepto_contentType" z="fL6fsNeDC4a7ITCDs36F9wszejY="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Concepto_idUsuario" validationMessageCode="field_invalid_integer" z="4LEGTa7Pj0ibZkLLlz9+c3iLu8s="/>
+        <field:datetime dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Concepto_fechaCreacion" z="jibsyVCeCdMdjQdbsIkaDunescU="/>
+        <field:datetime dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Concepto_fechaModificacion" z="kMwfsGr0aUwEanQY6VzNd0TMIAc="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Concepto_activo" z="5ocFVP6YARXk5P+imuRsrWplTPc="/>
+    </form:update>
+</div>

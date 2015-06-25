@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_AlumnoGrupo" object="${alumnogrupo}" path="/alumnogrupoes" z="0NIR8DKBeaaQBT1mvINbbjUXZyw=">
+        <field:display field="alumno" id="s_com_raze_coleadmin_domain_AlumnoGrupo_alumno" object="${alumnogrupo}" z="UCxndKvLsr9XAFwEOzNdnPtlmz0="/>
+        <field:display field="grupo" id="s_com_raze_coleadmin_domain_AlumnoGrupo_grupo" object="${alumnogrupo}" z="YGXlpzri8K1SCd7V+pysZl+5OyQ="/>
+        <field:display field="tipoEscuela" id="s_com_raze_coleadmin_domain_AlumnoGrupo_tipoEscuela" object="${alumnogrupo}" z="XTvcDIdNnx1v+y4Dh4Y88oq9Nts="/>
+        <field:display field="observaciones" id="s_com_raze_coleadmin_domain_AlumnoGrupo_observaciones" object="${alumnogrupo}" z="z/p+SmbqD3iNARD7WnLIB/+SqI0="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_AlumnoGrupo_idUsuario" object="${alumnogrupo}" z="8tYY4WWh1njdBfCHNLKWehZtsHg="/>
+        <field:display date="true" dateTimePattern="${alumnoGrupo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_AlumnoGrupo_fechaCreacion" object="${alumnogrupo}" z="GRswafmJsZ21woY7ffpg6gZX0Jg="/>
+        <field:display date="true" dateTimePattern="${alumnoGrupo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_AlumnoGrupo_fechaModificacion" object="${alumnogrupo}" z="zQMEL4pwt4DsUl2rJ3TKlkNd23U="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_AlumnoGrupo_activo" object="${alumnogrupo}" z="uJgbUmScn4Xg5rkyD8L+0k6BQm8="/>
+    </page:show>
+</div>

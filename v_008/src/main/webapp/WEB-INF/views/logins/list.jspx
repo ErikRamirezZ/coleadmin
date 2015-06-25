@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Login" items="${logins}" z="3IkXs5TREvPcN2tgOpS7jhhdyr4=">
+        <table:table data="${logins}" id="l_com_raze_coleadmin_domain_Login" path="/logins" z="WFyqwURAylUy4dtLd0C6883jCRs=">
+            <table:column id="c_com_raze_coleadmin_domain_Login_usuario" property="usuario" z="ToXeeJgLx1kb30wDpzP8QGK2RdA="/>
+            <table:column id="c_com_raze_coleadmin_domain_Login_password" property="password" z="6oNS7XBRapl7n/M0iwrGLKVzPy8="/>
+            <table:column id="c_com_raze_coleadmin_domain_Login_idUsuario" property="idUsuario" z="8VzuF1ML9m8xg/qhh8ZlwHbfzBE="/>
+            <table:column date="true" dateTimePattern="${login_fechacreacion_date_format}" id="c_com_raze_coleadmin_domain_Login_fechaCreacion" property="fechaCreacion" z="4VGOVBbE2WXa93pv7oITLFrxhLc="/>
+            <table:column date="true" dateTimePattern="${login_fechamodificacion_date_format}" id="c_com_raze_coleadmin_domain_Login_fechaModificacion" property="fechaModificacion" z="17GAaD6QZU4xdoMVRJ65y2D3dD0="/>
+            <table:column id="c_com_raze_coleadmin_domain_Login_activo" property="activo" z="DO+K1iU3+kpKkgHtEKqH3IQqvB8="/>
+        </table:table>
+    </page:list>
+</div>

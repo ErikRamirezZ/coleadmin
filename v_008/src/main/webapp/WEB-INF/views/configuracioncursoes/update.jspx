@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_ConfiguracionCurso" modelAttribute="configuracionCurso" path="/configuracioncursoes" versionField="Version" z="hrpy6WhseGV/vTtnET2L5AKv+sE=">
+        <field:select field="curso" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_curso" itemValue="id" items="${cursoes}" multiple="true" path="/cursoes" z="Ld9zrzks598HdGksFE9/Ufx2lOg="/>
+        <field:input field="cuotaMensual" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_cuotaMensual" validationMessageCode="field_invalid_number" z="uPIJF3v2RbjHUbfmNqx1yRIY9H8="/>
+        <field:input field="cuotaInscripcion" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_cuotaInscripcion" validationMessageCode="field_invalid_number" z="VR4J+eJSm0e77lSV39HHRM72UOs="/>
+        <field:input field="diaCorte" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_diaCorte" validationMessageCode="field_invalid_integer" z="eW/dlGfgDDaELQatH8IQfYQU9+0="/>
+        <field:input field="diaPago" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_diaPago" validationMessageCode="field_invalid_integer" z="MOWLwzkUg1WuVr75n7g/Aw5zWeU="/>
+        <field:input field="numeroDiasParaPagar" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_numeroDiasParaPagar" validationMessageCode="field_invalid_integer" z="Pxu5UsiKTTCMrwib/7x7KBP/1Fw="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_idUsuario" validationMessageCode="field_invalid_integer" z="CKlwux1TFJQAnreNgu+zTBBO5Es="/>
+        <field:datetime dateTimePattern="${configuracionCurso_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_fechaCreacion" z="V1p0i5hcuAY7COpUsPNU10FhdRY="/>
+        <field:datetime dateTimePattern="${configuracionCurso_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_fechaModificacion" z="Cg8sy8iXjcuQjVg+YizLipdtkk4="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_activo" z="v6gvkiaeHlNvcmCWYgmVe0ysLEk="/>
+    </form:update>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Login" modelAttribute="login" path="/logins" versionField="Version" z="GmMECxgVkfLQ4BsUt2a71hCTfNU=">
+        <field:select field="usuario" id="c_com_raze_coleadmin_domain_Login_usuario" itemValue="id" items="${usuarios}" path="/usuarios" required="true" z="uOMM8cONNzV8aI1YW6p27C9K6IE="/>
+        <field:input field="password" id="c_com_raze_coleadmin_domain_Login_password" required="true" z="1YY8rdg4dTi81kPmYciwH/sdXmY="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Login_idUsuario" validationMessageCode="field_invalid_integer" z="NrjdIu/hSG62JjELrKN24EAoOiY="/>
+        <field:datetime dateTimePattern="${login_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Login_fechaCreacion" z="K5bOWkvZRGD/h4lv0EQ8138joqw="/>
+        <field:datetime dateTimePattern="${login_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Login_fechaModificacion" z="ojwwEfK3V3IbeO0pZyusS3B5Qk4="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Login_activo" z="2s2s6676l3m+8TbKt6wKNU1p+fw="/>
+    </form:update>
+</div>

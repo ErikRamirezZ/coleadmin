@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Login" object="${login}" path="/logins" z="ZP+xD7l8QGVbK1uAU0w9PDuKU/s=">
+        <field:display field="usuario" id="s_com_raze_coleadmin_domain_Login_usuario" object="${login}" z="vNtbH07KyKc28mLzS00vFznWhoc="/>
+        <field:display field="password" id="s_com_raze_coleadmin_domain_Login_password" object="${login}" z="zmr6ZTBQvtvghSNjOt94/F5Ma6I="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Login_idUsuario" object="${login}" z="7Hcm71N++jgDLkOPiEw6AJUtXw8="/>
+        <field:display date="true" dateTimePattern="${login_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Login_fechaCreacion" object="${login}" z="vIyBEu+B/ZKv17HpbKXmM0Wdp+0="/>
+        <field:display date="true" dateTimePattern="${login_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Login_fechaModificacion" object="${login}" z="8gWLcAkvV9VnxCLd1D6W3KErzy0="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Login_activo" object="${login}" z="oPV0ZDAWNV1qvyE8FuSE2mI03JQ="/>
+    </page:show>
+</div>

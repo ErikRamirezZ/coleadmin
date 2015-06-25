@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Plantel" object="${plantel}" path="/plantels" z="ucfXCs2PZHJIQKGluMyBPQn/KOw=">
+        <field:display field="escuela" id="s_com_raze_coleadmin_domain_Plantel_escuela" object="${plantel}" z="kNo+omS5Bmbm7++WyK54c0bkhkg="/>
+        <field:display field="nombre" id="s_com_raze_coleadmin_domain_Plantel_nombre" object="${plantel}" z="dz+dSLsh9/k1SWKvSAyfud/blR8="/>
+        <field:display field="calle" id="s_com_raze_coleadmin_domain_Plantel_calle" object="${plantel}" z="pCJiEt2AdXmkgl3SP3bpATVqxnc="/>
+        <field:display field="numero" id="s_com_raze_coleadmin_domain_Plantel_numero" object="${plantel}" z="zs62WFM2D4CJJ+IbumC3kllYAGk="/>
+        <field:display field="codigoPostal" id="s_com_raze_coleadmin_domain_Plantel_codigoPostal" object="${plantel}" z="dWJBZn0TQg5dR2oW6hK2JMBpzwo="/>
+        <field:display field="correoE" id="s_com_raze_coleadmin_domain_Plantel_correoE" object="${plantel}" z="Iuoil7SfOT9DtoFhh0kEwf5ivrE="/>
+        <field:display field="telefono1" id="s_com_raze_coleadmin_domain_Plantel_telefono1" object="${plantel}" z="McGwqiYFR/bSreLoGyh94EmxIns="/>
+        <field:display field="telefono2" id="s_com_raze_coleadmin_domain_Plantel_telefono2" object="${plantel}" z="iRleXnNNhmdiBHO+5TxMZPXMkuw="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Plantel_idUsuario" object="${plantel}" z="Ooqhwe6Meb/+xvnLh/azI40zNK0="/>
+        <field:display date="true" dateTimePattern="${plantel_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Plantel_fechaCreacion" object="${plantel}" z="Bxp4VR7T2LyczfjjCqi0Jc66XHU="/>
+        <field:display date="true" dateTimePattern="${plantel_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Plantel_fechaModificacion" object="${plantel}" z="1lddKNx7Zp2cKDZLI3KaxtrHoNI="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Plantel_activo" object="${plantel}" z="40HpfDIEXimxusr+ztKEa2DJ3IY="/>
+    </page:show>
+</div>

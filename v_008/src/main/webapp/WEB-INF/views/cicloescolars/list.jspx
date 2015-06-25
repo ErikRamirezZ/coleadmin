@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_CicloEscolar" items="${cicloescolars}" z="Vu5a9xVgCctkt7BXMI9z0bAWbmg=">
+        <table:table data="${cicloescolars}" id="l_com_raze_coleadmin_domain_CicloEscolar" path="/cicloescolars" z="m9ZjI+O7dqx2BqKqYIBJIb7GixQ=">
+            <table:column id="c_com_raze_coleadmin_domain_CicloEscolar_escuela" property="escuela" z="Dr9LYn/02NeOKzclcSixwvvQQOo="/>
+            <table:column id="c_com_raze_coleadmin_domain_CicloEscolar_plantel" property="plantel" z="glT7keqiNH1zE8aP19K4Qq6MwM4="/>
+            <table:column id="c_com_raze_coleadmin_domain_CicloEscolar_nombre" property="nombre" z="YXnxqrl0iJoDKaQO3lzbtLLuF/k="/>
+            <table:column date="true" dateTimePattern="${cicloEscolar_fechainicio_date_format}" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaInicio" property="fechaInicio" z="748DhFiF9lN+U0jrAVJOsmmR96Y="/>
+            <table:column date="true" dateTimePattern="${cicloEscolar_fechafin_date_format}" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaFin" property="fechaFin" z="i2bZ+N7nhoez6NojymQ51phvkWY="/>
+            <table:column id="c_com_raze_coleadmin_domain_CicloEscolar_idUsuario" property="idUsuario" z="EWpztZPqgjsfOqWykDtp3Ylc6SY="/>
+        </table:table>
+    </page:list>
+</div>

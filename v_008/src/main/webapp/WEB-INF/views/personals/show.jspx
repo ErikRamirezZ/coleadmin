@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Personal" object="${personal}" path="/personals" z="I4Ta90A9Kx4DEOw/9SAQbDhJndo=">
+        <field:display field="correoE" id="s_com_raze_coleadmin_domain_Personal_correoE" object="${personal}" z="fqBpKFpGMO+lWL+G0fWpK7VJFno="/>
+        <field:display field="nombre" id="s_com_raze_coleadmin_domain_Personal_nombre" object="${personal}" z="OpWPT3mg/SHbTQpwnApJRE/8H/8="/>
+        <field:display field="primerApellido" id="s_com_raze_coleadmin_domain_Personal_primerApellido" object="${personal}" z="k8EvwsXJthwwJSSPUqof+rKxUq0="/>
+        <field:display field="segundoApellido" id="s_com_raze_coleadmin_domain_Personal_segundoApellido" object="${personal}" z="79TIvomqSaooY54zkTj5lULZlcI="/>
+        <field:display field="domicilio" id="s_com_raze_coleadmin_domain_Personal_domicilio" object="${personal}" z="I8brXcVFcchpxo69pHBy9IGObfU="/>
+        <field:display field="ciudad" id="s_com_raze_coleadmin_domain_Personal_ciudad" object="${personal}" z="HlfUItDRNA6CjCjE8v5Pdw0tXSU="/>
+        <field:display field="telefono" id="s_com_raze_coleadmin_domain_Personal_telefono" object="${personal}" z="Kz7F2+zjb5EhPLAONbigHnAN2Zc="/>
+        <field:display date="true" dateTimePattern="${personal_fechanacimiento_date_format}" field="fechaNacimiento" id="s_com_raze_coleadmin_domain_Personal_fechaNacimiento" object="${personal}" z="izL/YGzgktgpna/8GF/s4TViOho="/>
+        
+        <br/>
+        <img src="${personal.id}/image"/>
+        <br/>
+        
+        <field:display field="foto" id="s_com_raze_coleadmin_domain_Personal_foto" object="${personal}" z="Nf0ZvhBBCdMLKIys/bPjIgGi4Hc=" render="False"/>
+        <field:display field="contentType" id="s_com_raze_coleadmin_domain_Personal_contentType" object="${personal}" z="6qzRuHPgfbvxo3xCGfN/QSJxnu4=" render="false"/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Personal_idUsuario" object="${personal}" z="Su8S6+RmrsHq9IqMG7K+aT+OQcw="/>
+        <field:display date="true" dateTimePattern="${personal_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Personal_fechaCreacion" object="${personal}" z="wF55Js4wRrGDvIoUdSsQnAIWw/k="/>
+        <field:display date="true" dateTimePattern="${personal_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Personal_fechaModificacion" object="${personal}" z="KvWOsOyPyo2f9qzd5GLtLUQfYgk="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Personal_activo" object="${personal}" z="fbyowJVM9S8GUcsU+3OfaKJFmYQ="/>
+        <field:display field="escuela" id="s_com_raze_coleadmin_domain_Personal_escuela" object="${personal}" z="+TFXMI5lRh5MPMn563LG0bXFZwI="/>
+        <field:display field="plantel" id="s_com_raze_coleadmin_domain_Personal_plantel" object="${personal}" z="ugkEUoiae+IDqz7tsT4hoT0xzCM="/>
+    </page:show>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_AlumnoGrupo" modelAttribute="alumnoGrupo" path="/alumnogrupoes" versionField="Version" z="Nq3Aamh0Va/NA27E7kP+dxoC/t8=">
+        <field:select field="alumno" id="c_com_raze_coleadmin_domain_AlumnoGrupo_alumno" itemValue="id" items="${alumnoes}" path="/alumnoes" z="QpBDzisbC3Nye+5SDJbXWBk8x7w="/>
+        <field:select field="grupo" id="c_com_raze_coleadmin_domain_AlumnoGrupo_grupo" itemValue="id" items="${grupoes}" multiple="true" path="/grupoes" z="GvE4zcL7OdIL1PcLhw0Loc0yvvY="/>
+        <field:select field="tipoEscuela" id="c_com_raze_coleadmin_domain_AlumnoGrupo_tipoEscuela" items="${tipoescuelas}" path="tipoescuelas" z="r6kbdG2KbhcXTfQ7//qyXICXA+A="/>
+        <field:input field="observaciones" id="c_com_raze_coleadmin_domain_AlumnoGrupo_observaciones" z="UJNEnJjIzuPDqzokajkuhqEO4jM="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_AlumnoGrupo_idUsuario" validationMessageCode="field_invalid_integer" z="++kf8jhR8ghALmV9Gx8h8GhuSHY="/>
+        <field:datetime dateTimePattern="${alumnoGrupo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaCreacion" z="bLWH/b0aVOZrGLogpIF456gR0Qc="/>
+        <field:datetime dateTimePattern="${alumnoGrupo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaModificacion" z="LRqaomnXz8dvrynLU4BisKckoBo="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_AlumnoGrupo_activo" z="uSgo1LbGiGl3T2XIpWgh6yRCrw8="/>
+    </form:update>
+</div>

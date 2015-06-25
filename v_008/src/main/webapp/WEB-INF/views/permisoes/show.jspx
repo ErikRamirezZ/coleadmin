@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Permiso" object="${permiso}" path="/permisoes" z="wimfA680O8a1mr/S27cYEdHh3hs=">
+        <field:display field="nombre" id="s_com_raze_coleadmin_domain_Permiso_nombre" object="${permiso}" z="ayb5w8rch36QqDYDQZhylEtjz8o="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Permiso_idUsuario" object="${permiso}" z="AHVsj37BDYN27TdOblswy2s0Qk0="/>
+        <field:display date="true" dateTimePattern="${permiso_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Permiso_fechaCreacion" object="${permiso}" z="chOB3is+WbDiIkMVaGWnAa7CVgc="/>
+        <field:display date="true" dateTimePattern="${permiso_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Permiso_fechaModificacion" object="${permiso}" z="ig9KxzLaaxq1ILJz0xOySwqRPOc="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Permiso_activo" object="${permiso}" z="NahcSJoNnnY6dg2KCCziK2J88mo="/>
+    </page:show>
+</div>

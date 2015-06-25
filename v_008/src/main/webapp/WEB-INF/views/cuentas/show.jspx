@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Cuenta" object="${cuenta}" path="/cuentas" z="6CNOlUF5DJ2MZCdxkTgcDUwWH9I=">
+        <field:display field="escuela" id="s_com_raze_coleadmin_domain_Cuenta_escuela" object="${cuenta}" z="GLpOf4muLry7b4dBaOwI8aBOM+Q="/>
+        <field:display field="plantel" id="s_com_raze_coleadmin_domain_Cuenta_plantel" object="${cuenta}" z="fWSxlY+zcspASNeuah8R1g1VqeQ="/>
+        <field:display field="cicloEscolar" id="s_com_raze_coleadmin_domain_Cuenta_cicloEscolar" object="${cuenta}" z="ib8O3pozgG0P4/r3fXzbywESUZc="/>
+        <field:display field="curso" id="s_com_raze_coleadmin_domain_Cuenta_curso" object="${cuenta}" z="3EsZoJBPrt7uQnAjdPo+Ie2gGUo="/>
+        <field:display field="padre" id="s_com_raze_coleadmin_domain_Cuenta_padre" object="${cuenta}" z="njJW34K5FCkH2lPjXg833dfR8ec="/>
+        <field:display field="alumno" id="s_com_raze_coleadmin_domain_Cuenta_alumno" object="${cuenta}" z="Ld/jCYrjUyGn6N9+r9CGhSlK6tY="/>
+        <field:display field="beca" id="s_com_raze_coleadmin_domain_Cuenta_beca" object="${cuenta}" z="9n0CYQa7qJ0BV6RAWOdwzTl6HZo="/>
+        <field:display field="enviarRecordatorio" id="s_com_raze_coleadmin_domain_Cuenta_enviarRecordatorio" object="${cuenta}" z="fc8+40n3YDweyE+F//L9lO+AxlA="/>
+        <field:display field="saldoTotal" id="s_com_raze_coleadmin_domain_Cuenta_saldoTotal" object="${cuenta}" z="JhMqc97DoBNKMFrL4jMIL2OJrhs="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Cuenta_idUsuario" object="${cuenta}" z="y0X9192ds2LKgaHucpQ4V5k5ixQ="/>
+        <field:display date="true" dateTimePattern="${cuenta_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Cuenta_fechaCreacion" object="${cuenta}" z="kKe6jp3xFu7bcc35vvKI/AlpLtE="/>
+        <field:display date="true" dateTimePattern="${cuenta_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Cuenta_fechaModificacion" object="${cuenta}" z="XWzPf3b5vFshXvV9kTFbwgdWO78="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Cuenta_activo" object="${cuenta}" z="QRQNTTo9pYMleatGguiqAxQnukQ="/>
+    </page:show>
+</div>

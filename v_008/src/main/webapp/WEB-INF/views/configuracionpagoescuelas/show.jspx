@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_ConfiguracionPagoEscuela" object="${configuracionpagoescuela}" path="/configuracionpagoescuelas" z="UP8XupXH2ZfF/PsQirpcXDOofrQ=">
+        <field:display field="escuela" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_escuela" object="${configuracionpagoescuela}" z="nx/rbVOW8/o9RWXIAOJhVe4XE8c="/>
+        <field:display field="diaPago" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_diaPago" object="${configuracionpagoescuela}" z="ihSGrHZOciSZKcs/qvhMBlosvqU="/>
+        <field:display field="nip" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_nip" object="${configuracionpagoescuela}" z="a+thli57hik1gYK6/5PgBmNtPHw="/>
+        <field:display field="fechaVencimiento" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_fechaVencimiento" object="${configuracionpagoescuela}" z="+O9eNkd7cNaroHAEjutmlB42coY="/>
+        <field:display field="correoE" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_correoE" object="${configuracionpagoescuela}" z="FtWGSob4byxkY8fayvWWWICdiDA="/>
+        <field:display field="numeroTelefonico" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_numeroTelefonico" object="${configuracionpagoescuela}" z="6yJqIBShdEJ/NRkKJtWbOX6PfCQ="/>
+        <field:display field="modulos" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_modulos" object="${configuracionpagoescuela}" z="MbJ9OcduIy5NbI0PvsnZ2ZL729U="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_idUsuario" object="${configuracionpagoescuela}" z="s3cg27vtRLl676Z46w7w4tixzxE="/>
+        <field:display date="true" dateTimePattern="${configuracionPagoEscuela_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_fechaCreacion" object="${configuracionpagoescuela}" z="9cE04G9S4mhY97DunrNYoln3Id8="/>
+        <field:display date="true" dateTimePattern="${configuracionPagoEscuela_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_fechaModificacion" object="${configuracionpagoescuela}" z="4k1ieeitzdZhYNQ4TnpDLJHsI/Q="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_activo" object="${configuracionpagoescuela}" z="XnzgxHf/uetsjuqjUlcDMU57VEM="/>
+    </page:show>
+</div>

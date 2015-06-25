@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Permiso" modelAttribute="permiso" path="/permisoes" versionField="Version" z="6I5RBTD854+63wyB8fWbAEfK74w=">
+        <field:input field="nombre" id="c_com_raze_coleadmin_domain_Permiso_nombre" z="Mk02cHcP43DnE92xx83PKCe2C5M="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Permiso_idUsuario" validationMessageCode="field_invalid_integer" z="gUPf1L1qAnnN2duC4cBUTUSjaug="/>
+        <field:datetime dateTimePattern="${permiso_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Permiso_fechaCreacion" z="D/XGc3KI+KsKZV+3U83aICR35K4="/>
+        <field:datetime dateTimePattern="${permiso_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Permiso_fechaModificacion" z="BxWrCRPSAClq4yxT0gyhG+dN3jU="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Permiso_activo" z="SJsmEv5nEpuRKnZExg5yVa17lqs="/>
+    </form:update>
+</div>

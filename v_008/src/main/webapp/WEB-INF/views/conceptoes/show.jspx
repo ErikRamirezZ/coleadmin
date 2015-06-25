@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Concepto" object="${concepto}" path="/conceptoes" z="lCIV3yjMf9CUxyb8ufXpO/lMHR8=">
+        <field:display field="tipoConcepto" id="s_com_raze_coleadmin_domain_Concepto_tipoConcepto" object="${concepto}" z="TUfoZRL/9MuWtrChAB/zX2Xli9E="/>
+        <field:display field="nombreConcepto" id="s_com_raze_coleadmin_domain_Concepto_nombreConcepto" object="${concepto}" z="SZ+KNUh0zvGkBY6UG1Z95WlqybE="/>
+        <field:display field="monto" id="s_com_raze_coleadmin_domain_Concepto_monto" object="${concepto}" z="UuQK9RTE75KqzJIhTQe9HH5/lkQ="/>
+        <field:display field="descripcion" id="s_com_raze_coleadmin_domain_Concepto_descripcion" object="${concepto}" z="/YHldIayS5CAseUVpjctXtCDA7E="/>
+        <field:display field="imagen" id="s_com_raze_coleadmin_domain_Concepto_imagen" object="${concepto}" z="8FPKgeoSk+savcaykH3jOLqeKKQ="/>
+        <field:display field="contentType" id="s_com_raze_coleadmin_domain_Concepto_contentType" object="${concepto}" z="/2MKVSYN/ZHd9hmcrIAAnkKurUE="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Concepto_idUsuario" object="${concepto}" z="PeWr3vftzxGpXP8X8JgJwUBtpIg="/>
+        <field:display date="true" dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Concepto_fechaCreacion" object="${concepto}" z="1+xsCNXNML1YDRlM6kgvSHmyqLU="/>
+        <field:display date="true" dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Concepto_fechaModificacion" object="${concepto}" z="2bxpz5zXPo9zG5NMNAjLq3Ltk7A="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Concepto_activo" object="${concepto}" z="0HWswZd0dFHfA64fois0ZtbVSm0="/>
+    </page:show>
+</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Cargo" modelAttribute="cargo" path="/cargoes" versionField="Version" z="ZAVc98Gia51yyKGSuK0RzhlwK68=">
+        <field:select field="cuenta" id="c_com_raze_coleadmin_domain_Cargo_cuenta" itemValue="id" items="${cuentas}" path="/cuentas" z="K1oLzThUnU2Fb/tQGudLhQ31jo0="/>
+        <field:select field="tipoConcepto" id="c_com_raze_coleadmin_domain_Cargo_tipoConcepto" items="${tipoconceptoes}" path="tipoconceptoes" z="LcJcFu9xpWTyVGgUVlpwJbhp/fo="/>
+        <field:select field="conceto" id="c_com_raze_coleadmin_domain_Cargo_conceto" itemValue="id" items="${conceptoes}" multiple="true" path="/conceptoes" z="crOVoh1iVgx4YGrz/staNNAqHWc="/>
+        <field:input field="subtotal" id="c_com_raze_coleadmin_domain_Cargo_subtotal" validationMessageCode="field_invalid_number" z="eEVR75uL/qAfiRmdg40jtvnfdVs="/>
+        <field:input field="total" id="c_com_raze_coleadmin_domain_Cargo_total" validationMessageCode="field_invalid_number" z="m4AgQeYSw+335ky3IJiEyhOiS+w="/>
+        <field:datetime dateTimePattern="${cargo_fechacargo_date_format}" field="fechaCargo" id="c_com_raze_coleadmin_domain_Cargo_fechaCargo" z="bEuixktvRkGlV0MMJljX/WqHpXk="/>
+        <field:select field="pago" id="c_com_raze_coleadmin_domain_Cargo_pago" itemValue="id" items="${pagoes}" path="/pagoes" z="nU0J8ZphRXBg1hWDwcUZsZp0ZdI="/>
+        <field:checkbox field="fuePagoOportuno" id="c_com_raze_coleadmin_domain_Cargo_fuePagoOportuno" z="XUftGuERvCGEM7PB+QLYBgfXmBk="/>
+        <field:datetime dateTimePattern="${cargo_fechapago_date_format}" field="fechaPago" id="c_com_raze_coleadmin_domain_Cargo_fechaPago" z="3BjkhdVLLGwkNKfFQsUPblzYcSs="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Cargo_idUsuario" validationMessageCode="field_invalid_integer" z="wBRVh0qI2CrBGHqRqUaTufNei1g="/>
+        <field:datetime dateTimePattern="${cargo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Cargo_fechaCreacion" z="5ia1OXFIFJMTSPbMv/XlIJnNrkI="/>
+        <field:datetime dateTimePattern="${cargo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Cargo_fechaModificacion" z="v8jibHtZMmvhllEFY5nYB5qfyws="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Cargo_activo" z="Oz4GUQskzYNH8+n1K9QKudT7dwE="/>
+    </form:update>
+</div>

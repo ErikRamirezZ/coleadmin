@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_ConfiguracionPagoEscuela" items="${configuracionpagoescuelas}" z="2ZNZEjFfuQSxI28av9WW3Qcwk+Q=">
+        <table:table data="${configuracionpagoescuelas}" id="l_com_raze_coleadmin_domain_ConfiguracionPagoEscuela" path="/configuracionpagoescuelas" z="VlpQeDOHl7LuZZs8wfCTXJEXi/0=">
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_escuela" property="escuela" z="2XYdj74QC8/Hqj9/Z5Z3D7Ud9Zo="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_diaPago" property="diaPago" z="HXv2NKRYpnUAhGDl9zcmb4+4uFA="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_nip" property="nip" z="TNj5PcbJWr8K8OYmVl2T9krPQMs="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_fechaVencimiento" property="fechaVencimiento" z="EJt+MczxZ917hFzpiA4l1Zui0iM="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_correoE" property="correoE" z="X6IwHDGStCFoPb//AdHvtjCb9Vs="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_numeroTelefonico" property="numeroTelefonico" z="7ge/9g1xN3rop4oA+d7nFDHU8G8="/>
+        </table:table>
+    </page:list>
+</div>

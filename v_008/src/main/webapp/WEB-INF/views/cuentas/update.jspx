@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Cuenta" modelAttribute="cuenta" path="/cuentas" versionField="Version" z="Qmq8254BCI1/UfSztZleT6Otngc=">
+        <field:select field="escuela" id="c_com_raze_coleadmin_domain_Cuenta_escuela" itemValue="id" items="${escuelas}" path="/escuelas" z="AxtkW0IOP18hcwAYDaBaqFFr3dY="/>
+        <field:select field="plantel" id="c_com_raze_coleadmin_domain_Cuenta_plantel" itemValue="id" items="${plantels}" path="/plantels" z="Qn4f+vYUEljE/iKgUluncq+hJXA="/>
+        <field:select field="cicloEscolar" id="c_com_raze_coleadmin_domain_Cuenta_cicloEscolar" itemValue="id" items="${cicloescolars}" path="/cicloescolars" z="lexuxVF4E6c6SUTncM6TR5zBGrk="/>
+        <field:select field="curso" id="c_com_raze_coleadmin_domain_Cuenta_curso" itemValue="id" items="${cursoes}" path="/cursoes" z="wFk5IVoMsjV2JxThSPMkl4SVhpM="/>
+        <field:select field="padre" id="c_com_raze_coleadmin_domain_Cuenta_padre" itemValue="id" items="${padres}" path="/padres" z="ZXQVgk/U2EtVTzT/I6eCBkh6eB4="/>
+        <field:select field="alumno" id="c_com_raze_coleadmin_domain_Cuenta_alumno" itemValue="id" items="${alumnoes}" path="/alumnoes" z="YjBV8ry5W3F8qMu3k7iMix2D54c="/>
+        <field:input field="beca" id="c_com_raze_coleadmin_domain_Cuenta_beca" validationMessageCode="field_invalid_integer" z="0wlM60Jd27EwFZLi0EKgq0rWmPg="/>
+        <field:checkbox field="enviarRecordatorio" id="c_com_raze_coleadmin_domain_Cuenta_enviarRecordatorio" z="SeYbLMxnb147/fcUBToca/fVUvk="/>
+        <field:input field="saldoTotal" id="c_com_raze_coleadmin_domain_Cuenta_saldoTotal" validationMessageCode="field_invalid_number" z="yDYpQr3pEDG5TZcqV3+dYDutpLo="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Cuenta_idUsuario" validationMessageCode="field_invalid_integer" z="ZSNXr/um4CMTiTZh1+4wQWcAamo="/>
+        <field:datetime dateTimePattern="${cuenta_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaCreacion" z="Joc1krHfFXZq+wwHqLJqlm3ekh4="/>
+        <field:datetime dateTimePattern="${cuenta_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaModificacion" z="gkFlfbIab2xYxVYi5VSHbyJbIIk="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Cuenta_activo" z="R/x91SMACDUdgdKI2z1U4CUmcXg="/>
+    </form:update>
+</div>

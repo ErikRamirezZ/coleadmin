@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Concepto" items="${conceptoes}" z="PtGr1ovnrTKeAtEP54IO6HtbFc8=">
+        <table:table data="${conceptoes}" id="l_com_raze_coleadmin_domain_Concepto" path="/conceptoes" z="2GMTzU4PPm9Fw52d6Am2SflJsso=">
+            <table:column id="c_com_raze_coleadmin_domain_Concepto_tipoConcepto" property="tipoConcepto" z="U2xaQSxi2Fk+fHFKG3sWyYR8/uk="/>
+            <table:column id="c_com_raze_coleadmin_domain_Concepto_nombreConcepto" property="nombreConcepto" z="Z7WI7wF+BPsD2BtU0bPkVXU48eY="/>
+            <table:column id="c_com_raze_coleadmin_domain_Concepto_monto" property="monto" z="AzN+uaJ1x0e6j1mbyx8t0lgfLF0="/>
+            <table:column id="c_com_raze_coleadmin_domain_Concepto_descripcion" property="descripcion" z="FT4ko4k+Ok6Gewv1ln+DhBCMZ1s="/>
+            <table:column id="c_com_raze_coleadmin_domain_Concepto_imagen" property="imagen" z="BirKymv7Y8Qv5ttoYCdi3ZUbpCs="/>
+            <table:column id="c_com_raze_coleadmin_domain_Concepto_contentType" property="contentType" z="YjOHWDRC/t6zx5TiSXWkNei5qyE="/>
+        </table:table>
+    </page:list>
+</div>

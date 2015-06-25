@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Escuela" object="${escuela}" path="/escuelas" z="DYx9xl5dHBmqEWo11DZHG9R1v7Q=">
+        <field:display field="clave" id="s_com_raze_coleadmin_domain_Escuela_clave" object="${escuela}" z="VN6lVW0gKXiDLd3hU3DNhLUdKxo="/>
+        <field:display field="tipoEscuela" id="s_com_raze_coleadmin_domain_Escuela_tipoEscuela" object="${escuela}" z="jl1p2oz1qbioSKlQdeTqqoUFlDs="/>
+        <field:display field="nombre" id="s_com_raze_coleadmin_domain_Escuela_nombre" object="${escuela}" z="TGrPCK1a0dAEZcRUTfmv0Vq4m7Q="/>
+        <field:display field="razonSocial" id="s_com_raze_coleadmin_domain_Escuela_razonSocial" object="${escuela}" z="CXYGNRKQOGjUMsGrUsanV4sXSgM="/>
+        <field:display field="logo" id="s_com_raze_coleadmin_domain_Escuela_logo" object="${escuela}" z="VyJ/oyS3tn5PvnFrpPDgulPQ6RM="/>
+        <field:display field="contentType" id="s_com_raze_coleadmin_domain_Escuela_contentType" object="${escuela}" z="XxGueSAexUpXWeKVdZFLssCZOeI="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Escuela_idUsuario" object="${escuela}" z="Tu1cf3qXUOp8FNk9Xxxqdpoadv0="/>
+        <field:display date="true" dateTimePattern="${escuela_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Escuela_fechaCreacion" object="${escuela}" z="TjXDuh8MEvcbl8357gR9a360uvs="/>
+        <field:display date="true" dateTimePattern="${escuela_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Escuela_fechaModificacion" object="${escuela}" z="HKsI8Vq2XetU7Ur4YmOJL6wEDrE="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Escuela_activo" object="${escuela}" z="ZkEGRLqvbWwJJ2Sz3jvHv51NH/Q="/>
+    </page:show>
+</div>
