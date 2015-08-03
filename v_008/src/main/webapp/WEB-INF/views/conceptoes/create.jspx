@@ -9,10 +9,10 @@
         <field:input field="descripcion" id="c_com_raze_coleadmin_domain_Concepto_descripcion" z="JZ221B1UIid8h5HNCh4UVKk4VPI="/>
         <field:textarea field="imagen" id="c_com_raze_coleadmin_domain_Concepto_imagen" z="VsIX39LJEgynV5M9d5tlH3zdJtg="/>
         <field:input field="contentType" id="c_com_raze_coleadmin_domain_Concepto_contentType" z="fL6fsNeDC4a7ITCDs36F9wszejY="/>
-        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Concepto_idUsuario" validationMessageCode="field_invalid_integer" z="4LEGTa7Pj0ibZkLLlz9+c3iLu8s="/>
-        <field:datetime dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Concepto_fechaCreacion" z="jibsyVCeCdMdjQdbsIkaDunescU="/>
-        <field:datetime dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Concepto_fechaModificacion" z="kMwfsGr0aUwEanQY6VzNd0TMIAc="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Concepto_activo" z="5ocFVP6YARXk5P+imuRsrWplTPc="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Concepto_idUsuario" validationMessageCode="field_invalid_integer" z="4LEGTa7Pj0ibZkLLlz9+c3iLu8s=" render="false"/>
+        <field:datetime dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Concepto_fechaCreacion" z="jibsyVCeCdMdjQdbsIkaDunescU=" render="false"/>
+        <field:datetime dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Concepto_fechaModificacion" z="kMwfsGr0aUwEanQY6VzNd0TMIAc=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Concepto_activo" z="5ocFVP6YARXk5P+imuRsrWplTPc=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Concepto" render="${not empty dependencies}" z="6sIdvFTtUdij4Wh00CqFbkleZkE="/>
 </div>

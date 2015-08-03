@@ -7,9 +7,9 @@
         <field:display field="salon" id="s_com_raze_coleadmin_domain_Grupo_salon" object="${grupo}" z="At8n/ZwoVL6DU39/ZpUMpnK7/30="/>
         <field:display field="nombreGrupo" id="s_com_raze_coleadmin_domain_Grupo_nombreGrupo" object="${grupo}" z="C78jVcDZVGWSxSxF4H1Lp1jTEiM="/>
         <field:display field="descripcion" id="s_com_raze_coleadmin_domain_Grupo_descripcion" object="${grupo}" z="kZUc8/xopcS8rMJkiKaOhdktFRQ="/>
-        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Grupo_idUsuario" object="${grupo}" z="XsiFZ0Ew4bVAQsay/vWqg+tShI0="/>
-        <field:display date="true" dateTimePattern="${grupo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Grupo_fechaCreacion" object="${grupo}" z="3BFU7jZOrTiCETn67G7EWPFhV1Y="/>
-        <field:display date="true" dateTimePattern="${grupo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Grupo_fechaModificacion" object="${grupo}" z="Wnxr/CmGQkkX2ZLWUFNZjrN9aXM="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Grupo_activo" object="${grupo}" z="kT679dMgpVfiINC8If8I0iQt9TU="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Grupo_idUsuario" object="${grupo}" z="XsiFZ0Ew4bVAQsay/vWqg+tShI0=" render="false"/>
+        <field:display date="true" dateTimePattern="${grupo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Grupo_fechaCreacion" object="${grupo}" z="3BFU7jZOrTiCETn67G7EWPFhV1Y=" render="false"/>
+        <field:display date="true" dateTimePattern="${grupo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Grupo_fechaModificacion" object="${grupo}" z="Wnxr/CmGQkkX2ZLWUFNZjrN9aXM=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Grupo_activo" object="${grupo}" z="kT679dMgpVfiINC8If8I0iQt9TU=" render="false"/>
     </page:show>
 </div>

@@ -26,6 +26,11 @@
 
     <!-- Selects a static view for rendering without the need for an explicit controller -->
     <mvc:view-controller path="/login"/>
+    <mvc:view-controller path="/administracion"/>
+    <mvc:view-controller path="/colegiaturas"/>
+    <mvc:view-controller path="/comunicacion"/>
+    <mvc:view-controller path="/reportes"/>
+    <mvc:view-controller path="/super"/>
     <mvc:view-controller path="/" view-name="index"/>
     <mvc:view-controller path="/uncaughtException"/>
     <mvc:view-controller path="/resourceNotFound"/>

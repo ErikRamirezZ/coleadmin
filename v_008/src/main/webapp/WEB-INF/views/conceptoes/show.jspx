@@ -9,9 +9,9 @@
         <field:display field="descripcion" id="s_com_raze_coleadmin_domain_Concepto_descripcion" object="${concepto}" z="/YHldIayS5CAseUVpjctXtCDA7E="/>
         <field:display field="imagen" id="s_com_raze_coleadmin_domain_Concepto_imagen" object="${concepto}" z="8FPKgeoSk+savcaykH3jOLqeKKQ="/>
         <field:display field="contentType" id="s_com_raze_coleadmin_domain_Concepto_contentType" object="${concepto}" z="/2MKVSYN/ZHd9hmcrIAAnkKurUE="/>
-        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Concepto_idUsuario" object="${concepto}" z="PeWr3vftzxGpXP8X8JgJwUBtpIg="/>
-        <field:display date="true" dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Concepto_fechaCreacion" object="${concepto}" z="1+xsCNXNML1YDRlM6kgvSHmyqLU="/>
-        <field:display date="true" dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Concepto_fechaModificacion" object="${concepto}" z="2bxpz5zXPo9zG5NMNAjLq3Ltk7A="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Concepto_activo" object="${concepto}" z="0HWswZd0dFHfA64fois0ZtbVSm0="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Concepto_idUsuario" object="${concepto}" z="PeWr3vftzxGpXP8X8JgJwUBtpIg=" render="false"/>
+        <field:display date="true" dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Concepto_fechaCreacion" object="${concepto}" z="1+xsCNXNML1YDRlM6kgvSHmyqLU=" render="false"/>
+        <field:display date="true" dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Concepto_fechaModificacion" object="${concepto}" z="2bxpz5zXPo9zG5NMNAjLq3Ltk7A=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Concepto_activo" object="${concepto}" z="0HWswZd0dFHfA64fois0ZtbVSm0=" render="false"/>
     </page:show>
 </div>

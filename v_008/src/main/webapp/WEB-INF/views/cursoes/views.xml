@@ -3,14 +3,18 @@
 <tiles-definitions>
     <definition extends="default" name="cursoes/list">
         <put-attribute name="body" value="/WEB-INF/views/cursoes/list.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="cursoes/show">
         <put-attribute name="body" value="/WEB-INF/views/cursoes/show.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="cursoes/create">
         <put-attribute name="body" value="/WEB-INF/views/cursoes/create.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="cursoes/update">
         <put-attribute name="body" value="/WEB-INF/views/cursoes/update.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 </tiles-definitions>

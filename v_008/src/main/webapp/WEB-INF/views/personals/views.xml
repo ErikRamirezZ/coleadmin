@@ -3,14 +3,18 @@
 <tiles-definitions>
     <definition extends="default" name="personals/list">
         <put-attribute name="body" value="/WEB-INF/views/personals/list.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="personals/show">
         <put-attribute name="body" value="/WEB-INF/views/personals/show.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="personals/create">
         <put-attribute name="body" value="/WEB-INF/views/personals/create.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="personals/update">
         <put-attribute name="body" value="/WEB-INF/views/personals/update.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 </tiles-definitions>

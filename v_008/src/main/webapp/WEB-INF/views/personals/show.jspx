@@ -18,10 +18,10 @@
         
         <field:display field="foto" id="s_com_raze_coleadmin_domain_Personal_foto" object="${personal}" z="Nf0ZvhBBCdMLKIys/bPjIgGi4Hc=" render="False"/>
         <field:display field="contentType" id="s_com_raze_coleadmin_domain_Personal_contentType" object="${personal}" z="6qzRuHPgfbvxo3xCGfN/QSJxnu4=" render="false"/>
-        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Personal_idUsuario" object="${personal}" z="Su8S6+RmrsHq9IqMG7K+aT+OQcw="/>
-        <field:display date="true" dateTimePattern="${personal_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Personal_fechaCreacion" object="${personal}" z="wF55Js4wRrGDvIoUdSsQnAIWw/k="/>
-        <field:display date="true" dateTimePattern="${personal_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Personal_fechaModificacion" object="${personal}" z="KvWOsOyPyo2f9qzd5GLtLUQfYgk="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Personal_activo" object="${personal}" z="fbyowJVM9S8GUcsU+3OfaKJFmYQ="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Personal_idUsuario" object="${personal}" z="Su8S6+RmrsHq9IqMG7K+aT+OQcw=" render="false"/>
+        <field:display date="true" dateTimePattern="${personal_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Personal_fechaCreacion" object="${personal}" z="wF55Js4wRrGDvIoUdSsQnAIWw/k=" render="false"/>
+        <field:display date="true" dateTimePattern="${personal_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Personal_fechaModificacion" object="${personal}" z="KvWOsOyPyo2f9qzd5GLtLUQfYgk=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Personal_activo" object="${personal}" z="fbyowJVM9S8GUcsU+3OfaKJFmYQ=" render="false"/>
         <field:display field="escuela" id="s_com_raze_coleadmin_domain_Personal_escuela" object="${personal}" z="+TFXMI5lRh5MPMn563LG0bXFZwI="/>
         <field:display field="plantel" id="s_com_raze_coleadmin_domain_Personal_plantel" object="${personal}" z="ugkEUoiae+IDqz7tsT4hoT0xzCM="/>
     </page:show>

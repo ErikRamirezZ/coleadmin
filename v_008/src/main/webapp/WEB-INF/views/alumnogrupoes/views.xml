@@ -3,14 +3,18 @@
 <tiles-definitions>
     <definition extends="default" name="alumnogrupoes/list">
         <put-attribute name="body" value="/WEB-INF/views/alumnogrupoes/list.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="alumnogrupoes/show">
         <put-attribute name="body" value="/WEB-INF/views/alumnogrupoes/show.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="alumnogrupoes/create">
         <put-attribute name="body" value="/WEB-INF/views/alumnogrupoes/create.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="alumnogrupoes/update">
         <put-attribute name="body" value="/WEB-INF/views/alumnogrupoes/update.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 </tiles-definitions>

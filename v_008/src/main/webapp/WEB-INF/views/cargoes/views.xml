@@ -3,14 +3,18 @@
 <tiles-definitions>
     <definition extends="default" name="cargoes/list">
         <put-attribute name="body" value="/WEB-INF/views/cargoes/list.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_colegiaturas.jspx" />
     </definition>
 <definition extends="default" name="cargoes/show">
         <put-attribute name="body" value="/WEB-INF/views/cargoes/show.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_colegiaturas.jspx" />
     </definition>
 <definition extends="default" name="cargoes/create">
         <put-attribute name="body" value="/WEB-INF/views/cargoes/create.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_colegiaturas.jspx" />
     </definition>
 <definition extends="default" name="cargoes/update">
         <put-attribute name="body" value="/WEB-INF/views/cargoes/update.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_colegiaturas.jspx" />
     </definition>
 </tiles-definitions>

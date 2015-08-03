@@ -3,14 +3,18 @@
 <tiles-definitions>
     <definition extends="default" name="padres/list">
         <put-attribute name="body" value="/WEB-INF/views/padres/list.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="padres/show">
         <put-attribute name="body" value="/WEB-INF/views/padres/show.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="padres/create">
         <put-attribute name="body" value="/WEB-INF/views/padres/create.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="padres/update">
         <put-attribute name="body" value="/WEB-INF/views/padres/update.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 </tiles-definitions>

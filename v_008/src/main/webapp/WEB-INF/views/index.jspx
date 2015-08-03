@@ -29,13 +29,10 @@
 
 
 		<h3>
-			<spring:message code="welcome_h3" arguments="${app_name}" />
+			<security:authentication property="principal" var="x"/>
+			<spring:message code="welcome_h3" arguments="${x.username}" />
 		</h3>
-		----
-		<h3>
-            <security:authentication property="principal"/>
-		</h3>
-		----
+		
 		<p>
 			<spring:message code="welcome_text" />
 		</p>
@@ -64,7 +61,7 @@
 							src="${comunication_url}" alt="comunication" /></span>
 						<div class="ca-content">
 							<h2 class="ca-main">Comunicacion</h2>
-							<h3 class="ca-sub">COmunicacion</h3>
+							<h3 class="ca-sub">Comunicacion</h3>
 						</div>
 				</a></li>
 				<li><spring:url value="/reportes" var="reports_menu_url" /> <a
@@ -75,6 +72,16 @@
 							<h3 class="ca-sub">Reportes</h3>
 						</div>
 				</a></li>
+				<!-- 
+				<li><spring:url value="/super" var="super_menu_url" /> <a
+					href="${super_menu_url}"> <span class="ca-icon"><img
+							src="${reports_url}" alt="reportes" /></span>
+						<div class="ca-content">
+							<h2 class="ca-main">Super</h2>
+							<h3 class="ca-sub">Admon</h3>
+						</div>
+				</a></li>
+				-->
 			</ul>
 		</div>
 		<br />

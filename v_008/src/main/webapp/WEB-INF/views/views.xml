@@ -4,6 +4,27 @@
 
     <definition extends="default" name="administracion">
         <put-attribute name="body" value="/WEB-INF/views/administracion.jspx" />
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+    </definition>
+
+    <definition extends="default" name="colegiaturas">
+        <put-attribute name="body" value="/WEB-INF/views/colegiaturas.jspx" />
+        <put-attribute name="menu" value="/WEB-INF/views/menu_colegiaturas.jspx" />
+    </definition>
+
+    <definition extends="default" name="comunicacion">
+        <put-attribute name="body" value="/WEB-INF/views/comunicacion.jspx" />
+        <put-attribute name="menu" value="/WEB-INF/views/menu_comunicacion.jspx" />
+    </definition>
+
+    <definition extends="default" name="reportes">
+        <put-attribute name="body" value="/WEB-INF/views/reportes.jspx" />
+        <put-attribute name="menu" value="/WEB-INF/views/menu_reportes.jspx" />
+    </definition>
+
+    <definition extends="default" name="super">
+        <put-attribute name="body" value="/WEB-INF/views/super.jspx" />
+        <put-attribute name="menu" value="/WEB-INF/views/menu.jspx" />
     </definition>
 
     <definition extends="public" name="index">

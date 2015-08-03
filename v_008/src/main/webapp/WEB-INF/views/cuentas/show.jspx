@@ -12,9 +12,9 @@
         <field:display field="beca" id="s_com_raze_coleadmin_domain_Cuenta_beca" object="${cuenta}" z="9n0CYQa7qJ0BV6RAWOdwzTl6HZo="/>
         <field:display field="enviarRecordatorio" id="s_com_raze_coleadmin_domain_Cuenta_enviarRecordatorio" object="${cuenta}" z="fc8+40n3YDweyE+F//L9lO+AxlA="/>
         <field:display field="saldoTotal" id="s_com_raze_coleadmin_domain_Cuenta_saldoTotal" object="${cuenta}" z="JhMqc97DoBNKMFrL4jMIL2OJrhs="/>
-        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Cuenta_idUsuario" object="${cuenta}" z="y0X9192ds2LKgaHucpQ4V5k5ixQ="/>
-        <field:display date="true" dateTimePattern="${cuenta_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Cuenta_fechaCreacion" object="${cuenta}" z="kKe6jp3xFu7bcc35vvKI/AlpLtE="/>
-        <field:display date="true" dateTimePattern="${cuenta_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Cuenta_fechaModificacion" object="${cuenta}" z="XWzPf3b5vFshXvV9kTFbwgdWO78="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Cuenta_activo" object="${cuenta}" z="QRQNTTo9pYMleatGguiqAxQnukQ="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Cuenta_idUsuario" object="${cuenta}" z="y0X9192ds2LKgaHucpQ4V5k5ixQ=" render="false"/>
+        <field:display date="true" dateTimePattern="${cuenta_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Cuenta_fechaCreacion" object="${cuenta}" z="kKe6jp3xFu7bcc35vvKI/AlpLtE=" render="false"/>
+        <field:display date="true" dateTimePattern="${cuenta_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Cuenta_fechaModificacion" object="${cuenta}" z="XWzPf3b5vFshXvV9kTFbwgdWO78=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Cuenta_activo" object="${cuenta}" z="QRQNTTo9pYMleatGguiqAxQnukQ=" render="false"/>
     </page:show>
 </div>

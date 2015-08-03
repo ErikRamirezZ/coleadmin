@@ -12,10 +12,10 @@
         <field:select field="pago" id="c_com_raze_coleadmin_domain_Cargo_pago" itemValue="id" items="${pagoes}" path="/pagoes" z="nU0J8ZphRXBg1hWDwcUZsZp0ZdI="/>
         <field:checkbox field="fuePagoOportuno" id="c_com_raze_coleadmin_domain_Cargo_fuePagoOportuno" z="XUftGuERvCGEM7PB+QLYBgfXmBk="/>
         <field:datetime dateTimePattern="${cargo_fechapago_date_format}" field="fechaPago" id="c_com_raze_coleadmin_domain_Cargo_fechaPago" z="3BjkhdVLLGwkNKfFQsUPblzYcSs="/>
-        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Cargo_idUsuario" validationMessageCode="field_invalid_integer" z="wBRVh0qI2CrBGHqRqUaTufNei1g="/>
-        <field:datetime dateTimePattern="${cargo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Cargo_fechaCreacion" z="5ia1OXFIFJMTSPbMv/XlIJnNrkI="/>
-        <field:datetime dateTimePattern="${cargo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Cargo_fechaModificacion" z="v8jibHtZMmvhllEFY5nYB5qfyws="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Cargo_activo" z="Oz4GUQskzYNH8+n1K9QKudT7dwE="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Cargo_idUsuario" validationMessageCode="field_invalid_integer" z="wBRVh0qI2CrBGHqRqUaTufNei1g=" render="false"/>
+        <field:datetime dateTimePattern="${cargo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Cargo_fechaCreacion" z="5ia1OXFIFJMTSPbMv/XlIJnNrkI=" render="false"/>
+        <field:datetime dateTimePattern="${cargo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Cargo_fechaModificacion" z="v8jibHtZMmvhllEFY5nYB5qfyws=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Cargo_activo" z="Oz4GUQskzYNH8+n1K9QKudT7dwE=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Cargo" render="${not empty dependencies}" z="LWbTsVX2i//ErVUT8xQkOed7Whc="/>
 </div>

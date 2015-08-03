@@ -7,9 +7,9 @@
         <field:input field="salon" id="c_com_raze_coleadmin_domain_Grupo_salon" z="Cmb0zZ6kF5WosfN+KIqwUnwdo80="/>
         <field:input field="nombreGrupo" id="c_com_raze_coleadmin_domain_Grupo_nombreGrupo" z="FbFyLSEtzg1FB98eYJtgsFhnwa8="/>
         <field:input field="descripcion" id="c_com_raze_coleadmin_domain_Grupo_descripcion" z="B+7R/fOASGVu7gzpfpc6mxsCMew="/>
-        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Grupo_idUsuario" validationMessageCode="field_invalid_integer" z="ZFwxiJP8HuWx45YIBDTQuvxXQds="/>
-        <field:datetime dateTimePattern="${grupo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Grupo_fechaCreacion" z="5xynLzUlNNH0keF8RGKN8ONgaWU="/>
-        <field:datetime dateTimePattern="${grupo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Grupo_fechaModificacion" z="I5wbSj2HCwSTNpKydYgo+bH/SeI="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Grupo_activo" z="MevTSJPYLvvf2CEhedyAYtAbTS4="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Grupo_idUsuario" validationMessageCode="field_invalid_integer" z="ZFwxiJP8HuWx45YIBDTQuvxXQds=" render="false"/>
+        <field:datetime dateTimePattern="${grupo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Grupo_fechaCreacion" z="5xynLzUlNNH0keF8RGKN8ONgaWU=" render="false"/>
+        <field:datetime dateTimePattern="${grupo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Grupo_fechaModificacion" z="I5wbSj2HCwSTNpKydYgo+bH/SeI=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Grupo_activo" z="MevTSJPYLvvf2CEhedyAYtAbTS4=" render="false"/>
     </form:update>
 </div>

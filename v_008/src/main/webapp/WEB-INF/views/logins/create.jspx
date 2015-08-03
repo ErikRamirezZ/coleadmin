@@ -4,6 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_raze_coleadmin_domain_Login" modelAttribute="login" path="/logins" render="${empty dependencies}" z="kmxp/43Cp1LDuVW2OZun9dlJVKM=">
         <field:select field="usuario" id="c_com_raze_coleadmin_domain_Login_usuario" itemValue="id" items="${usuarios}" path="/usuarios" required="true" z="uOMM8cONNzV8aI1YW6p27C9K6IE="/>
+        <field:input field="username" id="c_com_raze_coleadmin_domain_Login_username" required="true" z="3dvgghy678qdf45huDe67De534D="/>
         <field:input field="password" id="c_com_raze_coleadmin_domain_Login_password" required="true" z="1YY8rdg4dTi81kPmYciwH/sdXmY="/>
         <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Login_idUsuario" validationMessageCode="field_invalid_integer" z="NrjdIu/hSG62JjELrKN24EAoOiY="/>
         <field:datetime dateTimePattern="${login_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Login_fechaCreacion" z="K5bOWkvZRGD/h4lv0EQ8138joqw="/>

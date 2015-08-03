@@ -12,9 +12,9 @@
         <field:display field="pago" id="s_com_raze_coleadmin_domain_Cargo_pago" object="${cargo}" z="LMQ+9EuYNaxCGsfvXXVTudQvUWU="/>
         <field:display field="fuePagoOportuno" id="s_com_raze_coleadmin_domain_Cargo_fuePagoOportuno" object="${cargo}" z="UNtIXfUcD2jbeGeqbVrZrpvU0yw="/>
         <field:display date="true" dateTimePattern="${cargo_fechapago_date_format}" field="fechaPago" id="s_com_raze_coleadmin_domain_Cargo_fechaPago" object="${cargo}" z="nqh8vZP8uGuSJ/6od7pDW4D+aEs="/>
-        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Cargo_idUsuario" object="${cargo}" z="Wd8pdqZqmTbEK2MWpKmr6dHpmp0="/>
-        <field:display date="true" dateTimePattern="${cargo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Cargo_fechaCreacion" object="${cargo}" z="o0HRQr8NxvzHNgqe9PT7/MUW0Cs="/>
-        <field:display date="true" dateTimePattern="${cargo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Cargo_fechaModificacion" object="${cargo}" z="RHqtgdjFlFoSIJ6h1NSpfs+wBqs="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Cargo_activo" object="${cargo}" z="ytUFu1kQp8pXVlkU/iYXKOZbhC8="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Cargo_idUsuario" object="${cargo}" z="Wd8pdqZqmTbEK2MWpKmr6dHpmp0=" render="false"/>
+        <field:display date="true" dateTimePattern="${cargo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Cargo_fechaCreacion" object="${cargo}" z="o0HRQr8NxvzHNgqe9PT7/MUW0Cs=" render="false"/>
+        <field:display date="true" dateTimePattern="${cargo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Cargo_fechaModificacion" object="${cargo}" z="RHqtgdjFlFoSIJ6h1NSpfs+wBqs=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Cargo_activo" object="${cargo}" z="ytUFu1kQp8pXVlkU/iYXKOZbhC8=" render="false"/>
     </page:show>
 </div>

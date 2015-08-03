@@ -7,9 +7,9 @@
         <field:select field="grupo" id="c_com_raze_coleadmin_domain_AlumnoGrupo_grupo" itemValue="id" items="${grupoes}" multiple="true" path="/grupoes" z="GvE4zcL7OdIL1PcLhw0Loc0yvvY="/>
         <field:select field="tipoEscuela" id="c_com_raze_coleadmin_domain_AlumnoGrupo_tipoEscuela" items="${tipoescuelas}" path="tipoescuelas" z="r6kbdG2KbhcXTfQ7//qyXICXA+A="/>
         <field:input field="observaciones" id="c_com_raze_coleadmin_domain_AlumnoGrupo_observaciones" z="UJNEnJjIzuPDqzokajkuhqEO4jM="/>
-        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_AlumnoGrupo_idUsuario" validationMessageCode="field_invalid_integer" z="++kf8jhR8ghALmV9Gx8h8GhuSHY="/>
-        <field:datetime dateTimePattern="${alumnoGrupo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaCreacion" z="bLWH/b0aVOZrGLogpIF456gR0Qc="/>
-        <field:datetime dateTimePattern="${alumnoGrupo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaModificacion" z="LRqaomnXz8dvrynLU4BisKckoBo="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_AlumnoGrupo_activo" z="uSgo1LbGiGl3T2XIpWgh6yRCrw8="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_AlumnoGrupo_idUsuario" validationMessageCode="field_invalid_integer" z="++kf8jhR8ghALmV9Gx8h8GhuSHY=" render="false"/>
+        <field:datetime dateTimePattern="${alumnoGrupo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaCreacion" z="bLWH/b0aVOZrGLogpIF456gR0Qc=" render="false"/>
+        <field:datetime dateTimePattern="${alumnoGrupo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaModificacion" z="LRqaomnXz8dvrynLU4BisKckoBo=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_AlumnoGrupo_activo" z="uSgo1LbGiGl3T2XIpWgh6yRCrw8=" render="false"/>
     </form:update>
 </div>

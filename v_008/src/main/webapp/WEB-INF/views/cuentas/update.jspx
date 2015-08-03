@@ -12,9 +12,9 @@
         <field:input field="beca" id="c_com_raze_coleadmin_domain_Cuenta_beca" validationMessageCode="field_invalid_integer" z="0wlM60Jd27EwFZLi0EKgq0rWmPg="/>
         <field:checkbox field="enviarRecordatorio" id="c_com_raze_coleadmin_domain_Cuenta_enviarRecordatorio" z="SeYbLMxnb147/fcUBToca/fVUvk="/>
         <field:input field="saldoTotal" id="c_com_raze_coleadmin_domain_Cuenta_saldoTotal" validationMessageCode="field_invalid_number" z="yDYpQr3pEDG5TZcqV3+dYDutpLo="/>
-        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Cuenta_idUsuario" validationMessageCode="field_invalid_integer" z="ZSNXr/um4CMTiTZh1+4wQWcAamo="/>
-        <field:datetime dateTimePattern="${cuenta_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaCreacion" z="Joc1krHfFXZq+wwHqLJqlm3ekh4="/>
-        <field:datetime dateTimePattern="${cuenta_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaModificacion" z="gkFlfbIab2xYxVYi5VSHbyJbIIk="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Cuenta_activo" z="R/x91SMACDUdgdKI2z1U4CUmcXg="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Cuenta_idUsuario" validationMessageCode="field_invalid_integer" z="ZSNXr/um4CMTiTZh1+4wQWcAamo=" render="false"/>
+        <field:datetime dateTimePattern="${cuenta_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaCreacion" z="Joc1krHfFXZq+wwHqLJqlm3ekh4=" render="false"/>
+        <field:datetime dateTimePattern="${cuenta_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaModificacion" z="gkFlfbIab2xYxVYi5VSHbyJbIIk=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Cuenta_activo" z="R/x91SMACDUdgdKI2z1U4CUmcXg=" render="false"/>
     </form:update>
 </div>

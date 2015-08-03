@@ -13,10 +13,10 @@
         <field:datetime dateTimePattern="${docente_fechanacimiento_date_format}" field="fechaNacimiento" id="c_com_raze_coleadmin_domain_Docente_fechaNacimiento" z="XWgnnqLkmMSz6eITNphsZbG8dHc="/>
         <field:textarea field="foto" id="c_com_raze_coleadmin_domain_Docente_foto" z="uxyyK+PpaPTWSVEDfDwBs8tjpIg="/>
         <field:input field="contentType" id="c_com_raze_coleadmin_domain_Docente_contentType" z="Vrne5L4TRsArKEJ3riYEzPUSI/I="/>
-        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Docente_idUsuario" validationMessageCode="field_invalid_integer" z="HeGGxjKei/4fS5RiemTR1LIQe7c="/>
-        <field:datetime dateTimePattern="${docente_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Docente_fechaCreacion" z="y5N/0MlZDx9OhEuvqQ1iD1bGAtU="/>
-        <field:datetime dateTimePattern="${docente_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Docente_fechaModificacion" z="KZoDaHm0/SmrI6h6J6hqDMLpnj4="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Docente_activo" z="F7glbU+F2AoLQExzNNOk6Xw0mAo="/>
+        <field:input field="idUsuario" id="c_com_raze_coleadmin_domain_Docente_idUsuario" validationMessageCode="field_invalid_integer" z="HeGGxjKei/4fS5RiemTR1LIQe7c=" render="false"/>
+        <field:datetime dateTimePattern="${docente_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Docente_fechaCreacion" z="y5N/0MlZDx9OhEuvqQ1iD1bGAtU=" render="false"/>
+        <field:datetime dateTimePattern="${docente_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Docente_fechaModificacion" z="KZoDaHm0/SmrI6h6J6hqDMLpnj4=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Docente_activo" z="F7glbU+F2AoLQExzNNOk6Xw0mAo=" render="false"/>
         <field:select field="escuela" id="c_com_raze_coleadmin_domain_Docente_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="8uTYzOeqYJiuiz87mngES0BYrqY="/>
         <field:select field="plantel" id="c_com_raze_coleadmin_domain_Docente_plantel" itemValue="id" items="${plantels}" path="/plantels" required="true" z="K4NH/F4M5p/ggrJnTULA1mKk3d0="/>
     </form:update>

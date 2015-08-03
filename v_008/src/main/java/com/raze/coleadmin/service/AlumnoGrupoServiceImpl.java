@@ -1,8 +1,11 @@
 package com.raze.coleadmin.service;
 
 import com.raze.coleadmin.domain.AlumnoGrupo;
+import com.raze.coleadmin.email.NotificationServiceImpl;
 import com.raze.coleadmin.repository.AlumnoGrupoRepository;
+
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,7 +16,7 @@ public class AlumnoGrupoServiceImpl implements AlumnoGrupoService {
 
 	@Autowired
     AlumnoGrupoRepository alumnoGrupoRepository;
-
+	
 	public long countAllAlumnoGrupoes() {
         return alumnoGrupoRepository.count();
     }
@@ -35,6 +38,13 @@ public class AlumnoGrupoServiceImpl implements AlumnoGrupoService {
     }
 
 	public void saveAlumnoGrupo(AlumnoGrupo alumnoGrupo) {
+//		try {
+//			NotificationServiceImpl mail = new NotificationServiceImpl();
+//			mail.
+//			mail.sendMessage("eramirezz0201@gmail.com", "Correo de Pruebass");
+//		} catch(Exception e) {
+//			e.printStackTrace();
+//		}
         alumnoGrupoRepository.save(alumnoGrupo);
     }
 

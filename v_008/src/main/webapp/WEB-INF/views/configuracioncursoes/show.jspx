@@ -9,9 +9,9 @@
         <field:display field="diaCorte" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_diaCorte" object="${configuracioncurso}" z="SN/I2aahbfgxTmrovKPv4PbimT8="/>
         <field:display field="diaPago" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_diaPago" object="${configuracioncurso}" z="yKZXdSH35qTwoFxHsytdrMDeV9s="/>
         <field:display field="numeroDiasParaPagar" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_numeroDiasParaPagar" object="${configuracioncurso}" z="6ak9qvRREm96uefiornyv51L1sg="/>
-        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_idUsuario" object="${configuracioncurso}" z="RZgZfuRifFiKrRv2mPdGWCYiCXg="/>
-        <field:display date="true" dateTimePattern="${configuracionCurso_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_fechaCreacion" object="${configuracioncurso}" z="7YxGiRzglAmp/NyYgFUNIZq0xHk="/>
-        <field:display date="true" dateTimePattern="${configuracionCurso_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_fechaModificacion" object="${configuracioncurso}" z="EpMcxLY9JjotrUOWqLHPVbp5Mmk="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_activo" object="${configuracioncurso}" z="0SPKh2bhCWEkp0B1uFVjyGBWS0g="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_idUsuario" object="${configuracioncurso}" z="RZgZfuRifFiKrRv2mPdGWCYiCXg=" render="false"/>
+        <field:display date="true" dateTimePattern="${configuracionCurso_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_fechaCreacion" object="${configuracioncurso}" z="7YxGiRzglAmp/NyYgFUNIZq0xHk=" render="false"/>
+        <field:display date="true" dateTimePattern="${configuracionCurso_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_fechaModificacion" object="${configuracioncurso}" z="EpMcxLY9JjotrUOWqLHPVbp5Mmk=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_ConfiguracionCurso_activo" object="${configuracioncurso}" z="0SPKh2bhCWEkp0B1uFVjyGBWS0g=" render="false"/>
     </page:show>
 </div>

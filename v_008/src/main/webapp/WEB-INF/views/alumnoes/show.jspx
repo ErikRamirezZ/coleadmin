@@ -19,10 +19,6 @@
         <field:display field="foto" id="s_com_raze_coleadmin_domain_Alumno_foto" object="${alumno}" z="60Kax0/Zty4Tn9i0G/J5JnhKQ04=" render="false"/>
         <field:display field="contentType" id="s_com_raze_coleadmin_domain_Alumno_contentType" object="${alumno}" z="q/RcQqGfSvfrS0pFa/dSwjAqI/8=" render="false"/>
         
-        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Alumno_idUsuario" object="${alumno}" z="/pTqlnaPokEjPZhow6QwcBgznRs="/>
-        <field:display date="true" dateTimePattern="${alumno_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Alumno_fechaCreacion" object="${alumno}" z="Nkecdmtlo9pOQjRjqb3jjHvf9Yw="/>
-        <field:display date="true" dateTimePattern="${alumno_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Alumno_fechaModificacion" object="${alumno}" z="F53D6RcUtNuWfI6q8OoDeCQrGUE="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Alumno_activo" object="${alumno}" z="FTKYOY15ug24hoeXK71zUZj1hI0="/>
         <field:display field="curp" id="s_com_raze_coleadmin_domain_Alumno_curp" object="${alumno}" z="QsPTDXV0J6HJJp7SUC0Oec1iSy8="/>
         <field:display field="tipoSangre" id="s_com_raze_coleadmin_domain_Alumno_tipoSangre" object="${alumno}" z="HrTmX0jOsvbfDqchF+kaKAkxr90="/>
         <field:display field="talla" id="s_com_raze_coleadmin_domain_Alumno_talla" object="${alumno}" z="BRVUxmS8aZYwihA2Nih8jHPfEUk="/>
@@ -31,5 +27,9 @@
         <field:display field="observaciones" id="s_com_raze_coleadmin_domain_Alumno_observaciones" object="${alumno}" z="K/RJ6PbHzWRhjiO2+jMKWYmetoo="/>
         <field:display field="escuela" id="s_com_raze_coleadmin_domain_Alumno_escuela" object="${alumno}" z="7z40MxU0tviDhP1ev0+jlbDpWLM="/>
         <field:display field="plantel" id="s_com_raze_coleadmin_domain_Alumno_plantel" object="${alumno}" z="gJCPyoS2X16+ouvNck6T4fa3NQk="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Alumno_idUsuario" object="${alumno}" z="/pTqlnaPokEjPZhow6QwcBgznRs=" render="false"/>
+        <field:display date="true" dateTimePattern="${alumno_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Alumno_fechaCreacion" object="${alumno}" z="Nkecdmtlo9pOQjRjqb3jjHvf9Yw=" render="false"/>
+        <field:display date="true" dateTimePattern="${alumno_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Alumno_fechaModificacion" object="${alumno}" z="F53D6RcUtNuWfI6q8OoDeCQrGUE=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Alumno_activo" object="${alumno}" z="FTKYOY15ug24hoeXK71zUZj1hI0=" render="false"/>
     </page:show>
 </div>

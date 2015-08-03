@@ -18,10 +18,10 @@
         
         <field:display field="foto" id="s_com_raze_coleadmin_domain_Padre_foto" object="${padre}" z="WsqhZ+nrfqsA51k0xuPEC0i0SRo=" render="false"/>
         <field:display field="contentType" id="s_com_raze_coleadmin_domain_Padre_contentType" object="${padre}" z="2BXGn0ZjlZJI0G2Olg1RYkd91bk=" render="false"/>
-        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Padre_idUsuario" object="${padre}" z="I5ocCL3vjFzH8g1f8yysE4CFn2g="/>
-        <field:display date="true" dateTimePattern="${padre_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Padre_fechaCreacion" object="${padre}" z="hzkq/3BqBZoeUuL7QuWTe4Civew="/>
-        <field:display date="true" dateTimePattern="${padre_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Padre_fechaModificacion" object="${padre}" z="aq3qGRZdpamOiJ617iEy9whGuHk="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Padre_activo" object="${padre}" z="WrSq8oG80eMwMOxgK7QxLw7gh3M="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Padre_idUsuario" object="${padre}" z="I5ocCL3vjFzH8g1f8yysE4CFn2g=" render="false"/>
+        <field:display date="true" dateTimePattern="${padre_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Padre_fechaCreacion" object="${padre}" z="hzkq/3BqBZoeUuL7QuWTe4Civew=" render="false"/>
+        <field:display date="true" dateTimePattern="${padre_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Padre_fechaModificacion" object="${padre}" z="aq3qGRZdpamOiJ617iEy9whGuHk=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Padre_activo" object="${padre}" z="WrSq8oG80eMwMOxgK7QxLw7gh3M=" render="false"/>
         <field:display field="hijos" id="s_com_raze_coleadmin_domain_Padre_hijos" object="${padre}" z="FOEAKMzGN8MkeQ0loP9A3SyZ7Ms="/>
         <field:display field="escuela" id="s_com_raze_coleadmin_domain_Padre_escuela" object="${padre}" z="bUtEsOk/asHvY2UndFsx+cxuJuY="/>
         <field:display field="plantel" id="s_com_raze_coleadmin_domain_Padre_plantel" object="${padre}" z="cozDDyFKp49ObF/bwXEwtCwpXpw="/>

@@ -30,10 +30,10 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 	    String username = authentication.getName();
         String password = (String) authentication.getCredentials();
  
-        log.error("Ya estoy en el servicio con username => " + username);
+        log.info("Ya estoy en el servicio con username => " + username);
         Login user = loginService.loadUserByUsername(username);
  
-        log.error("Ya estoy de regreso en el customLogin con user => " + user);
+        log.info("Ya estoy de regreso en el customLogin con user => " + user);
         if (user == null) {
             throw new BadCredentialsException("Username not found.");
         }

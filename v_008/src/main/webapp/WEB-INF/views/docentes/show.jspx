@@ -18,10 +18,10 @@
         
         <field:display field="foto" id="s_com_raze_coleadmin_domain_Docente_foto" object="${docente}" z="ozPBiQIHmcZepMMnvyi8Dtb75dw=" rednder="false"/>
         <field:display field="contentType" id="s_com_raze_coleadmin_domain_Docente_contentType" object="${docente}" z="eYjNedVxFJtxU5SJXLh/wKcdCV8=" render="false"/>
-        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Docente_idUsuario" object="${docente}" z="Du8zVw+PG5UQ7OYcbLEjZjT8b2Q="/>
-        <field:display date="true" dateTimePattern="${docente_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Docente_fechaCreacion" object="${docente}" z="ndkPGx38L0Yo0QYGk/krf7S/CYs="/>
-        <field:display date="true" dateTimePattern="${docente_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Docente_fechaModificacion" object="${docente}" z="VQVw1QrAClnWVv6Cnqmhh6TUSyY="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Docente_activo" object="${docente}" z="uNW0Nx3kYc/D7YW8EsOQYoI0oHU="/>
+        <field:display field="idUsuario" id="s_com_raze_coleadmin_domain_Docente_idUsuario" object="${docente}" z="Du8zVw+PG5UQ7OYcbLEjZjT8b2Q=" render="false"/>
+        <field:display date="true" dateTimePattern="${docente_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Docente_fechaCreacion" object="${docente}" z="ndkPGx38L0Yo0QYGk/krf7S/CYs=" render="false"/>
+        <field:display date="true" dateTimePattern="${docente_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Docente_fechaModificacion" object="${docente}" z="VQVw1QrAClnWVv6Cnqmhh6TUSyY=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Docente_activo" object="${docente}" z="uNW0Nx3kYc/D7YW8EsOQYoI0oHU=" render="false"/>
         <field:display field="escuela" id="s_com_raze_coleadmin_domain_Docente_escuela" object="${docente}" z="GBfFpCOAnMynn9ZC4XXMc5u+hMk="/>
         <field:display field="plantel" id="s_com_raze_coleadmin_domain_Docente_plantel" object="${docente}" z="dgX40HwccQf8JtLsX/qmC24HK78="/>
     </page:show>

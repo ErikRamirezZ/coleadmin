@@ -3,14 +3,18 @@
 <tiles-definitions>
     <definition extends="default" name="grupoes/list">
         <put-attribute name="body" value="/WEB-INF/views/grupoes/list.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="grupoes/show">
         <put-attribute name="body" value="/WEB-INF/views/grupoes/show.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="grupoes/create">
         <put-attribute name="body" value="/WEB-INF/views/grupoes/create.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 <definition extends="default" name="grupoes/update">
         <put-attribute name="body" value="/WEB-INF/views/grupoes/update.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
     </definition>
 </tiles-definitions>

@@ -3,14 +3,18 @@
 <tiles-definitions>
     <definition extends="default" name="pagoes/list">
         <put-attribute name="body" value="/WEB-INF/views/pagoes/list.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_colegiaturas.jspx" />
     </definition>
 <definition extends="default" name="pagoes/show">
         <put-attribute name="body" value="/WEB-INF/views/pagoes/show.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_colegiaturas.jspx" />
     </definition>
 <definition extends="default" name="pagoes/create">
         <put-attribute name="body" value="/WEB-INF/views/pagoes/create.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_colegiaturas.jspx" />
     </definition>
 <definition extends="default" name="pagoes/update">
         <put-attribute name="body" value="/WEB-INF/views/pagoes/update.jspx"/>
+        <put-attribute name="menu" value="/WEB-INF/views/menu_colegiaturas.jspx" />
     </definition>
 </tiles-definitions>
