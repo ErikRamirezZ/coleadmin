@@ -36,11 +36,11 @@ entity jpa --class ~.catalog.TipoConcepto --activeRecord false
 entity jpa --class ~.catalog.SeRepite --activeRecord false
 entity jpa --class ~.catalog.MetodoPago --activeRecord false
 
+
 //Escuela
-field string --fieldName clave --class ~.domain.Escuela
-field reference --fieldName nivelEducativo --type ~.catalog.NivelEducativo
-field reference --fieldName plantel --type ~.domain.Plantel
-field string --fieldName nombre
+field reference --fieldName nivelEducativo --type ~.catalog.NivelEducativo --class ~.domain.Escuela
+field string --fieldName nombre --notNull
+field string --fieldName clave
 field string --fieldName razonSocial
 field file --fieldName logo --contentType JPG --autoUpload
 
@@ -53,12 +53,12 @@ field boolean --fieldName activo
 
 //Plantel
 field reference --fieldName escuela --type ~.domain.Escuela --class ~.domain.Plantel
-field string --fieldName nombre
+field string --fieldName nombre --notNull
 field string --fieldName calle
 field string --fieldName numero
 field string --fieldName codigoPostal
-field string --fieldName correoE
-field string --fieldName telefono1
+field string --fieldName correoE --notNull
+field string --fieldName telefono1 --notNull
 field string --fieldName telefono2
 
 field number --fieldName usuarioCrea --type java.lang.Long
@@ -67,61 +67,69 @@ field date --fieldName fechaCreacion --type java.util.Date
 field date --fieldName fechaModificacion --type java.util.Date 
 field boolean --fieldName activo
 
- 
-field reference --fieldName escuela --type ~.domain.Escuela --class ~.domain.CicloEscolar
-field reference --fieldName plantel --type ~.domain.Plantel
-field string --fieldName nombre
+
+// CicloEscolar
+field reference --fieldName escuela --type ~.domain.Escuela --notNull --class ~.domain.CicloEscolar
+field string --fieldName nombre --notNull
 field date --fieldName fechaInicio --type java.util.Date
 field date --fieldName fechaFin --type java.util.Date
 
-field number --fieldName idUsuario --type java.lang.Long
+field number --fieldName usuarioCrea --type java.lang.Long
+field number --fieldName usuarioModifica --type java.lang.Long
 field date --fieldName fechaCreacion --type java.util.Date 
 field date --fieldName fechaModificacion --type java.util.Date 
 field boolean --fieldName activo
 
 
+//Curso
+field reference --fieldName cicloEscolar --type ~.domain.CicloEscolar --notNull --class ~.domain.Curso
+field string --fieldName nombre --notNull
 
-field reference --fieldName cicloEscolar --type ~.domain.CicloEscolar --class ~.domain.Curso
-field string --fieldName nombre
-
-field number --fieldName idUsuario --type java.lang.Long
+field number --fieldName usuarioCrea --type java.lang.Long
+field number --fieldName usuarioModifica --type java.lang.Long
 field date --fieldName fechaCreacion --type java.util.Date 
 field date --fieldName fechaModificacion --type java.util.Date 
 field boolean --fieldName activo
 
 
-
-field set --fieldName curso --type ~.domain.Curso --class ~.domain.ConfiguracionCurso
-field number --fieldName cuotaMensual --type java.lang.Double
-field number --fieldName cuotaInscripcion --type java.lang.Double
+//ConfiguracionCurso
+field set --fieldName curso --type ~.domain.Curso --notNull --class ~.domain.ConfiguracionCurso
+field number --fieldName cuotaInscripcion --type java.lang.Double --notNull
+field number --fieldName cuotaMensual --type java.lang.Double --notNull
+field number --fieldName seguro --type java.lang.Double
+field number --fieldName cuotaPadres --type java.lang.Double
+field number --fieldName credencial --type java.lang.Double
+field number --fieldName otro --type java.lang.Double
 field number --fieldName diaCorte --type java.lang.Integer
-field number --fieldName diaPago --type java.lang.Integer
 field number --fieldName numeroDiasParaPagar --type java.lang.Integer
 
-field number --fieldName idUsuario --type java.lang.Long
+field number --fieldName usuarioCrea --type java.lang.Long
+field number --fieldName usuarioModifica --type java.lang.Long
 field date --fieldName fechaCreacion --type java.util.Date 
 field date --fieldName fechaModificacion --type java.util.Date 
 field boolean --fieldName activo
 
 
-
+// Grupo
 field reference --fieldName curso --type ~.domain.Curso --class ~.domain.Grupo
-field string --fieldName salon
 field string --fieldName nombreGrupo
+field string --fieldName salon
 field string --fieldName descripcion
 
-field number --fieldName idUsuario --type java.lang.Long
+field number --fieldName usuarioCrea --type java.lang.Long
+field number --fieldName usuarioModifica --type java.lang.Long
 field date --fieldName fechaCreacion --type java.util.Date 
 field date --fieldName fechaModificacion --type java.util.Date 
 field boolean --fieldName activo
 
 
-field reference --fieldName alumno --type ~.domain.Alumno --class ~.domain.AlumnoGrupo
-field set --fieldName grupo --type ~.domain.Grupo
-field enum --fieldName tipoEscuela --type ~.catalog.TipoEscuela
+// AlumnoGrupo
+field reference --fieldName alumno --type ~.domain.Alumno --notNull --class ~.domain.AlumnoGrupo
+field reference --fieldName grupo --type ~.domain.Grupo
 field string --fieldName observaciones
 
-field number --fieldName idUsuario --type java.lang.Long
+field number --fieldName usuarioCrea --type java.lang.Long
+field number --fieldName usuarioModifica --type java.lang.Long
 field date --fieldName fechaCreacion --type java.util.Date 
 field date --fieldName fechaModificacion --type java.util.Date 
 field boolean --fieldName activo
