@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_catalog_NivelEducativo" items="${niveleducativoes}" z="L3UFzOUzJoWNggFIO5npsNW/Khk=">
+        <table:table data="${niveleducativoes}" id="l_com_raze_coleadmin_catalog_NivelEducativo" path="/niveleducativoes" z="YJp9WOsQwOPTlvxKMPzZQ3r+GXg=">
+            <table:column id="c_com_raze_coleadmin_catalog_NivelEducativo_nombreNivelEducativo" property="nombreNivelEducativo" z="JDkJmBd/IMc+XUtn+II+fXefdso="/>
+            <table:column id="c_com_raze_coleadmin_catalog_NivelEducativo_descripcion" property="descripcion" z="+IxaOww1gpkgBbYrTGCWERoeEUQ="/>
+            <table:column id="c_com_raze_coleadmin_catalog_NivelEducativo_usuarioCrea" property="usuarioCrea" z="27D7G8ELj+7yajZd4F6OsM7ODW4="/>
+            <table:column id="c_com_raze_coleadmin_catalog_NivelEducativo_usuarioModifica" property="usuarioModifica" z="eGCibL04+tm52v3d4Vr/RtU5jQ0="/>
+            <table:column date="true" dateTimePattern="${nivelEducativo_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_NivelEducativo_fechaCreacion" property="fechaCreacion" z="B1PSriFZV2ZW7hfJcmjRsABHCmc="/>
+            <table:column date="true" dateTimePattern="${nivelEducativo_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_NivelEducativo_fechaModificacion" property="fechaModificacion" z="seroTaA3S3Aad+dgFPCJROW8F5I="/>
+        </table:table>
+    </page:list>
+</div>

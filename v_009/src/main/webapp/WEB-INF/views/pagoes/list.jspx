@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Pago" items="${pagoes}" z="vCimc4dIr76H+yE8z7RvC432xWY=">
+        <table:table data="${pagoes}" id="l_com_raze_coleadmin_domain_Pago" path="/pagoes" z="7YlZe1DnuFlGCpoT7IyeRcLHWc0=">
+            <table:column id="c_com_raze_coleadmin_domain_Pago_cantidad" property="cantidad" z="pI2yL3IaJnQof1u4O2ZuCGD956M="/>
+            <table:column id="c_com_raze_coleadmin_domain_Pago_concepto" property="concepto" z="3ySsxn/kxjfSRKt5deAnJE6QrI0="/>
+            <table:column id="c_com_raze_coleadmin_domain_Pago_subtotal" property="subtotal" z="pVBVeBOvmc8as+EmW/RSaaCbKLw="/>
+            <table:column id="c_com_raze_coleadmin_domain_Pago_total" property="total" z="mFbJP+bNL0jnC8yjjtg/zOFERr8="/>
+            <table:column date="true" dateTimePattern="${pago_fechacargo_date_format}" id="c_com_raze_coleadmin_domain_Pago_fechaCargo" property="fechaCargo" z="sajjLAlr+dthHX4n6d/R/DyamiU="/>
+            <table:column id="c_com_raze_coleadmin_domain_Pago_fuePagoOportuno" property="fuePagoOportuno" z="5ETpPx1kwtn0JTgqBLcRMuy2fCE="/>
+        </table:table>
+    </page:list>
+</div>

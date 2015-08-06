@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_catalog_MetodoPago" items="${metodopagoes}" z="AdtdsFSXCXH12Hc+MAMlV1ZU86Y=">
+        <table:table data="${metodopagoes}" id="l_com_raze_coleadmin_catalog_MetodoPago" path="/metodopagoes" z="Rx6j4nK5iiVa7NZlCGwiJkHYnrQ=">
+            <table:column id="c_com_raze_coleadmin_catalog_MetodoPago_nombreMetodoPago" property="nombreMetodoPago" z="MYYwc2NYxkIMhJr4cU58LYGf678="/>
+            <table:column id="c_com_raze_coleadmin_catalog_MetodoPago_descripcion" property="descripcion" z="SO3flM1itRmgdPifKAsOVFQcaD4="/>
+            <table:column id="c_com_raze_coleadmin_catalog_MetodoPago_usuarioCrea" property="usuarioCrea" z="wmm7DTGJNEY6r7Imd9TjvQcziEw="/>
+            <table:column id="c_com_raze_coleadmin_catalog_MetodoPago_usuarioModifica" property="usuarioModifica" z="tiQwN/YOJcOKVSDAdl+mJNu5jQA="/>
+            <table:column date="true" dateTimePattern="${metodoPago_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_MetodoPago_fechaCreacion" property="fechaCreacion" z="Lf41rMv2BGYmIH21H5Dq0UqXcu4="/>
+            <table:column date="true" dateTimePattern="${metodoPago_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_MetodoPago_fechaModificacion" property="fechaModificacion" z="7ARimb0zIMzKjH69eOwQ49nVsmU="/>
+        </table:table>
+    </page:list>
+</div>

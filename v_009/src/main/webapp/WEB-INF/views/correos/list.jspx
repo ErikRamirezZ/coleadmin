@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_catalog_Correo" items="${correos}" z="JDxc2bE/O1aWJUHPuVIV6hi1w+k=">
+        <table:table data="${correos}" id="l_com_raze_coleadmin_catalog_Correo" path="/correos" z="Hq/wCUqw4zn+Kr0zjWEB/YZVUD8=">
+            <table:column id="c_com_raze_coleadmin_catalog_Correo_escuela" property="escuela" z="ftmr1jMV44h1NcWqYGeaufjxCYU="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Correo_email" property="email" z="RXETR0dOJ3O6cYZ8hI7bn3gvjRw="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Correo_host" property="host" z="NnffhKhCe52MoIEy/DVcVJ/BZ4o="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Correo_password" property="password" z="Lkn1GTISyvCNSWQ7ahmHkDzrb+c="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Correo_port" property="port" z="c+2bIFefwWl9SWA9vpk+ypc6JMI="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Correo_protocol" property="protocol" z="PBm3jmOfbAD4vsUzboivCaGhSbc="/>
+        </table:table>
+    </page:list>
+</div>

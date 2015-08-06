@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_catalog_TipoConcepto" object="${tipoconcepto}" path="/tipoconceptoes" z="FRk0gFHFmTYx18HipGKSnqbH3X4=">
+        <field:display field="nombreTipoConcepto" id="s_com_raze_coleadmin_catalog_TipoConcepto_nombreTipoConcepto" object="${tipoconcepto}" z="26FJM8wHvXHPZ5C9weLOLgc9juI="/>
+        <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_TipoConcepto_descripcion" object="${tipoconcepto}" z="Fi6GmtKhhYNOuBIUlfTlJmYRFdw="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_TipoConcepto_usuarioCrea" object="${tipoconcepto}" z="mAC2mQ18ENaaiMjadTmsR0CWiJU="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_TipoConcepto_usuarioModifica" object="${tipoconcepto}" z="D+vf7jsZKY7X5w7C4H7rqBDSNsY="/>
+        <field:display date="true" dateTimePattern="${tipoConcepto_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_TipoConcepto_fechaCreacion" object="${tipoconcepto}" z="zKeXg6D8pu7mo+n8fb0YrpoOcJ8="/>
+        <field:display date="true" dateTimePattern="${tipoConcepto_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_TipoConcepto_fechaModificacion" object="${tipoconcepto}" z="bPodTizFig4JAlsOGfnvuJKQcBQ="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_TipoConcepto_activo" object="${tipoconcepto}" z="k+h2nHcQvBrIyl8BlANUnLiCdKc="/>
+    </page:show>
+</div>

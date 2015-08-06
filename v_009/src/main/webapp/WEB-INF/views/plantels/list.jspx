@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Plantel" items="${plantels}" z="kEsfyPd44G6sNuDzpff0YI9BkuE=">
+        <table:table data="${plantels}" id="l_com_raze_coleadmin_domain_Plantel" path="/plantels" z="Rj58+fajjs1gi9N2xc/8IgHQoEQ=">
+            <table:column id="c_com_raze_coleadmin_domain_Plantel_escuela" property="escuela" z="ruW5yI86fkPZg3bBymL87jNpxiQ="/>
+            <table:column id="c_com_raze_coleadmin_domain_Plantel_nombre" property="nombre" z="jDrScWgl4le3jMFjpoqvXWl/IRo="/>
+            <table:column id="c_com_raze_coleadmin_domain_Plantel_calle" property="calle" z="uAsSD1ER3h6KebZmRlXD/q+GrhA="/>
+            <table:column id="c_com_raze_coleadmin_domain_Plantel_numero" property="numero" z="KIxffu95ZdAmFuJWAOUngK0Sd6A="/>
+            <table:column id="c_com_raze_coleadmin_domain_Plantel_codigoPostal" property="codigoPostal" z="VUm6141iHMcrgczxo+e7QiyXBTc="/>
+            <table:column id="c_com_raze_coleadmin_domain_Plantel_correoE" property="correoE" z="Okfruw3KBXZn2+IaZB2gyL+tkSo="/>
+        </table:table>
+    </page:list>
+</div>

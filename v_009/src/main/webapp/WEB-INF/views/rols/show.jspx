@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_catalog_Rol" object="${rol}" path="/rols" z="shB7KECN3N+MDVwRhZ8PeES7rdQ=">
+        <field:display field="nombreRol" id="s_com_raze_coleadmin_catalog_Rol_nombreRol" object="${rol}" z="rICFhZsW1RX9g9ul4e5x7iQWRv8="/>
+        <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_Rol_descripcion" object="${rol}" z="OTp42ohXUKd2h2aUYsc88zJqK3U="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Rol_usuarioCrea" object="${rol}" z="OZCITPRipmDnV5/DmFhKP0CtOfg="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Rol_usuarioModifica" object="${rol}" z="HJHFyd22UcpH43r/HKmuB+GiOrg="/>
+        <field:display date="true" dateTimePattern="${rol_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Rol_fechaCreacion" object="${rol}" z="xQbg7MjysYIVR9AFv+E2dmKwqV0="/>
+        <field:display date="true" dateTimePattern="${rol_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Rol_fechaModificacion" object="${rol}" z="KHqGPkktvAL0cabCsiyz/aoYE3g="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Rol_activo" object="${rol}" z="/O1Bn94Hsx4VIqYjFBGGf0Du2G0="/>
+    </page:show>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_catalog_Modulo" items="${moduloes}" z="48Ule4TsGoFMr8yLCYf3dEVctmM=">
+        <table:table data="${moduloes}" id="l_com_raze_coleadmin_catalog_Modulo" path="/moduloes" z="KqAjdSeA+8WFvBs4O94JTyIfivA=">
+            <table:column id="c_com_raze_coleadmin_catalog_Modulo_nombreModulo" property="nombreModulo" z="fFYHU+iVXbH6yFhAf+WHrrarEEM="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Modulo_descripcion" property="descripcion" z="grir+oke+pSSHQ2WGajcFD4Y+hk="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Modulo_usuarioCrea" property="usuarioCrea" z="bRrwSlH9Q2JYwa09UHc9PDhvz4I="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Modulo_usuarioModifica" property="usuarioModifica" z="hU7J4HoVuQieIXCtZN1ZxlNd9tQ="/>
+            <table:column date="true" dateTimePattern="${modulo_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_Modulo_fechaCreacion" property="fechaCreacion" z="dcCivW3I7dOC09fXZsOhfPxTmbg="/>
+            <table:column date="true" dateTimePattern="${modulo_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_Modulo_fechaModificacion" property="fechaModificacion" z="2pR/UX8zhEFoUP0kz73LC/UxrAo="/>
+        </table:table>
+    </page:list>
+</div>

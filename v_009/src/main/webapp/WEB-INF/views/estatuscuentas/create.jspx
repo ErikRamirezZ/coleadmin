@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_coleadmin_catalog_EstatusCuenta" modelAttribute="estatusCuenta" path="/estatuscuentas" render="${empty dependencies}" z="C9Sjh28ARxWz3BdcfgmJFDcbHTE=">
+        <field:input field="nombreEstatusCuenta" id="c_com_raze_coleadmin_catalog_EstatusCuenta_nombreEstatusCuenta" required="true" z="HirDEhyxD0y671Dk7K4ZpCjOy0w="/>
+        <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_EstatusCuenta_descripcion" z="Z8SR2BIw9sgvCgYH+JD6NHIC+a0="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_EstatusCuenta_usuarioCrea" validationMessageCode="field_invalid_integer" z="Tz7ZjeKQ1tdKTn/7tDczYxvi0pI="/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_EstatusCuenta_usuarioModifica" validationMessageCode="field_invalid_integer" z="dydxGY6YyckC/rMRNu+MrGiLKXA="/>
+        <field:datetime dateTimePattern="${estatusCuenta_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_EstatusCuenta_fechaCreacion" z="8BdSbUx0AJOAg/CdIg8CEZvfLvA="/>
+        <field:datetime dateTimePattern="${estatusCuenta_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_EstatusCuenta_fechaModificacion" z="TznjGg1xXKsZYkWKPU/buOo8s10="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_EstatusCuenta_activo" z="NYLET96cLdhO5+8BAXIo0IEIxCQ="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_catalog_EstatusCuenta" render="${not empty dependencies}" z="2FQiHUv0r+zpdhRuXR2p7f2p5nw="/>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_catalog_TipoAsistencia" modelAttribute="tipoAsistencia" path="/tipoasistencias" versionField="Version" z="iBUmOGPkUxlpzjO1Xl1OIVYnirs=">
+        <field:input field="nombreTipoAsistencia" id="c_com_raze_coleadmin_catalog_TipoAsistencia_nombreTipoAsistencia" required="true" z="XFk7Q7xM26+Zr9h2C1uK9vrfuSA="/>
+        <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_TipoAsistencia_descripcion" z="ijZ/skBK67x4x0ouhbqEHI0OFY0="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_TipoAsistencia_usuarioCrea" validationMessageCode="field_invalid_integer" z="+SFhjK1YZI967J7e8R8rZFvLTkU="/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_TipoAsistencia_usuarioModifica" validationMessageCode="field_invalid_integer" z="CIKqbFRa83wtgP8vsL5EteWjDik="/>
+        <field:datetime dateTimePattern="${tipoAsistencia_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_TipoAsistencia_fechaCreacion" z="KXrkRX9/lmV7qa3bDqA/JdBczok="/>
+        <field:datetime dateTimePattern="${tipoAsistencia_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_TipoAsistencia_fechaModificacion" z="77wQ0Nti+shPhb0PVwGfql3yKmU="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_TipoAsistencia_activo" z="iskDkJEwnlJJOpEzuNE/VJfompc="/>
+    </form:update>
+</div>

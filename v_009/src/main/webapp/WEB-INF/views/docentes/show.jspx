@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Docente" object="${docente}" path="/docentes" z="F4CzPDAQRdHxKOlvGnHP3DUVJFU=">
+        <field:display field="correoE" id="s_com_raze_coleadmin_domain_Docente_correoE" object="${docente}" z="3lWIvQMfdXVCKNFFj/AO33ijv/M="/>
+        <field:display field="nombre" id="s_com_raze_coleadmin_domain_Docente_nombre" object="${docente}" z="2lcP5Y7EphPCmzLyJSFbLF6AKNI="/>
+        <field:display field="primerApellido" id="s_com_raze_coleadmin_domain_Docente_primerApellido" object="${docente}" z="OCHpJTNjdDZ0ZSI9SUyX4yg7FBY="/>
+        <field:display field="segundoApellido" id="s_com_raze_coleadmin_domain_Docente_segundoApellido" object="${docente}" z="136Z3CcNF4gKET9apyDTT2wSYHM="/>
+        <field:display field="domicilio" id="s_com_raze_coleadmin_domain_Docente_domicilio" object="${docente}" z="DHsTugIJ+misxwlTRu14U4sMwew="/>
+        <field:display field="ciudad" id="s_com_raze_coleadmin_domain_Docente_ciudad" object="${docente}" z="Aw4Ad2TLwtfHNLdjAtLMuEs9GF8="/>
+        <field:display field="telefono" id="s_com_raze_coleadmin_domain_Docente_telefono" object="${docente}" z="Xn1i1a7aQiM3BeQ+wgucD3ZWJ8Y="/>
+        <field:display date="true" dateTimePattern="${docente_fechanacimiento_date_format}" field="fechaNacimiento" id="s_com_raze_coleadmin_domain_Docente_fechaNacimiento" object="${docente}" z="emAaxiqYY6TDCk34e3K/OTdFGNA="/>
+        <field:display field="foto" id="s_com_raze_coleadmin_domain_Docente_foto" object="${docente}" z="ozPBiQIHmcZepMMnvyi8Dtb75dw="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Docente_usuarioCrea" object="${docente}" z="k8M9AG0xMtK3tlYVxKvfa1Mf5uA="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Docente_usuarioModifica" object="${docente}" z="mN0vpZgMTNRZIVpJqdAf6btHUUw="/>
+        <field:display date="true" dateTimePattern="${docente_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Docente_fechaCreacion" object="${docente}" z="ndkPGx38L0Yo0QYGk/krf7S/CYs="/>
+        <field:display date="true" dateTimePattern="${docente_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Docente_fechaModificacion" object="${docente}" z="VQVw1QrAClnWVv6Cnqmhh6TUSyY="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Docente_activo" object="${docente}" z="uNW0Nx3kYc/D7YW8EsOQYoI0oHU="/>
+        <field:display field="roles" id="s_com_raze_coleadmin_domain_Docente_roles" object="${docente}" z="NCu5Jqx7h1hnpa4XgkVGM+d8JEU="/>
+        <field:display field="escuela" id="s_com_raze_coleadmin_domain_Docente_escuela" object="${docente}" z="GBfFpCOAnMynn9ZC4XXMc5u+hMk="/>
+    </page:show>
+</div>

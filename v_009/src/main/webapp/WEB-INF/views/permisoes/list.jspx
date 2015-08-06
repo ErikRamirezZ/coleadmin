@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_catalog_Permiso" items="${permisoes}" z="XabLuHky/EKyGMluApZoTfEjHmA=">
+        <table:table data="${permisoes}" id="l_com_raze_coleadmin_catalog_Permiso" path="/permisoes" z="ctRIKXbTaD1EvXAQ7KPzU1hk+Ic=">
+            <table:column id="c_com_raze_coleadmin_catalog_Permiso_nombrePermiso" property="nombrePermiso" z="ycW5e9aYxhEa0pU1BmgasCK0Ss4="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Permiso_descripcion" property="descripcion" z="K7pQp05NE7lh+/RdYBhOtuq4080="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Permiso_usuarioCrea" property="usuarioCrea" z="K+lpPq8kutaAKyz8C3r4x84gr7U="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Permiso_usuarioModifica" property="usuarioModifica" z="J72Rbel1wIya6QAte9d8IibnnOc="/>
+            <table:column date="true" dateTimePattern="${permiso_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_Permiso_fechaCreacion" property="fechaCreacion" z="wyT5PortUJvX+uuGQd9B+sI7+Rw="/>
+            <table:column date="true" dateTimePattern="${permiso_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_Permiso_fechaModificacion" property="fechaModificacion" z="Wlbj+yC6sC8kbrxX0mDedXA+c6M="/>
+        </table:table>
+    </page:list>
+</div>

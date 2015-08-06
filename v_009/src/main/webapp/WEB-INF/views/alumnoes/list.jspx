@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Alumno" items="${alumnoes}" z="amJBN+UEswxJXaosXi4nsFa50i8=">
+        <table:table data="${alumnoes}" id="l_com_raze_coleadmin_domain_Alumno" path="/alumnoes" z="CQV+FZ1oHIJjV4Za7UblS177TMw=">
+            <table:column id="c_com_raze_coleadmin_domain_Alumno_correoE" property="correoE" z="vcpuEoJBMjdcKlUWP5XRgDMHB8U="/>
+            <table:column id="c_com_raze_coleadmin_domain_Alumno_nombre" property="nombre" z="WUF/tfsGKkR36J5l2PgXYBpyQN0="/>
+            <table:column id="c_com_raze_coleadmin_domain_Alumno_primerApellido" property="primerApellido" z="sYlAKmFmDALEmaQSh2x0c7JAIkc="/>
+            <table:column id="c_com_raze_coleadmin_domain_Alumno_segundoApellido" property="segundoApellido" z="mfW4LgoQTOD9XrZZoBAV4Rrwsk8="/>
+            <table:column id="c_com_raze_coleadmin_domain_Alumno_domicilio" property="domicilio" z="ixF1mVG4E2OcQdPe+yMzT4ZlqBA="/>
+            <table:column id="c_com_raze_coleadmin_domain_Alumno_ciudad" property="ciudad" z="y22oc0PJMoxWbJefGxKaeViF3iA="/>
+        </table:table>
+    </page:list>
+</div>

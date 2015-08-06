@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_catalog_Rol" modelAttribute="rol" path="/rols" versionField="Version" z="UM25tbq7sZOSlVbU9p61kiFaDSM=">
+        <field:input field="nombreRol" id="c_com_raze_coleadmin_catalog_Rol_nombreRol" required="true" z="BS2Z6qEhP/VzVljPqFeV6eA9yFE="/>
+        <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_Rol_descripcion" z="Z59Kt4WjKTljcDL/4kUVBTwyVVc="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Rol_usuarioCrea" validationMessageCode="field_invalid_integer" z="HIptMWclI4QEFAO8P4I8d/rJoRo="/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Rol_usuarioModifica" validationMessageCode="field_invalid_integer" z="tHx4S1nmA1ZUvEqd7U3oGRcok+s="/>
+        <field:datetime dateTimePattern="${rol_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Rol_fechaCreacion" z="jHg5s2557r9UKMdzxhg8PkDSqAM="/>
+        <field:datetime dateTimePattern="${rol_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Rol_fechaModificacion" z="UAedLazoznyObBRaWU8fR4434t4="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Rol_activo" z="TlF4Sfmd5XpVy3xaulI4DAl/zJA="/>
+    </form:update>
+</div>

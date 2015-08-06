@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_PagoEscuela" object="${pagoescuela}" path="/pagoescuelas" z="g5t698/cDnuKBT6qDGv7ZVwt1oY=">
+        <field:display field="escuela" id="s_com_raze_coleadmin_domain_PagoEscuela_escuela" object="${pagoescuela}" z="aDYIEOZXQFwo02QT1oGFoA+S4Zo="/>
+        <field:display date="true" dateTimePattern="${pagoEscuela_fechapago_date_format}" field="fechaPago" id="s_com_raze_coleadmin_domain_PagoEscuela_fechaPago" object="${pagoescuela}" z="CdcNYFEoghqC/h04Q67xsY3BzKs="/>
+        <field:display field="metodoPago" id="s_com_raze_coleadmin_domain_PagoEscuela_metodoPago" object="${pagoescuela}" z="5zG6JswKpqoxlBYlagQXUEN0C/g="/>
+        <field:display field="comprobantePago" id="s_com_raze_coleadmin_domain_PagoEscuela_comprobantePago" object="${pagoescuela}" z="xQHGQcyCcLEGfGl37qaQwfopYNI="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_PagoEscuela_usuarioCrea" object="${pagoescuela}" z="GsALgbyPRvjfAIl1z3vdlBQQuKs="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_PagoEscuela_usuarioModifica" object="${pagoescuela}" z="v6nHREUxDQx+t4GHM4IGsmtHTto="/>
+        <field:display date="true" dateTimePattern="${pagoEscuela_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_PagoEscuela_fechaCreacion" object="${pagoescuela}" z="4YBs+HqPvzLvmWxUtUrOvVeWQIk="/>
+        <field:display date="true" dateTimePattern="${pagoEscuela_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_PagoEscuela_fechaModificacion" object="${pagoescuela}" z="fGfl1DwzK0mmU29h6zcfQzhPCSw="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_PagoEscuela_activo" object="${pagoescuela}" z="19+4oGet30cCLFU9yoTL1I+JwoA="/>
+    </page:show>
+</div>

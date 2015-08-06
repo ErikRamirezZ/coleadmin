@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_catalog_Correo" object="${correo}" path="/correos" z="d/d/4C0xQAVEPv5e5X5aBseFYgs=">
+        <field:display field="escuela" id="s_com_raze_coleadmin_catalog_Correo_escuela" object="${correo}" z="3tLj4iHybjx93LrylRfTff0w3Os="/>
+        <field:display field="email" id="s_com_raze_coleadmin_catalog_Correo_email" object="${correo}" z="gue12s4TVzgdmSmxnBeOJ+nAjiM="/>
+        <field:display field="host" id="s_com_raze_coleadmin_catalog_Correo_host" object="${correo}" z="M9EY605iqBwPwpXvU7gAIgIohGE="/>
+        <field:display field="password" id="s_com_raze_coleadmin_catalog_Correo_password" object="${correo}" z="caUFgEXQG3fzzGdrPAZs59iw3ks="/>
+        <field:display field="port" id="s_com_raze_coleadmin_catalog_Correo_port" object="${correo}" z="AanP2fPO72SPa97cbvGXFtK7ro8="/>
+        <field:display field="protocol" id="s_com_raze_coleadmin_catalog_Correo_protocol" object="${correo}" z="6gmDQSJ/nklYR+L2JBY/TIRvDos="/>
+        <field:display field="subject" id="s_com_raze_coleadmin_catalog_Correo_subject" object="${correo}" z="ZcmPWRfowu3Th9X27d71Ft1SMLI="/>
+        <field:display field="username" id="s_com_raze_coleadmin_catalog_Correo_username" object="${correo}" z="MZ6iH0JA0/FnyaeQGRjGUBkRAXg="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Correo_usuarioCrea" object="${correo}" z="zR2ZZNZwKrogik3/oGWTPocVQy8="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Correo_usuarioModifica" object="${correo}" z="LMk0uMwk2cLaMoL5X3wHWPIdITI="/>
+        <field:display date="true" dateTimePattern="${correo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Correo_fechaCreacion" object="${correo}" z="psmSFh08nA+pK8NyljzBRx6BVGI="/>
+        <field:display date="true" dateTimePattern="${correo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Correo_fechaModificacion" object="${correo}" z="cvTAiZhX0RA1L6DNiD9l3B1Yrk4="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Correo_activo" object="${correo}" z="br2YxiWl0mWg3XWLJe/i2aeBh7A="/>
+    </page:show>
+</div>

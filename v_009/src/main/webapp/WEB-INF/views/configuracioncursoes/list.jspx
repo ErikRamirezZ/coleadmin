@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_ConfiguracionCurso" items="${configuracioncursoes}" z="6zOUVOIL4Cacd0TmaVMvMg/Bs+c=">
+        <table:table data="${configuracioncursoes}" id="l_com_raze_coleadmin_domain_ConfiguracionCurso" path="/configuracioncursoes" z="XRtgMagGj9ZlrUYwX5FE+OU54/w=">
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionCurso_curso" property="curso" z="W6pye7L2XBz1/jgpICC2b0ipwww="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionCurso_cuotaInscripcion" property="cuotaInscripcion" z="RKq2GJNLTON0bQVV4y/Mv4Sb2N4="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionCurso_cuotaMensual" property="cuotaMensual" z="JRmAzy2HQjDVQHre4FPpN6bsKKc="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionCurso_seguro" property="seguro" z="/pOdTS5Q5COUTfdQks56gL6GWpo="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionCurso_cuotaPadres" property="cuotaPadres" z="kvcboqsj2WXMgRDLaZisnT0Bb7s="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConfiguracionCurso_credencial" property="credencial" z="nBzx4jfcYDOcBUzdt/cZCK5Iqmo="/>
+        </table:table>
+    </page:list>
+</div>

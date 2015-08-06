@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Asistencia" object="${asistencia}" path="/asistencias" z="0fl65yqb9FPKhLvNlY0gacpJHNs=">
+        <field:display field="alumno" id="s_com_raze_coleadmin_domain_Asistencia_alumno" object="${asistencia}" z="QCE734Ce2TNPoAfow3hnwmryhPc="/>
+        <field:display field="tipoAsistencia" id="s_com_raze_coleadmin_domain_Asistencia_tipoAsistencia" object="${asistencia}" z="naqV+pfIyqvBdsEI4ygg63TdbYA="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Asistencia_usuarioCrea" object="${asistencia}" z="HIHKE8e0I6gN6Zg0jNrxjb0hi1c="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Asistencia_usuarioModifica" object="${asistencia}" z="2hSMtgmrZO/UKaIyFaIQndbNjww="/>
+        <field:display date="true" dateTimePattern="${asistencia_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Asistencia_fechaCreacion" object="${asistencia}" z="ppnSTfMb2anfxCgxavWz6JhpQSc="/>
+        <field:display date="true" dateTimePattern="${asistencia_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Asistencia_fechaModificacion" object="${asistencia}" z="E7NqozZ4Lg4BQnXrvcvE2Crjd6o="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Asistencia_activo" object="${asistencia}" z="cVtJPDl1la8AEiN7x0gOzslRcV0="/>
+    </page:show>
+</div>

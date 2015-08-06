@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_catalog_TipoAsistencia" items="${tipoasistencias}" z="rdgdiMUaAWEyWPi+06vIrNew3cU=">
+        <table:table data="${tipoasistencias}" id="l_com_raze_coleadmin_catalog_TipoAsistencia" path="/tipoasistencias" z="18SqSwl6AGjPOiMCcJe7UyHh+gM=">
+            <table:column id="c_com_raze_coleadmin_catalog_TipoAsistencia_nombreTipoAsistencia" property="nombreTipoAsistencia" z="iMIvZmpMslxAuvgcnyMw86g/FfI="/>
+            <table:column id="c_com_raze_coleadmin_catalog_TipoAsistencia_descripcion" property="descripcion" z="GkTrU8a2MDiEG+cbQnmDpWLu2pQ="/>
+            <table:column id="c_com_raze_coleadmin_catalog_TipoAsistencia_usuarioCrea" property="usuarioCrea" z="FcDMG6CVkWtRmqR3iV/06NLpeQA="/>
+            <table:column id="c_com_raze_coleadmin_catalog_TipoAsistencia_usuarioModifica" property="usuarioModifica" z="sQr9TmlhRws+mtYrRsPLceyOfLE="/>
+            <table:column date="true" dateTimePattern="${tipoAsistencia_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_TipoAsistencia_fechaCreacion" property="fechaCreacion" z="qmkHTPtLIKmOob5m2vmhq7mgoY0="/>
+            <table:column date="true" dateTimePattern="${tipoAsistencia_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_TipoAsistencia_fechaModificacion" property="fechaModificacion" z="Kk+8KwUSKUAT4c5GmYzrir24YaM="/>
+        </table:table>
+    </page:list>
+</div>

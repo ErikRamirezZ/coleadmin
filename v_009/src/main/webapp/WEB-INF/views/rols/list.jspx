@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_catalog_Rol" items="${rols}" z="Xz1gXz0pvT9m5EWeOgtmQnAEY8o=">
+        <table:table data="${rols}" id="l_com_raze_coleadmin_catalog_Rol" path="/rols" z="eMTrFxRhem/Poo5Q5X7xk5o2AJM=">
+            <table:column id="c_com_raze_coleadmin_catalog_Rol_nombreRol" property="nombreRol" z="82LULZLKNKzUohW2+Rfm2HKMnhg="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Rol_descripcion" property="descripcion" z="kWw/Ua/l5208ZAPaE2igE66XNa4="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Rol_usuarioCrea" property="usuarioCrea" z="200YCqFm6I4XaNC5xxHSVpleF7c="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Rol_usuarioModifica" property="usuarioModifica" z="HihICKz4axDKHLllRLW4o8NuLXg="/>
+            <table:column date="true" dateTimePattern="${rol_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_Rol_fechaCreacion" property="fechaCreacion" z="1Cdy91quUaI/pByfJeASg0MeQHY="/>
+            <table:column date="true" dateTimePattern="${rol_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_Rol_fechaModificacion" property="fechaModificacion" z="JSrdJfUlSh9D9s12hqHEfxbskpc="/>
+        </table:table>
+    </page:list>
+</div>

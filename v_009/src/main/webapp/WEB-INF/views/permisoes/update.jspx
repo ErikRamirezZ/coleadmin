@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_catalog_Permiso" modelAttribute="permiso" path="/permisoes" versionField="Version" z="Rpbt+A31HxTiSKEKwDaI3gCowCg=">
+        <field:input field="nombrePermiso" id="c_com_raze_coleadmin_catalog_Permiso_nombrePermiso" required="true" z="wl3sjjtmPuAe/rEIK37+dfUSr/8="/>
+        <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_Permiso_descripcion" z="t2kgc6yMGPh20tOowFpYSUT9tVo="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Permiso_usuarioCrea" validationMessageCode="field_invalid_integer" z="Io3sStxTmFwhNG/Snpyoy/NgOVI="/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Permiso_usuarioModifica" validationMessageCode="field_invalid_integer" z="fg5EO4BEwkghss2zjEWGRR2hGKU="/>
+        <field:datetime dateTimePattern="${permiso_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Permiso_fechaCreacion" z="vTH1qA5KGTU5BeakGU32XUmLu2E="/>
+        <field:datetime dateTimePattern="${permiso_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Permiso_fechaModificacion" z="W39T8sZLwugnVDxMA2o+/Ukg5T4="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Permiso_activo" z="DG3exFbGO4knSwDtbKBs8pIyOuI="/>
+    </form:update>
+</div>

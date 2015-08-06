@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Grupo" object="${grupo}" path="/grupoes" z="FYUcSzqtCQH2ZgwA7MjJnAuvGMk=">
+        <field:display field="curso" id="s_com_raze_coleadmin_domain_Grupo_curso" object="${grupo}" z="2Hb3PmQnMz2mZ668LkIFjjKnuHE="/>
+        <field:display field="nombreGrupo" id="s_com_raze_coleadmin_domain_Grupo_nombreGrupo" object="${grupo}" z="C78jVcDZVGWSxSxF4H1Lp1jTEiM="/>
+        <field:display field="salon" id="s_com_raze_coleadmin_domain_Grupo_salon" object="${grupo}" z="At8n/ZwoVL6DU39/ZpUMpnK7/30="/>
+        <field:display field="descripcion" id="s_com_raze_coleadmin_domain_Grupo_descripcion" object="${grupo}" z="kZUc8/xopcS8rMJkiKaOhdktFRQ="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Grupo_usuarioCrea" object="${grupo}" z="M5ox2QSeh0KJvpwYUX3DGKr70kE="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Grupo_usuarioModifica" object="${grupo}" z="V5Ra/GdGMZAQgHhw48ZSbSapb4c="/>
+        <field:display date="true" dateTimePattern="${grupo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Grupo_fechaCreacion" object="${grupo}" z="3BFU7jZOrTiCETn67G7EWPFhV1Y="/>
+        <field:display date="true" dateTimePattern="${grupo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Grupo_fechaModificacion" object="${grupo}" z="Wnxr/CmGQkkX2ZLWUFNZjrN9aXM="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Grupo_activo" object="${grupo}" z="kT679dMgpVfiINC8If8I0iQt9TU="/>
+    </page:show>
+</div>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_ConfiguracionCurso" modelAttribute="configuracionCurso" path="/configuracioncursoes" versionField="Version" z="hrpy6WhseGV/vTtnET2L5AKv+sE=">
+        <field:select field="curso" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_curso" itemValue="id" items="${cursoes}" multiple="true" path="/cursoes" required="true" z="uAfBMn2M3kBjGanRpgr85tfeuXU="/>
+        <field:input field="cuotaInscripcion" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_cuotaInscripcion" required="true" validationMessageCode="field_invalid_number" z="vYyWMCUzfqVXaTbQ5iyHE+PYYNo="/>
+        <field:input field="cuotaMensual" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_cuotaMensual" required="true" validationMessageCode="field_invalid_number" z="uKj/Xvqd4PWBuhzHf07/b78zFjY="/>
+        <field:input field="seguro" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_seguro" validationMessageCode="field_invalid_number" z="8WdpMj9EYs7wjRxU/5U4J8uHiJs="/>
+        <field:input field="cuotaPadres" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_cuotaPadres" validationMessageCode="field_invalid_number" z="U+lpOopsYoas8wnpLz1Q7uVaId0="/>
+        <field:input field="credencial" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_credencial" validationMessageCode="field_invalid_number" z="wkR1qMKvrSeCSwxDvhBv+qXVTwM="/>
+        <field:input field="otro" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_otro" validationMessageCode="field_invalid_number" z="RDFGlJeJtChsibYL3WtLfy9DfzM="/>
+        <field:input field="diaCorte" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_diaCorte" validationMessageCode="field_invalid_integer" z="eW/dlGfgDDaELQatH8IQfYQU9+0="/>
+        <field:input field="numeroDiasParaPagar" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_numeroDiasParaPagar" validationMessageCode="field_invalid_integer" z="Pxu5UsiKTTCMrwib/7x7KBP/1Fw="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_usuarioCrea" validationMessageCode="field_invalid_integer" z="ESsXBkancNDf8pqtwGzz3ZpNj/w="/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_usuarioModifica" validationMessageCode="field_invalid_integer" z="m7cXZ77BS/g/4G8a+H00kQy54EU="/>
+        <field:datetime dateTimePattern="${configuracionCurso_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_fechaCreacion" z="V1p0i5hcuAY7COpUsPNU10FhdRY="/>
+        <field:datetime dateTimePattern="${configuracionCurso_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_fechaModificacion" z="Cg8sy8iXjcuQjVg+YizLipdtkk4="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_activo" z="v6gvkiaeHlNvcmCWYgmVe0ysLEk="/>
+    </form:update>
+</div>
