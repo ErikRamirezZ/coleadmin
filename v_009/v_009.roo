@@ -1,4 +1,3 @@
-// Spring Roo 1.3.0.RELEASE [rev f425090] log opened at 2015-05-31 08:36:14
 project --topLevelPackage com.raze.coleadmin --projectName coleadmin
 
 jpa setup --provider HIBERNATE --database MYSQL --databaseName coleadmin --userName root
@@ -149,11 +148,12 @@ field string --fieldName talla
 field string --fieldName peso
 field string --fieldName alergias
 field string --fieldName observaciones --sizeMax 250
-
+field set --fieldName roles --type ~.catalog.Rol
 
 // Padre
 field set --fieldName hijos --type ~.domain.Alumno --notNull --class ~.domain.Padre
 field reference --fieldName escuela --type ~.domain.Escuela --notNull
+field set --fieldName roles --type ~.catalog.Rol
 
 
 // Docente
@@ -290,6 +290,7 @@ field boolean --fieldName activo
 // Rol
 field string --fieldName nombreRol --notNull --class ~.catalog.Rol
 field string --fieldName descripcion
+field set --fieldName permisos --type ~.catalog.Permiso
 
 field number --fieldName usuarioCrea --type java.lang.Long
 field number --fieldName usuarioModifica --type java.lang.Long

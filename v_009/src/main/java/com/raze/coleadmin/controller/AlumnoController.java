@@ -2,6 +2,7 @@ package com.raze.coleadmin.controller;
 import com.raze.coleadmin.domain.Alumno;
 import com.raze.coleadmin.service.AlumnoService;
 import com.raze.coleadmin.service.EscuelaService;
+import com.raze.coleadmin.service.RolService;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +14,7 @@ import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.roo.addon.web.mvc.controller.json.RooWebJson;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -25,9 +27,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.util.UriComponentsBuilder;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
+import org.springframework.roo.addon.web.mvc.controller.scaffold.RooWebScaffold;
 
+@RooWebJson(jsonObject = Alumno.class)
 @Controller
 @RequestMapping("/alumnoes")
+@RooWebScaffold(path = "alumnoes", formBackingObject = Alumno.class)
 public class AlumnoController {
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET, headers = "Accept=application/json")
@@ -126,6 +131,9 @@ public class AlumnoController {
 	@Autowired
     AlumnoService alumnoService;
 
+	@Autowired
+    RolService rolService;
+
 	@RequestMapping(method = RequestMethod.POST, produces = "text/html")
     public String create(@Valid Alumno alumno, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
@@ -207,6 +215,7 @@ public class AlumnoController {
 	void populateEditForm(Model uiModel, Alumno alumno) {
         uiModel.addAttribute("alumno", alumno);
         addDateTimeFormatPatterns(uiModel);
+        uiModel.addAttribute("rols", rolService.findAllRols());
         uiModel.addAttribute("escuelas", escuelaService.findAllEscuelas());
     }
 

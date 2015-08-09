@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_alumno" z="nHbgP7LBxRMoFKFcN1FUCPv0Zso=">
+            <menu:item id="i_alumno_new" messageCode="global_menu_new" url="/alumnoes?form" z="AD6Q5BvysLZFNs3u5P/gQvQQVi4="/>
+            <menu:item id="i_alumno_list" messageCode="global_menu_list" url="/alumnoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="8BJn7mkV4787yUBFwYY/ZR+urjU="/>
+        </menu:category>
+        <menu:category id="c_asistencia" z="U8KUS4G/hRPnQKlf5U+8tptB5nM=">
+            <menu:item id="i_asistencia_new" messageCode="global_menu_new" url="/asistencias?form" z="B/2X8L/bhAilMmFb2uqYN5vzmOM="/>
+            <menu:item id="i_asistencia_list" messageCode="global_menu_list" url="/asistencias?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nwuXsP9yXNynlVDpFcaeXkicias="/>
+        </menu:category>
+        <menu:category id="c_personal" z="qksA8Df2tqc0i9fnaKGFhQPc3RM=">
+            <menu:item id="i_personal_new" messageCode="global_menu_new" url="/personals?form" z="76pSySg9QYkBB4EZrDiiTsErILQ="/>
+            <menu:item id="i_personal_list" messageCode="global_menu_list" url="/personals?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ShzaiNBcZEHNxu/tOdXerSPaT60="/>
+        </menu:category>
+        <menu:category id="c_cicloescolar" z="+oDzKw5fDHInKANyJXffljrska8=">
+            <menu:item id="i_cicloescolar_new" messageCode="global_menu_new" url="/cicloescolars?form" z="vNk0r00IzMoRwBQ8KqCdcLWpNBg="/>
+            <menu:item id="i_cicloescolar_list" messageCode="global_menu_list" url="/cicloescolars?page=1&amp;size=${empty param.size ? 10 : param.size}" z="UB3moWDLbHtsexAQrtbTCkecak0="/>
+        </menu:category>
+        <menu:category id="c_padre" z="66ZYpJkoJQJz+L9255GsxdIF9KI=">
+            <menu:item id="i_padre_new" messageCode="global_menu_new" url="/padres?form" z="+TwTxs2bNQSYtHpq1aJkj3gO5HI="/>
+            <menu:item id="i_padre_list" messageCode="global_menu_list" url="/padres?page=1&amp;size=${empty param.size ? 10 : param.size}" z="RjE9Q0Uu/NCy9W3W3sOOaw/kI/g="/>
+        </menu:category>
+        <menu:category id="c_alumnogrupo" z="LQiNL5JUZLTYi0MexWkBiPyda48=">
+            <menu:item id="i_alumnogrupo_new" messageCode="global_menu_new" url="/alumnogrupoes?form" z="vde51tCx7M79V8De1QUTdBbps+g="/>
+            <menu:item id="i_alumnogrupo_list" messageCode="global_menu_list" url="/alumnogrupoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="DDHUR10+7LzYw7701Ny/TzlEy5Y="/>
+        </menu:category>
+        <menu:category id="c_grupo" z="aEc7CUb6jPdvenY+zZYtXPTsF6A=">
+            <menu:item id="i_grupo_new" messageCode="global_menu_new" url="/grupoes?form" z="w/Bv5V+m4clKPWr5NSSRzQPz8Nc="/>
+            <menu:item id="i_grupo_list" messageCode="global_menu_list" url="/grupoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="O3uVN41ElSwPLWcQ8uEDcvkEyRc="/>
+        </menu:category>
+        <menu:category id="c_configuracioncurso" z="V2qh4sMr9TFdEE2TpO9HGfkPqn4=">
+            <menu:item id="i_configuracioncurso_new" messageCode="global_menu_new" url="/configuracioncursoes?form" z="BjbB7shi7+vVehGmciQAL4DJvv4="/>
+            <menu:item id="i_configuracioncurso_list" messageCode="global_menu_list" url="/configuracioncursoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="thuwO5Nl69RHPNCrOdX/xIiAkpc="/>
+        </menu:category>
+        <menu:category id="c_curso" z="HZkpr/mFg3Jt16a6Bb8jg2ec7GA=">
+            <menu:item id="i_curso_new" messageCode="global_menu_new" url="/cursoes?form" z="i5hb6h9BZQgF9RE9iqqRTA+wGak="/>
+            <menu:item id="i_curso_list" messageCode="global_menu_list" url="/cursoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="H5eRx2vxkuAYrT5z65L2KRROpNs="/>
+        </menu:category>
+    </menu:menu>
+</div>

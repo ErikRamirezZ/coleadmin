@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_metodopago" z="ivaY1Ww5zsZQWJ84p4lPq713Nf0=" label="Comunicacion">
+            <menu:item id="i_metodopago_new" messageCode="global_menu_new" url="/metodopagoes?form" z="zD6WNqrEpRlwtGZvb/9F1ylZ5jA=" label="Nueva Comunicacion" />
+            <menu:item id="i_metodopago_list" messageCode="global_menu_list" url="/metodopagoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="v3V2nLlh/mJtkbUyrWKGzbA5f8Q=" label="Lista Comunicacion" />
+        </menu:category>
+    </menu:menu>
+</div>

@@ -3,6 +3,7 @@ import com.raze.coleadmin.domain.Padre;
 import com.raze.coleadmin.service.AlumnoService;
 import com.raze.coleadmin.service.EscuelaService;
 import com.raze.coleadmin.service.PadreService;
+import com.raze.coleadmin.service.RolService;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +15,7 @@ import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.roo.addon.web.mvc.controller.json.RooWebJson;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -26,9 +28,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.util.UriComponentsBuilder;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
+import org.springframework.roo.addon.web.mvc.controller.scaffold.RooWebScaffold;
 
+@RooWebJson(jsonObject = Padre.class)
 @Controller
 @RequestMapping("/padres")
+@RooWebScaffold(path = "padres", formBackingObject = Padre.class)
 public class PadreController {
 
 	@Autowired
@@ -36,6 +41,9 @@ public class PadreController {
 
 	@Autowired
     PadreService padreService;
+
+	@Autowired
+    RolService rolService;
 
 	@Autowired
     AlumnoService alumnoService;
@@ -121,6 +129,7 @@ public class PadreController {
 	void populateEditForm(Model uiModel, Padre padre) {
         uiModel.addAttribute("padre", padre);
         addDateTimeFormatPatterns(uiModel);
+        uiModel.addAttribute("rols", rolService.findAllRols());
         uiModel.addAttribute("alumnoes", alumnoService.findAllAlumnoes());
         uiModel.addAttribute("escuelas", escuelaService.findAllEscuelas());
     }

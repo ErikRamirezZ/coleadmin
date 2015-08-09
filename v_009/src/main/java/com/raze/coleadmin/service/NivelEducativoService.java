@@ -1,7 +1,9 @@
 package com.raze.coleadmin.service;
 import com.raze.coleadmin.catalog.NivelEducativo;
 import java.util.List;
+import org.springframework.roo.addon.layers.service.RooService;
 
+@RooService(domainTypes = { com.raze.coleadmin.catalog.NivelEducativo.class })
 public interface NivelEducativoService {
 
 	public abstract long countAllNivelEducativoes();

@@ -1,7 +1,9 @@
 package com.raze.coleadmin.service;
 import com.raze.coleadmin.domain.AlumnoGrupo;
 import java.util.List;
+import org.springframework.roo.addon.layers.service.RooService;
 
+@RooService(domainTypes = { com.raze.coleadmin.domain.AlumnoGrupo.class })
 public interface AlumnoGrupoService {
 
 	public abstract long countAllAlumnoGrupoes();

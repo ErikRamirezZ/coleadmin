@@ -1,6 +1,9 @@
 package com.raze.coleadmin.domain;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.springframework.roo.addon.javabean.RooJavaBean;
+import org.springframework.roo.addon.jpa.entity.RooJpaEntity;
+import org.springframework.roo.addon.tostring.RooToString;
 import com.raze.coleadmin.catalog.Rol;
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
@@ -13,8 +16,13 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 import javax.persistence.ManyToOne;
+import org.springframework.roo.addon.json.RooJson;
 
 @Entity
+@RooJavaBean
+@RooToString
+@RooJpaEntity
+@RooJson(deepSerialize = true)
 public class Personal extends Usuario {
 
     /**

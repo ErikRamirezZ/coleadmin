@@ -5,6 +5,7 @@
     <form:update id="fu_com_raze_coleadmin_catalog_Rol" modelAttribute="rol" path="/rols" versionField="Version" z="UM25tbq7sZOSlVbU9p61kiFaDSM=">
         <field:input field="nombreRol" id="c_com_raze_coleadmin_catalog_Rol_nombreRol" required="true" z="BS2Z6qEhP/VzVljPqFeV6eA9yFE="/>
         <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_Rol_descripcion" z="Z59Kt4WjKTljcDL/4kUVBTwyVVc="/>
+        <field:select field="permisos" id="c_com_raze_coleadmin_catalog_Rol_permisos" itemValue="id" items="${permisoes}" multiple="true" path="/permisoes" z="afW0PRpSWyVCPYoVgqkKi6inHa0="/>
         <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Rol_usuarioCrea" validationMessageCode="field_invalid_integer" z="HIptMWclI4QEFAO8P4I8d/rJoRo="/>
         <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Rol_usuarioModifica" validationMessageCode="field_invalid_integer" z="tHx4S1nmA1ZUvEqd7U3oGRcok+s="/>
         <field:datetime dateTimePattern="${rol_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Rol_fechaCreacion" z="jHg5s2557r9UKMdzxhg8PkDSqAM="/>

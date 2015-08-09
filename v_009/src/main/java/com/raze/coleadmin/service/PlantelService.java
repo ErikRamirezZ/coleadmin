@@ -1,7 +1,9 @@
 package com.raze.coleadmin.service;
 import com.raze.coleadmin.domain.Plantel;
 import java.util.List;
+import org.springframework.roo.addon.layers.service.RooService;
 
+@RooService(domainTypes = { com.raze.coleadmin.domain.Plantel.class })
 public interface PlantelService {
 
 	public abstract long countAllPlantels();

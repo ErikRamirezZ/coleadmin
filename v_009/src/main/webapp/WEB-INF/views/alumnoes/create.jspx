@@ -24,6 +24,7 @@
         <field:input field="peso" id="c_com_raze_coleadmin_domain_Alumno_peso" z="8oXyDfnxLcsHXqlW+33FOZ+/WfY="/>
         <field:input field="alergias" id="c_com_raze_coleadmin_domain_Alumno_alergias" z="PWIwKuJ8wRDIGqEanHM+mooHloc="/>
         <field:textarea field="observaciones" id="c_com_raze_coleadmin_domain_Alumno_observaciones" z="v7BEu+u00td+MUcNKwLLeG1XlaQ="/>
+        <field:select field="roles" id="c_com_raze_coleadmin_domain_Alumno_roles" itemValue="id" items="${rols}" multiple="true" path="/rols" z="jsBMVDS1oQhoN88yzbs9cAEi3rw="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Alumno" render="${not empty dependencies}" z="ByjF+iAelrFx9czO67Q6kSHwbZA="/>
 </div>

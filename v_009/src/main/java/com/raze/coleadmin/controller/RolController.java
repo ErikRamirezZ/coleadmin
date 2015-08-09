@@ -1,5 +1,6 @@
 package com.raze.coleadmin.controller;
 import com.raze.coleadmin.catalog.Rol;
+import com.raze.coleadmin.service.PermisoService;
 import com.raze.coleadmin.service.RolService;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
@@ -11,6 +12,7 @@ import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.roo.addon.web.mvc.controller.json.RooWebJson;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -23,13 +25,19 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.util.UriComponentsBuilder;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
+import org.springframework.roo.addon.web.mvc.controller.scaffold.RooWebScaffold;
 
+@RooWebJson(jsonObject = Rol.class)
 @Controller
 @RequestMapping("/rols")
+@RooWebScaffold(path = "rols", formBackingObject = Rol.class)
 public class RolController {
 
 	@Autowired
     RolService rolService;
+
+	@Autowired
+    PermisoService permisoService;
 
 	@RequestMapping(method = RequestMethod.POST, produces = "text/html")
     public String create(@Valid Rol rol, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
@@ -106,6 +114,7 @@ public class RolController {
 	void populateEditForm(Model uiModel, Rol rol) {
         uiModel.addAttribute("rol", rol);
         addDateTimeFormatPatterns(uiModel);
+        uiModel.addAttribute("permisoes", permisoService.findAllPermisoes());
     }
 
 	String encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

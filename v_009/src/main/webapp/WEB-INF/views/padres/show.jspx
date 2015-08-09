@@ -19,5 +19,6 @@
         <field:display field="activo" id="s_com_raze_coleadmin_domain_Padre_activo" object="${padre}" z="WrSq8oG80eMwMOxgK7QxLw7gh3M="/>
         <field:display field="hijos" id="s_com_raze_coleadmin_domain_Padre_hijos" object="${padre}" z="FOEAKMzGN8MkeQ0loP9A3SyZ7Ms="/>
         <field:display field="escuela" id="s_com_raze_coleadmin_domain_Padre_escuela" object="${padre}" z="bUtEsOk/asHvY2UndFsx+cxuJuY="/>
+        <field:display field="roles" id="s_com_raze_coleadmin_domain_Padre_roles" object="${padre}" z="vGwF6INGbN4ixwnyV3M05vaXHeY="/>
     </page:show>
 </div>

@@ -1,6 +1,9 @@
 package com.raze.coleadmin.domain;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.springframework.roo.addon.javabean.RooJavaBean;
+import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
+import org.springframework.roo.addon.tostring.RooToString;
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
 import javax.validation.constraints.NotNull;
@@ -21,10 +24,16 @@ import javax.persistence.Version;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.Lob;
+import org.springframework.roo.classpath.operations.jsr303.RooUploadedFile;
+import org.springframework.roo.addon.json.RooJson;
 import org.springframework.transaction.annotation.Transactional;
 
 @Configurable
 @Entity
+@RooJavaBean
+@RooToString
+@RooJpaActiveRecord
+@RooJson(deepSerialize = true)
 public abstract class Usuario {
 
     /**
@@ -69,6 +78,7 @@ public abstract class Usuario {
 
     /**
      */
+    @RooUploadedFile(contentType = "image/jpeg", autoUpload = true)
     @Lob
     private byte[] foto;
 

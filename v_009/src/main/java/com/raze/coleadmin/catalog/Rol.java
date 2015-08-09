@@ -1,23 +1,35 @@
 package com.raze.coleadmin.catalog;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.springframework.roo.addon.javabean.RooJavaBean;
+import org.springframework.roo.addon.jpa.entity.RooJpaEntity;
+import org.springframework.roo.addon.tostring.RooToString;
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
 import javax.validation.constraints.NotNull;
 import java.util.Collection;
-import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.Version;
+import java.util.Date;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.Version;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.roo.addon.json.RooJson;
 
 @Entity
+@RooJavaBean
+@RooToString
+@RooJpaEntity
+@RooJson(deepSerialize = true)
 public class Rol {
 
     /**
@@ -28,6 +40,11 @@ public class Rol {
     /**
      */
     private String descripcion;
+
+    /**
+     */
+    @ManyToMany(cascade = CascadeType.ALL)
+    private Set<Permiso> permisos = new HashSet<Permiso>();
 
     /**
      */
@@ -92,6 +109,14 @@ public class Rol {
 
 	public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+	public Set<Permiso> getPermisos() {
+        return this.permisos;
+    }
+
+	public void setPermisos(Set<Permiso> permisos) {
+        this.permisos = permisos;
     }
 
 	public Long getUsuarioCrea() {

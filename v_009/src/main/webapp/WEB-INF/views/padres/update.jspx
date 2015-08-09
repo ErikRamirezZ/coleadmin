@@ -19,5 +19,6 @@
         <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Padre_activo" z="0bc+KuGCesDDPatnJTJl5i47ErM="/>
         <field:select field="hijos" id="c_com_raze_coleadmin_domain_Padre_hijos" itemValue="id" items="${alumnoes}" multiple="true" path="/alumnoes" required="true" z="Z3gUHSOaBQFKpkQmpIMzQo8hVqA="/>
         <field:select field="escuela" id="c_com_raze_coleadmin_domain_Padre_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="cAflH/8YmNetcWQIrMql0VrsqDE="/>
+        <field:select field="roles" id="c_com_raze_coleadmin_domain_Padre_roles" itemValue="id" items="${rols}" multiple="true" path="/rols" z="vPYKHNxHiz7hZqP35oOFntqOsu8="/>
     </form:update>
 </div>

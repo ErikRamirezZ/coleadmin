@@ -5,6 +5,7 @@
     <page:show id="ps_com_raze_coleadmin_catalog_Rol" object="${rol}" path="/rols" z="shB7KECN3N+MDVwRhZ8PeES7rdQ=">
         <field:display field="nombreRol" id="s_com_raze_coleadmin_catalog_Rol_nombreRol" object="${rol}" z="rICFhZsW1RX9g9ul4e5x7iQWRv8="/>
         <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_Rol_descripcion" object="${rol}" z="OTp42ohXUKd2h2aUYsc88zJqK3U="/>
+        <field:display field="permisos" id="s_com_raze_coleadmin_catalog_Rol_permisos" object="${rol}" z="crB8rwDA5m3VPPfeEuwatUQUspU="/>
         <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Rol_usuarioCrea" object="${rol}" z="OZCITPRipmDnV5/DmFhKP0CtOfg="/>
         <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Rol_usuarioModifica" object="${rol}" z="HJHFyd22UcpH43r/HKmuB+GiOrg="/>
         <field:display date="true" dateTimePattern="${rol_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Rol_fechaCreacion" object="${rol}" z="xQbg7MjysYIVR9AFv+E2dmKwqV0="/>

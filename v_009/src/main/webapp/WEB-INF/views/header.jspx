@@ -1,11 +1,49 @@
-<div id="header" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:spring="http://www.springframework.org/tags" version="2.0">
-  <jsp:directive.page contentType="text/html;charset=UTF-8" />
-  <jsp:output omit-xml-declaration="yes" />
+<div id="header" xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:spring="http://www.springframework.org/tags" version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
 
-  <spring:url var="banner" value="/resources/images/banner-graphic.png" />
-  <spring:url var="home" value="/" />
-  <spring:message code="button_home" var="home_label" htmlEscape="false" />
-  <a href="${home}" name="${fn:escapeXml(home_label)}" title="${fn:escapeXml(home_label)}">
-    <img src="${banner}" />
-  </a>
-</div> 
+	<!-- <spring:url var="jquery_url"
+		value="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" />
+	<script type="text/javascript" src="${jquery_url}"> -->
+	<!-- required for FF3 and Opera -->
+		
+	<!-- </script> -->
+
+	<!-- <spring:url var="alphabet_url"
+		value="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js" />
+	<script type="text/javascript" src="${alphabet_url}"> -->
+	<!-- required for FF3 and Opera -->
+		
+	<!-- </script> -->
+	
+    <!-- <div id="content_canvan">
+	   <canvas id="myCanvas" style="margin-left:100px;" height="100px" width="800px"></canvas>
+	</div>
+	<spring:url var="bubbles_url"
+		value="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js" />
+	<script type="text/javascript" src="${bubbles_url}"> -->
+	<!-- required for FF3 and Opera -->
+		
+	<!-- </script> -->
+
+	<!-- <spring:url var="bubbleWords_url"
+		value="/resources/scripts/bubbleWords.js" />
+	<script type="text/javascript" src="${bubbleWords_url}"> -->
+	<!-- required for FF3 and Opera -->
+		
+	<!-- </script> -->
+
+
+
+	<spring:url var="banner" value="/resources/images/coleadmin.png" />
+	<spring:url var="home" value="/" />
+	<spring:message code="button_home" var="home_label" htmlEscape="false" />
+	<a href="${home}" name="${fn:escapeXml(home_label)}"
+		title="${fn:escapeXml(home_label)}"> <img src="${banner}" />
+	</a>
+
+
+</div>

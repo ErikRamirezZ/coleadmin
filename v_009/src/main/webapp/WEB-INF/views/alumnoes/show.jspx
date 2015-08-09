@@ -24,5 +24,6 @@
         <field:display field="peso" id="s_com_raze_coleadmin_domain_Alumno_peso" object="${alumno}" z="gHMwRJf6wIWjDa2PPipj8QnWnOA="/>
         <field:display field="alergias" id="s_com_raze_coleadmin_domain_Alumno_alergias" object="${alumno}" z="D/CEjaO7N2zdC+KJVb1WLR0J+pI="/>
         <field:display field="observaciones" id="s_com_raze_coleadmin_domain_Alumno_observaciones" object="${alumno}" z="K/RJ6PbHzWRhjiO2+jMKWYmetoo="/>
+        <field:display field="roles" id="s_com_raze_coleadmin_domain_Alumno_roles" object="${alumno}" z="8iB6mzCdaZWrWZYkwzXZDeb6R00="/>
     </page:show>
 </div>

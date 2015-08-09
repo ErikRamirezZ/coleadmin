@@ -1,16 +1,29 @@
 package com.raze.coleadmin.domain;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.springframework.roo.addon.javabean.RooJavaBean;
+import org.springframework.roo.addon.jpa.entity.RooJpaEntity;
+import org.springframework.roo.addon.tostring.RooToString;
+import javax.validation.constraints.NotNull;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.Size;
+import com.raze.coleadmin.catalog.Rol;
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
-import javax.validation.constraints.NotNull;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.validation.constraints.Size;
+import javax.persistence.ManyToMany;
+import org.springframework.roo.addon.json.RooJson;
 
 @Entity
+@RooJavaBean
+@RooToString
+@RooJpaEntity
+@RooJson(deepSerialize = true)
 public class Alumno extends Usuario {
 
     /**
@@ -44,6 +57,11 @@ public class Alumno extends Usuario {
      */
     @Size(max = 250)
     private String observaciones;
+
+    /**
+     */
+    @ManyToMany(cascade = CascadeType.ALL)
+    private Set<Rol> roles = new HashSet<Rol>();
 
 	public String getCurp() {
         return this.curp;
@@ -99,6 +117,14 @@ public class Alumno extends Usuario {
 
 	public void setObservaciones(String observaciones) {
         this.observaciones = observaciones;
+    }
+
+	public Set<Rol> getRoles() {
+        return this.roles;
+    }
+
+	public void setRoles(Set<Rol> roles) {
+        this.roles = roles;
     }
 
 	public String toString() {

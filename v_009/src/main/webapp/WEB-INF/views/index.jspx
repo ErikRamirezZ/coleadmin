@@ -1,14 +1,116 @@
-<div xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+<div xmlns:spring="http://www.springframework.org/tags" 
+	xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" 
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:security="http://www.springframework.org/security/tags" version="2.0">
   <jsp:directive.page contentType="text/html;charset=UTF-8" />
   <jsp:output omit-xml-declaration="yes" />
   <spring:message var="app_name" code="application_name" htmlEscape="false" />
   <spring:message var="title" code="welcome_titlepane" arguments="${app_name}" htmlEscape="false" />
-  <util:panel id="title" title="${title}">
-    <h3>
-      <spring:message code="welcome_h3" arguments="${app_name}" />
-    </h3>
-    <p>
-      <spring:message code="welcome_text" />
-    </p>
-  </util:panel>
+  	<util:panel id="title" title="${title}">
+	    <h3>
+	      <spring:message code="welcome_h3" arguments="${app_name}" />
+	    </h3>
+	    <p>
+	      <spring:message code="welcome_text" />
+	    </p>
+    
+    	<spring:url
+			value="/resources/images/iconathon_federal-government_simple-black_64x64.png"
+			var="admon_url" />
+		<spring:url
+			value="/resources/images/classica_pie-chart_simple-black_96x96.png"
+			var="reports_url" />
+		<spring:url
+			value="/resources/images/iconathon_bribery_simple-black_96x96.png"
+			var="money_url" />
+		<spring:url
+			value="/resources/images/ocha_activity-advocacy_simple-black_96x96.png"
+			var="comunication_url" />
+
+		<spring:url value="/resources/styles/main_menu.css"
+			var="main_menu_url" />
+		<link rel="stylesheet" type="text/css" href="${main_menu_url}" />
+
+
+		<h3>
+			<security:authentication property="principal" var="x"/>
+			<spring:message code="welcome_h3" arguments="${x.username}" />
+		</h3>
+		
+		<p>
+			<spring:message code="welcome_text" />
+		</p>
+
+		<div class="content">
+			<ul class="ca-menu">
+				<li><spring:url value="/administracion" var="admon_menu_url" />
+					<a href="${admon_menu_url}"> <span class="ca-icon"><img
+							src="${admon_url}" alt="admon" /></span>
+						<div class="ca-content">
+							<h2 class="ca-main">Administracion</h2>
+							<h3 class="ca-sub">Menu Admon</h3>
+						</div>
+				</a></li>
+				<li><spring:url value="/colegiaturas" var="money_menu_url" />
+					<a href="${money_menu_url}"> <span class="ca-icon"><img
+							src="${money_url}" alt="money" /></span>
+						<div class="ca-content">
+							<h2 class="ca-main">Colegiaturas, Inscripciones y Pagos</h2>
+							<h3 class="ca-sub">Advanced use of technology</h3>
+						</div>
+				</a></li>
+				<li><spring:url value="/comunicacion"
+						var="comunication_menu_url" /> <a href="${comunication_menu_url}">
+						<span class="ca-icon" id="heart"><img
+							src="${comunication_url}" alt="comunication" /></span>
+						<div class="ca-content">
+							<h2 class="ca-main">Comunicacion</h2>
+							<h3 class="ca-sub">Comunicacion</h3>
+						</div>
+				</a></li>
+				<li><spring:url value="/reportes" var="reports_menu_url" /> <a
+					href="${reports_menu_url}"> <span class="ca-icon"><img
+							src="${reports_url}" alt="reportes" /></span>
+						<div class="ca-content">
+							<h2 class="ca-main">Reportes</h2>
+							<h3 class="ca-sub">Reportes</h3>
+						</div>
+				</a></li>
+				<!-- 
+				<li><spring:url value="/super" var="super_menu_url" /> <a
+					href="${super_menu_url}"> <span class="ca-icon"><img
+							src="${reports_url}" alt="reportes" /></span>
+						<div class="ca-content">
+							<h2 class="ca-main">Super</h2>
+							<h3 class="ca-sub">Admon</h3>
+						</div>
+				</a></li>
+				-->
+			</ul>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+    
+    
+    
+	</util:panel>
 </div>
