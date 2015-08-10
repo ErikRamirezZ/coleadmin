@@ -5,10 +5,10 @@
     <page:show id="ps_com_raze_coleadmin_catalog_NivelEducativo" object="${niveleducativo}" path="/niveleducativoes" z="95O55LsLMCEQqo80L5c72CdF/9A=">
         <field:display field="nombreNivelEducativo" id="s_com_raze_coleadmin_catalog_NivelEducativo_nombreNivelEducativo" object="${niveleducativo}" z="EulGfNTdTjxm9UKjFObiFO3geJU="/>
         <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_NivelEducativo_descripcion" object="${niveleducativo}" z="6kt4A3ZnbgUqrcx2WT8IMOuSM3o="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_NivelEducativo_usuarioCrea" object="${niveleducativo}" z="CkTZ3XVYytE+sac1yYMed6ZGNjU="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_NivelEducativo_usuarioModifica" object="${niveleducativo}" z="uYqQuGdbcQrxPFXBXht64yhAQ90="/>
-        <field:display date="true" dateTimePattern="${nivelEducativo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_NivelEducativo_fechaCreacion" object="${niveleducativo}" z="BulOg1fw5/eyTrjvn6oUtrz1rUU="/>
-        <field:display date="true" dateTimePattern="${nivelEducativo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_NivelEducativo_fechaModificacion" object="${niveleducativo}" z="4vX2JFWLBpH4bWmiNVNWVQgGJZk="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_catalog_NivelEducativo_activo" object="${niveleducativo}" z="SbI63E6UA2SGB/9l+aCE0cxyQvQ="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_NivelEducativo_usuarioCrea" object="${niveleducativo}" z="CkTZ3XVYytE+sac1yYMed6ZGNjU=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_NivelEducativo_usuarioModifica" object="${niveleducativo}" z="uYqQuGdbcQrxPFXBXht64yhAQ90=" render="false"/>
+        <field:display date="true" dateTimePattern="${nivelEducativo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_NivelEducativo_fechaCreacion" object="${niveleducativo}" z="BulOg1fw5/eyTrjvn6oUtrz1rUU=" render="false"/>
+        <field:display date="true" dateTimePattern="${nivelEducativo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_NivelEducativo_fechaModificacion" object="${niveleducativo}" z="4vX2JFWLBpH4bWmiNVNWVQgGJZk=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_NivelEducativo_activo" object="${niveleducativo}" z="SbI63E6UA2SGB/9l+aCE0cxyQvQ=" render="false"/>
     </page:show>
 </div>

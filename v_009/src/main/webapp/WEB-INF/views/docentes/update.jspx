@@ -12,12 +12,12 @@
         <field:input field="telefono" id="c_com_raze_coleadmin_domain_Docente_telefono" z="rq4JqweNs/UooYRFLQShN+i2odM="/>
         <field:datetime dateTimePattern="${docente_fechanacimiento_date_format}" field="fechaNacimiento" id="c_com_raze_coleadmin_domain_Docente_fechaNacimiento" z="XWgnnqLkmMSz6eITNphsZbG8dHc="/>
         <field:textarea field="foto" id="c_com_raze_coleadmin_domain_Docente_foto" z="uxyyK+PpaPTWSVEDfDwBs8tjpIg="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Docente_usuarioCrea" validationMessageCode="field_invalid_integer" z="qlQvPTIYd82yGuoPokOdTmXEYrg="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Docente_usuarioModifica" validationMessageCode="field_invalid_integer" z="DxKhOp5knwh9Caaay0BAhNAMfUM="/>
-        <field:datetime dateTimePattern="${docente_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Docente_fechaCreacion" z="y5N/0MlZDx9OhEuvqQ1iD1bGAtU="/>
-        <field:datetime dateTimePattern="${docente_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Docente_fechaModificacion" z="KZoDaHm0/SmrI6h6J6hqDMLpnj4="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Docente_activo" z="F7glbU+F2AoLQExzNNOk6Xw0mAo="/>
         <field:select field="roles" id="c_com_raze_coleadmin_domain_Docente_roles" itemValue="id" items="${rols}" multiple="true" path="/rols" required="true" z="Azdbto3qQXFJmTIkY7KAmtRESXU="/>
         <field:select field="escuela" id="c_com_raze_coleadmin_domain_Docente_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="8uTYzOeqYJiuiz87mngES0BYrqY="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Docente_usuarioCrea" validationMessageCode="field_invalid_integer" z="qlQvPTIYd82yGuoPokOdTmXEYrg=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Docente_usuarioModifica" validationMessageCode="field_invalid_integer" z="DxKhOp5knwh9Caaay0BAhNAMfUM=" render="false"/>
+        <field:datetime dateTimePattern="${docente_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Docente_fechaCreacion" z="y5N/0MlZDx9OhEuvqQ1iD1bGAtU=" render="false"/>
+        <field:datetime dateTimePattern="${docente_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Docente_fechaModificacion" z="KZoDaHm0/SmrI6h6J6hqDMLpnj4=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Docente_activo" z="F7glbU+F2AoLQExzNNOk6Xw0mAo=" render="false"/>
     </form:update>
 </div>

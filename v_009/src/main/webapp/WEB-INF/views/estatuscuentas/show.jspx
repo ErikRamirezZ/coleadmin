@@ -5,10 +5,10 @@
     <page:show id="ps_com_raze_coleadmin_catalog_EstatusCuenta" object="${estatuscuenta}" path="/estatuscuentas" z="pjgS3EmbjSP8Hkrrbgt3DN8/JJs=">
         <field:display field="nombreEstatusCuenta" id="s_com_raze_coleadmin_catalog_EstatusCuenta_nombreEstatusCuenta" object="${estatuscuenta}" z="ejfBr6u7bA/esOlCACthje0A1Lg="/>
         <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_EstatusCuenta_descripcion" object="${estatuscuenta}" z="9Vw3PCmVqhTOMZKftI5HZRExUok="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_EstatusCuenta_usuarioCrea" object="${estatuscuenta}" z="nxi73vufKtxZFAivxhF6S1m2SSc="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_EstatusCuenta_usuarioModifica" object="${estatuscuenta}" z="aSY65QUvRzbp2ogLQWjiUW1KrO0="/>
-        <field:display date="true" dateTimePattern="${estatusCuenta_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_EstatusCuenta_fechaCreacion" object="${estatuscuenta}" z="ZPnmpZvGnKYyBn0iJi/Hj4yfaNQ="/>
-        <field:display date="true" dateTimePattern="${estatusCuenta_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_EstatusCuenta_fechaModificacion" object="${estatuscuenta}" z="lBKhoq5MhT+qSXOl62F3SCN8vtk="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_catalog_EstatusCuenta_activo" object="${estatuscuenta}" z="6QHBRmq1ROdVeH98z3oLjsSmtrE="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_EstatusCuenta_usuarioCrea" object="${estatuscuenta}" z="nxi73vufKtxZFAivxhF6S1m2SSc=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_EstatusCuenta_usuarioModifica" object="${estatuscuenta}" z="aSY65QUvRzbp2ogLQWjiUW1KrO0=" render="false"/>
+        <field:display date="true" dateTimePattern="${estatusCuenta_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_EstatusCuenta_fechaCreacion" object="${estatuscuenta}" z="ZPnmpZvGnKYyBn0iJi/Hj4yfaNQ=" render="false"/>
+        <field:display date="true" dateTimePattern="${estatusCuenta_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_EstatusCuenta_fechaModificacion" object="${estatuscuenta}" z="lBKhoq5MhT+qSXOl62F3SCN8vtk=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_EstatusCuenta_activo" object="${estatuscuenta}" z="6QHBRmq1ROdVeH98z3oLjsSmtrE=" render="false"/>
     </page:show>
 </div>

@@ -7,10 +7,10 @@
         <field:input field="nombre" id="c_com_raze_coleadmin_domain_CicloEscolar_nombre" required="true" z="Yv1gsHWA3soin4iPOqJLhYH1Q8c="/>
         <field:datetime dateTimePattern="${cicloEscolar_fechainicio_date_format}" field="fechaInicio" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaInicio" z="LvVVXMD6PHY2xDY5TD0rDCdgRsg="/>
         <field:datetime dateTimePattern="${cicloEscolar_fechafin_date_format}" field="fechaFin" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaFin" z="LwoBIbGQszVM+sVVAnN89RyrJu0="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_CicloEscolar_usuarioCrea" validationMessageCode="field_invalid_integer" z="I9TOBvtQaSfoVS3bU+Tgf5srnyk="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_CicloEscolar_usuarioModifica" validationMessageCode="field_invalid_integer" z="ER7QTSU5EiBFici3JvR1eHkJ1b0="/>
-        <field:datetime dateTimePattern="${cicloEscolar_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaCreacion" z="TPdLail6Vz+wwPj6S/5hQM1c+k0="/>
-        <field:datetime dateTimePattern="${cicloEscolar_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaModificacion" z="rX0ulyz3nB/8Hn2IeYn9PD5IYwk="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_CicloEscolar_activo" z="69jnS6c0pQMBSytJDHBj3kpBLpM="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_CicloEscolar_usuarioCrea" validationMessageCode="field_invalid_integer" z="I9TOBvtQaSfoVS3bU+Tgf5srnyk=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_CicloEscolar_usuarioModifica" validationMessageCode="field_invalid_integer" z="ER7QTSU5EiBFici3JvR1eHkJ1b0=" render="false"/>
+        <field:datetime dateTimePattern="${cicloEscolar_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaCreacion" z="TPdLail6Vz+wwPj6S/5hQM1c+k0=" render="false"/>
+        <field:datetime dateTimePattern="${cicloEscolar_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaModificacion" z="rX0ulyz3nB/8Hn2IeYn9PD5IYwk=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_CicloEscolar_activo" z="69jnS6c0pQMBSytJDHBj3kpBLpM=" render="false"/>
     </form:update>
 </div>

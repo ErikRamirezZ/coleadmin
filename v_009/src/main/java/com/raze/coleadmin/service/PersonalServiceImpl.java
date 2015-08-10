@@ -2,7 +2,9 @@ package com.raze.coleadmin.service;
 
 import com.raze.coleadmin.domain.Personal;
 import com.raze.coleadmin.repository.PersonalRepository;
+
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,4 +43,9 @@ public class PersonalServiceImpl implements PersonalService {
 	public Personal updatePersonal(Personal personal) {
         return personalRepository.save(personal);
     }
+
+	@Override
+	public Personal findPersonalByCorreoE(String correoE) {
+		return personalRepository.findByCorreoE(correoE);
+	}
 }

@@ -6,10 +6,10 @@
         <table:table data="${cursoes}" id="l_com_raze_coleadmin_domain_Curso" path="/cursoes" z="2H0ULLONhU9X5nwm8Wr3v5IYh1w=">
             <table:column id="c_com_raze_coleadmin_domain_Curso_cicloEscolar" property="cicloEscolar" z="6l0u2JugCVHNvBjRR4CgYl4U6vY="/>
             <table:column id="c_com_raze_coleadmin_domain_Curso_nombre" property="nombre" z="ioeLoT6uzqDrTnpHek7zUVR8YU0="/>
-            <table:column id="c_com_raze_coleadmin_domain_Curso_usuarioCrea" property="usuarioCrea" z="l8oc+l0Vad8Kmfc2C0g3sQ0nSIA="/>
-            <table:column id="c_com_raze_coleadmin_domain_Curso_usuarioModifica" property="usuarioModifica" z="FdzqPFWrsGIx25wnRkK/PuzIQbY="/>
-            <table:column date="true" dateTimePattern="${curso_fechacreacion_date_format}" id="c_com_raze_coleadmin_domain_Curso_fechaCreacion" property="fechaCreacion" z="9oO2Vk0ArvHrxdaWgPFiTmYAJ8k="/>
-            <table:column date="true" dateTimePattern="${curso_fechamodificacion_date_format}" id="c_com_raze_coleadmin_domain_Curso_fechaModificacion" property="fechaModificacion" z="zCMTK8dg747ZMZqGstrjwgCsd2Y="/>
+            <table:column id="c_com_raze_coleadmin_domain_Curso_usuarioCrea" property="usuarioCrea" z="l8oc+l0Vad8Kmfc2C0g3sQ0nSIA=" render="false"/>
+            <table:column id="c_com_raze_coleadmin_domain_Curso_usuarioModifica" property="usuarioModifica" z="FdzqPFWrsGIx25wnRkK/PuzIQbY=" render="false"/>
+            <table:column date="true" dateTimePattern="${curso_fechacreacion_date_format}" id="c_com_raze_coleadmin_domain_Curso_fechaCreacion" property="fechaCreacion" z="9oO2Vk0ArvHrxdaWgPFiTmYAJ8k=" render="false"/>
+            <table:column date="true" dateTimePattern="${curso_fechamodificacion_date_format}" id="c_com_raze_coleadmin_domain_Curso_fechaModificacion" property="fechaModificacion" z="zCMTK8dg747ZMZqGstrjwgCsd2Y=" render="false"/>
         </table:table>
     </page:list>
 </div>

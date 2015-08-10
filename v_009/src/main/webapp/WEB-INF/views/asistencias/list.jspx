@@ -6,10 +6,10 @@
         <table:table data="${asistencias}" id="l_com_raze_coleadmin_domain_Asistencia" path="/asistencias" z="03mcMM13dlcTk6lpW9W77TaeFaU=">
             <table:column id="c_com_raze_coleadmin_domain_Asistencia_alumno" property="alumno" z="oevzaRFJG7f7RB4AwweKofRLr3M="/>
             <table:column id="c_com_raze_coleadmin_domain_Asistencia_tipoAsistencia" property="tipoAsistencia" z="FdgmOFNRxDWPMeh4E7VsGGKtSHk="/>
-            <table:column id="c_com_raze_coleadmin_domain_Asistencia_usuarioCrea" property="usuarioCrea" z="rCL4BV/TkUXWAX3jDLW30dCXgAw="/>
-            <table:column id="c_com_raze_coleadmin_domain_Asistencia_usuarioModifica" property="usuarioModifica" z="y+YQeeAx6x338vKZIclmEuNloUo="/>
-            <table:column date="true" dateTimePattern="${asistencia_fechacreacion_date_format}" id="c_com_raze_coleadmin_domain_Asistencia_fechaCreacion" property="fechaCreacion" z="SBPr6i1v8BfiQNIxGPK6HLsiO9Q="/>
-            <table:column date="true" dateTimePattern="${asistencia_fechamodificacion_date_format}" id="c_com_raze_coleadmin_domain_Asistencia_fechaModificacion" property="fechaModificacion" z="pcUZgPTA1loFnV+cQ+11YfBVgW0="/>
+            <table:column id="c_com_raze_coleadmin_domain_Asistencia_usuarioCrea" property="usuarioCrea" z="rCL4BV/TkUXWAX3jDLW30dCXgAw=" render="false"/>
+            <table:column id="c_com_raze_coleadmin_domain_Asistencia_usuarioModifica" property="usuarioModifica" z="y+YQeeAx6x338vKZIclmEuNloUo=" render="false"/>
+            <table:column date="true" dateTimePattern="${asistencia_fechacreacion_date_format}" id="c_com_raze_coleadmin_domain_Asistencia_fechaCreacion" property="fechaCreacion" z="SBPr6i1v8BfiQNIxGPK6HLsiO9Q=" render="false"/>
+            <table:column date="true" dateTimePattern="${asistencia_fechamodificacion_date_format}" id="c_com_raze_coleadmin_domain_Asistencia_fechaModificacion" property="fechaModificacion" z="pcUZgPTA1loFnV+cQ+11YfBVgW0=" render="false"/>
         </table:table>
     </page:list>
 </div>

@@ -8,10 +8,10 @@
         <field:display field="monto" id="s_com_raze_coleadmin_catalog_Concepto_monto" object="${concepto}" z="U1na7Qfp2HcTLJ+0dqaZhPmXSN4="/>
         <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_Concepto_descripcion" object="${concepto}" z="piKtUEZ80p+HfWX6gcCW95egHMk="/>
         <field:display field="imagen" id="s_com_raze_coleadmin_catalog_Concepto_imagen" object="${concepto}" z="Mj0ozYAnL12iXf3cBC/g33a4MN8="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Concepto_usuarioCrea" object="${concepto}" z="5Ij4eR/lRKuvqaJKigjNxgsH1vA="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Concepto_usuarioModifica" object="${concepto}" z="zdMMKjZSwa76K+id7SD+5LBU1f4="/>
-        <field:display date="true" dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Concepto_fechaCreacion" object="${concepto}" z="zNzELYqJDx7OOOE3qkmxKRrZgj0="/>
-        <field:display date="true" dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Concepto_fechaModificacion" object="${concepto}" z="C8KKaAvQXhe8BpUM9/CWHGjZfUM="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Concepto_activo" object="${concepto}" z="iS1hzh9XFMC7tT4Y2jj6mc0nv7Q="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Concepto_usuarioCrea" object="${concepto}" z="5Ij4eR/lRKuvqaJKigjNxgsH1vA=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Concepto_usuarioModifica" object="${concepto}" z="zdMMKjZSwa76K+id7SD+5LBU1f4=" render="false"/>
+        <field:display date="true" dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Concepto_fechaCreacion" object="${concepto}" z="zNzELYqJDx7OOOE3qkmxKRrZgj0=" render="false"/>
+        <field:display date="true" dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Concepto_fechaModificacion" object="${concepto}" z="C8KKaAvQXhe8BpUM9/CWHGjZfUM=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Concepto_activo" object="${concepto}" z="iS1hzh9XFMC7tT4Y2jj6mc0nv7Q=" render="false"/>
     </page:show>
 </div>

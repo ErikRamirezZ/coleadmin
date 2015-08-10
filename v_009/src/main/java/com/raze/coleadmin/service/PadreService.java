@@ -1,9 +1,8 @@
 package com.raze.coleadmin.service;
 import com.raze.coleadmin.domain.Padre;
-import java.util.List;
-import org.springframework.roo.addon.layers.service.RooService;
 
-@RooService(domainTypes = { com.raze.coleadmin.domain.Padre.class })
+import java.util.List;
+
 public interface PadreService {
 
 	public abstract long countAllPadres();
@@ -25,5 +24,8 @@ public interface PadreService {
 
 
 	public abstract Padre updatePadre(Padre padre);
+
+
+	public abstract Padre findPadreByCorreoE(String correoE);
 
 }

@@ -6,10 +6,10 @@
         <field:display field="alumno" id="s_com_raze_coleadmin_domain_AlumnoGrupo_alumno" object="${alumnogrupo}" z="UCxndKvLsr9XAFwEOzNdnPtlmz0="/>
         <field:display field="grupo" id="s_com_raze_coleadmin_domain_AlumnoGrupo_grupo" object="${alumnogrupo}" z="YGXlpzri8K1SCd7V+pysZl+5OyQ="/>
         <field:display field="observaciones" id="s_com_raze_coleadmin_domain_AlumnoGrupo_observaciones" object="${alumnogrupo}" z="z/p+SmbqD3iNARD7WnLIB/+SqI0="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_AlumnoGrupo_usuarioCrea" object="${alumnogrupo}" z="UQp7yAKbIYemGIO/Vt61KjmmLIA="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_AlumnoGrupo_usuarioModifica" object="${alumnogrupo}" z="KAYQ0CSxwn/jGc6Orz8Dlj6of5k="/>
-        <field:display date="true" dateTimePattern="${alumnoGrupo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_AlumnoGrupo_fechaCreacion" object="${alumnogrupo}" z="GRswafmJsZ21woY7ffpg6gZX0Jg="/>
-        <field:display date="true" dateTimePattern="${alumnoGrupo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_AlumnoGrupo_fechaModificacion" object="${alumnogrupo}" z="zQMEL4pwt4DsUl2rJ3TKlkNd23U="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_AlumnoGrupo_activo" object="${alumnogrupo}" z="uJgbUmScn4Xg5rkyD8L+0k6BQm8="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_AlumnoGrupo_usuarioCrea" object="${alumnogrupo}" z="UQp7yAKbIYemGIO/Vt61KjmmLIA=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_AlumnoGrupo_usuarioModifica" object="${alumnogrupo}" z="KAYQ0CSxwn/jGc6Orz8Dlj6of5k=" render="false"/>
+        <field:display date="true" dateTimePattern="${alumnoGrupo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_AlumnoGrupo_fechaCreacion" object="${alumnogrupo}" z="GRswafmJsZ21woY7ffpg6gZX0Jg=" render="false"/>
+        <field:display date="true" dateTimePattern="${alumnoGrupo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_AlumnoGrupo_fechaModificacion" object="${alumnogrupo}" z="zQMEL4pwt4DsUl2rJ3TKlkNd23U=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_AlumnoGrupo_activo" object="${alumnogrupo}" z="uJgbUmScn4Xg5rkyD8L+0k6BQm8=" render="false"/>
     </page:show>
 </div>

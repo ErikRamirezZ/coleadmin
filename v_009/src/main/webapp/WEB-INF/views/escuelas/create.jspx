@@ -8,11 +8,11 @@
         <field:input field="clave" id="c_com_raze_coleadmin_domain_Escuela_clave" z="/Q/5M61X3GQFiZo4l5QyyUpSDOE="/>
         <field:input field="razonSocial" id="c_com_raze_coleadmin_domain_Escuela_razonSocial" z="Wi2s1wCmXIOvMMdLausqhMGtlek="/>
         <field:textarea field="logo" id="c_com_raze_coleadmin_domain_Escuela_logo" z="j2zUNAhXZ1XZGCl8XVuouVx5qps="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Escuela_usuarioCrea" validationMessageCode="field_invalid_integer" z="F/AW66sGEucdJLVxhDu8gRfNKZs="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Escuela_usuarioModifica" validationMessageCode="field_invalid_integer" z="SynU798mp7cyJjQf3OhF0dTL3mI="/>
-        <field:datetime dateTimePattern="${escuela_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Escuela_fechaCreacion" z="5w4iP533uBscUwtPymVoTdwEwAA="/>
-        <field:datetime dateTimePattern="${escuela_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Escuela_fechaModificacion" z="X5lB2t6b7ikCxHVoK6XqrIrT3+4="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Escuela_activo" z="+KiGe8965HNo+mSpsvVWhANVPdc="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Escuela_usuarioCrea" validationMessageCode="field_invalid_integer" z="F/AW66sGEucdJLVxhDu8gRfNKZs=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Escuela_usuarioModifica" validationMessageCode="field_invalid_integer" z="SynU798mp7cyJjQf3OhF0dTL3mI=" render="false"/>
+        <field:datetime dateTimePattern="${escuela_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Escuela_fechaCreacion" z="5w4iP533uBscUwtPymVoTdwEwAA=" render="false"/>
+        <field:datetime dateTimePattern="${escuela_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Escuela_fechaModificacion" z="X5lB2t6b7ikCxHVoK6XqrIrT3+4=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Escuela_activo" z="+KiGe8965HNo+mSpsvVWhANVPdc=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Escuela" render="${not empty dependencies}" z="AK8UZEH9d85U62A8RBF4Wo2h34g="/>
 </div>

@@ -12,13 +12,13 @@
         <field:input field="telefono" id="c_com_raze_coleadmin_domain_Padre_telefono" z="hYWXxV9PFkTUDVkj9udPukxpIHg="/>
         <field:datetime dateTimePattern="${padre_fechanacimiento_date_format}" field="fechaNacimiento" id="c_com_raze_coleadmin_domain_Padre_fechaNacimiento" z="7KUBDwv02/tu13YU9BjFxPbsMok="/>
         <field:textarea field="foto" id="c_com_raze_coleadmin_domain_Padre_foto" z="iaJcEAYvpDxZX0KILyuqYfb27iI="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Padre_usuarioCrea" validationMessageCode="field_invalid_integer" z="r2gK2z2g3bpqKKsAk8qnsH2Bgug="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Padre_usuarioModifica" validationMessageCode="field_invalid_integer" z="13YuflLU0i5foUtMYgB9iR8nH3o="/>
-        <field:datetime dateTimePattern="${padre_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Padre_fechaCreacion" z="Gq0UPvg1d4CwWLsvB+8RNNaIe0g="/>
-        <field:datetime dateTimePattern="${padre_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Padre_fechaModificacion" z="d5xuBLt0pf7Mi/iNk08KrPz6zu0="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Padre_activo" z="0bc+KuGCesDDPatnJTJl5i47ErM="/>
         <field:select field="hijos" id="c_com_raze_coleadmin_domain_Padre_hijos" itemValue="id" items="${alumnoes}" multiple="true" path="/alumnoes" required="true" z="Z3gUHSOaBQFKpkQmpIMzQo8hVqA="/>
         <field:select field="escuela" id="c_com_raze_coleadmin_domain_Padre_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="cAflH/8YmNetcWQIrMql0VrsqDE="/>
         <field:select field="roles" id="c_com_raze_coleadmin_domain_Padre_roles" itemValue="id" items="${rols}" multiple="true" path="/rols" z="vPYKHNxHiz7hZqP35oOFntqOsu8="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Padre_usuarioCrea" validationMessageCode="field_invalid_integer" z="r2gK2z2g3bpqKKsAk8qnsH2Bgug=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Padre_usuarioModifica" validationMessageCode="field_invalid_integer" z="13YuflLU0i5foUtMYgB9iR8nH3o=" render="false"/>
+        <field:datetime dateTimePattern="${padre_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Padre_fechaCreacion" z="Gq0UPvg1d4CwWLsvB+8RNNaIe0g=" render="false"/>
+        <field:datetime dateTimePattern="${padre_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Padre_fechaModificacion" z="d5xuBLt0pf7Mi/iNk08KrPz6zu0=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Padre_activo" z="0bc+KuGCesDDPatnJTJl5i47ErM=" render="false"/>
     </form:update>
 </div>

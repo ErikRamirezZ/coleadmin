@@ -6,10 +6,10 @@
         <table:table data="${tipoconceptoes}" id="l_com_raze_coleadmin_catalog_TipoConcepto" path="/tipoconceptoes" z="KeQoeoC7nzgbtFgLWONWcd0sEo8=">
             <table:column id="c_com_raze_coleadmin_catalog_TipoConcepto_nombreTipoConcepto" property="nombreTipoConcepto" z="5v8naBkzD4+jm20bXH/YLyChqHk="/>
             <table:column id="c_com_raze_coleadmin_catalog_TipoConcepto_descripcion" property="descripcion" z="8HH4FQHFQP4yhFX1hRJmLvqH7sY="/>
-            <table:column id="c_com_raze_coleadmin_catalog_TipoConcepto_usuarioCrea" property="usuarioCrea" z="joKN7qHBglGw44gkuOURCK39+kg="/>
-            <table:column id="c_com_raze_coleadmin_catalog_TipoConcepto_usuarioModifica" property="usuarioModifica" z="epzeM0x7tp3jBJdFjQlckUXF8vI="/>
-            <table:column date="true" dateTimePattern="${tipoConcepto_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_TipoConcepto_fechaCreacion" property="fechaCreacion" z="CLsrpopMcW++1+dTaZJop0KNajE="/>
-            <table:column date="true" dateTimePattern="${tipoConcepto_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_TipoConcepto_fechaModificacion" property="fechaModificacion" z="bgDd7cDh5L3Q193t1ytIS40HT18="/>
+            <table:column id="c_com_raze_coleadmin_catalog_TipoConcepto_usuarioCrea" property="usuarioCrea" z="joKN7qHBglGw44gkuOURCK39+kg=" render="false"/>
+            <table:column id="c_com_raze_coleadmin_catalog_TipoConcepto_usuarioModifica" property="usuarioModifica" z="epzeM0x7tp3jBJdFjQlckUXF8vI=" render="false"/>
+            <table:column date="true" dateTimePattern="${tipoConcepto_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_TipoConcepto_fechaCreacion" property="fechaCreacion" z="CLsrpopMcW++1+dTaZJop0KNajE=" render="false"/>
+            <table:column date="true" dateTimePattern="${tipoConcepto_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_TipoConcepto_fechaModificacion" property="fechaModificacion" z="bgDd7cDh5L3Q193t1ytIS40HT18=" render="false"/>
         </table:table>
     </page:list>
 </div>

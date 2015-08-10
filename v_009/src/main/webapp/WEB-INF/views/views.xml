@@ -29,7 +29,7 @@
 	</definition>
 
 
-	<definition extends="default" name="index">
+	<definition extends="public" name="index">
 		<put-attribute name="body" value="/WEB-INF/views/index.jspx" />
 	</definition>
 

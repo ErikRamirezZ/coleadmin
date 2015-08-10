@@ -1,9 +1,6 @@
 package com.raze.coleadmin.domain;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.springframework.roo.addon.javabean.RooJavaBean;
-import org.springframework.roo.addon.jpa.entity.RooJpaEntity;
-import org.springframework.roo.addon.tostring.RooToString;
 import javax.persistence.ManyToOne;
 import java.util.Collection;
 import java.util.Date;
@@ -21,14 +18,8 @@ import com.raze.coleadmin.catalog.MetodoPago;
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
 import javax.persistence.Lob;
-import org.springframework.roo.classpath.operations.jsr303.RooUploadedFile;
-import org.springframework.roo.addon.json.RooJson;
 
 @Entity
-@RooJavaBean
-@RooToString
-@RooJpaEntity
-@RooJson(deepSerialize = true)
 public class PagoEscuela {
 
     /**
@@ -49,7 +40,6 @@ public class PagoEscuela {
 
     /**
      */
-    @RooUploadedFile(contentType = "image/jpeg", autoUpload = true)
     @Lob
     private byte[] comprobantePago;
 

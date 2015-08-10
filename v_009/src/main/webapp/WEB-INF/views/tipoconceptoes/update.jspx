@@ -5,10 +5,10 @@
     <form:update id="fu_com_raze_coleadmin_catalog_TipoConcepto" modelAttribute="tipoConcepto" path="/tipoconceptoes" versionField="Version" z="q6HMzcgxJtqz4pbf4Q66+tFf5w8=">
         <field:input field="nombreTipoConcepto" id="c_com_raze_coleadmin_catalog_TipoConcepto_nombreTipoConcepto" required="true" z="b3b+3A9bA8aHqRlySG+fh60H2Uo="/>
         <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_TipoConcepto_descripcion" z="QS3n0r0rbGDMfdI3wOo+a8+F+9k="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_TipoConcepto_usuarioCrea" validationMessageCode="field_invalid_integer" z="TIbUjy8nFMQHLchHy6g/TjQyQ+c="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_TipoConcepto_usuarioModifica" validationMessageCode="field_invalid_integer" z="mSw+Ta5jHfgJrf2OgGdF+Vfu284="/>
-        <field:datetime dateTimePattern="${tipoConcepto_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_TipoConcepto_fechaCreacion" z="h5DHziijGxRPvSQYft0bgECCzW4="/>
-        <field:datetime dateTimePattern="${tipoConcepto_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_TipoConcepto_fechaModificacion" z="GTWmkMapUap/+PBNbDvXXUq4XdY="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_TipoConcepto_activo" z="Ds2Zt2TWa8tdx9Ffb5F2rtLn1d4="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_TipoConcepto_usuarioCrea" validationMessageCode="field_invalid_integer" z="TIbUjy8nFMQHLchHy6g/TjQyQ+c=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_TipoConcepto_usuarioModifica" validationMessageCode="field_invalid_integer" z="mSw+Ta5jHfgJrf2OgGdF+Vfu284=" render="false"/>
+        <field:datetime dateTimePattern="${tipoConcepto_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_TipoConcepto_fechaCreacion" z="h5DHziijGxRPvSQYft0bgECCzW4=" render="false"/>
+        <field:datetime dateTimePattern="${tipoConcepto_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_TipoConcepto_fechaModificacion" z="GTWmkMapUap/+PBNbDvXXUq4XdY=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_TipoConcepto_activo" z="Ds2Zt2TWa8tdx9Ffb5F2rtLn1d4=" render="false"/>
     </form:update>
 </div>

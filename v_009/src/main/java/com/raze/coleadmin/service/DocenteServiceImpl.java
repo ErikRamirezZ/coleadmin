@@ -2,7 +2,9 @@ package com.raze.coleadmin.service;
 
 import com.raze.coleadmin.domain.Docente;
 import com.raze.coleadmin.repository.DocenteRepository;
+
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,4 +43,9 @@ public class DocenteServiceImpl implements DocenteService {
 	public Docente updateDocente(Docente docente) {
         return docenteRepository.save(docente);
     }
+
+	@Override
+	public Docente findDocenteByCorreoE(String correoE) {
+		return docenteRepository.findByCorreoE(correoE);
+	}
 }

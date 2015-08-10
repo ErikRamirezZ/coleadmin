@@ -1,9 +1,6 @@
 package com.raze.coleadmin.catalog;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.springframework.roo.addon.javabean.RooJavaBean;
-import org.springframework.roo.addon.jpa.entity.RooJpaEntity;
-import org.springframework.roo.addon.tostring.RooToString;
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
 import javax.persistence.Column;
@@ -14,20 +11,14 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Lob;
 import javax.persistence.Version;
-import org.springframework.roo.classpath.operations.jsr303.RooUploadedFile;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.roo.addon.json.RooJson;
 
 @Entity
-@RooJavaBean
-@RooToString
-@RooJpaEntity
-@RooJson(deepSerialize = true)
 public class Concepto {
 
     /**
@@ -49,7 +40,6 @@ public class Concepto {
 
     /**
      */
-    @RooUploadedFile(contentType = "image/jpeg", autoUpload = true)
     @Lob
     private byte[] imagen;
 

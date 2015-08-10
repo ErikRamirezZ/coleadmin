@@ -7,9 +7,9 @@
             <table:column id="c_com_raze_coleadmin_catalog_Rol_nombreRol" property="nombreRol" z="82LULZLKNKzUohW2+Rfm2HKMnhg="/>
             <table:column id="c_com_raze_coleadmin_catalog_Rol_descripcion" property="descripcion" z="kWw/Ua/l5208ZAPaE2igE66XNa4="/>
             <table:column id="c_com_raze_coleadmin_catalog_Rol_permisos" property="permisos" z="ScISsjWejKIIcl4G+OGiusbLsEE="/>
-            <table:column id="c_com_raze_coleadmin_catalog_Rol_usuarioCrea" property="usuarioCrea" z="200YCqFm6I4XaNC5xxHSVpleF7c="/>
-            <table:column id="c_com_raze_coleadmin_catalog_Rol_usuarioModifica" property="usuarioModifica" z="HihICKz4axDKHLllRLW4o8NuLXg="/>
-            <table:column date="true" dateTimePattern="${rol_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_Rol_fechaCreacion" property="fechaCreacion" z="1Cdy91quUaI/pByfJeASg0MeQHY="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Rol_usuarioCrea" property="usuarioCrea" z="200YCqFm6I4XaNC5xxHSVpleF7c=" render="false"/>
+            <table:column id="c_com_raze_coleadmin_catalog_Rol_usuarioModifica" property="usuarioModifica" z="HihICKz4axDKHLllRLW4o8NuLXg=" render="false"/>
+            <table:column date="true" dateTimePattern="${rol_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_Rol_fechaCreacion" property="fechaCreacion" z="1Cdy91quUaI/pByfJeASg0MeQHY=" render="false"/>
         </table:table>
     </page:list>
 </div>

@@ -2,7 +2,9 @@ package com.raze.coleadmin.service;
 
 import com.raze.coleadmin.domain.Padre;
 import com.raze.coleadmin.repository.PadreRepository;
+
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,4 +43,9 @@ public class PadreServiceImpl implements PadreService {
 	public Padre updatePadre(Padre padre) {
         return padreRepository.save(padre);
     }
+
+	@Override
+	public Padre findPadreByCorreoE(String correoE) {
+		return padreRepository.findByCorreoE(correoE);
+	}
 }

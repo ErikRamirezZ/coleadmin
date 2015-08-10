@@ -9,7 +9,7 @@
             <table:column id="c_com_raze_coleadmin_domain_Escuela_clave" property="clave" z="lw9i8lZhJSLwhQELjSCH1kE23mo="/>
             <table:column id="c_com_raze_coleadmin_domain_Escuela_razonSocial" property="razonSocial" z="P85W0sq2AE5/Vw9sMl0BhuEUzFo="/>
             <table:column id="c_com_raze_coleadmin_domain_Escuela_logo" property="logo" z="Mpoez1oIFzlbT9jEXOJGK3c8uNo="/>
-            <table:column id="c_com_raze_coleadmin_domain_Escuela_usuarioCrea" property="usuarioCrea" z="Q5KWKeVkRhR4AR46sWTxS+iLSUQ="/>
+            <table:column id="c_com_raze_coleadmin_domain_Escuela_usuarioCrea" property="usuarioCrea" z="Q5KWKeVkRhR4AR46sWTxS+iLSUQ=" render="false"/>
         </table:table>
     </page:list>
 </div>

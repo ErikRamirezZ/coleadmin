@@ -12,12 +12,12 @@
         <field:display field="telefono" id="s_com_raze_coleadmin_domain_Personal_telefono" object="${personal}" z="Kz7F2+zjb5EhPLAONbigHnAN2Zc="/>
         <field:display date="true" dateTimePattern="${personal_fechanacimiento_date_format}" field="fechaNacimiento" id="s_com_raze_coleadmin_domain_Personal_fechaNacimiento" object="${personal}" z="izL/YGzgktgpna/8GF/s4TViOho="/>
         <field:display field="foto" id="s_com_raze_coleadmin_domain_Personal_foto" object="${personal}" z="Nf0ZvhBBCdMLKIys/bPjIgGi4Hc="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Personal_usuarioCrea" object="${personal}" z="aujwAUk2AM5EBde0DXvOPDqWdJQ="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Personal_usuarioModifica" object="${personal}" z="tT2mNHTgbJoXltcW2N7kOFaNCPA="/>
-        <field:display date="true" dateTimePattern="${personal_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Personal_fechaCreacion" object="${personal}" z="wF55Js4wRrGDvIoUdSsQnAIWw/k="/>
-        <field:display date="true" dateTimePattern="${personal_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Personal_fechaModificacion" object="${personal}" z="KvWOsOyPyo2f9qzd5GLtLUQfYgk="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Personal_activo" object="${personal}" z="fbyowJVM9S8GUcsU+3OfaKJFmYQ="/>
         <field:display field="roles" id="s_com_raze_coleadmin_domain_Personal_roles" object="${personal}" z="NsKNTc+Z5PBKEKN88aup2oGr+yo="/>
         <field:display field="escuela" id="s_com_raze_coleadmin_domain_Personal_escuela" object="${personal}" z="+TFXMI5lRh5MPMn563LG0bXFZwI="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Personal_usuarioCrea" object="${personal}" z="aujwAUk2AM5EBde0DXvOPDqWdJQ=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Personal_usuarioModifica" object="${personal}" z="tT2mNHTgbJoXltcW2N7kOFaNCPA=" render="false"/>
+        <field:display date="true" dateTimePattern="${personal_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Personal_fechaCreacion" object="${personal}" z="wF55Js4wRrGDvIoUdSsQnAIWw/k=" render="false"/>
+        <field:display date="true" dateTimePattern="${personal_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Personal_fechaModificacion" object="${personal}" z="KvWOsOyPyo2f9qzd5GLtLUQfYgk=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Personal_activo" object="${personal}" z="fbyowJVM9S8GUcsU+3OfaKJFmYQ=" render="false"/>
     </page:show>
 </div>

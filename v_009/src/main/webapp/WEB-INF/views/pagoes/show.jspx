@@ -9,10 +9,10 @@
         <field:display field="total" id="s_com_raze_coleadmin_domain_Pago_total" object="${pago}" z="+CTRZnpevcEzCfxhd9bZopP8AtE="/>
         <field:display date="true" dateTimePattern="${pago_fechacargo_date_format}" field="fechaCargo" id="s_com_raze_coleadmin_domain_Pago_fechaCargo" object="${pago}" z="zBGipOTg9fymKcjMhhMW4q6pRVo="/>
         <field:display field="fuePagoOportuno" id="s_com_raze_coleadmin_domain_Pago_fuePagoOportuno" object="${pago}" z="As+YcNwISEjpPmIdJEHkKSordKM="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Pago_usuarioCrea" object="${pago}" z="g9pAKlU9iapYX5seS4D8ICyq3/k="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Pago_usuarioModifica" object="${pago}" z="NsyGWK1QaCNK8OW3ecZfXF8pGFw="/>
-        <field:display date="true" dateTimePattern="${pago_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Pago_fechaCreacion" object="${pago}" z="Tn/X7IRybjauHUAyzTHvZ8YGSpI="/>
-        <field:display date="true" dateTimePattern="${pago_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Pago_fechaModificacion" object="${pago}" z="J6uQ3iBwLGxnUiRPW7hJ8CETwRg="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Pago_activo" object="${pago}" z="L0dhSvDoQJq/ABRELMT2ffkKSqQ="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Pago_usuarioCrea" object="${pago}" z="g9pAKlU9iapYX5seS4D8ICyq3/k=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Pago_usuarioModifica" object="${pago}" z="NsyGWK1QaCNK8OW3ecZfXF8pGFw=" render="false"/>
+        <field:display date="true" dateTimePattern="${pago_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Pago_fechaCreacion" object="${pago}" z="Tn/X7IRybjauHUAyzTHvZ8YGSpI=" render="false"/>
+        <field:display date="true" dateTimePattern="${pago_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Pago_fechaModificacion" object="${pago}" z="J6uQ3iBwLGxnUiRPW7hJ8CETwRg=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Pago_activo" object="${pago}" z="L0dhSvDoQJq/ABRELMT2ffkKSqQ=" render="false"/>
     </page:show>
 </div>

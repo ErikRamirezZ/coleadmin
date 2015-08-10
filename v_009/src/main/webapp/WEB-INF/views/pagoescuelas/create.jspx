@@ -7,11 +7,11 @@
         <field:datetime dateTimePattern="${pagoEscuela_fechapago_date_format}" field="fechaPago" id="c_com_raze_coleadmin_domain_PagoEscuela_fechaPago" z="ohNPm03eVnkHW90V0oFNKJvlkuM="/>
         <field:select field="metodoPago" id="c_com_raze_coleadmin_domain_PagoEscuela_metodoPago" itemValue="id" items="${metodopagoes}" path="/metodopagoes" z="6xiJiYuvhKG37hwosBPYOsEGtuM="/>
         <field:textarea field="comprobantePago" id="c_com_raze_coleadmin_domain_PagoEscuela_comprobantePago" z="3+UR5FgLMebqYqdOlTkp4uY5Z7Q="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_PagoEscuela_usuarioCrea" validationMessageCode="field_invalid_integer" z="Mn+bUqWUfKCFR+huFyW3LjsqOBU="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_PagoEscuela_usuarioModifica" validationMessageCode="field_invalid_integer" z="evQ7KaD7+6rt38JLvVApv+V9oG0="/>
-        <field:datetime dateTimePattern="${pagoEscuela_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_PagoEscuela_fechaCreacion" z="D/O7vFOiwXW1i5YltYdfWbVuXZY="/>
-        <field:datetime dateTimePattern="${pagoEscuela_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_PagoEscuela_fechaModificacion" z="tzkDqauu8IlJI7aIYE0B/g/U1xs="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_PagoEscuela_activo" z="QFl3iymwpeai2TywQy06w0PmI0Y="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_PagoEscuela_usuarioCrea" validationMessageCode="field_invalid_integer" z="Mn+bUqWUfKCFR+huFyW3LjsqOBU=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_PagoEscuela_usuarioModifica" validationMessageCode="field_invalid_integer" z="evQ7KaD7+6rt38JLvVApv+V9oG0=" render="false"/>
+        <field:datetime dateTimePattern="${pagoEscuela_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_PagoEscuela_fechaCreacion" z="D/O7vFOiwXW1i5YltYdfWbVuXZY=" render="false"/>
+        <field:datetime dateTimePattern="${pagoEscuela_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_PagoEscuela_fechaModificacion" z="tzkDqauu8IlJI7aIYE0B/g/U1xs=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_PagoEscuela_activo" z="QFl3iymwpeai2TywQy06w0PmI0Y=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_PagoEscuela" render="${not empty dependencies}" z="+qOSFirK4iO+0Y/KUP4etY/3mhA="/>
 </div>

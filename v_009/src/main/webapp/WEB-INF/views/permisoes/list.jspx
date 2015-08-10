@@ -8,8 +8,8 @@
             <table:column id="c_com_raze_coleadmin_catalog_Permiso_descripcion" property="descripcion" z="K7pQp05NE7lh+/RdYBhOtuq4080="/>
             <table:column id="c_com_raze_coleadmin_catalog_Permiso_usuarioCrea" property="usuarioCrea" z="K+lpPq8kutaAKyz8C3r4x84gr7U="/>
             <table:column id="c_com_raze_coleadmin_catalog_Permiso_usuarioModifica" property="usuarioModifica" z="J72Rbel1wIya6QAte9d8IibnnOc="/>
-            <table:column date="true" dateTimePattern="${permiso_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_Permiso_fechaCreacion" property="fechaCreacion" z="wyT5PortUJvX+uuGQd9B+sI7+Rw="/>
-            <table:column date="true" dateTimePattern="${permiso_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_Permiso_fechaModificacion" property="fechaModificacion" z="Wlbj+yC6sC8kbrxX0mDedXA+c6M="/>
+            <table:column date="true" dateTimePattern="${permiso_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_Permiso_fechaCreacion" property="fechaCreacion" z="wyT5PortUJvX+uuGQd9B+sI7+Rw=" render="false"/>
+            <table:column date="true" dateTimePattern="${permiso_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_Permiso_fechaModificacion" property="fechaModificacion" z="Wlbj+yC6sC8kbrxX0mDedXA+c6M=" render="false"/>
         </table:table>
     </page:list>
 </div>

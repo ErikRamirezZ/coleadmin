@@ -5,10 +5,10 @@
     <form:update id="fu_com_raze_coleadmin_catalog_NivelEducativo" modelAttribute="nivelEducativo" path="/niveleducativoes" versionField="Version" z="BZFJe1E743jI+pQmhX5wF3H94D8=">
         <field:input field="nombreNivelEducativo" id="c_com_raze_coleadmin_catalog_NivelEducativo_nombreNivelEducativo" required="true" z="HA0sq9ZirKcP7WSnKfTsLdGO+zo="/>
         <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_NivelEducativo_descripcion" z="Zmp38NC7VBA6BiKvloC+C7m5E/Y="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_NivelEducativo_usuarioCrea" validationMessageCode="field_invalid_integer" z="800fobIhkKbFXp/CJyd7n+TxZPY="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_NivelEducativo_usuarioModifica" validationMessageCode="field_invalid_integer" z="+fWFguOWITr5EdY6J5gcf+brZgw="/>
-        <field:datetime dateTimePattern="${nivelEducativo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_NivelEducativo_fechaCreacion" z="mm0fn6mEUbx1Y7pXUTWgaw6QvrQ="/>
-        <field:datetime dateTimePattern="${nivelEducativo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_NivelEducativo_fechaModificacion" z="TWn09KHUsb3hXMLM8jE/OFGGlbY="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_NivelEducativo_activo" z="2kws2Sazpyw0xZkMfs34U5/pLAk="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_NivelEducativo_usuarioCrea" validationMessageCode="field_invalid_integer" z="800fobIhkKbFXp/CJyd7n+TxZPY=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_NivelEducativo_usuarioModifica" validationMessageCode="field_invalid_integer" z="+fWFguOWITr5EdY6J5gcf+brZgw=" render="false"/>
+        <field:datetime dateTimePattern="${nivelEducativo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_NivelEducativo_fechaCreacion" z="mm0fn6mEUbx1Y7pXUTWgaw6QvrQ=" render="false"/>
+        <field:datetime dateTimePattern="${nivelEducativo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_NivelEducativo_fechaModificacion" z="TWn09KHUsb3hXMLM8jE/OFGGlbY=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_NivelEducativo_activo" z="2kws2Sazpyw0xZkMfs34U5/pLAk=" render="false"/>
     </form:update>
 </div>

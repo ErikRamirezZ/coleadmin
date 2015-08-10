@@ -5,11 +5,11 @@
     <form:create id="fc_com_raze_coleadmin_catalog_MetodoPago" modelAttribute="metodoPago" path="/metodopagoes" render="${empty dependencies}" z="PM2udiZ1zlH/mTUEjS+oDUan/Zo=">
         <field:input field="nombreMetodoPago" id="c_com_raze_coleadmin_catalog_MetodoPago_nombreMetodoPago" required="true" z="ZkbqxJoiNBNn4K1T+PrsFmEnNao="/>
         <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_MetodoPago_descripcion" z="rk5OIVSvK4hks+bqnuRq0Rr/q7Q="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_MetodoPago_usuarioCrea" validationMessageCode="field_invalid_integer" z="9a7xOEMQiH/PKKGRRQZ03LfC1Ok="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_MetodoPago_usuarioModifica" validationMessageCode="field_invalid_integer" z="nxFqcFVVWepvZ6q3JbtXjHcZU2A="/>
-        <field:datetime dateTimePattern="${metodoPago_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_MetodoPago_fechaCreacion" z="yqceGRC0msu+pd9yU/XiqIVQ/S0="/>
-        <field:datetime dateTimePattern="${metodoPago_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_MetodoPago_fechaModificacion" z="Ves1iIp1Y36mwIaN7f8wkF2K3+s="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_MetodoPago_activo" z="wh27uDuBP2iJMLGV9ZHHEt9QXiI="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_MetodoPago_usuarioCrea" validationMessageCode="field_invalid_integer" z="9a7xOEMQiH/PKKGRRQZ03LfC1Ok=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_MetodoPago_usuarioModifica" validationMessageCode="field_invalid_integer" z="nxFqcFVVWepvZ6q3JbtXjHcZU2A=" render="false"/>
+        <field:datetime dateTimePattern="${metodoPago_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_MetodoPago_fechaCreacion" z="yqceGRC0msu+pd9yU/XiqIVQ/S0=" render="false"/>
+        <field:datetime dateTimePattern="${metodoPago_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_MetodoPago_fechaModificacion" z="Ves1iIp1Y36mwIaN7f8wkF2K3+s=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_MetodoPago_activo" z="wh27uDuBP2iJMLGV9ZHHEt9QXiI=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_catalog_MetodoPago" render="${not empty dependencies}" z="xcWh+6ldgbMEfQGEcjEPriNsp24="/>
 </div>

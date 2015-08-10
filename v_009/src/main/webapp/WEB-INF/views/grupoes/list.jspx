@@ -8,8 +8,8 @@
             <table:column id="c_com_raze_coleadmin_domain_Grupo_nombreGrupo" property="nombreGrupo" z="yNeysNou1FrhHIXuQ4WKkjx4tg4="/>
             <table:column id="c_com_raze_coleadmin_domain_Grupo_salon" property="salon" z="bk3eLZlgNCusyZpqLWpFmhk5TaE="/>
             <table:column id="c_com_raze_coleadmin_domain_Grupo_descripcion" property="descripcion" z="01mUMdcy7UA95CVzyuy7xbj2afo="/>
-            <table:column id="c_com_raze_coleadmin_domain_Grupo_usuarioCrea" property="usuarioCrea" z="HG5BpK4SYwunXsjk8yWqPC4oyW0="/>
-            <table:column id="c_com_raze_coleadmin_domain_Grupo_usuarioModifica" property="usuarioModifica" z="vm9Lgh4R87UsrztgGndncDhuRzo="/>
+            <table:column id="c_com_raze_coleadmin_domain_Grupo_usuarioCrea" property="usuarioCrea" z="HG5BpK4SYwunXsjk8yWqPC4oyW0=" render="false"/>
+            <table:column id="c_com_raze_coleadmin_domain_Grupo_usuarioModifica" property="usuarioModifica" z="vm9Lgh4R87UsrztgGndncDhuRzo=" render="false"/>
         </table:table>
     </page:list>
 </div>

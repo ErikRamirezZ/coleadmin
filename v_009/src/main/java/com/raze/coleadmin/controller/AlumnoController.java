@@ -3,36 +3,44 @@ import com.raze.coleadmin.domain.Alumno;
 import com.raze.coleadmin.service.AlumnoService;
 import com.raze.coleadmin.service.EscuelaService;
 import com.raze.coleadmin.service.RolService;
+
+import java.io.ByteArrayInputStream;
+import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+
+import org.apache.commons.io.IOUtils;
 import org.joda.time.format.DateTimeFormat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.roo.addon.web.mvc.controller.json.RooWebJson;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.ServletRequestDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.support.ByteArrayMultipartFileEditor;
 import org.springframework.web.util.UriComponentsBuilder;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
-import org.springframework.roo.addon.web.mvc.controller.scaffold.RooWebScaffold;
 
-@RooWebJson(jsonObject = Alumno.class)
 @Controller
 @RequestMapping("/alumnoes")
-@RooWebScaffold(path = "alumnoes", formBackingObject = Alumno.class)
 public class AlumnoController {
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET, headers = "Accept=application/json")
@@ -135,7 +143,11 @@ public class AlumnoController {
     RolService rolService;
 
 	@RequestMapping(method = RequestMethod.POST, produces = "text/html")
-    public String create(@Valid Alumno alumno, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
+    public String create(@Valid Alumno alumno, 
+    		BindingResult bindingResult, 
+    		Model uiModel, 
+    		@RequestParam("foto") MultipartFile multipartFile,
+    		HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             populateEditForm(uiModel, alumno);
             return "alumnoes/create";
@@ -229,4 +241,32 @@ public class AlumnoController {
         } catch (UnsupportedEncodingException uee) {}
         return pathSegment;
     }
+	
+	
+	@RequestMapping(value = "/{id}/image", method = RequestMethod.GET)
+    public String showImage(@PathVariable("id") Long id, HttpServletResponse response, Model model) {
+        Alumno alumno = alumnoService.findAlumno(id);
+        if (alumno != null) {
+            byte[] image = alumno.getFoto();
+            if (image != null) {
+                try {
+//                    response.setContentType(logItem.getContentType());
+                    OutputStream out = response.getOutputStream();
+                    IOUtils.copy(new ByteArrayInputStream(image), out);
+                    out.flush();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return null;
+    }
+	
+	@InitBinder
+	protected void initBinder(HttpServletRequest request,
+	        ServletRequestDataBinder binder) throws ServletException {
+	    binder.registerCustomEditor(byte[].class,
+	            new ByteArrayMultipartFileEditor());
+	}
+
 }

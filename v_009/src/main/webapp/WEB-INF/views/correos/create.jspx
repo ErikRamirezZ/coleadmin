@@ -11,11 +11,11 @@
         <field:input field="protocol" id="c_com_raze_coleadmin_catalog_Correo_protocol" z="G+qAdJ42Z9Qp0DqyBE5FK4JVuHs="/>
         <field:input field="subject" id="c_com_raze_coleadmin_catalog_Correo_subject" z="Li3bMdnLVf/wKVDexlYi1CBOuOk="/>
         <field:input field="username" id="c_com_raze_coleadmin_catalog_Correo_username" z="iuHnhVgbju5bfMDy8xgLAScE8jk="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Correo_usuarioCrea" validationMessageCode="field_invalid_integer" z="pCHhwhJ89HDwehVWPNPLvtddhAU="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Correo_usuarioModifica" validationMessageCode="field_invalid_integer" z="f5oAZIhycVyhIO6HKe1hd2+1iZM="/>
-        <field:datetime dateTimePattern="${correo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Correo_fechaCreacion" z="Zsrvzzcj2IQv9rAyzhaoFU234T4="/>
-        <field:datetime dateTimePattern="${correo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Correo_fechaModificacion" z="y9mo2ncdHGt9KdRjcNrWtfc2XIc="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Correo_activo" z="/kkE5py8PJC2iuUsVvx/kHsaCuo="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Correo_usuarioCrea" validationMessageCode="field_invalid_integer" z="pCHhwhJ89HDwehVWPNPLvtddhAU=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Correo_usuarioModifica" validationMessageCode="field_invalid_integer" z="f5oAZIhycVyhIO6HKe1hd2+1iZM=" render="false"/>
+        <field:datetime dateTimePattern="${correo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Correo_fechaCreacion" z="Zsrvzzcj2IQv9rAyzhaoFU234T4=" render="false"/>
+        <field:datetime dateTimePattern="${correo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Correo_fechaModificacion" z="y9mo2ncdHGt9KdRjcNrWtfc2XIc=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Correo_activo" z="/kkE5py8PJC2iuUsVvx/kHsaCuo=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_catalog_Correo" render="${not empty dependencies}" z="m3NzGmOqLnHPHvCVMquz0THkOdI="/>
 </div>

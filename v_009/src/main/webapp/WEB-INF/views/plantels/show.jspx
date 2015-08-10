@@ -11,10 +11,10 @@
         <field:display field="correoE" id="s_com_raze_coleadmin_domain_Plantel_correoE" object="${plantel}" z="Iuoil7SfOT9DtoFhh0kEwf5ivrE="/>
         <field:display field="telefono1" id="s_com_raze_coleadmin_domain_Plantel_telefono1" object="${plantel}" z="McGwqiYFR/bSreLoGyh94EmxIns="/>
         <field:display field="telefono2" id="s_com_raze_coleadmin_domain_Plantel_telefono2" object="${plantel}" z="iRleXnNNhmdiBHO+5TxMZPXMkuw="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Plantel_usuarioCrea" object="${plantel}" z="j2i8MptHZVopYxB9DjxJoGkaT9s="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Plantel_usuarioModifica" object="${plantel}" z="crCr8z2PEvm1T4f6WtSy0f3MGb4="/>
-        <field:display date="true" dateTimePattern="${plantel_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Plantel_fechaCreacion" object="${plantel}" z="Bxp4VR7T2LyczfjjCqi0Jc66XHU="/>
-        <field:display date="true" dateTimePattern="${plantel_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Plantel_fechaModificacion" object="${plantel}" z="1lddKNx7Zp2cKDZLI3KaxtrHoNI="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Plantel_activo" object="${plantel}" z="40HpfDIEXimxusr+ztKEa2DJ3IY="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Plantel_usuarioCrea" object="${plantel}" z="j2i8MptHZVopYxB9DjxJoGkaT9s=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Plantel_usuarioModifica" object="${plantel}" z="crCr8z2PEvm1T4f6WtSy0f3MGb4=" render="false"/>
+        <field:display date="true" dateTimePattern="${plantel_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Plantel_fechaCreacion" object="${plantel}" z="Bxp4VR7T2LyczfjjCqi0Jc66XHU=" render="false"/>
+        <field:display date="true" dateTimePattern="${plantel_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Plantel_fechaModificacion" object="${plantel}" z="1lddKNx7Zp2cKDZLI3KaxtrHoNI=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Plantel_activo" object="${plantel}" z="40HpfDIEXimxusr+ztKEa2DJ3IY=" render="false"/>
     </page:show>
 </div>

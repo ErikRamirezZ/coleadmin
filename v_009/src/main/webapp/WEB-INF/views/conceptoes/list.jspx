@@ -9,7 +9,7 @@
             <table:column id="c_com_raze_coleadmin_catalog_Concepto_monto" property="monto" z="d67XZwYylmyr+vBGXz8ZbNSwdTg="/>
             <table:column id="c_com_raze_coleadmin_catalog_Concepto_descripcion" property="descripcion" z="dMLbAAgvt0cpDg/X4AV9Ho4/ehg="/>
             <table:column id="c_com_raze_coleadmin_catalog_Concepto_imagen" property="imagen" z="pjyYCHy7FxMzGP2rLhMC8lY1dtg="/>
-            <table:column id="c_com_raze_coleadmin_catalog_Concepto_usuarioCrea" property="usuarioCrea" z="4r7C8u1TQ/sC4HdyVrpYd1wSL4U="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Concepto_usuarioCrea" property="usuarioCrea" z="4r7C8u1TQ/sC4HdyVrpYd1wSL4U=" render="false"/>
         </table:table>
     </page:list>
 </div>

@@ -8,10 +8,10 @@
         <field:input field="monto" id="c_com_raze_coleadmin_catalog_Concepto_monto" validationMessageCode="field_invalid_number" z="YA426rR2r1u9ek6rLKIfK81epv0="/>
         <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_Concepto_descripcion" z="oxXoG2/9ByUc7VgTUVc0Nx0d3/8="/>
         <field:textarea field="imagen" id="c_com_raze_coleadmin_catalog_Concepto_imagen" z="/PoBDVye1ajtUAJKeIPGY9FVzCg="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Concepto_usuarioCrea" validationMessageCode="field_invalid_integer" z="4LNvnIvRJIBDfVXxxPDVIe7pWIQ="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Concepto_usuarioModifica" validationMessageCode="field_invalid_integer" z="je3jImaMhrjHQhiOGv38o/2OlUY="/>
-        <field:datetime dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Concepto_fechaCreacion" z="fp5wqytlslcowpyJnmnMkblM00o="/>
-        <field:datetime dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Concepto_fechaModificacion" z="+KI91IZzy8Kw1tt7wAoTNeg31+E="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Concepto_activo" z="W1gAIwzb0DCPTyK9gmFUGaG4D8w="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Concepto_usuarioCrea" validationMessageCode="field_invalid_integer" z="4LNvnIvRJIBDfVXxxPDVIe7pWIQ=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Concepto_usuarioModifica" validationMessageCode="field_invalid_integer" z="je3jImaMhrjHQhiOGv38o/2OlUY=" render="false"/>
+        <field:datetime dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Concepto_fechaCreacion" z="fp5wqytlslcowpyJnmnMkblM00o=" render="false"/>
+        <field:datetime dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Concepto_fechaModificacion" z="+KI91IZzy8Kw1tt7wAoTNeg31+E=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Concepto_activo" z="W1gAIwzb0DCPTyK9gmFUGaG4D8w=" render="false"/>
     </form:update>
 </div>

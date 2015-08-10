@@ -12,11 +12,11 @@
         <field:input field="otro" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_otro" validationMessageCode="field_invalid_number" z="RDFGlJeJtChsibYL3WtLfy9DfzM="/>
         <field:input field="diaCorte" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_diaCorte" validationMessageCode="field_invalid_integer" z="eW/dlGfgDDaELQatH8IQfYQU9+0="/>
         <field:input field="numeroDiasParaPagar" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_numeroDiasParaPagar" validationMessageCode="field_invalid_integer" z="Pxu5UsiKTTCMrwib/7x7KBP/1Fw="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_usuarioCrea" validationMessageCode="field_invalid_integer" z="ESsXBkancNDf8pqtwGzz3ZpNj/w="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_usuarioModifica" validationMessageCode="field_invalid_integer" z="m7cXZ77BS/g/4G8a+H00kQy54EU="/>
-        <field:datetime dateTimePattern="${configuracionCurso_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_fechaCreacion" z="V1p0i5hcuAY7COpUsPNU10FhdRY="/>
-        <field:datetime dateTimePattern="${configuracionCurso_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_fechaModificacion" z="Cg8sy8iXjcuQjVg+YizLipdtkk4="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_activo" z="v6gvkiaeHlNvcmCWYgmVe0ysLEk="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_usuarioCrea" validationMessageCode="field_invalid_integer" z="ESsXBkancNDf8pqtwGzz3ZpNj/w=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_usuarioModifica" validationMessageCode="field_invalid_integer" z="m7cXZ77BS/g/4G8a+H00kQy54EU=" render="false"/>
+        <field:datetime dateTimePattern="${configuracionCurso_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_fechaCreacion" z="V1p0i5hcuAY7COpUsPNU10FhdRY=" render="false"/>
+        <field:datetime dateTimePattern="${configuracionCurso_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_fechaModificacion" z="Cg8sy8iXjcuQjVg+YizLipdtkk4=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_ConfiguracionCurso_activo" z="v6gvkiaeHlNvcmCWYgmVe0ysLEk=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_ConfiguracionCurso" render="${not empty dependencies}" z="6l5ngIIfHtGpVCq7eGCHlhGLU5k="/>
 </div>

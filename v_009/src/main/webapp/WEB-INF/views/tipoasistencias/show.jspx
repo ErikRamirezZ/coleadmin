@@ -5,10 +5,10 @@
     <page:show id="ps_com_raze_coleadmin_catalog_TipoAsistencia" object="${tipoasistencia}" path="/tipoasistencias" z="v346+8zS0xSsL9aPpEpRRbXBYAA=">
         <field:display field="nombreTipoAsistencia" id="s_com_raze_coleadmin_catalog_TipoAsistencia_nombreTipoAsistencia" object="${tipoasistencia}" z="HAg4Rcz5/ziSd7SShKRJR2S/kLA="/>
         <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_TipoAsistencia_descripcion" object="${tipoasistencia}" z="EE2eSwmkdxldz+ZP0348tHbZXm0="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_TipoAsistencia_usuarioCrea" object="${tipoasistencia}" z="sfXqVU7N3c+3P5bZvfcLKatPyF4="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_TipoAsistencia_usuarioModifica" object="${tipoasistencia}" z="QeUpvbHM15OmJkl95uDu+2ZjUwA="/>
-        <field:display date="true" dateTimePattern="${tipoAsistencia_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_TipoAsistencia_fechaCreacion" object="${tipoasistencia}" z="OxODuHaIDIEzOSuNR9bZAMt33zE="/>
-        <field:display date="true" dateTimePattern="${tipoAsistencia_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_TipoAsistencia_fechaModificacion" object="${tipoasistencia}" z="XChtaD4y3nT5el4tpxww50TyOv8="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_catalog_TipoAsistencia_activo" object="${tipoasistencia}" z="X/OrlCVOz0zKax+RxDz9KIzk21o="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_TipoAsistencia_usuarioCrea" object="${tipoasistencia}" z="sfXqVU7N3c+3P5bZvfcLKatPyF4=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_TipoAsistencia_usuarioModifica" object="${tipoasistencia}" z="QeUpvbHM15OmJkl95uDu+2ZjUwA=" render="false"/>
+        <field:display date="true" dateTimePattern="${tipoAsistencia_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_TipoAsistencia_fechaCreacion" object="${tipoasistencia}" z="OxODuHaIDIEzOSuNR9bZAMt33zE=" render="false"/>
+        <field:display date="true" dateTimePattern="${tipoAsistencia_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_TipoAsistencia_fechaModificacion" object="${tipoasistencia}" z="XChtaD4y3nT5el4tpxww50TyOv8=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_TipoAsistencia_activo" object="${tipoasistencia}" z="X/OrlCVOz0zKax+RxDz9KIzk21o=" render="false"/>
     </page:show>
 </div>

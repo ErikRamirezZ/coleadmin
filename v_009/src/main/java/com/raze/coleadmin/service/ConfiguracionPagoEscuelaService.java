@@ -1,9 +1,7 @@
 package com.raze.coleadmin.service;
 import com.raze.coleadmin.domain.ConfiguracionPagoEscuela;
 import java.util.List;
-import org.springframework.roo.addon.layers.service.RooService;
 
-@RooService(domainTypes = { com.raze.coleadmin.domain.ConfiguracionPagoEscuela.class })
 public interface ConfiguracionPagoEscuelaService {
 
 	public abstract long countAllConfiguracionPagoEscuelas();

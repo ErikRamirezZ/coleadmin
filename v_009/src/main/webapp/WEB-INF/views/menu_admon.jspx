@@ -7,6 +7,10 @@
             <menu:item id="i_alumno_new" messageCode="global_menu_new" url="/alumnoes?form" z="AD6Q5BvysLZFNs3u5P/gQvQQVi4="/>
             <menu:item id="i_alumno_list" messageCode="global_menu_list" url="/alumnoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="8BJn7mkV4787yUBFwYY/ZR+urjU="/>
         </menu:category>
+        <menu:category id="c_docente" z="PyyZ+iIqeQcfhSbJUYWGT84wnOA=">
+            <menu:item id="i_docente_new" messageCode="global_menu_new" url="/docentes?form" z="0/JHtXoUV4+BQJv/otDadpqncnM="/>
+            <menu:item id="i_docente_list" messageCode="global_menu_list" url="/docentes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="yj9CNIESIfGwGWs4ry8RSB9QbOM="/>
+        </menu:category>
         <menu:category id="c_asistencia" z="U8KUS4G/hRPnQKlf5U+8tptB5nM=">
             <menu:item id="i_asistencia_new" messageCode="global_menu_new" url="/asistencias?form" z="B/2X8L/bhAilMmFb2uqYN5vzmOM="/>
             <menu:item id="i_asistencia_list" messageCode="global_menu_list" url="/asistencias?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nwuXsP9yXNynlVDpFcaeXkicias="/>

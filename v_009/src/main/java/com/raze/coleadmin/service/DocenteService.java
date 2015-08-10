@@ -1,9 +1,8 @@
 package com.raze.coleadmin.service;
 import com.raze.coleadmin.domain.Docente;
-import java.util.List;
-import org.springframework.roo.addon.layers.service.RooService;
 
-@RooService(domainTypes = { com.raze.coleadmin.domain.Docente.class })
+import java.util.List;
+
 public interface DocenteService {
 
 	public abstract long countAllDocentes();
@@ -25,5 +24,8 @@ public interface DocenteService {
 
 
 	public abstract Docente updateDocente(Docente docente);
+
+
+	public abstract Docente findDocenteByCorreoE(String correoE);
 
 }

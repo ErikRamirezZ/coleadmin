@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
-    <definition extends="default" name="personals/list">
-        <put-attribute name="body" value="/WEB-INF/views/personals/list.jspx"/>
-    </definition>
-<definition extends="default" name="personals/show">
-        <put-attribute name="body" value="/WEB-INF/views/personals/show.jspx"/>
-    </definition>
-<definition extends="default" name="personals/create">
-        <put-attribute name="body" value="/WEB-INF/views/personals/create.jspx"/>
-    </definition>
-<definition extends="default" name="personals/update">
-        <put-attribute name="body" value="/WEB-INF/views/personals/update.jspx"/>
-    </definition>
+	<definition extends="default" name="personals/list">
+		<put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body" value="/WEB-INF/views/personals/list.jspx" />
+	</definition>
+	<definition extends="default" name="personals/show">
+		<put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body" value="/WEB-INF/views/personals/show.jspx" />
+	</definition>
+	<definition extends="default" name="personals/create">
+		<put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/personals/create.jspx" />
+	</definition>
+	<definition extends="default" name="personals/update">
+		<put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/personals/update.jspx" />
+	</definition>
 </tiles-definitions>

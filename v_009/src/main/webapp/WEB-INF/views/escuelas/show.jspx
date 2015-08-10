@@ -8,10 +8,10 @@
         <field:display field="clave" id="s_com_raze_coleadmin_domain_Escuela_clave" object="${escuela}" z="VN6lVW0gKXiDLd3hU3DNhLUdKxo="/>
         <field:display field="razonSocial" id="s_com_raze_coleadmin_domain_Escuela_razonSocial" object="${escuela}" z="CXYGNRKQOGjUMsGrUsanV4sXSgM="/>
         <field:display field="logo" id="s_com_raze_coleadmin_domain_Escuela_logo" object="${escuela}" z="VyJ/oyS3tn5PvnFrpPDgulPQ6RM="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Escuela_usuarioCrea" object="${escuela}" z="fECmtn/5Z+a3XgkA0TpUUYHMS+M="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Escuela_usuarioModifica" object="${escuela}" z="vfJbauqTeACyuxpRqtxxibH/cyo="/>
-        <field:display date="true" dateTimePattern="${escuela_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Escuela_fechaCreacion" object="${escuela}" z="TjXDuh8MEvcbl8357gR9a360uvs="/>
-        <field:display date="true" dateTimePattern="${escuela_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Escuela_fechaModificacion" object="${escuela}" z="HKsI8Vq2XetU7Ur4YmOJL6wEDrE="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Escuela_activo" object="${escuela}" z="ZkEGRLqvbWwJJ2Sz3jvHv51NH/Q="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Escuela_usuarioCrea" object="${escuela}" z="fECmtn/5Z+a3XgkA0TpUUYHMS+M=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Escuela_usuarioModifica" object="${escuela}" z="vfJbauqTeACyuxpRqtxxibH/cyo=" render="false"/>
+        <field:display date="true" dateTimePattern="${escuela_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Escuela_fechaCreacion" object="${escuela}" z="TjXDuh8MEvcbl8357gR9a360uvs=" render="false"/>
+        <field:display date="true" dateTimePattern="${escuela_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Escuela_fechaModificacion" object="${escuela}" z="HKsI8Vq2XetU7Ur4YmOJL6wEDrE=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Escuela_activo" object="${escuela}" z="ZkEGRLqvbWwJJ2Sz3jvHv51NH/Q=" render="false"/>
     </page:show>
 </div>

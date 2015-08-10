@@ -5,10 +5,10 @@
     <form:update id="fu_com_raze_coleadmin_domain_Asistencia" modelAttribute="asistencia" path="/asistencias" versionField="Version" z="aeKOfyK22d1+EHvEAh4VxvQpGXo=">
         <field:select field="alumno" id="c_com_raze_coleadmin_domain_Asistencia_alumno" itemValue="id" items="${alumnogrupoes}" path="/alumnogrupoes" z="R5sfAvvN6kHmnLmhSYCKr04hZaA="/>
         <field:select field="tipoAsistencia" id="c_com_raze_coleadmin_domain_Asistencia_tipoAsistencia" itemValue="id" items="${tipoasistencias}" path="/tipoasistencias" required="true" z="QJ0U8XSjm31eJrW3f7FwAws3+rU="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Asistencia_usuarioCrea" validationMessageCode="field_invalid_integer" z="RUeXEjPasafALW/qaJLV6xsaD7U="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Asistencia_usuarioModifica" validationMessageCode="field_invalid_integer" z="BRoU0/0BAHRF1K01qUuckkbDdNI="/>
-        <field:datetime dateTimePattern="${asistencia_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Asistencia_fechaCreacion" z="tl5Um6ENj9i1E4KMhsbNXbkMkP8="/>
-        <field:datetime dateTimePattern="${asistencia_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Asistencia_fechaModificacion" z="ypnkt+Ucnou80J/FyapNgnjBi5g="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Asistencia_activo" z="yI5lPtAK0xK/mFqbItZIbHQUE/Y="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Asistencia_usuarioCrea" validationMessageCode="field_invalid_integer" z="RUeXEjPasafALW/qaJLV6xsaD7U=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Asistencia_usuarioModifica" validationMessageCode="field_invalid_integer" z="BRoU0/0BAHRF1K01qUuckkbDdNI=" render="false"/>
+        <field:datetime dateTimePattern="${asistencia_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Asistencia_fechaCreacion" z="tl5Um6ENj9i1E4KMhsbNXbkMkP8=" render="false"/>
+        <field:datetime dateTimePattern="${asistencia_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Asistencia_fechaModificacion" z="ypnkt+Ucnou80J/FyapNgnjBi5g=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Asistencia_activo" z="yI5lPtAK0xK/mFqbItZIbHQUE/Y=" render="false"/>
     </form:update>
 </div>

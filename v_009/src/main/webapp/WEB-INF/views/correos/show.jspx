@@ -11,10 +11,10 @@
         <field:display field="protocol" id="s_com_raze_coleadmin_catalog_Correo_protocol" object="${correo}" z="6gmDQSJ/nklYR+L2JBY/TIRvDos="/>
         <field:display field="subject" id="s_com_raze_coleadmin_catalog_Correo_subject" object="${correo}" z="ZcmPWRfowu3Th9X27d71Ft1SMLI="/>
         <field:display field="username" id="s_com_raze_coleadmin_catalog_Correo_username" object="${correo}" z="MZ6iH0JA0/FnyaeQGRjGUBkRAXg="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Correo_usuarioCrea" object="${correo}" z="zR2ZZNZwKrogik3/oGWTPocVQy8="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Correo_usuarioModifica" object="${correo}" z="LMk0uMwk2cLaMoL5X3wHWPIdITI="/>
-        <field:display date="true" dateTimePattern="${correo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Correo_fechaCreacion" object="${correo}" z="psmSFh08nA+pK8NyljzBRx6BVGI="/>
-        <field:display date="true" dateTimePattern="${correo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Correo_fechaModificacion" object="${correo}" z="cvTAiZhX0RA1L6DNiD9l3B1Yrk4="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Correo_activo" object="${correo}" z="br2YxiWl0mWg3XWLJe/i2aeBh7A="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Correo_usuarioCrea" object="${correo}" z="zR2ZZNZwKrogik3/oGWTPocVQy8=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Correo_usuarioModifica" object="${correo}" z="LMk0uMwk2cLaMoL5X3wHWPIdITI=" render="false"/>
+        <field:display date="true" dateTimePattern="${correo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Correo_fechaCreacion" object="${correo}" z="psmSFh08nA+pK8NyljzBRx6BVGI=" render="false"/>
+        <field:display date="true" dateTimePattern="${correo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Correo_fechaModificacion" object="${correo}" z="cvTAiZhX0RA1L6DNiD9l3B1Yrk4=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Correo_activo" object="${correo}" z="br2YxiWl0mWg3XWLJe/i2aeBh7A=" render="false"/>
     </page:show>
 </div>

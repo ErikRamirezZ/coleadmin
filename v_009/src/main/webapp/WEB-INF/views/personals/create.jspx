@@ -12,13 +12,13 @@
         <field:input field="telefono" id="c_com_raze_coleadmin_domain_Personal_telefono" z="dqkzg+bTtPeDy6Qq4jOoQhw04/4="/>
         <field:datetime dateTimePattern="${personal_fechanacimiento_date_format}" field="fechaNacimiento" id="c_com_raze_coleadmin_domain_Personal_fechaNacimiento" z="Z/BTH3RvAJZwpwgw9l0Tnczn3uI="/>
         <field:textarea field="foto" id="c_com_raze_coleadmin_domain_Personal_foto" z="TurWEDycx5RfjGtRmQjDm9Wb008="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Personal_usuarioCrea" validationMessageCode="field_invalid_integer" z="Ydl6gbwrkS2S4uaSeFnBYxykilg="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Personal_usuarioModifica" validationMessageCode="field_invalid_integer" z="/yim/bPJYWaKj+WQGOuqNdvLFiI="/>
-        <field:datetime dateTimePattern="${personal_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Personal_fechaCreacion" z="5xziI5020G5MUvPWHY61i3h3/Rk="/>
-        <field:datetime dateTimePattern="${personal_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Personal_fechaModificacion" z="1PrBmzMOUwsBrtsqyHKxCERBUyg="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Personal_activo" z="ph7kAB2mjkBBRnV/K8lU9o8SLq0="/>
         <field:select field="roles" id="c_com_raze_coleadmin_domain_Personal_roles" itemValue="id" items="${rols}" multiple="true" path="/rols" required="true" z="E1a9V8I9Z8lhQ2+lj0aDnt1nBRg="/>
         <field:select field="escuela" id="c_com_raze_coleadmin_domain_Personal_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="TnknUTUR6qj46JtvqaJVr8Y/7eY="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Personal_usuarioCrea" validationMessageCode="field_invalid_integer" z="Ydl6gbwrkS2S4uaSeFnBYxykilg=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Personal_usuarioModifica" validationMessageCode="field_invalid_integer" z="/yim/bPJYWaKj+WQGOuqNdvLFiI=" render="false"/>
+        <field:datetime dateTimePattern="${personal_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Personal_fechaCreacion" z="5xziI5020G5MUvPWHY61i3h3/Rk=" render="false"/>
+        <field:datetime dateTimePattern="${personal_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Personal_fechaModificacion" z="1PrBmzMOUwsBrtsqyHKxCERBUyg=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Personal_activo" z="ph7kAB2mjkBBRnV/K8lU9o8SLq0=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Personal" render="${not empty dependencies}" z="N+tXESUW+SapRbnwvpuF3nTvFOk="/>
 </div>

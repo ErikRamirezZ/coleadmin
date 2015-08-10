@@ -6,10 +6,10 @@
         <table:table data="${cicloescolars}" id="l_com_raze_coleadmin_domain_CicloEscolar" path="/cicloescolars" z="m9ZjI+O7dqx2BqKqYIBJIb7GixQ=">
             <table:column id="c_com_raze_coleadmin_domain_CicloEscolar_escuela" property="escuela" z="Dr9LYn/02NeOKzclcSixwvvQQOo="/>
             <table:column id="c_com_raze_coleadmin_domain_CicloEscolar_nombre" property="nombre" z="YXnxqrl0iJoDKaQO3lzbtLLuF/k="/>
-            <table:column date="true" dateTimePattern="${cicloEscolar_fechainicio_date_format}" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaInicio" property="fechaInicio" z="748DhFiF9lN+U0jrAVJOsmmR96Y="/>
-            <table:column date="true" dateTimePattern="${cicloEscolar_fechafin_date_format}" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaFin" property="fechaFin" z="i2bZ+N7nhoez6NojymQ51phvkWY="/>
-            <table:column id="c_com_raze_coleadmin_domain_CicloEscolar_usuarioCrea" property="usuarioCrea" z="iU2RQWqIAAv0CTk+j3dtYfHG56U="/>
-            <table:column id="c_com_raze_coleadmin_domain_CicloEscolar_usuarioModifica" property="usuarioModifica" z="qDSj7XNcbGzxayL5OjzZS4Coea4="/>
+            <table:column date="true" dateTimePattern="${cicloEscolar_fechainicio_date_format}" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaInicio" property="fechaInicio" z="748DhFiF9lN+U0jrAVJOsmmR96Y=" render="false"/>
+            <table:column date="true" dateTimePattern="${cicloEscolar_fechafin_date_format}" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaFin" property="fechaFin" z="i2bZ+N7nhoez6NojymQ51phvkWY=" render="false"/>
+            <table:column id="c_com_raze_coleadmin_domain_CicloEscolar_usuarioCrea" property="usuarioCrea" z="iU2RQWqIAAv0CTk+j3dtYfHG56U=" render="false"/>
+            <table:column id="c_com_raze_coleadmin_domain_CicloEscolar_usuarioModifica" property="usuarioModifica" z="qDSj7XNcbGzxayL5OjzZS4Coea4=" render="false"/>
         </table:table>
     </page:list>
 </div>

@@ -5,11 +5,11 @@
     <form:create id="fc_com_raze_coleadmin_catalog_Modulo" modelAttribute="modulo" path="/moduloes" render="${empty dependencies}" z="oNlFO1qOQ9jRUdJ5mqoGGHYZYoE=">
         <field:input field="nombreModulo" id="c_com_raze_coleadmin_catalog_Modulo_nombreModulo" required="true" z="Q7S/12WCE66RQAONF3T0g73kjfY="/>
         <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_Modulo_descripcion" z="IIi8iV5VLSJVdVDWj/FW0oVtZMg="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Modulo_usuarioCrea" validationMessageCode="field_invalid_integer" z="E71dhYWNWEDrRwFVBzrSNEqqXs4="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Modulo_usuarioModifica" validationMessageCode="field_invalid_integer" z="JZjIgyvZPAEBSHmw4uGjuVSnwf0="/>
-        <field:datetime dateTimePattern="${modulo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Modulo_fechaCreacion" z="ic20bKaen70fuY6fnFzvtqtTnJY="/>
-        <field:datetime dateTimePattern="${modulo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Modulo_fechaModificacion" z="kMdkbaNTbhfvEFYUUDDyfhxOey8="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Modulo_activo" z="747CDOHIO8sQV4WegUoomDgOF5E="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Modulo_usuarioCrea" validationMessageCode="field_invalid_integer" z="E71dhYWNWEDrRwFVBzrSNEqqXs4=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Modulo_usuarioModifica" validationMessageCode="field_invalid_integer" z="JZjIgyvZPAEBSHmw4uGjuVSnwf0=" render="false"/>
+        <field:datetime dateTimePattern="${modulo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Modulo_fechaCreacion" z="ic20bKaen70fuY6fnFzvtqtTnJY=" render="false"/>
+        <field:datetime dateTimePattern="${modulo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Modulo_fechaModificacion" z="kMdkbaNTbhfvEFYUUDDyfhxOey8=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Modulo_activo" z="747CDOHIO8sQV4WegUoomDgOF5E=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_catalog_Modulo" render="${not empty dependencies}" z="Rb0u1k1e0nKYZMWJBHSjQiVK8Hs="/>
 </div>

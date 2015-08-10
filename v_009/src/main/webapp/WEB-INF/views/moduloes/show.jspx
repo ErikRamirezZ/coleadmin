@@ -5,10 +5,10 @@
     <page:show id="ps_com_raze_coleadmin_catalog_Modulo" object="${modulo}" path="/moduloes" z="DIUXRGxLcr8tZ3nhqZDMM3mXGNI=">
         <field:display field="nombreModulo" id="s_com_raze_coleadmin_catalog_Modulo_nombreModulo" object="${modulo}" z="93ZZHglqVhybU868eWyDS/gY4Xk="/>
         <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_Modulo_descripcion" object="${modulo}" z="WrA68Nt+JNOGcB21ce5trehuahA="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Modulo_usuarioCrea" object="${modulo}" z="n1GwVxlvgrspiIFnSwYgJToadig="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Modulo_usuarioModifica" object="${modulo}" z="Zqifznc9oJLgREoOL/bunt/VRZM="/>
-        <field:display date="true" dateTimePattern="${modulo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Modulo_fechaCreacion" object="${modulo}" z="87D7xQz7hmHFsDXYPvtVUECzpPM="/>
-        <field:display date="true" dateTimePattern="${modulo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Modulo_fechaModificacion" object="${modulo}" z="9vJM6FxOYcloH1R2F9i5qGEEO30="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Modulo_activo" object="${modulo}" z="Q5NnkMWyTn1NbSyUem/1RQTDFGY="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Modulo_usuarioCrea" object="${modulo}" z="n1GwVxlvgrspiIFnSwYgJToadig=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Modulo_usuarioModifica" object="${modulo}" z="Zqifznc9oJLgREoOL/bunt/VRZM=" render="false"/>
+        <field:display date="true" dateTimePattern="${modulo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Modulo_fechaCreacion" object="${modulo}" z="87D7xQz7hmHFsDXYPvtVUECzpPM=" render="false"/>
+        <field:display date="true" dateTimePattern="${modulo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Modulo_fechaModificacion" object="${modulo}" z="9vJM6FxOYcloH1R2F9i5qGEEO30=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Modulo_activo" object="${modulo}" z="Q5NnkMWyTn1NbSyUem/1RQTDFGY=" render="false"/>
     </page:show>
 </div>

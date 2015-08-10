@@ -6,10 +6,10 @@
         <field:display field="nombreRol" id="s_com_raze_coleadmin_catalog_Rol_nombreRol" object="${rol}" z="rICFhZsW1RX9g9ul4e5x7iQWRv8="/>
         <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_Rol_descripcion" object="${rol}" z="OTp42ohXUKd2h2aUYsc88zJqK3U="/>
         <field:display field="permisos" id="s_com_raze_coleadmin_catalog_Rol_permisos" object="${rol}" z="crB8rwDA5m3VPPfeEuwatUQUspU="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Rol_usuarioCrea" object="${rol}" z="OZCITPRipmDnV5/DmFhKP0CtOfg="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Rol_usuarioModifica" object="${rol}" z="HJHFyd22UcpH43r/HKmuB+GiOrg="/>
-        <field:display date="true" dateTimePattern="${rol_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Rol_fechaCreacion" object="${rol}" z="xQbg7MjysYIVR9AFv+E2dmKwqV0="/>
-        <field:display date="true" dateTimePattern="${rol_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Rol_fechaModificacion" object="${rol}" z="KHqGPkktvAL0cabCsiyz/aoYE3g="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Rol_activo" object="${rol}" z="/O1Bn94Hsx4VIqYjFBGGf0Du2G0="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Rol_usuarioCrea" object="${rol}" z="OZCITPRipmDnV5/DmFhKP0CtOfg=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Rol_usuarioModifica" object="${rol}" z="HJHFyd22UcpH43r/HKmuB+GiOrg=" render="false"/>
+        <field:display date="true" dateTimePattern="${rol_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Rol_fechaCreacion" object="${rol}" z="xQbg7MjysYIVR9AFv+E2dmKwqV0=" render="false"/>
+        <field:display date="true" dateTimePattern="${rol_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Rol_fechaModificacion" object="${rol}" z="KHqGPkktvAL0cabCsiyz/aoYE3g=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Rol_activo" object="${rol}" z="/O1Bn94Hsx4VIqYjFBGGf0Du2G0=" render="false"/>
     </page:show>
 </div>

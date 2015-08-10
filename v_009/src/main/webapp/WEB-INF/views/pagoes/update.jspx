@@ -9,10 +9,10 @@
         <field:input field="total" id="c_com_raze_coleadmin_domain_Pago_total" validationMessageCode="field_invalid_number" z="8L11iRzPY1mnjBAfOrS0BVkVmHw="/>
         <field:datetime dateTimePattern="${pago_fechacargo_date_format}" field="fechaCargo" id="c_com_raze_coleadmin_domain_Pago_fechaCargo" z="x6P09beHbfRtRvgE98C17NSeeAc="/>
         <field:checkbox field="fuePagoOportuno" id="c_com_raze_coleadmin_domain_Pago_fuePagoOportuno" z="BUTiXZKQ6G5hYZ8Apmxxl9y0XzQ="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Pago_usuarioCrea" validationMessageCode="field_invalid_integer" z="vjznyHA/NPVUtyQE1UwVb+ILmUI="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Pago_usuarioModifica" validationMessageCode="field_invalid_integer" z="PWZaMnLLvLJEpHqyhBATgFDmSYc="/>
-        <field:datetime dateTimePattern="${pago_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Pago_fechaCreacion" z="aIHHZ7SfXgo4DtCsY78mr3i9gAg="/>
-        <field:datetime dateTimePattern="${pago_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Pago_fechaModificacion" z="BIdywq94w6KZfPCkIzGu62GELOc="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Pago_activo" z="4bDLZfHLvx1SS5nS64VzcueZ13I="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Pago_usuarioCrea" validationMessageCode="field_invalid_integer" z="vjznyHA/NPVUtyQE1UwVb+ILmUI=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Pago_usuarioModifica" validationMessageCode="field_invalid_integer" z="PWZaMnLLvLJEpHqyhBATgFDmSYc=" render="false"/>
+        <field:datetime dateTimePattern="${pago_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Pago_fechaCreacion" z="aIHHZ7SfXgo4DtCsY78mr3i9gAg=" render="false"/>
+        <field:datetime dateTimePattern="${pago_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Pago_fechaModificacion" z="BIdywq94w6KZfPCkIzGu62GELOc=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Pago_activo" z="4bDLZfHLvx1SS5nS64VzcueZ13I=" render="false"/>
     </form:update>
 </div>

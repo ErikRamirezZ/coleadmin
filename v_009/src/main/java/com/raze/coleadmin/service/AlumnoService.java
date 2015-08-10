@@ -1,9 +1,8 @@
 package com.raze.coleadmin.service;
 import com.raze.coleadmin.domain.Alumno;
-import java.util.List;
-import org.springframework.roo.addon.layers.service.RooService;
 
-@RooService(domainTypes = { com.raze.coleadmin.domain.Alumno.class })
+import java.util.List;
+
 public interface AlumnoService {
 
 	public abstract long countAllAlumnoes();
@@ -25,5 +24,8 @@ public interface AlumnoService {
 
 
 	public abstract Alumno updateAlumno(Alumno alumno);
+
+
+	public abstract Alumno  findAlumnoByCorreoE(String correoe);
 
 }

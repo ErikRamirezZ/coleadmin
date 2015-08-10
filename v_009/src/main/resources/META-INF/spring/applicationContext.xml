@@ -85,4 +85,13 @@
         <property name="from" value="${email.from}"/>
         <property name="subject" value="${email.subject}"/>
     </bean>
+    
+    <bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <bean class="com.raze.coleadmin.security.dao.UserDAO" id="userDAO">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+    
 </beans>

@@ -6,10 +6,10 @@
         <field:select field="alumno" id="c_com_raze_coleadmin_domain_AlumnoGrupo_alumno" itemValue="id" items="${alumnoes}" path="/alumnoes" required="true" z="AZ8vJ11b+qELWeJTA24Fjs2GJhY="/>
         <field:select field="grupo" id="c_com_raze_coleadmin_domain_AlumnoGrupo_grupo" itemValue="id" items="${grupoes}" path="/grupoes" z="oI+k31ni066HkaU24rhKpRWp87Y="/>
         <field:input field="observaciones" id="c_com_raze_coleadmin_domain_AlumnoGrupo_observaciones" z="UJNEnJjIzuPDqzokajkuhqEO4jM="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_AlumnoGrupo_usuarioCrea" validationMessageCode="field_invalid_integer" z="bOXSZgwHCH+91CG4TB5BZJRFLps="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_AlumnoGrupo_usuarioModifica" validationMessageCode="field_invalid_integer" z="GhfoRyhlublXxH9XuAY2DDFchb8="/>
-        <field:datetime dateTimePattern="${alumnoGrupo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaCreacion" z="bLWH/b0aVOZrGLogpIF456gR0Qc="/>
-        <field:datetime dateTimePattern="${alumnoGrupo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaModificacion" z="LRqaomnXz8dvrynLU4BisKckoBo="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_AlumnoGrupo_activo" z="uSgo1LbGiGl3T2XIpWgh6yRCrw8="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_AlumnoGrupo_usuarioCrea" validationMessageCode="field_invalid_integer" z="bOXSZgwHCH+91CG4TB5BZJRFLps=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_AlumnoGrupo_usuarioModifica" validationMessageCode="field_invalid_integer" z="GhfoRyhlublXxH9XuAY2DDFchb8=" render="false"/>
+        <field:datetime dateTimePattern="${alumnoGrupo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaCreacion" z="bLWH/b0aVOZrGLogpIF456gR0Qc=" render="false"/>
+        <field:datetime dateTimePattern="${alumnoGrupo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaModificacion" z="LRqaomnXz8dvrynLU4BisKckoBo=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_AlumnoGrupo_activo" z="uSgo1LbGiGl3T2XIpWgh6yRCrw8=" render="false"/>
     </form:update>
 </div>

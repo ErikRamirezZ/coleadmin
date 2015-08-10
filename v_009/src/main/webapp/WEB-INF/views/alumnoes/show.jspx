@@ -11,12 +11,8 @@
         <field:display field="ciudad" id="s_com_raze_coleadmin_domain_Alumno_ciudad" object="${alumno}" z="78S9FXepVwkT5wwvYneT2BkSZVo="/>
         <field:display field="telefono" id="s_com_raze_coleadmin_domain_Alumno_telefono" object="${alumno}" z="EY2mBQj8/OVZUT0b1rfMKOWwFos="/>
         <field:display date="true" dateTimePattern="${alumno_fechanacimiento_date_format}" field="fechaNacimiento" id="s_com_raze_coleadmin_domain_Alumno_fechaNacimiento" object="${alumno}" z="vtSV0pkZjxWXjvEQ3Zq3VLWdxro="/>
-        <field:display field="foto" id="s_com_raze_coleadmin_domain_Alumno_foto" object="${alumno}" z="60Kax0/Zty4Tn9i0G/J5JnhKQ04="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Alumno_usuarioCrea" object="${alumno}" z="AsIbI2TdeNxvtDSS8mTYLxTYic0="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Alumno_usuarioModifica" object="${alumno}" z="2CVxzFme+1Bx5evhlPlQSyArpGQ="/>
-        <field:display date="true" dateTimePattern="${alumno_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Alumno_fechaCreacion" object="${alumno}" z="Nkecdmtlo9pOQjRjqb3jjHvf9Yw="/>
-        <field:display date="true" dateTimePattern="${alumno_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Alumno_fechaModificacion" object="${alumno}" z="F53D6RcUtNuWfI6q8OoDeCQrGUE="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Alumno_activo" object="${alumno}" z="FTKYOY15ug24hoeXK71zUZj1hI0="/>
+        <field:display field="foto" id="s_com_raze_coleadmin_domain_Alumno_foto" object="${alumno}" z="60Kax0/Zty4Tn9i0G/J5JnhKQ04=" render="false"/>
+        <img src="${alumno.id}/image" height="256px"/>
         <field:display field="curp" id="s_com_raze_coleadmin_domain_Alumno_curp" object="${alumno}" z="QsPTDXV0J6HJJp7SUC0Oec1iSy8="/>
         <field:display field="escuela" id="s_com_raze_coleadmin_domain_Alumno_escuela" object="${alumno}" z="7z40MxU0tviDhP1ev0+jlbDpWLM="/>
         <field:display field="tipoSangre" id="s_com_raze_coleadmin_domain_Alumno_tipoSangre" object="${alumno}" z="HrTmX0jOsvbfDqchF+kaKAkxr90="/>
@@ -25,5 +21,10 @@
         <field:display field="alergias" id="s_com_raze_coleadmin_domain_Alumno_alergias" object="${alumno}" z="D/CEjaO7N2zdC+KJVb1WLR0J+pI="/>
         <field:display field="observaciones" id="s_com_raze_coleadmin_domain_Alumno_observaciones" object="${alumno}" z="K/RJ6PbHzWRhjiO2+jMKWYmetoo="/>
         <field:display field="roles" id="s_com_raze_coleadmin_domain_Alumno_roles" object="${alumno}" z="8iB6mzCdaZWrWZYkwzXZDeb6R00="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Alumno_usuarioCrea" object="${alumno}" z="AsIbI2TdeNxvtDSS8mTYLxTYic0=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Alumno_usuarioModifica" object="${alumno}" z="2CVxzFme+1Bx5evhlPlQSyArpGQ=" render="false"/>
+        <field:display date="true" dateTimePattern="${alumno_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Alumno_fechaCreacion" object="${alumno}" z="Nkecdmtlo9pOQjRjqb3jjHvf9Yw=" render="false"/>
+        <field:display date="true" dateTimePattern="${alumno_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Alumno_fechaModificacion" object="${alumno}" z="F53D6RcUtNuWfI6q8OoDeCQrGUE=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Alumno_activo" object="${alumno}" z="FTKYOY15ug24hoeXK71zUZj1hI0=" render="false"/>
     </page:show>
 </div>

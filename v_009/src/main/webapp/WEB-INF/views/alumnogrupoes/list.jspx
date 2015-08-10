@@ -7,9 +7,9 @@
             <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_alumno" property="alumno" z="7XthOqWylCxkhusqAOicsq1G4bE="/>
             <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_grupo" property="grupo" z="WQDdMxQhYGInqe7BZ0wJgjlmOgM="/>
             <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_observaciones" property="observaciones" z="IBpieBRwLNjL7WlChVajOVIBV9I="/>
-            <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_usuarioCrea" property="usuarioCrea" z="2r2hXK4Rbkli+d5AM+1sc3LQbt8="/>
-            <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_usuarioModifica" property="usuarioModifica" z="IydKj9p0a/3ObW0eb8uV6mL2euU="/>
-            <table:column date="true" dateTimePattern="${alumnoGrupo_fechacreacion_date_format}" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaCreacion" property="fechaCreacion" z="F8+7KxpuIj7Tf2Y6j6MzKKz0JAI="/>
+            <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_usuarioCrea" property="usuarioCrea" z="2r2hXK4Rbkli+d5AM+1sc3LQbt8=" render="false"/>
+            <table:column id="c_com_raze_coleadmin_domain_AlumnoGrupo_usuarioModifica" property="usuarioModifica" z="IydKj9p0a/3ObW0eb8uV6mL2euU=" render="false"/>
+            <table:column date="true" dateTimePattern="${alumnoGrupo_fechacreacion_date_format}" id="c_com_raze_coleadmin_domain_AlumnoGrupo_fechaCreacion" property="fechaCreacion" z="F8+7KxpuIj7Tf2Y6j6MzKKz0JAI=" render="false"/>
         </table:table>
     </page:list>
 </div>

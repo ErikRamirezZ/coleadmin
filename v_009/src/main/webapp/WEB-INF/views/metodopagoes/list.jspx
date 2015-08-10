@@ -6,10 +6,10 @@
         <table:table data="${metodopagoes}" id="l_com_raze_coleadmin_catalog_MetodoPago" path="/metodopagoes" z="Rx6j4nK5iiVa7NZlCGwiJkHYnrQ=">
             <table:column id="c_com_raze_coleadmin_catalog_MetodoPago_nombreMetodoPago" property="nombreMetodoPago" z="MYYwc2NYxkIMhJr4cU58LYGf678="/>
             <table:column id="c_com_raze_coleadmin_catalog_MetodoPago_descripcion" property="descripcion" z="SO3flM1itRmgdPifKAsOVFQcaD4="/>
-            <table:column id="c_com_raze_coleadmin_catalog_MetodoPago_usuarioCrea" property="usuarioCrea" z="wmm7DTGJNEY6r7Imd9TjvQcziEw="/>
-            <table:column id="c_com_raze_coleadmin_catalog_MetodoPago_usuarioModifica" property="usuarioModifica" z="tiQwN/YOJcOKVSDAdl+mJNu5jQA="/>
-            <table:column date="true" dateTimePattern="${metodoPago_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_MetodoPago_fechaCreacion" property="fechaCreacion" z="Lf41rMv2BGYmIH21H5Dq0UqXcu4="/>
-            <table:column date="true" dateTimePattern="${metodoPago_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_MetodoPago_fechaModificacion" property="fechaModificacion" z="7ARimb0zIMzKjH69eOwQ49nVsmU="/>
+            <table:column id="c_com_raze_coleadmin_catalog_MetodoPago_usuarioCrea" property="usuarioCrea" z="wmm7DTGJNEY6r7Imd9TjvQcziEw=" render="false"/>
+            <table:column id="c_com_raze_coleadmin_catalog_MetodoPago_usuarioModifica" property="usuarioModifica" z="tiQwN/YOJcOKVSDAdl+mJNu5jQA=" render="false"/>
+            <table:column date="true" dateTimePattern="${metodoPago_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_MetodoPago_fechaCreacion" property="fechaCreacion" z="Lf41rMv2BGYmIH21H5Dq0UqXcu4=" render="false"/>
+            <table:column date="true" dateTimePattern="${metodoPago_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_MetodoPago_fechaModificacion" property="fechaModificacion" z="7ARimb0zIMzKjH69eOwQ49nVsmU=" render="false"/>
         </table:table>
     </page:list>
 </div>

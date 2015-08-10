@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
-    <definition extends="default" name="padres/list">
-        <put-attribute name="body" value="/WEB-INF/views/padres/list.jspx"/>
-    </definition>
-<definition extends="default" name="padres/show">
-        <put-attribute name="body" value="/WEB-INF/views/padres/show.jspx"/>
-    </definition>
-<definition extends="default" name="padres/create">
-        <put-attribute name="body" value="/WEB-INF/views/padres/create.jspx"/>
-    </definition>
-<definition extends="default" name="padres/update">
-        <put-attribute name="body" value="/WEB-INF/views/padres/update.jspx"/>
-    </definition>
+	<definition extends="default" name="padres/list">
+		<put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body" value="/WEB-INF/views/padres/list.jspx" />
+	</definition>
+	<definition extends="default" name="padres/show">
+		<put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body" value="/WEB-INF/views/padres/show.jspx" />
+	</definition>
+	<definition extends="default" name="padres/create">
+		<put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body" value="/WEB-INF/views/padres/create.jspx" />
+	</definition>
+	<definition extends="default" name="padres/update">
+		<put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body" value="/WEB-INF/views/padres/update.jspx" />
+	</definition>
 </tiles-definitions>

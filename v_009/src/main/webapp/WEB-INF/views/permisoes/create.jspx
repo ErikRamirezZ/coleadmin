@@ -5,11 +5,11 @@
     <form:create id="fc_com_raze_coleadmin_catalog_Permiso" modelAttribute="permiso" path="/permisoes" render="${empty dependencies}" z="T5z/mVD0WyBsCaetLPetQTqM2Kg=">
         <field:input field="nombrePermiso" id="c_com_raze_coleadmin_catalog_Permiso_nombrePermiso" required="true" z="wl3sjjtmPuAe/rEIK37+dfUSr/8="/>
         <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_Permiso_descripcion" z="t2kgc6yMGPh20tOowFpYSUT9tVo="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Permiso_usuarioCrea" validationMessageCode="field_invalid_integer" z="Io3sStxTmFwhNG/Snpyoy/NgOVI="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Permiso_usuarioModifica" validationMessageCode="field_invalid_integer" z="fg5EO4BEwkghss2zjEWGRR2hGKU="/>
-        <field:datetime dateTimePattern="${permiso_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Permiso_fechaCreacion" z="vTH1qA5KGTU5BeakGU32XUmLu2E="/>
-        <field:datetime dateTimePattern="${permiso_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Permiso_fechaModificacion" z="W39T8sZLwugnVDxMA2o+/Ukg5T4="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Permiso_activo" z="DG3exFbGO4knSwDtbKBs8pIyOuI="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Permiso_usuarioCrea" validationMessageCode="field_invalid_integer" z="Io3sStxTmFwhNG/Snpyoy/NgOVI=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Permiso_usuarioModifica" validationMessageCode="field_invalid_integer" z="fg5EO4BEwkghss2zjEWGRR2hGKU=" render="false"/>
+        <field:datetime dateTimePattern="${permiso_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Permiso_fechaCreacion" z="vTH1qA5KGTU5BeakGU32XUmLu2E=" render="false"/>
+        <field:datetime dateTimePattern="${permiso_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Permiso_fechaModificacion" z="W39T8sZLwugnVDxMA2o+/Ukg5T4=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Permiso_activo" z="DG3exFbGO4knSwDtbKBs8pIyOuI=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_catalog_Permiso" render="${not empty dependencies}" z="DegxX5+4kUbNB0vl1s5LkWgRwPs="/>
 </div>

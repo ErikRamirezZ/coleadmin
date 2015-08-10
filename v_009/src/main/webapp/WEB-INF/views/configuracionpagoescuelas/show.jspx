@@ -10,10 +10,10 @@
         <field:display field="correoE" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_correoE" object="${configuracionpagoescuela}" z="FtWGSob4byxkY8fayvWWWICdiDA="/>
         <field:display field="numeroTelefonico" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_numeroTelefonico" object="${configuracionpagoescuela}" z="6yJqIBShdEJ/NRkKJtWbOX6PfCQ="/>
         <field:display field="modulos" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_modulos" object="${configuracionpagoescuela}" z="MbJ9OcduIy5NbI0PvsnZ2ZL729U="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_usuarioCrea" object="${configuracionpagoescuela}" z="03Zq4PCrJGZZo7URGiv05CLcrTs="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_usuarioModifica" object="${configuracionpagoescuela}" z="dfYopMaLLOUc36GuYaIpNR6z6dA="/>
-        <field:display date="true" dateTimePattern="${configuracionPagoEscuela_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_fechaCreacion" object="${configuracionpagoescuela}" z="9cE04G9S4mhY97DunrNYoln3Id8="/>
-        <field:display date="true" dateTimePattern="${configuracionPagoEscuela_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_fechaModificacion" object="${configuracionpagoescuela}" z="4k1ieeitzdZhYNQ4TnpDLJHsI/Q="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_activo" object="${configuracionpagoescuela}" z="XnzgxHf/uetsjuqjUlcDMU57VEM="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_usuarioCrea" object="${configuracionpagoescuela}" z="03Zq4PCrJGZZo7URGiv05CLcrTs=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_usuarioModifica" object="${configuracionpagoescuela}" z="dfYopMaLLOUc36GuYaIpNR6z6dA=" render="false"/>
+        <field:display date="true" dateTimePattern="${configuracionPagoEscuela_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_fechaCreacion" object="${configuracionpagoescuela}" z="9cE04G9S4mhY97DunrNYoln3Id8=" render="false"/>
+        <field:display date="true" dateTimePattern="${configuracionPagoEscuela_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_fechaModificacion" object="${configuracionpagoescuela}" z="4k1ieeitzdZhYNQ4TnpDLJHsI/Q=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_ConfiguracionPagoEscuela_activo" object="${configuracionpagoescuela}" z="XnzgxHf/uetsjuqjUlcDMU57VEM=" render="false"/>
     </page:show>
 </div>

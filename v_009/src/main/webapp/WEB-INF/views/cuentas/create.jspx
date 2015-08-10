@@ -13,11 +13,11 @@
         <field:checkbox field="enviarRecordatorio" id="c_com_raze_coleadmin_domain_Cuenta_enviarRecordatorio" z="SeYbLMxnb147/fcUBToca/fVUvk="/>
         <field:input field="saldoTotal" id="c_com_raze_coleadmin_domain_Cuenta_saldoTotal" validationMessageCode="field_invalid_number" z="yDYpQr3pEDG5TZcqV3+dYDutpLo="/>
         <field:select field="estatus" id="c_com_raze_coleadmin_domain_Cuenta_estatus" itemValue="id" items="${estatuscuentas}" path="/estatuscuentas" required="true" z="/XAKmNpKVxVyKfsiE0M1xcpmo5A="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Cuenta_usuarioCrea" validationMessageCode="field_invalid_integer" z="75kAHoBfJZFvuFRXuVsJvDfpoVY="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Cuenta_usuarioModifica" validationMessageCode="field_invalid_integer" z="7wfo4RRg3Oovn5vJsf4nmI5Kjec="/>
-        <field:datetime dateTimePattern="${cuenta_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaCreacion" z="Joc1krHfFXZq+wwHqLJqlm3ekh4="/>
-        <field:datetime dateTimePattern="${cuenta_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaModificacion" z="gkFlfbIab2xYxVYi5VSHbyJbIIk="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Cuenta_activo" z="R/x91SMACDUdgdKI2z1U4CUmcXg="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Cuenta_usuarioCrea" validationMessageCode="field_invalid_integer" z="75kAHoBfJZFvuFRXuVsJvDfpoVY=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Cuenta_usuarioModifica" validationMessageCode="field_invalid_integer" z="7wfo4RRg3Oovn5vJsf4nmI5Kjec=" render="false"/>
+        <field:datetime dateTimePattern="${cuenta_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaCreacion" z="Joc1krHfFXZq+wwHqLJqlm3ekh4=" render="false"/>
+        <field:datetime dateTimePattern="${cuenta_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Cuenta_fechaModificacion" z="gkFlfbIab2xYxVYi5VSHbyJbIIk=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Cuenta_activo" z="R/x91SMACDUdgdKI2z1U4CUmcXg=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Cuenta" render="${not empty dependencies}" z="STl/h31Akt2LAOPajAF374adlvI="/>
 </div>

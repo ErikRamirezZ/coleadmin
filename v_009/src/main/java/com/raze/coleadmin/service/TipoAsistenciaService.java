@@ -1,9 +1,7 @@
 package com.raze.coleadmin.service;
 import com.raze.coleadmin.catalog.TipoAsistencia;
 import java.util.List;
-import org.springframework.roo.addon.layers.service.RooService;
 
-@RooService(domainTypes = { com.raze.coleadmin.catalog.TipoAsistencia.class })
 public interface TipoAsistenciaService {
 
 	public abstract long countAllTipoAsistencias();

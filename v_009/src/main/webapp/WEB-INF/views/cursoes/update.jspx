@@ -5,10 +5,10 @@
     <form:update id="fu_com_raze_coleadmin_domain_Curso" modelAttribute="curso" path="/cursoes" versionField="Version" z="YbZPcgX54h2P0IJWQUpSSxwiczA=">
         <field:select field="cicloEscolar" id="c_com_raze_coleadmin_domain_Curso_cicloEscolar" itemValue="id" items="${cicloescolars}" path="/cicloescolars" required="true" z="F1odMbK8xHwhqCtiqdWkWnoWAFM="/>
         <field:input field="nombre" id="c_com_raze_coleadmin_domain_Curso_nombre" required="true" z="tSpnWj8O7Lmmj/jrl/bgyHZhFQI="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Curso_usuarioCrea" validationMessageCode="field_invalid_integer" z="q+0A08MZ/lPyYPsUOlEnQ7+qzco="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Curso_usuarioModifica" validationMessageCode="field_invalid_integer" z="pfM8xEYMKxn70DDhk6Hhk5V1isk="/>
-        <field:datetime dateTimePattern="${curso_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Curso_fechaCreacion" z="/oXivqh4YId6bDJ3hUbuHwXyCyU="/>
-        <field:datetime dateTimePattern="${curso_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Curso_fechaModificacion" z="lRV+EkJQgqQ8u2vZy8uNC/Dgb2Q="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Curso_activo" z="I2bm1rlEJUZ2I+aFZqRCwdcMRRM="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Curso_usuarioCrea" validationMessageCode="field_invalid_integer" z="q+0A08MZ/lPyYPsUOlEnQ7+qzco=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Curso_usuarioModifica" validationMessageCode="field_invalid_integer" z="pfM8xEYMKxn70DDhk6Hhk5V1isk=" render="false"/>
+        <field:datetime dateTimePattern="${curso_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Curso_fechaCreacion" z="/oXivqh4YId6bDJ3hUbuHwXyCyU=" render="false"/>
+        <field:datetime dateTimePattern="${curso_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Curso_fechaModificacion" z="lRV+EkJQgqQ8u2vZy8uNC/Dgb2Q=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Curso_activo" z="I2bm1rlEJUZ2I+aFZqRCwdcMRRM=" render="false"/>
     </form:update>
 </div>

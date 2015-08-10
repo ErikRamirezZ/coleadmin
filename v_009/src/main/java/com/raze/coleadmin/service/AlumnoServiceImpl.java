@@ -2,7 +2,9 @@ package com.raze.coleadmin.service;
 
 import com.raze.coleadmin.domain.Alumno;
 import com.raze.coleadmin.repository.AlumnoRepository;
+
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,4 +43,10 @@ public class AlumnoServiceImpl implements AlumnoService {
 	public Alumno updateAlumno(Alumno alumno) {
         return alumnoRepository.save(alumno);
     }
+
+	@Override
+	public Alumno findAlumnoByCorreoE(String correoe) {
+		return alumnoRepository.findByCorreoE(correoe);
+	}
+
 }

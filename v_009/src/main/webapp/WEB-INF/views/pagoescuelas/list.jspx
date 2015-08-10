@@ -8,8 +8,8 @@
             <table:column date="true" dateTimePattern="${pagoEscuela_fechapago_date_format}" id="c_com_raze_coleadmin_domain_PagoEscuela_fechaPago" property="fechaPago" z="ZddvhPrEz4kke1JbPodQUaBt/P8="/>
             <table:column id="c_com_raze_coleadmin_domain_PagoEscuela_metodoPago" property="metodoPago" z="AMP4LDnM3SfmufrG8dG0H6uDGW0="/>
             <table:column id="c_com_raze_coleadmin_domain_PagoEscuela_comprobantePago" property="comprobantePago" z="cOdNUQbfhBabacKTiN5/3bYjotE="/>
-            <table:column id="c_com_raze_coleadmin_domain_PagoEscuela_usuarioCrea" property="usuarioCrea" z="xaR2gObVXNUuRih47K556iYFcB8="/>
-            <table:column id="c_com_raze_coleadmin_domain_PagoEscuela_usuarioModifica" property="usuarioModifica" z="0t1EDQ1KYJ/2hNQkZuW1GBgSIp4="/>
+            <table:column id="c_com_raze_coleadmin_domain_PagoEscuela_usuarioCrea" property="usuarioCrea" z="xaR2gObVXNUuRih47K556iYFcB8=" render="false"/>
+            <table:column id="c_com_raze_coleadmin_domain_PagoEscuela_usuarioModifica" property="usuarioModifica" z="0t1EDQ1KYJ/2hNQkZuW1GBgSIp4=" render="false"/>
         </table:table>
     </page:list>
 </div>

@@ -6,10 +6,10 @@
         <table:table data="${estatuscuentas}" id="l_com_raze_coleadmin_catalog_EstatusCuenta" path="/estatuscuentas" z="Qt3foyRHspUGaKj9O0uhPBU2jtM=">
             <table:column id="c_com_raze_coleadmin_catalog_EstatusCuenta_nombreEstatusCuenta" property="nombreEstatusCuenta" z="1umViTYL7Aj6lk5IAW9lWJmJ03s="/>
             <table:column id="c_com_raze_coleadmin_catalog_EstatusCuenta_descripcion" property="descripcion" z="99K0BWn08frRM+wfBuk2xgxeyYw="/>
-            <table:column id="c_com_raze_coleadmin_catalog_EstatusCuenta_usuarioCrea" property="usuarioCrea" z="hYs/X01OkQWKQfAe93aJbXqXsOE="/>
-            <table:column id="c_com_raze_coleadmin_catalog_EstatusCuenta_usuarioModifica" property="usuarioModifica" z="52tgdSCpb74XULpVDX7WUkkpUvQ="/>
-            <table:column date="true" dateTimePattern="${estatusCuenta_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_EstatusCuenta_fechaCreacion" property="fechaCreacion" z="ql+oAce8b0YFdxLrFVFXCFF059U="/>
-            <table:column date="true" dateTimePattern="${estatusCuenta_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_EstatusCuenta_fechaModificacion" property="fechaModificacion" z="O1W01qXNwsc9WnmsWKUPgh4xcEU="/>
+            <table:column id="c_com_raze_coleadmin_catalog_EstatusCuenta_usuarioCrea" property="usuarioCrea" z="hYs/X01OkQWKQfAe93aJbXqXsOE=" render="false"/>
+            <table:column id="c_com_raze_coleadmin_catalog_EstatusCuenta_usuarioModifica" property="usuarioModifica" z="52tgdSCpb74XULpVDX7WUkkpUvQ=" render="false"/>
+            <table:column date="true" dateTimePattern="${estatusCuenta_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_EstatusCuenta_fechaCreacion" property="fechaCreacion" z="ql+oAce8b0YFdxLrFVFXCFF059U=" render="false"/>
+            <table:column date="true" dateTimePattern="${estatusCuenta_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_EstatusCuenta_fechaModificacion" property="fechaModificacion" z="O1W01qXNwsc9WnmsWKUPgh4xcEU=" render="false"/>
         </table:table>
     </page:list>
 </div>

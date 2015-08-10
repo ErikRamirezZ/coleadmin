@@ -11,11 +11,11 @@
         <field:input field="correoE" id="c_com_raze_coleadmin_domain_Plantel_correoE" required="true" z="fvRN9M+3NajKBrAAccVCWrQyuWY="/>
         <field:input field="telefono1" id="c_com_raze_coleadmin_domain_Plantel_telefono1" required="true" z="ag4n1mnnhwCmbSKFkLRrEFmoUIc="/>
         <field:input field="telefono2" id="c_com_raze_coleadmin_domain_Plantel_telefono2" z="m8IxniAx5p79Y9ZktgZXlCrShx0="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Plantel_usuarioCrea" validationMessageCode="field_invalid_integer" z="OyXY4AjttpwgHQX4POnD6RiRNtQ="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Plantel_usuarioModifica" validationMessageCode="field_invalid_integer" z="U1qO8wNkfuCYNvXWL43HFPB4o58="/>
-        <field:datetime dateTimePattern="${plantel_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Plantel_fechaCreacion" z="4RxSbJ3qS3Nhv8TgH/YAi9p8rl0="/>
-        <field:datetime dateTimePattern="${plantel_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Plantel_fechaModificacion" z="SATBjuxFIW9dpM1hzUb43Pm1ZTY="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Plantel_activo" z="LxZI82SXngPpfXccGbdv5tNNIwQ="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Plantel_usuarioCrea" validationMessageCode="field_invalid_integer" z="OyXY4AjttpwgHQX4POnD6RiRNtQ=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Plantel_usuarioModifica" validationMessageCode="field_invalid_integer" z="U1qO8wNkfuCYNvXWL43HFPB4o58=" render="false"/>
+        <field:datetime dateTimePattern="${plantel_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Plantel_fechaCreacion" z="4RxSbJ3qS3Nhv8TgH/YAi9p8rl0=" render="false"/>
+        <field:datetime dateTimePattern="${plantel_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Plantel_fechaModificacion" z="SATBjuxFIW9dpM1hzUb43Pm1ZTY=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Plantel_activo" z="LxZI82SXngPpfXccGbdv5tNNIwQ=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Plantel" render="${not empty dependencies}" z="91Z/mPXEbzTGsDAmuNZ19NFFHJ4="/>
 </div>

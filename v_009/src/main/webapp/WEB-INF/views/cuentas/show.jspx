@@ -13,10 +13,10 @@
         <field:display field="enviarRecordatorio" id="s_com_raze_coleadmin_domain_Cuenta_enviarRecordatorio" object="${cuenta}" z="fc8+40n3YDweyE+F//L9lO+AxlA="/>
         <field:display field="saldoTotal" id="s_com_raze_coleadmin_domain_Cuenta_saldoTotal" object="${cuenta}" z="JhMqc97DoBNKMFrL4jMIL2OJrhs="/>
         <field:display field="estatus" id="s_com_raze_coleadmin_domain_Cuenta_estatus" object="${cuenta}" z="sX8dS+Hb7CFwvqa7emSDRUV5IS8="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Cuenta_usuarioCrea" object="${cuenta}" z="JPPsJ/B3EU1AIUdyYlp5I/rhKA8="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Cuenta_usuarioModifica" object="${cuenta}" z="e489Gde1VdMFVwthWy8YHg3Kg0E="/>
-        <field:display date="true" dateTimePattern="${cuenta_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Cuenta_fechaCreacion" object="${cuenta}" z="kKe6jp3xFu7bcc35vvKI/AlpLtE="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Cuenta_usuarioCrea" object="${cuenta}" z="JPPsJ/B3EU1AIUdyYlp5I/rhKA8=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Cuenta_usuarioModifica" object="${cuenta}" z="e489Gde1VdMFVwthWy8YHg3Kg0E=" render="false"/>
+        <field:display date="true" dateTimePattern="${cuenta_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Cuenta_fechaCreacion" object="${cuenta}" z="kKe6jp3xFu7bcc35vvKI/AlpLtE=" render="false"/>
         <field:display date="true" dateTimePattern="${cuenta_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Cuenta_fechaModificacion" object="${cuenta}" z="XWzPf3b5vFshXvV9kTFbwgdWO78="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Cuenta_activo" object="${cuenta}" z="QRQNTTo9pYMleatGguiqAxQnukQ="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Cuenta_activo" object="${cuenta}" z="QRQNTTo9pYMleatGguiqAxQnukQ=" render="false"/>
     </page:show>
 </div>

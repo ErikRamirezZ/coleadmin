@@ -1,9 +1,7 @@
 package com.raze.coleadmin.service;
 import com.raze.coleadmin.catalog.Permiso;
 import java.util.List;
-import org.springframework.roo.addon.layers.service.RooService;
 
-@RooService(domainTypes = { com.raze.coleadmin.catalog.Permiso.class })
 public interface PermisoService {
 
 	public abstract long countAllPermisoes();

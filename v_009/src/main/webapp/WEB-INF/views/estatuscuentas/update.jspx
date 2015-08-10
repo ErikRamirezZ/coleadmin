@@ -5,10 +5,10 @@
     <form:update id="fu_com_raze_coleadmin_catalog_EstatusCuenta" modelAttribute="estatusCuenta" path="/estatuscuentas" versionField="Version" z="RF/r/hU+EsiD4Qzn7hyrmATXSeI=">
         <field:input field="nombreEstatusCuenta" id="c_com_raze_coleadmin_catalog_EstatusCuenta_nombreEstatusCuenta" required="true" z="HirDEhyxD0y671Dk7K4ZpCjOy0w="/>
         <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_EstatusCuenta_descripcion" z="Z8SR2BIw9sgvCgYH+JD6NHIC+a0="/>
-        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_EstatusCuenta_usuarioCrea" validationMessageCode="field_invalid_integer" z="Tz7ZjeKQ1tdKTn/7tDczYxvi0pI="/>
-        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_EstatusCuenta_usuarioModifica" validationMessageCode="field_invalid_integer" z="dydxGY6YyckC/rMRNu+MrGiLKXA="/>
-        <field:datetime dateTimePattern="${estatusCuenta_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_EstatusCuenta_fechaCreacion" z="8BdSbUx0AJOAg/CdIg8CEZvfLvA="/>
-        <field:datetime dateTimePattern="${estatusCuenta_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_EstatusCuenta_fechaModificacion" z="TznjGg1xXKsZYkWKPU/buOo8s10="/>
-        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_EstatusCuenta_activo" z="NYLET96cLdhO5+8BAXIo0IEIxCQ="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_catalog_EstatusCuenta_usuarioCrea" validationMessageCode="field_invalid_integer" z="Tz7ZjeKQ1tdKTn/7tDczYxvi0pI=" render="false"/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_catalog_EstatusCuenta_usuarioModifica" validationMessageCode="field_invalid_integer" z="dydxGY6YyckC/rMRNu+MrGiLKXA=" render="false"/>
+        <field:datetime dateTimePattern="${estatusCuenta_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_EstatusCuenta_fechaCreacion" z="8BdSbUx0AJOAg/CdIg8CEZvfLvA=" render="false"/>
+        <field:datetime dateTimePattern="${estatusCuenta_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_EstatusCuenta_fechaModificacion" z="TznjGg1xXKsZYkWKPU/buOo8s10=" render="false"/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_EstatusCuenta_activo" z="NYLET96cLdhO5+8BAXIo0IEIxCQ=" render="false"/>
     </form:update>
 </div>

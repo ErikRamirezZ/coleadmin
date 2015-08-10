@@ -5,10 +5,10 @@
     <page:show id="ps_com_raze_coleadmin_domain_Curso" object="${curso}" path="/cursoes" z="NdbuqrwcfvRZMH76lAaCSR7hIg4=">
         <field:display field="cicloEscolar" id="s_com_raze_coleadmin_domain_Curso_cicloEscolar" object="${curso}" z="sqlPSo8WApsYXU8lyuFOH609UPo="/>
         <field:display field="nombre" id="s_com_raze_coleadmin_domain_Curso_nombre" object="${curso}" z="TtM91374HjU22AMSjkRm5ttm6Bo="/>
-        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Curso_usuarioCrea" object="${curso}" z="nawiZu4/5RJMmgTAfNQK+NUqE3A="/>
-        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Curso_usuarioModifica" object="${curso}" z="EmDYqALUA/tbU4Qkt0C/nsTTEM8="/>
-        <field:display date="true" dateTimePattern="${curso_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Curso_fechaCreacion" object="${curso}" z="hlrh64YOi7h03iZ6skH5zspIleo="/>
-        <field:display date="true" dateTimePattern="${curso_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Curso_fechaModificacion" object="${curso}" z="m3wTwInc2QjT2rANKrzea5RI+g8="/>
-        <field:display field="activo" id="s_com_raze_coleadmin_domain_Curso_activo" object="${curso}" z="wyRKliGHpSoJBwZYOaxyNh0hULI="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Curso_usuarioCrea" object="${curso}" z="nawiZu4/5RJMmgTAfNQK+NUqE3A=" render="false"/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Curso_usuarioModifica" object="${curso}" z="EmDYqALUA/tbU4Qkt0C/nsTTEM8=" render="false"/>
+        <field:display date="true" dateTimePattern="${curso_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Curso_fechaCreacion" object="${curso}" z="hlrh64YOi7h03iZ6skH5zspIleo=" render="false"/>
+        <field:display date="true" dateTimePattern="${curso_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Curso_fechaModificacion" object="${curso}" z="m3wTwInc2QjT2rANKrzea5RI+g8=" render="false"/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Curso_activo" object="${curso}" z="wyRKliGHpSoJBwZYOaxyNh0hULI=" render="false"/>
     </page:show>
 </div>

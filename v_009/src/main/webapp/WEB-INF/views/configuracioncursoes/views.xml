@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
-    <definition extends="default" name="configuracioncursoes/list">
-        <put-attribute name="body" value="/WEB-INF/views/configuracioncursoes/list.jspx"/>
-    </definition>
-<definition extends="default" name="configuracioncursoes/show">
-        <put-attribute name="body" value="/WEB-INF/views/configuracioncursoes/show.jspx"/>
-    </definition>
-<definition extends="default" name="configuracioncursoes/create">
-        <put-attribute name="body" value="/WEB-INF/views/configuracioncursoes/create.jspx"/>
-    </definition>
-<definition extends="default" name="configuracioncursoes/update">
-        <put-attribute name="body" value="/WEB-INF/views/configuracioncursoes/update.jspx"/>
-    </definition>
+	<definition extends="default" name="configuracioncursoes/list">
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/configuracioncursoes/list.jspx" />
+	</definition>
+	<definition extends="default" name="configuracioncursoes/show">
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/configuracioncursoes/show.jspx" />
+	</definition>
+	<definition extends="default" name="configuracioncursoes/create">
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/configuracioncursoes/create.jspx" />
+	</definition>
+	<definition extends="default" name="configuracioncursoes/update">
+        <put-attribute name="menu" value="/WEB-INF/views/menu_admon.jspx" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/configuracioncursoes/update.jspx" />
+	</definition>
 </tiles-definitions>
