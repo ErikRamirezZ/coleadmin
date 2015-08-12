@@ -2,7 +2,9 @@ package com.raze.coleadmin.service;
 
 import com.raze.coleadmin.domain.Padre;
 import com.raze.coleadmin.repository.PadreRepository;
+import com.raze.coleadmin.util.UserLoginData;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +26,13 @@ public class PadreServiceImpl implements PadreService {
         padreRepository.delete(padre);
     }
 
+	public void logicalDeletePadre(Padre padre) {
+		padre.setUsuarioModifica(UserLoginData.getIdUsername());
+		padre.setFechaModificacion(new Date());
+		padre.setActivo(false);
+        padreRepository.save(padre);
+    }
+
 	public Padre findPadre(Long id) {
         return padreRepository.findOne(id);
     }
@@ -37,10 +46,16 @@ public class PadreServiceImpl implements PadreService {
     }
 
 	public void savePadre(Padre padre) {
+		padre.setUsuarioCrea(UserLoginData.getIdUsername());
+		padre.setFechaCreacion(new Date());
+		padre.setActivo(true);
         padreRepository.save(padre);
     }
 
 	public Padre updatePadre(Padre padre) {
+		padre.setUsuarioModifica(UserLoginData.getIdUsername());
+		padre.setFechaModificacion(new Date());
+		padre.setActivo(true);
         return padreRepository.save(padre);
     }
 

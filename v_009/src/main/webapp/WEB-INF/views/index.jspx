@@ -34,7 +34,7 @@
 
 		<h3>
 			<security:authentication property="principal" var="x"/>
-			<spring:message code="welcome_h3" arguments="${x.username}" />
+            <spring:message code="welcome_h3" arguments="${x.username}" />
 		</h3>
 		
 		<p>
