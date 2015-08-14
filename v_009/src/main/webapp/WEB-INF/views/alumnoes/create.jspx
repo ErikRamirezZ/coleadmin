@@ -25,6 +25,65 @@
         <field:datetime dateTimePattern="${alumno_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Alumno_fechaCreacion" z="EkD6vCWGDb7JANSH1mo97znZoJo=" render="false"/>
         <field:datetime dateTimePattern="${alumno_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Alumno_fechaModificacion" z="CSl7aiNGuT3UUiUjZ1LInSoAgYk=" render="false"/>
         <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Alumno_activo" z="C3nNTCgjWjCpVFDRWGhk0K7xcf8=" render="false"/>
+        
+        
+        
+               <!-- create the tab container div -->
+        <div id="myTabContainer" style="height: 500px; width:500px;">
+
+           <!-- add a tab -->
+            <div id="basicTab" style="width: 100%">
+
+                <!-- fields in the tab pane -->
+                <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Alumno_usuarioCrea" validationMessageCode="field_invalid_integer" z="blfoWw4J6Mx1JGYKLOMNNU8onbI=" render="false"/>
+             </div>
+             <!-- add the content pane decoration (all tabs must live in content panes) -->
+             <script type="text/javascript">
+                    Spring.addDecoration(new Spring.ElementDecoration(
+                        {elementId : 'basicTab',
+                            widgetType : 'dijit.layout.ContentPane',
+                            widgetAttrs : {title: 'Basic', selected: true}
+                        }));
+                </script>               
+
+            <!-- another tab... -->
+            <div id="advancedTab">
+                <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Alumno_usuarioCrea" validationMessageCode="field_invalid_integer" z="blfoWw4J6Mx1JGYKLOMNNU8onbI=" render="false"/>                
+            </div>
+            <!-- decorate the second tab div with a content pane -->
+            <script type="text/javascript">
+                    Spring.addDecoration(new Spring.ElementDecoration(
+                        {elementId : 'advancedTab',
+                            widgetType : 'dijit.layout.ContentPane',
+                            widgetAttrs : {title: 'Advanced'}
+                        }));
+                </script>
+        </div>
+        <!-- decorate the tab container to create it -->
+        <script type="text/javascript">
+        Spring.addDecoration(new Spring.ElementDecoration(
+                {elementId : 'myTabContainer',
+                    widgetType : 'dijit.layout.TabContainer'}
+                ));
+        </script>
+
+        <!-- now, find the tab container, and the title pane, (which is the ID with a prefix of '_title'.  Add the tab container to the tab pane at the top of it..  Note that the button is at the bottom of the TitlePane. -->
+        <script type="text/javascript">
+            dojo.addOnLoad(function(){
+                var tabs = dijit.byId("myTabContainer");
+                var pane = dijit.byId("_title_fc_org_rooina_ria_ajax_coursemanager_model_Course_id");
+                tabs.placeAt(pane.containerNode, "first");
+                tabs.startup();
+                tabs.resize();
+            });
+        </script>
+        
+        
+        
+        
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Alumno" render="${not empty dependencies}" z="ByjF+iAelrFx9czO67Q6kSHwbZA="/>
+    
+
+    
 </div>
