@@ -3,6 +3,7 @@ import com.raze.coleadmin.domain.Alumno;
 import com.raze.coleadmin.service.AlumnoService;
 import com.raze.coleadmin.service.EscuelaService;
 import com.raze.coleadmin.service.RolService;
+import com.raze.coleadmin.util.UserLoginData;
 
 import java.io.ByteArrayInputStream;
 import java.io.OutputStream;
@@ -148,8 +149,14 @@ public class AlumnoController {
     		Model uiModel, 
     		@RequestParam("foto") MultipartFile multipartFile,
     		HttpServletRequest httpServletRequest) {
+		System.out.println("UserLoginData.getEscuela() ===> "+ UserLoginData.getEscuela());
+		System.out.println("bindingResult ===> " + bindingResult.getObjectName());
+		System.out.println("bindingResult ===> " + bindingResult.getFieldErrorCount());
+		System.out.println("bindingResult ===> " + bindingResult.toString());
+		alumno.setEscuela(UserLoginData.getEscuela());
         if (bindingResult.hasErrors()) {
             populateEditForm(uiModel, alumno);
+            System.out.println("Falto algun Dato ");
             return "alumnoes/create";
         }
         uiModel.asMap().clear();
