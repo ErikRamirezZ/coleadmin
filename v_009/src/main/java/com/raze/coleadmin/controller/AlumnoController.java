@@ -274,6 +274,7 @@ public class AlumnoController {
 	        ServletRequestDataBinder binder) throws ServletException {
 	    binder.registerCustomEditor(byte[].class,
 	            new ByteArrayMultipartFileEditor());
+	    binder.setDisallowedFields("escuela");
 	}
 
 }

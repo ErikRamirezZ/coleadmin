@@ -38,7 +38,7 @@
 
 
 
-	<spring:url var="banner" value="/resources/images/coleadmin_2.png" />
+	<spring:url var="banner" value="/resources/images/coleadmin_1.png" />
 	<spring:url var="home" value="/" />
 	<spring:message code="button_home" var="home_label" htmlEscape="false" />
 	<a href="${home}" name="${fn:escapeXml(home_label)}" 

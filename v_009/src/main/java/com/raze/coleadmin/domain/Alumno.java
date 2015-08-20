@@ -37,7 +37,6 @@ public class Alumno extends Usuario implements UserDetails {
 
     /**
      */
-    @NotNull
     @ManyToOne
     private Escuela escuela;
 
