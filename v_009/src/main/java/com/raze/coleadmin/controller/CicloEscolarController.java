@@ -132,6 +132,7 @@ public class CicloEscolarController {
             populateEditForm(uiModel, cicloEscolar);
             return "cicloescolars/create";
         }
+        System.out.println("crea CICLO ESCOLAR");
         uiModel.asMap().clear();
         cicloEscolarService.saveCicloEscolar(cicloEscolar);
         return "redirect:/cicloescolars/" + encodeUrlPathSegment(cicloEscolar.getId().toString(), httpServletRequest);
@@ -177,6 +178,7 @@ public class CicloEscolarController {
             populateEditForm(uiModel, cicloEscolar);
             return "cicloescolars/update";
         }
+        System.out.println("actualiza CICLO ESCOLAR");
         uiModel.asMap().clear();
         cicloEscolarService.updateCicloEscolar(cicloEscolar);
         return "redirect:/cicloescolars/" + encodeUrlPathSegment(cicloEscolar.getId().toString(), httpServletRequest);

@@ -23,9 +23,14 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Personal extends Usuario  implements UserDetails {
 
-    /**
+/**
+	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -3291498568886815395L;
+
+//    /**
+//	 */
+//	private static final long serialVersionUID = 1L;
 
 	/**
      */

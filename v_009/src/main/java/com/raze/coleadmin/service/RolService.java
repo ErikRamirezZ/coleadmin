@@ -1,5 +1,6 @@
 package com.raze.coleadmin.service;
 import com.raze.coleadmin.catalog.Rol;
+
 import java.util.List;
 
 public interface RolService {
@@ -23,5 +24,7 @@ public interface RolService {
 
 
 	public abstract Rol updateRol(Rol rol);
+	
+	public abstract Rol findeRolByNombreRol(String nombreRol);
 
 }

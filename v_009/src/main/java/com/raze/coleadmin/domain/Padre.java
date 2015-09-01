@@ -1,9 +1,4 @@
 package com.raze.coleadmin.domain;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
@@ -12,8 +7,13 @@ import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
-import javax.validation.constraints.NotNull;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import com.raze.coleadmin.catalog.Rol;
 
@@ -23,10 +23,15 @@ import flexjson.JSONSerializer;
 @Entity
 public class Padre extends Usuario implements UserDetails {
 
-    /**
+//    /**
+//	 * 
+//	 */
+//	private static final long serialVersionUID = 1L;
+
+	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 8619267778433531513L;
 
 	/**
      */

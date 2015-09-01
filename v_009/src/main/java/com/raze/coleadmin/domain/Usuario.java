@@ -1,27 +1,30 @@
 package com.raze.coleadmin.domain;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-import flexjson.JSONDeserializer;
-import flexjson.JSONSerializer;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.Version;
+import javax.persistence.Transient;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.format.annotation.DateTimeFormat;
-import javax.persistence.Lob;
 import org.springframework.transaction.annotation.Transactional;
+
+import flexjson.JSONDeserializer;
+import flexjson.JSONSerializer;
 
 @Configurable
 @Entity
@@ -229,8 +232,9 @@ public abstract class Usuario {
     @Column(name = "id")
     private Long id;
 
-	@Version
-    @Column(name = "version")
+//	@Version
+//    @Column(name = "version")
+	@Transient
     private Integer version;
 
 	public Long getId() {
@@ -252,7 +256,7 @@ public abstract class Usuario {
 	@PersistenceContext
     transient EntityManager entityManager;
 
-	public static final List<String> fieldNames4OrderClauseFilter = java.util.Arrays.asList("correoE", "nombre", "primerApellido", "segundoApellido", "domicilio", "ciudad", "telefono", "fechaNacimiento", "foto", "usuarioCrea", "usuarioModifica", "fechaCreacion", "fechaModificacion", "activo");
+	public static final List<String> fieldNames4OrderClauseFilter = java.util.Arrays.asList("nombre", "primerApellido", "segundoApellido", "fechaNacimiento", "activo");
 
 	public static final EntityManager entityManager() {
         EntityManager em = new Usuario() {

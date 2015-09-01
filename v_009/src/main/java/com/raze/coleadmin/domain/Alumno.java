@@ -25,10 +25,9 @@ import javax.persistence.ManyToMany;
 @Entity
 public class Alumno extends Usuario implements UserDetails {
 
-    /**
-	 * 
+	/**
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 4906158640521843221L;
 
 	/**
      */

@@ -9,4 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface AlumnoRepository extends JpaSpecificationExecutor<Alumno>, JpaRepository<Alumno, Long> {
 
 	Alumno findByCorreoE(String correoe);
+	
 }

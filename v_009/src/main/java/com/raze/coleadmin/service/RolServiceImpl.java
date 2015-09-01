@@ -41,4 +41,9 @@ public class RolServiceImpl implements RolService {
 	public Rol updateRol(Rol rol) {
         return rolRepository.save(rol);
     }
+	
+	public Rol findeRolByNombreRol(String nombreRol) {
+		return rolRepository.findByNombreRol(nombreRol);
+	}
+	
 }

@@ -149,14 +149,10 @@ public class AlumnoController {
     		Model uiModel, 
     		@RequestParam("foto") MultipartFile multipartFile,
     		HttpServletRequest httpServletRequest) {
-		System.out.println("UserLoginData.getEscuela() ===> "+ UserLoginData.getEscuela());
-		System.out.println("bindingResult ===> " + bindingResult.getObjectName());
-		System.out.println("bindingResult ===> " + bindingResult.getFieldErrorCount());
-		System.out.println("bindingResult ===> " + bindingResult.toString());
+		System.out.println("alumno en CREATE");
 		alumno.setEscuela(UserLoginData.getEscuela());
         if (bindingResult.hasErrors()) {
             populateEditForm(uiModel, alumno);
-            System.out.println("Falto algun Dato ");
             return "alumnoes/create";
         }
         uiModel.asMap().clear();
@@ -199,11 +195,16 @@ public class AlumnoController {
     }
 
 	@RequestMapping(method = RequestMethod.PUT, produces = "text/html")
-    public String update(@Valid Alumno alumno, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
+    public String update(@Valid Alumno alumno, 
+    		BindingResult bindingResult, 
+    		Model uiModel, 
+    		@RequestParam("foto") MultipartFile multipartFile,
+    		HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             populateEditForm(uiModel, alumno);
             return "alumnoes/update";
         }
+        System.out.println("alumno en UPDATE");
         uiModel.asMap().clear();
         alumnoService.updateAlumno(alumno);
         return "redirect:/alumnoes/" + encodeUrlPathSegment(alumno.getId().toString(), httpServletRequest);

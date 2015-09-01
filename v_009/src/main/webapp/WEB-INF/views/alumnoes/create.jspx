@@ -97,6 +97,7 @@
 			                tabs.startup();
 			                tabs.resize();
 			                tabs.set('style', 'margin-right: auto; margin-left: auto; width: 100%; height: 100%; margin:5px; overflow-y: auto; -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75); -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75); box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);');
+			                dojo.style(dojo.byId("_c_com_raze_coleadmin_domain_Alumno_foto_id"), 'display', 'none');
 			                //dojo.byId('_title_fc_com_raze_coleadmin_domain_Alumno_id_pane');
 			                //dijit.byId('_title_fc_com_raze_coleadmin_domain_Alumno_id_pane').set('style', 'heigth: auto;');
 			                //dojo.byId('fc_com_raze_coleadmin_domain_Alumno_submit').set('style','');
