@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields"
+	xmlns:form="urn:jsptagdir:/WEB-INF/tags/form"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:util="urn:jsptagdir:/WEB-INF/tags/util"
+	xmlns:spring="http://www.springframework.org/tags" version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+
+	<spring:message code="label_inscripciones" var="title_msg" htmlEscape="false" />
+	<spring:message code="tab_alumno" var="tab_alumno" htmlEscape="false" />
+	<spring:message code="tab_padre" var="tab_padre" htmlEscape="false" />
+	<spring:message code="tab_ciclo_grupo" var="tab_ciclo_grupo" htmlEscape="false" />
+	<spring:message code="label_obligatorio" var="label_obligatorio" htmlEscape="false" />
+	
+	<spring:message code="label_nombre" var="label_nombre" htmlEscape="false" /> 
+	
+	<util:panel id="pane_create_inscripcion" title="${title_msg}" openPane="true">
+		<div id="d_block">
+			<div id="content_div">
+				<div id="tabs_form">
+					<!-- create the tab container div -->
+					<div id="myTabContainer" style="height: 500px; width: 500px;">
+
+						<!-- add a tab -->
+						<div id="alumno-data-tab" style="width: 100%">
+							<div class="picture_personal_data">
+								<label for="_foto_id">
+									<div class="circle"
+										style="background-image: url('${background_pic}')">
+										<!-- x -->
+									</div>
+								</label>
+								<input type="file" id="_foto_id" style="display: none;"/>
+							</div>
+							<div>
+                                <div>
+                                    <label for="_nombre_id" class="custom">${label_nombre}</label>
+                                    <input type="text" id="_nombre_id" placeholder="${label_obligatorio}" />
+                                </div>
+                                <div>
+                                    <label for="_nombre_id" class="custom">${label_nombre}</label>
+                                    <input type="text" id="_nombre_id" placeholder="${label_obligatorio}" />
+                                </div>
+                                <div>
+                                    <label for="_nombre_id" class="custom">${label_nombre}</label>
+                                    <input type="text" id="_nombre_id" placeholder="${label_opcional}" />
+                                </div>
+						    </div>
+						</div>
+						<!-- add the content pane decoration (all tabs must live in content panes) -->
+						<script type="text/javascript">
+							Spring.addDecoration(new Spring.ElementDecoration({
+								elementId : 'alumno-data-tab',
+								widgetType : 'dijit.layout.ContentPane',
+								widgetAttrs : {
+									title : '${tab_alumno}',
+									selected : true
+								}
+							}));
+						</script>
+
+                        <!-- another tab... -->
+                        <div id="padre-data-tab">
+                            <div class="picture_personal_data">
+                                <label for="_foto_id">
+                                    <div class="circle"
+                                        style="background-image: url('${background_pic}')">
+                                        <!-- x -->
+                                    </div>
+                                </label> aqui van form
+                            </div>
+                        </div>
+                        <!-- decorate the second tab div with a content pane -->
+                        <script type="text/javascript">
+                            Spring.addDecoration(new Spring.ElementDecoration({
+                                elementId : 'padre-data-tab',
+                                widgetType : 'dijit.layout.ContentPane',
+                                widgetAttrs : {
+                                    title : '${tab_padre}'
+                                }
+                            }));
+                        </script>
+
+
+                        <!-- another tab... -->
+                        <div id="ciclo-data-tab">mas datos</div>
+                        <!-- decorate the second tab div with a content pane -->
+                        <script type="text/javascript">
+                            Spring.addDecoration(new Spring.ElementDecoration({
+                                elementId : 'ciclo-data-tab',
+                                widgetType : 'dijit.layout.ContentPane',
+                                widgetAttrs : {
+                                    title : '${tab_ciclo_grupo}'
+                                }
+                            }));
+                        </script>
+
+
+
+					</div>
+
+					<!-- decorate the tab container to create it -->
+					<script type="text/javascript">
+						Spring
+								.addDecoration(new Spring.ElementDecoration(
+										{
+											elementId : 'myTabContainer',
+											widgetType : 'dijit.layout.TabContainer',
+											widgetAttrs : {
+												tabPosition : 'top',
+												controllerWidget : 'dijit.layout.TabController',
+												doLayout : false, // si es false pone el marco a lo alto del contenido, true pone los un height fijo
+												tabStrip : true
+											}
+										}));
+					</script>
+
+					<script type="text/javascript">
+						dojo
+								.addOnLoad(function() {
+									var tabs = dijit.byId("myTabContainer");
+									tabs.startup();
+									tabs.resize();
+									tabs
+											.set(
+													'style',
+													'margin-right: auto; margin-left: auto; width: 100%; height: 100%; margin:5px; overflow-y: auto; -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75); -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75); box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);');
+									dojo
+											.style(
+													dojo
+															.byId("_c_com_raze_coleadmin_domain_Alumno_foto_id"),
+													'display', 'none');
+									//dojo.byId('_title_fc_com_raze_coleadmin_domain_Alumno_id_pane');
+									//dijit.byId('_title_fc_com_raze_coleadmin_domain_Alumno_id_pane').set('style', 'heigth: auto;');
+									//dojo.byId('fc_com_raze_coleadmin_domain_Alumno_submit').set('style','');
+									//tabs.placeAt(pane.containerNode, "first");
+								});
+					</script>
+
+
+				</div>
+			</div>
+		</div>
+	</util:panel>
+</div>

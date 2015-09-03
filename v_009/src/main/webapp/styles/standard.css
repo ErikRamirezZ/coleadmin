@@ -176,6 +176,17 @@ label {
     margin-top: 0px;
 }
 
+label.custom {
+    width:120px;
+    float:left;
+    margin-left: 5px;
+    margin-top: 0px;
+    text-align: right;
+    background-color: #EDF3F4;
+    padding: 5px 5px;
+    border-color:  #000000;
+}
+
 input {
     height:20px;
 }
@@ -433,7 +444,7 @@ fieldset th {
     width: 16px;
 }
 
-#picture_personal_data {    
+.picture_personal_data {    
 	float: left;
     width:20%;
 }

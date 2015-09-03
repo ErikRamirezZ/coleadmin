@@ -48,15 +48,15 @@
 							src="${admon_url}" alt="admon" /></span>
 						<div class="ca-content">
 							<h2 class="ca-main">Administracion</h2>
-							<h3 class="ca-sub">Menu Admon</h3>
+							<h3 class="ca-sub">Administracion</h3>
 						</div>
 				</a></li>
 				<li><spring:url value="/colegiaturas" var="money_menu_url" />
 					<a href="${money_menu_url}"> <span class="ca-icon"><img
 							src="${money_url}" alt="money" /></span>
 						<div class="ca-content">
-							<h2 class="ca-main">Colegiaturas, Inscripciones y Pagos</h2>
-							<h3 class="ca-sub">Advanced use of technology</h3>
+							<h2 class="ca-main">Inscripciones y Pagos</h2>
+							<h3 class="ca-sub">Inscripciones y Pagos</h3>
 						</div>
 				</a></li>
 				<li><spring:url value="/comunicacion"
@@ -72,8 +72,8 @@
 					href="${reports_menu_url}"> <span class="ca-icon"><img
 							src="${reports_url}" alt="reportes" /></span>
 						<div class="ca-content">
-							<h2 class="ca-main">Reportes</h2>
-							<h3 class="ca-sub">Reportes</h3>
+							<h2 class="ca-main">Reportes y Busquedas</h2>
+							<h3 class="ca-sub">Reportes y Busquedas</h3>
 						</div>
 				</a></li>
 				<!-- 
