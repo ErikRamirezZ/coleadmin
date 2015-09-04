@@ -8,15 +8,45 @@
 	<jsp:directive.page contentType="text/html;charset=UTF-8" />
 	<jsp:output omit-xml-declaration="yes" />
 
-	<spring:message code="label_inscripciones" var="title_msg" htmlEscape="false" />
+	<spring:message code="label_inscripciones" var="title_msg"
+		htmlEscape="false" />
 	<spring:message code="tab_alumno" var="tab_alumno" htmlEscape="false" />
 	<spring:message code="tab_padre" var="tab_padre" htmlEscape="false" />
-	<spring:message code="tab_ciclo_grupo" var="tab_ciclo_grupo" htmlEscape="false" />
-	<spring:message code="label_obligatorio" var="label_obligatorio" htmlEscape="false" />
-	
-	<spring:message code="label_nombre" var="label_nombre" htmlEscape="false" /> 
-	
-	<util:panel id="pane_create_inscripcion" title="${title_msg}" openPane="true">
+	<spring:message code="tab_ciclo_grupo" var="tab_ciclo_grupo"
+		htmlEscape="false" />
+	<spring:message code="label_obligatorio" var="label_obligatorio"
+		htmlEscape="false" />
+
+	<spring:message code="label_nombre" var="label_nombre"
+		htmlEscape="false" />
+	<spring:message code="label_primer_apellido"
+		var="label_primer_apellido" htmlEscape="false" />
+	<spring:message code="label_segundo_apellido"
+		var="label_segundo_apellido" htmlEscape="false" />
+
+	<spring:message code="label_fecha_nacimiento"
+		var="label_fecha_nacimiento" htmlEscape="false" />
+	<spring:message code="label_curp" var="label_curp" htmlEscape="false" />
+	<spring:message code="label_tipo_sangre" var="label_tipo_sangre"
+		htmlEscape="false" />
+	<spring:message code="label_talla" var="label_talla" htmlEscape="false" />
+	<spring:message code="label_perso" var="label_perso" htmlEscape="false" />
+	<spring:message code="label_alergias" var="label_alergias"
+		htmlEscape="false" />
+	<spring:message code="label_observaciones" var="label_observaciones"
+		htmlEscape="false" />
+	<spring:message code="label_correo_e" var="label_correo_e"
+		htmlEscape="false" />
+	<spring:message code="label_domicilio" var="label_domicilio"
+		htmlEscape="false" />
+	<spring:message code="label_ciudad" var="label_ciudad"
+		htmlEscape="false" />
+	<spring:message code="label_telefono" var="label_telefono"
+		htmlEscape="false" />
+
+
+	<util:panel id="pane_create_inscripcion" title="${title_msg}"
+		openPane="true">
 		<div id="d_block">
 			<div id="content_div">
 				<div id="tabs_form">
@@ -31,23 +61,90 @@
 										style="background-image: url('${background_pic}')">
 										<!-- x -->
 									</div>
-								</label>
-								<input type="file" id="_foto_id" style="display: none;"/>
+								</label> <input type="file" id="_foto_id" style="display: none;" />
 							</div>
 							<div>
-                                <div>
-                                    <label for="_nombre_id" class="custom">${label_nombre}</label>
-                                    <input type="text" id="_nombre_id" placeholder="${label_obligatorio}" />
-                                </div>
-                                <div>
-                                    <label for="_nombre_id" class="custom">${label_nombre}</label>
-                                    <input type="text" id="_nombre_id" placeholder="${label_obligatorio}" />
-                                </div>
-                                <div>
-                                    <label for="_nombre_id" class="custom">${label_nombre}</label>
-                                    <input type="text" id="_nombre_id" placeholder="${label_opcional}" />
-                                </div>
-						    </div>
+
+								<fieldset class="form">
+									<legend>Personal:</legend>
+									<div>
+										<label for="_nombre_id" class="custom">${label_nombre}</label>
+										<input type="text" id="_nombre_id"
+											placeholder="${label_obligatorio}" />
+									</div>
+									<div>
+										<label for="_primer_apellido_id" class="custom">${label_primer_apellido}</label>
+										<input type="text" id="_primer_apellido_id"
+											placeholder="${label_obligatorio}" />
+									</div>
+									<div>
+										<label for="_segundo_apellido_id" class="custom">${label_segundo_apellido}</label>
+										<input type="text" id="_segundo_apellido_id" />
+									</div>
+									<div>
+										<label for="_fecha_nacimiento_id" class="custom">${label_fecha_nacimiento}</label>
+										<input type="text" id="_fecha_nacimiento_id"
+											placeholder="${label_obligatorio}" />
+										<script>
+											Spring
+													.addDecoration(new Spring.ElementDecoration(
+															{
+																elementId : '_fecha_nacimiento_id',
+																widgetType : 'dijit.form.DateTextBox',
+																widgetAttrs : {
+																	required : false,
+																	constraints : {
+																		required : true
+																	}
+																}
+															}));
+										</script>
+									</div>
+								</fieldset>
+								<fieldset class="form">
+									<legend>Personal:</legend>
+									<div>
+										<label for="_curp_id" class="custom">${label_curp}</label> <input
+											type="text" id="_curp_id" placeholder="${label_obligatorio}" />
+									</div>
+									<div>
+										<label for="_tipo_sangre_id" class="custom">${label_tipo_sangre}</label>
+										<input type="text" id="_tipo_sangre_id" />
+									</div>
+									<div>
+										<label for="_segundo_apellido_id" class="custom">${label_segundo_apellido}</label>
+										<input type="text" id="_segundo_apellido_id" />
+									</div>
+									<div>
+										<label for="_peso_id" class="custom">${label_peso}</label> <input
+											type="text" id="_peso_id" />
+									</div>
+                              <div>
+                                  <label for="_alergias_id" class="custom">${label_alergias}</label> <input
+                                      type="text" id="_alergias_id" />
+                              </div>
+                              <div>
+                                  <label for="_observaciones_id" class="custom">${label_observaciones}</label> <input
+                                      type="text" id="_observaciones_id" />
+                              </div>
+                              <div>
+                                  <label for="_correo_e_id" class="custom">${label_correo_e}</label> <input
+                                      type="text" id="_correo_e_id" />
+                              </div>
+                              <div>
+                                  <label for="_domicilio_id" class="custom">${label_domicilio}</label> <input
+                                      type="text" id="_domicilio_id" />
+                              </div>
+                              <div>
+                                  <label for="_ciudad_id" class="custom">${label_ciudad}</label> <input
+                                      type="text" id="_ciudad_id" />
+                              </div>
+                              <div>
+                                  <label for="_telefono_id" class="custom">${label_telefono}</label> <input
+                                      type="text" id="_telefono_id" />
+                              </div>
+								</fieldset>
+							</div>
 						</div>
 						<!-- add the content pane decoration (all tabs must live in content panes) -->
 						<script type="text/javascript">
@@ -61,41 +158,41 @@
 							}));
 						</script>
 
-                        <!-- another tab... -->
-                        <div id="padre-data-tab">
-                            <div class="picture_personal_data">
-                                <label for="_foto_id">
-                                    <div class="circle"
-                                        style="background-image: url('${background_pic}')">
-                                        <!-- x -->
-                                    </div>
-                                </label> aqui van form
-                            </div>
-                        </div>
-                        <!-- decorate the second tab div with a content pane -->
-                        <script type="text/javascript">
-                            Spring.addDecoration(new Spring.ElementDecoration({
-                                elementId : 'padre-data-tab',
-                                widgetType : 'dijit.layout.ContentPane',
-                                widgetAttrs : {
-                                    title : '${tab_padre}'
-                                }
-                            }));
-                        </script>
+						<!-- another tab... -->
+						<div id="padre-data-tab">
+							<div class="picture_personal_data">
+								<label for="_foto_id">
+									<div class="circle"
+										style="background-image: url('${background_pic}')">
+										<!-- x -->
+									</div>
+								</label> aqui van form
+							</div>
+						</div>
+						<!-- decorate the second tab div with a content pane -->
+						<script type="text/javascript">
+							Spring.addDecoration(new Spring.ElementDecoration({
+								elementId : 'padre-data-tab',
+								widgetType : 'dijit.layout.ContentPane',
+								widgetAttrs : {
+									title : '${tab_padre}'
+								}
+							}));
+						</script>
 
 
-                        <!-- another tab... -->
-                        <div id="ciclo-data-tab">mas datos</div>
-                        <!-- decorate the second tab div with a content pane -->
-                        <script type="text/javascript">
-                            Spring.addDecoration(new Spring.ElementDecoration({
-                                elementId : 'ciclo-data-tab',
-                                widgetType : 'dijit.layout.ContentPane',
-                                widgetAttrs : {
-                                    title : '${tab_ciclo_grupo}'
-                                }
-                            }));
-                        </script>
+						<!-- another tab... -->
+						<div id="ciclo-data-tab">mas datos</div>
+						<!-- decorate the second tab div with a content pane -->
+						<script type="text/javascript">
+							Spring.addDecoration(new Spring.ElementDecoration({
+								elementId : 'ciclo-data-tab',
+								widgetType : 'dijit.layout.ContentPane',
+								widgetAttrs : {
+									title : '${tab_ciclo_grupo}'
+								}
+							}));
+						</script>
 
 
 

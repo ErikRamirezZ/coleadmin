@@ -485,24 +485,32 @@ fieldset th {
 }
 
 .name_profile {
-	text-align: center;
-	font-weight: bold;
-	position: relative;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
     top: 15px;
     padding: 5px 10px;
     width:80%;
     
     color: #8FC452;
     
-	background: #31343D;
+    background: #31343D;
 
-	-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
-	box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
 
-	border: 0px solid #000000;
+    border: 0px solid #000000;
 }
 
 .label_img {
     width: 0px;
 }
+
+fieldset.form{
+    padding: 2px;
+    background-color: #ffffff;
+    border: 1px dashed #dedede;
+}
+
+
