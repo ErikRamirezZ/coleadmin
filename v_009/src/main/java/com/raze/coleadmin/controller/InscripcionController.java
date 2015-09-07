@@ -13,4 +13,5 @@ public class InscripcionController {
         return "inscripciones/create";
     }
 	
+	
 }

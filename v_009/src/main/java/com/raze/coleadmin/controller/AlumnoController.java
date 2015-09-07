@@ -33,6 +33,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.support.ByteArrayMultipartFileEditor;
@@ -73,8 +74,15 @@ public class AlumnoController {
         }
     }
 
-	@RequestMapping(method = RequestMethod.POST, headers = "Accept=application/json")
-    public ResponseEntity<String> createFromJson(@RequestBody String json, UriComponentsBuilder uriBuilder) {
+//	@RequestMapping(method = RequestMethod.POST, headers = "Accept=application/json")
+	@RequestMapping(value="/upload", method = RequestMethod.POST, consumes = {"multipart/form-data"})
+    public ResponseEntity<String> createFromJson(
+    		@RequestPart(required = false, value="foto") MultipartFile foto,
+    		@RequestBody String json, 
+    		UriComponentsBuilder uriBuilder) {
+		System.out.println("Si entro en el controller AlumnoCOntroller.createFromJson");
+		System.out.println("foto =>>> " + foto);
+		System.out.println("json =>>> " + json);
         HttpHeaders headers = new HttpHeaders();
         headers.add("Content-Type", "application/json");
         try {

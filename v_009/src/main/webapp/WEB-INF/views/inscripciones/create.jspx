@@ -8,237 +8,316 @@
 	<jsp:directive.page contentType="text/html;charset=UTF-8" />
 	<jsp:output omit-xml-declaration="yes" />
 
-	<spring:message code="label_inscripciones" var="title_msg"
-		htmlEscape="false" />
+    <spring:url value="/resources/scripts/json/inscripcion.js" var="_script_inscripcion_js" />
+    
+    <script src="${_script_inscripcion_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+
+    <spring:url var="background_pic" value="/resources/images/user_icon.png" />
+
+	<spring:message code="label_inscripciones" var="title_msg" htmlEscape="false" />
 	<spring:message code="tab_alumno" var="tab_alumno" htmlEscape="false" />
 	<spring:message code="tab_padre" var="tab_padre" htmlEscape="false" />
-	<spring:message code="tab_ciclo_grupo" var="tab_ciclo_grupo"
-		htmlEscape="false" />
-	<spring:message code="label_obligatorio" var="label_obligatorio"
-		htmlEscape="false" />
+	<spring:message code="tab_ciclo_grupo" var="tab_ciclo_grupo" htmlEscape="false" />
+	<spring:message code="label_obligatorio" var="label_obligatorio" htmlEscape="false" />
+	
+	<spring:message code="field_required" var="field_required" htmlEscape="false" />
+	<spring:message code="btn_guardar_continuar" var="btn_guardar_continuar" htmlEscape="false" />
 
-	<spring:message code="label_nombre" var="label_nombre"
-		htmlEscape="false" />
-	<spring:message code="label_primer_apellido"
-		var="label_primer_apellido" htmlEscape="false" />
-	<spring:message code="label_segundo_apellido"
-		var="label_segundo_apellido" htmlEscape="false" />
+	<spring:message code="label_datos_generales" var="label_datos_generales" htmlEscape="false" />
+	<spring:message code="label_nombre" var="label_nombre" htmlEscape="false" />
+	<spring:message argumentSeparator="," arguments="${label_nombre},(${field_required})" code="field_simple_validation" var="label_nombre_obligatorio" htmlEscape="false" />
+	<spring:message code="label_primer_apellido" var="label_primer_apellido" htmlEscape="false" />
+    <spring:message argumentSeparator="," arguments="${label_primer_apellido},(${field_required})" code="field_simple_validation" var="label_primer_apellido_obligatorio" htmlEscape="false" />
+	<spring:message code="label_segundo_apellido" var="label_segundo_apellido" htmlEscape="false" />
 
-	<spring:message code="label_fecha_nacimiento"
-		var="label_fecha_nacimiento" htmlEscape="false" />
+	<spring:message code="label_fecha_nacimiento" var="label_fecha_nacimiento" htmlEscape="false" />
 	<spring:message code="label_curp" var="label_curp" htmlEscape="false" />
-	<spring:message code="label_tipo_sangre" var="label_tipo_sangre"
-		htmlEscape="false" />
+    <spring:message argumentSeparator="," arguments="${label_curp},(${field_required})" code="field_simple_validation" var="label_curp_obligatorio" htmlEscape="false" />
+	<spring:message code="label_tipo_sangre" var="label_tipo_sangre" htmlEscape="false" />
 	<spring:message code="label_talla" var="label_talla" htmlEscape="false" />
-	<spring:message code="label_perso" var="label_perso" htmlEscape="false" />
-	<spring:message code="label_alergias" var="label_alergias"
-		htmlEscape="false" />
-	<spring:message code="label_observaciones" var="label_observaciones"
-		htmlEscape="false" />
-	<spring:message code="label_correo_e" var="label_correo_e"
-		htmlEscape="false" />
-	<spring:message code="label_domicilio" var="label_domicilio"
-		htmlEscape="false" />
-	<spring:message code="label_ciudad" var="label_ciudad"
-		htmlEscape="false" />
-	<spring:message code="label_telefono" var="label_telefono"
-		htmlEscape="false" />
+	<spring:message code="label_peso" var="label_peso" htmlEscape="false" />
+	<spring:message code="label_alergias" var="label_alergias" htmlEscape="false" />
+	<spring:message code="label_observaciones" var="label_observaciones" htmlEscape="false" />
+	<spring:message code="label_correo_e" var="label_correo_e" htmlEscape="false" />
+	<spring:message code="label_domicilio" var="label_domicilio" htmlEscape="false" />
+	<spring:message code="label_ciudad" var="label_ciudad" htmlEscape="false" />
+	<spring:message code="label_telefono" var="label_telefono" htmlEscape="false" />
 
+    <spring:message code="label_contacto" var="label_contacto" htmlEscape="false" />
 
-	<util:panel id="pane_create_inscripcion" title="${title_msg}"
-		openPane="true">
-		<div id="d_block">
-			<div id="content_div">
-				<div id="tabs_form">
-					<!-- create the tab container div -->
-					<div id="myTabContainer" style="height: 500px; width: 500px;">
-
-						<!-- add a tab -->
-						<div id="alumno-data-tab" style="width: 100%">
-							<div class="picture_personal_data">
-								<label for="_foto_id">
-									<div class="circle"
-										style="background-image: url('${background_pic}')">
-										<!-- x -->
-									</div>
-								</label> <input type="file" id="_foto_id" style="display: none;" />
-							</div>
-							<div>
-
-								<fieldset class="form">
-									<legend>Personal:</legend>
-									<div>
-										<label for="_nombre_id" class="custom">${label_nombre}</label>
-										<input type="text" id="_nombre_id"
-											placeholder="${label_obligatorio}" />
-									</div>
-									<div>
-										<label for="_primer_apellido_id" class="custom">${label_primer_apellido}</label>
-										<input type="text" id="_primer_apellido_id"
-											placeholder="${label_obligatorio}" />
-									</div>
-									<div>
-										<label for="_segundo_apellido_id" class="custom">${label_segundo_apellido}</label>
-										<input type="text" id="_segundo_apellido_id" />
-									</div>
-									<div>
-										<label for="_fecha_nacimiento_id" class="custom">${label_fecha_nacimiento}</label>
-										<input type="text" id="_fecha_nacimiento_id"
-											placeholder="${label_obligatorio}" />
-										<script>
-											Spring
-													.addDecoration(new Spring.ElementDecoration(
-															{
-																elementId : '_fecha_nacimiento_id',
-																widgetType : 'dijit.form.DateTextBox',
-																widgetAttrs : {
-																	required : false,
-																	constraints : {
-																		required : true
-																	}
-																}
-															}));
-										</script>
-									</div>
-								</fieldset>
-								<fieldset class="form">
-									<legend>Personal:</legend>
-									<div>
-										<label for="_curp_id" class="custom">${label_curp}</label> <input
-											type="text" id="_curp_id" placeholder="${label_obligatorio}" />
-									</div>
-									<div>
-										<label for="_tipo_sangre_id" class="custom">${label_tipo_sangre}</label>
-										<input type="text" id="_tipo_sangre_id" />
-									</div>
-									<div>
-										<label for="_segundo_apellido_id" class="custom">${label_segundo_apellido}</label>
-										<input type="text" id="_segundo_apellido_id" />
-									</div>
-									<div>
-										<label for="_peso_id" class="custom">${label_peso}</label> <input
-											type="text" id="_peso_id" />
-									</div>
-                              <div>
-                                  <label for="_alergias_id" class="custom">${label_alergias}</label> <input
-                                      type="text" id="_alergias_id" />
-                              </div>
-                              <div>
-                                  <label for="_observaciones_id" class="custom">${label_observaciones}</label> <input
-                                      type="text" id="_observaciones_id" />
-                              </div>
-                              <div>
-                                  <label for="_correo_e_id" class="custom">${label_correo_e}</label> <input
-                                      type="text" id="_correo_e_id" />
-                              </div>
-                              <div>
-                                  <label for="_domicilio_id" class="custom">${label_domicilio}</label> <input
-                                      type="text" id="_domicilio_id" />
-                              </div>
-                              <div>
-                                  <label for="_ciudad_id" class="custom">${label_ciudad}</label> <input
-                                      type="text" id="_ciudad_id" />
-                              </div>
-                              <div>
-                                  <label for="_telefono_id" class="custom">${label_telefono}</label> <input
-                                      type="text" id="_telefono_id" />
-                              </div>
-								</fieldset>
-							</div>
+	<util:panel id="pane_create_inscripcion" title="${title_msg}" openPane="true">
+		<!-- create the tab container div -->
+		<div id="myTabContainer">
+			<!-- add a tab -->
+			<div id="alumno-data-tab">
+			<form id="_form_alumno" enctype="multipart/form-data" method="post">
+                <input type="hidden" name="id"/>
+				<div>
+                    <div class="picture_personal_data">
+                        <label for="_foto_id">
+                            <div class="circle" style="background-image: url('${background_pic}')">
+                                <!-- x -->
+                            </div>
+                        </label> <input type="file" id="_foto_id" style="display: none;" name="foto" value=""/>
+                    </div>
+					<fieldset class="form">
+						<legend>${label_datos_generales}</legend>
+						<div>
+							<label for="_nombre_id" class="custom">${label_nombre}:</label>
+							<input type="text" id="_nombre_id" name="nombre"/>
+							<script type="text/javascript">
+							   Spring.addDecoration(new Spring.ElementDecoration({elementId : '_nombre_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {promptMessage: '${label_nombre_obligatorio}', required : true, style: 'width: 300px;' }}));
+							</script>
 						</div>
-						<!-- add the content pane decoration (all tabs must live in content panes) -->
-						<script type="text/javascript">
-							Spring.addDecoration(new Spring.ElementDecoration({
-								elementId : 'alumno-data-tab',
-								widgetType : 'dijit.layout.ContentPane',
-								widgetAttrs : {
-									title : '${tab_alumno}',
-									selected : true
-								}
-							}));
-						</script>
-
-						<!-- another tab... -->
-						<div id="padre-data-tab">
-							<div class="picture_personal_data">
-								<label for="_foto_id">
-									<div class="circle"
-										style="background-image: url('${background_pic}')">
-										<!-- x -->
-									</div>
-								</label> aqui van form
-							</div>
+						<div>
+							<label for="_primer_apellido_id" class="custom">${label_primer_apellido}:</label>
+							<input type="text" id="_primer_apellido_id" name="primerApellido"/>
+							<script type="text/javascript">
+							    Spring.addDecoration(new Spring.ElementDecoration({elementId : '_primer_apellido_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {promptMessage: '${label_primer_apellido_obligatorio}', required : true, style: 'width: 300px;' }})); 
+							</script>
 						</div>
-						<!-- decorate the second tab div with a content pane -->
-						<script type="text/javascript">
-							Spring.addDecoration(new Spring.ElementDecoration({
-								elementId : 'padre-data-tab',
-								widgetType : 'dijit.layout.ContentPane',
-								widgetAttrs : {
-									title : '${tab_padre}'
-								}
-							}));
-						</script>
-
-
-						<!-- another tab... -->
-						<div id="ciclo-data-tab">mas datos</div>
-						<!-- decorate the second tab div with a content pane -->
-						<script type="text/javascript">
-							Spring.addDecoration(new Spring.ElementDecoration({
-								elementId : 'ciclo-data-tab',
-								widgetType : 'dijit.layout.ContentPane',
-								widgetAttrs : {
-									title : '${tab_ciclo_grupo}'
-								}
-							}));
-						</script>
-
-
-
-					</div>
-
-					<!-- decorate the tab container to create it -->
-					<script type="text/javascript">
-						Spring
-								.addDecoration(new Spring.ElementDecoration(
-										{
-											elementId : 'myTabContainer',
-											widgetType : 'dijit.layout.TabContainer',
-											widgetAttrs : {
-												tabPosition : 'top',
-												controllerWidget : 'dijit.layout.TabController',
-												doLayout : false, // si es false pone el marco a lo alto del contenido, true pone los un height fijo
-												tabStrip : true
-											}
-										}));
-					</script>
-
-					<script type="text/javascript">
-						dojo
-								.addOnLoad(function() {
-									var tabs = dijit.byId("myTabContainer");
-									tabs.startup();
-									tabs.resize();
-									tabs
-											.set(
-													'style',
-													'margin-right: auto; margin-left: auto; width: 100%; height: 100%; margin:5px; overflow-y: auto; -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75); -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75); box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);');
-									dojo
-											.style(
-													dojo
-															.byId("_c_com_raze_coleadmin_domain_Alumno_foto_id"),
-													'display', 'none');
-									//dojo.byId('_title_fc_com_raze_coleadmin_domain_Alumno_id_pane');
-									//dijit.byId('_title_fc_com_raze_coleadmin_domain_Alumno_id_pane').set('style', 'heigth: auto;');
-									//dojo.byId('fc_com_raze_coleadmin_domain_Alumno_submit').set('style','');
-									//tabs.placeAt(pane.containerNode, "first");
-								});
-					</script>
-
-
+						<div>
+							<label for="_segundo_apellido_id" class="custom">${label_segundo_apellido}:</label>
+							<input type="text" id="_segundo_apellido_id" name="segundoApellido" />
+							<script type="text/javascript">
+							   Spring.addDecoration(new Spring.ElementDecoration({elementId : '_segundo_apellido_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+							</script>
+						</div>
+						<div>
+							<label for="_fecha_nacimiento_id" class="custom">${label_fecha_nacimiento}:</label>
+							<input type="text" id="_fecha_nacimiento_id"  name="fechaNacimiento"/>
+							<script>
+								Spring.addDecoration(new Spring.ElementDecoration({elementId : '_fecha_nacimiento_id', widgetType : 'dijit.form.DateTextBox', widgetAttrs : {required : false, constraints : {required : true}, style: 'width: 300px;'}}));
+							</script>
+						</div>
+						<div>
+							<label for="_curp_id" class="custom">${label_curp}:</label>
+							<input type="text" id="_curp_id" name="curp"/>
+							<script type="text/javascript">
+							   Spring.addDecoration(new Spring.ElementDecoration({elementId : '_curp_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {promptMessage: '${label_curp_obligatorio}', required : true, style: 'width: 300px;' }}));
+							</script>
+						</div>
+						<div>
+							<label for="_tipo_sangre_id" class="custom">${label_tipo_sangre}:</label>
+							<input type="text" id="_tipo_sangre_id" name="tipoSagre"/>
+                            <script type="text/javascript">
+                                Spring.addDecoration(new Spring.ElementDecoration({elementId : '_tipo_sangre_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+                            </script>
+						</div>
+						<div>
+							<label for="_label_talla_id" class="custom">${label_talla}:</label>
+							<input type="text" id="_talla_id" name="talla"/>
+                            <script type="text/javascript">
+                                Spring.addDecoration(new Spring.ElementDecoration({elementId : '_talla_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+                            </script>
+						</div>
+						<div>
+							<label for="_peso_id" class="custom">${label_peso}:</label> 
+							<input type="text" id="_peso_id" name="peso"/>
+                            <script type="text/javascript">
+                                Spring.addDecoration(new Spring.ElementDecoration({elementId : '_peso_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+                            </script>
+						</div>
+						<div>
+						    <label for="_alergias_id" class="custom">${label_alergias}:</label> 
+						    <input type="text" id="_alergias_id" name="alergias"/>
+                            <script type="text/javascript">
+                                Spring.addDecoration(new Spring.ElementDecoration({elementId : '_alergias_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+                            </script>
+						</div>
+						<div>
+						    <label for="_observaciones_id" class="custom">${label_observaciones}:</label> 
+						    <input type="text" id="_observaciones_id" name="observaciones"/>
+                            <script type="text/javascript">
+                               Spring.addDecoration(new Spring.ElementDecoration({elementId : '_observaciones_id', widgetType : 'dijit.form.SimpleTextarea'})); 
+                            </script>
+						</div>
+                    </fieldset>
+                    <fieldset class="form">
+                        <legend>${label_contacto}</legend>
+                        <div>
+                            <label for="_telefono_id" class="custom">${label_telefono}</label> 
+                            <input type="text" id="_telefono_id" name="telefono"/>
+                            <script type="text/javascript">
+                                Spring.addDecoration(new Spring.ElementDecoration({elementId : '_telefono_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+                            </script>
+                        </div>
+                        <div>
+                            <label for="_correo_e_id" class="custom">${label_correo_e}</label> 
+                            <input type="text" id="_correo_e_id" name="correoE"/>
+                            <script type="text/javascript">
+                                Spring.addDecoration(new Spring.ElementDecoration({elementId : '_correo_e_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+                            </script>
+                        </div>
+                    </fieldset>
+                    <button type="button" id="btn_save_alumno" formenctype="multipart/form-data">${btn_guardar_continuar}
+                    </button>
 				</div>
+			</form>
 			</div>
+			<!-- add the content pane decoration (all tabs must live in content panes) -->
+			<script type="text/javascript">
+				Spring.addDecoration(new Spring.ElementDecoration({
+					elementId : 'alumno-data-tab',
+					widgetType : 'dijit.layout.ContentPane',
+					widgetAttrs : {
+						title : '${tab_alumno}',
+						selected : true
+					}
+				}));
+			</script>
+
+			<!-- another tab... -->
+			<div id="padre-data-tab">
+                <div>
+                    <div class="picture_personal_data">
+                        <label for="_padre_foto_id">
+                            <div class="circle" style="background-image: url('${background_pic}')">
+                                <!-- x -->
+                            </div>
+                        </label> <input type="file" id="_padre_foto_id" style="display: none;" />
+                    </div>
+                    <fieldset class="form">
+                        <legend>${label_datos_generales}</legend>
+                        <div>
+                            <label for="_padre_nombre_id" class="custom">${label_nombre}:</label>
+                            <input type="text" id="_padre_nombre_id"/>
+                            <script type="text/javascript">
+                               Spring.addDecoration(new Spring.ElementDecoration({elementId : '_padre_nombre_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {promptMessage: '${label_nombre_obligatorio}', required : true, style: 'width: 300px;' }}));
+                            </script>
+                        </div>
+                        <div>
+                            <label for="_padre_primer_apellido_id" class="custom">${label_primer_apellido}:</label>
+                            <input type="text" id="_padre_primer_apellido_id" />
+                            <script type="text/javascript">
+                                Spring.addDecoration(new Spring.ElementDecoration({elementId : '_padre_primer_apellido_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {promptMessage: '${label_primer_apellido_obligatorio}', required : true, style: 'width: 300px;' }})); 
+                            </script>
+                        </div>
+                        <div>
+                            <label for="_padre_segundo_apellido_id" class="custom">${label_segundo_apellido}:</label>
+                            <input type="text" id="_padre_segundo_apellido_id" />
+                            <script type="text/javascript">
+                               Spring.addDecoration(new Spring.ElementDecoration({elementId : '_padre_segundo_apellido_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+                            </script>
+                        </div>
+                        <div>
+                            <label for="_padre_fecha_nacimiento_id" class="custom">${label_fecha_nacimiento}:</label>
+                            <input type="text" id="_padre_fecha_nacimiento_id"/>
+                            <script>
+                                Spring.addDecoration(new Spring.ElementDecoration({elementId : '_padre_fecha_nacimiento_id', widgetType : 'dijit.form.DateTextBox', widgetAttrs : {required : false, constraints : {required : true}, style: 'width: 300px;'}}));
+                            </script>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form">
+                        <legend>${label_contacto}</legend>
+                        <div>
+                            <label for="_padre_telefono_id" class="custom">${label_telefono}</label> 
+                            <input type="text" id="_padre_telefono_id" />
+                            <script type="text/javascript">
+                                Spring.addDecoration(new Spring.ElementDecoration({elementId : '_padre_telefono_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+                            </script>
+                        </div>
+                        <div>
+                            <label for="_padre_correo_e_id" class="custom">${label_correo_e}</label> 
+                            <input type="text" id="_padre_correo_e_id" />
+                            <script type="text/javascript">
+                                Spring.addDecoration(new Spring.ElementDecoration({elementId : '_padre_correo_e_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+                            </script>
+                        </div>
+                    </fieldset>
+                </div>
+			</div>
+			<!-- decorate the second tab div with a content pane -->
+			<script type="text/javascript">
+				Spring.addDecoration(new Spring.ElementDecoration({
+					elementId : 'padre-data-tab',
+					widgetType : 'dijit.layout.ContentPane',
+					widgetAttrs : {
+						title : '${tab_padre}'
+					}
+				}));
+			</script>
+
+
+			<!-- Domicilio tab... -->
+			<div id="domicilio-tab">
+				<fieldset class="form">
+				    <legend>${label_domicilio}:</legend>
+				    <div>
+				        <label for="_domicilio_id" class="custom">${label_domicilio}</label> 
+				        <input type="text" id="_domicilio_id" />
+				        <script type="text/javascript">
+				            Spring.addDecoration(new Spring.ElementDecoration({elementId : '_domicilio_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+				        </script>
+				    </div>
+				    <div>
+				        <label for="_ciudad_id" class="custom">${label_ciudad}</label> 
+				        <input type="text" id="_ciudad_id" />
+				        <script type="text/javascript">
+				            Spring.addDecoration(new Spring.ElementDecoration({elementId : '_ciudad_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {required : false, style: 'width: 300px;' }})); 
+				        </script>
+				    </div>
+				</fieldset>
+			</div>
+			<!-- decorate the second tab div with a content pane -->
+			<script type="text/javascript">
+				Spring.addDecoration(new Spring.ElementDecoration({
+					elementId : 'domicilio-tab',
+					widgetType : 'dijit.layout.ContentPane',
+					widgetAttrs : {
+						title : '${label_domicilio}'
+					}
+				}));
+			</script>
+
+
+
+            <!-- ciclo curso grupo tab... -->
+            <div id="ciclo-data-tab">mas datos</div>
+            <!-- decorate the second tab div with a content pane -->
+            <script type="text/javascript">
+                Spring.addDecoration(new Spring.ElementDecoration({
+                    elementId : 'ciclo-data-tab',
+                    widgetType : 'dijit.layout.ContentPane',
+                    widgetAttrs : {
+                        title : '${tab_ciclo_grupo}'
+                    }
+                }));
+            </script>
+
+
+
 		</div>
+
+		<!-- decorate the tab container to create it -->
+		<script type="text/javascript">
+			Spring.addDecoration(new Spring.ElementDecoration({
+				elementId : 'myTabContainer',
+				widgetType : 'dijit.layout.TabContainer',
+				widgetAttrs : {
+					tabPosition : 'top',
+					controllerWidget : 'dijit.layout.TabController',
+					doLayout : false, // si es false pone el marco a lo alto del contenido, true pone los un height fijo
+					tabStrip : true
+				}
+			}));
+		</script>
+
+		<script type="text/javascript">
+			dojo.addOnLoad(function() {
+				var tabs = dijit.byId("myTabContainer");
+				tabs.startup();
+				tabs.resize();
+			    tabs.set('style','margin-right: auto; margin-left: auto; margin-bottom: 10px; width: 90%; height: 100%; padding: 5px 5px; overflow-y: auto; -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75); -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75); box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);');
+			    init();
+			    //dojo.style(dojo.byId("_c_com_raze_coleadmin_domain_Alumno_foto_id"),'display', 'none');
+				//dojo.byId('_title_fc_com_raze_coleadmin_domain_Alumno_id_pane');
+				//dijit.byId('_title_fc_com_raze_coleadmin_domain_Alumno_id_pane').set('style', 'heigth: auto;');
+				//dojo.byId('fc_com_raze_coleadmin_domain_Alumno_submit').set('style','');
+				//tabs.placeAt(pane.containerNode, "first");
+			});
+		</script>
+
+
 	</util:panel>
 </div>
