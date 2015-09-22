@@ -58,7 +58,8 @@
                             <div class="circle" style="background-image: url('${background_pic}')">
                                 <!-- x -->
                             </div>
-                        </label> <input type="file" id="_foto_id" style="display: none;" name="foto" value=""/>
+                        </label>
+                        <div style="">  <input type="file" id="_foto_id" name="foto"/> </div>
                     </div>
 					<fieldset class="form">
 						<legend>${label_datos_generales}</legend>

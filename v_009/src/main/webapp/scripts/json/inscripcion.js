@@ -8,8 +8,10 @@ function saveAlumno() {
 	console.info("json FormAlumno =>" + getJsonFromForm('_form_alumno'));
 	dojo.xhrPost({
 		url: "alumnoes/upload",
+//		form: dojo.byId('_form_alumno'),
 		postData: getJsonFromForm('_form_alumno'),
-		handleAs: "text",
+//		handleAs: "text",
+		contentType: "multipart/form-data",
 		load: function(data){
 			console.info("Message posted.");
 		},

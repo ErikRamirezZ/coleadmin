@@ -77,7 +77,7 @@ public class AlumnoController {
 //	@RequestMapping(method = RequestMethod.POST, headers = "Accept=application/json")
 	@RequestMapping(value="/upload", method = RequestMethod.POST, consumes = {"multipart/form-data"})
     public ResponseEntity<String> createFromJson(
-    		@RequestPart(required = false, value="foto") MultipartFile foto,
+    		@RequestPart("foto") MultipartFile foto,
     		@RequestBody String json, 
     		UriComponentsBuilder uriBuilder) {
 		System.out.println("Si entro en el controller AlumnoCOntroller.createFromJson");
@@ -96,6 +96,22 @@ public class AlumnoController {
         }
     }
 
+	
+//	@RequestMapping(value="/upload", method = RequestMethod.POST, produces = "text/html")
+//    public ResponseEntity<String> jsonUpload(@RequestBody String json, 
+//    		@RequestParam("foto") MultipartFile multipartFile,
+//    		HttpServletRequest httpServletRequest) {
+//        if (bindingResult.hasErrors()) {
+//            populateEditForm(uiModel, alumno);
+//            return "alumnoes/update";
+//        }
+//        System.out.println("alumno en UPDATE");
+//        uiModel.asMap().clear();
+//        alumnoService.updateAlumno(alumno);
+//        return "redirect:/alumnoes/" + encodeUrlPathSegment(alumno.getId().toString(), httpServletRequest);
+//    }
+
+	
 	@RequestMapping(value = "/jsonArray", method = RequestMethod.POST, headers = "Accept=application/json")
     public ResponseEntity<String> createFromJsonArray(@RequestBody String json) {
         HttpHeaders headers = new HttpHeaders();
