@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Domicilio" items="${domicilios}" z="Q7a5EyCUvzQlb0L4e5RqqRwAYyk=">
+        <table:table data="${domicilios}" id="l_com_raze_coleadmin_domain_Domicilio" path="/domicilios" z="K0DVj1br4Nsn+YW59EP+leCQ4bo=">
+            <table:column id="c_com_raze_coleadmin_domain_Domicilio_calle" property="calle" z="hHSitX5GYvRWbjMmUSH3MbgXiEg="/>
+            <table:column id="c_com_raze_coleadmin_domain_Domicilio_numeroInt" property="numeroInt" z="R7Fy5sBrNwmztszamp8IVBYULwc="/>
+            <table:column id="c_com_raze_coleadmin_domain_Domicilio_numeroExt" property="numeroExt" z="5wb+Kdl5xMr51Ftkja+kH1WFO+o="/>
+            <table:column id="c_com_raze_coleadmin_domain_Domicilio_colonia" property="colonia" z="lXZviJWy5KbTgIWwS4FBLayzI0U="/>
+            <table:column id="c_com_raze_coleadmin_domain_Domicilio_cp" property="cp" z="v2ovoG+KlAjbChAx0iOZm3kqqac="/>
+            <table:column id="c_com_raze_coleadmin_domain_Domicilio_municipio" property="municipio" z="X/KXlNIB/whKW8mPe3ry7HwKyiU="/>
+        </table:table>
+    </page:list>
+</div>

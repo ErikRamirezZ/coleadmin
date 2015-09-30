@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Abono" modelAttribute="abono" path="/abonoes" versionField="none" z="d2xB+x7IsSgTsG1HCE5rOkbccwA=">
+        <field:select field="alumno" id="c_com_raze_coleadmin_domain_Abono_alumno" itemValue="id" items="${alumnoes}" path="/alumnoes" required="true" z="S4GKOQWcrtQlv40CWj8yjQZG/7c="/>
+        <field:select field="cargo" id="c_com_raze_coleadmin_domain_Abono_cargo" itemValue="id" items="${cargoes}" multiple="true" path="/cargoes" z="kVoBSjpKLmtu1NQ9zngr5STwgKc="/>
+        <field:select field="metodoPago" id="c_com_raze_coleadmin_domain_Abono_metodoPago" itemValue="id" items="${metodopagoes}" path="/metodopagoes" z="vDDcpcCgjxEVKFQ6LENDraeg7us="/>
+        <field:input field="total" id="c_com_raze_coleadmin_domain_Abono_total" validationMessageCode="field_invalid_number" z="X/MmcR5w2Glj6SztwwFzM00tsHc="/>
+        <field:select field="usuarioCrea" id="c_com_raze_coleadmin_domain_Abono_usuarioCrea" itemValue="id" items="${usuarios}" path="/usuarios" z="iScIMUot4aejpmzgP/eJ2tBjnYw="/>
+        <field:select field="usuarioModifica" id="c_com_raze_coleadmin_domain_Abono_usuarioModifica" itemValue="id" items="${usuarios}" path="/usuarios" z="d8Y1nDTHXZhDgC1jJnV6o0QPLLI="/>
+        <field:datetime dateTimePattern="${abono_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Abono_fechaCreacion" z="gPu5P/zcCHL/y9QqtX22+06QA94="/>
+        <field:datetime dateTimePattern="${abono_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Abono_fechaModificacion" z="KowtJzuzPihw9CWnJpqH6GaDbQc="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Abono_activo" z="anOGwPDNOrViy86QJ/UPA8R8f9U="/>
+    </form:update>
+</div>

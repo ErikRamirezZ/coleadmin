@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_catalog_Concepto" modelAttribute="concepto" path="/conceptoes" versionField="none" z="FwXG39hRbNfPRv/nrDsEEaLqCJ4=">
+        <field:select field="escuela" id="c_com_raze_coleadmin_catalog_Concepto_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="L5kOEHqny0Jml2+wDcef0h/M1fQ="/>
+        <field:select field="categoria" id="c_com_raze_coleadmin_catalog_Concepto_categoria" itemValue="id" items="${categorias}" path="/categorias" z="MCe7FOBYf11YpQjBex31xtu+i1U="/>
+        <field:input field="nombreConcepto" id="c_com_raze_coleadmin_catalog_Concepto_nombreConcepto" z="1RM5LcPy7b5wVGBPBefbY2suhLI="/>
+        <field:input field="monto" id="c_com_raze_coleadmin_catalog_Concepto_monto" validationMessageCode="field_invalid_number" z="YA426rR2r1u9ek6rLKIfK81epv0="/>
+        <field:select field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Concepto_usuarioCrea" itemValue="id" items="${usuarios}" path="/usuarios" z="AjuLrBBvY7QxGYJN5qtL5iuEKIY="/>
+        <field:select field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Concepto_usuarioModifica" itemValue="id" items="${usuarios}" path="/usuarios" z="sSwmeNySBUbC5cQQr/10WTxXCOE="/>
+        <field:datetime dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Concepto_fechaCreacion" z="fp5wqytlslcowpyJnmnMkblM00o="/>
+        <field:datetime dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Concepto_fechaModificacion" z="+KI91IZzy8Kw1tt7wAoTNeg31+E="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Concepto_activo" z="W1gAIwzb0DCPTyK9gmFUGaG4D8w="/>
+    </form:update>
+</div>

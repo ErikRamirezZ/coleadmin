@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Domicilio" modelAttribute="domicilio" path="/domicilios" versionField="none" z="DyNDI8qpqBDYhmAviFi3EgSSNzY=">
+        <field:input field="calle" id="c_com_raze_coleadmin_domain_Domicilio_calle" required="true" z="z6syeyMRrK4CzpANSjU4Xh4qzRg="/>
+        <field:input field="numeroInt" id="c_com_raze_coleadmin_domain_Domicilio_numeroInt" z="MNXN8HX8fDrVntufvk3QESE/VVg="/>
+        <field:input field="numeroExt" id="c_com_raze_coleadmin_domain_Domicilio_numeroExt" z="xsPz/eyewDB/OVC/f3Sn9C3MfPM="/>
+        <field:input field="colonia" id="c_com_raze_coleadmin_domain_Domicilio_colonia" z="MIF/SrFJ08m6T27VeVqTj930hE0="/>
+        <field:input field="cp" id="c_com_raze_coleadmin_domain_Domicilio_cp" z="dJZIy2QjvZl5VLti9WENxcCqG6k="/>
+        <field:input field="municipio" id="c_com_raze_coleadmin_domain_Domicilio_municipio" z="ZwFgJbl81JmOzHTozVLuSg+/YP8="/>
+        <field:input field="estado" id="c_com_raze_coleadmin_domain_Domicilio_estado" z="6IccwsEqbp8z/kPwEUEaWYp9U5U="/>
+        <field:select field="usuarioCrea" id="c_com_raze_coleadmin_domain_Domicilio_usuarioCrea" itemValue="id" items="${usuarios}" path="/usuarios" z="BBlxZdWBScR+WgreR8AC7NGureo="/>
+        <field:select field="usuarioModifica" id="c_com_raze_coleadmin_domain_Domicilio_usuarioModifica" itemValue="id" items="${usuarios}" path="/usuarios" z="kkg31IbofwziImkhI86/z9JGCdg="/>
+        <field:datetime dateTimePattern="${domicilio_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Domicilio_fechaCreacion" z="DDcaXuGlj20oNhd+WcMtzUAtxGc="/>
+        <field:datetime dateTimePattern="${domicilio_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Domicilio_fechaModificacion" z="LPtY1pDZxU6180u+JuDZxaz50Oc="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Domicilio_activo" z="6HYFUTAU7Y87XN8o2Nw656oFQQw="/>
+    </form:update>
+</div>

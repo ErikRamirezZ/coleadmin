@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Salon" modelAttribute="salon" path="/salons" versionField="none" z="tnXISxZpUzDnWOH2mLPU6D1TyL4=">
+        <field:input field="nombreSalon" id="c_com_raze_coleadmin_domain_Salon_nombreSalon" required="true" z="D9+DlB9AN20cGm4FKJBcPxrww70="/>
+        <field:select field="escuela" id="c_com_raze_coleadmin_domain_Salon_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="7zENnToc+bc3L1Mhv+LZDdMJcsU="/>
+        <field:input field="descripcion" id="c_com_raze_coleadmin_domain_Salon_descripcion" z="fBdKDwKG+qET0aX+5j1xmqZZZE0="/>
+        <field:select field="usuarioCrea" id="c_com_raze_coleadmin_domain_Salon_usuarioCrea" itemValue="id" items="${usuarios}" path="/usuarios" z="bK+m3i5HuACcX5hQWPsmaAUVveQ="/>
+        <field:select field="usuarioModifica" id="c_com_raze_coleadmin_domain_Salon_usuarioModifica" itemValue="id" items="${usuarios}" path="/usuarios" z="00VWJfwjwtk/bwApr60GMp+FAhU="/>
+        <field:datetime dateTimePattern="${salon_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Salon_fechaCreacion" z="jp+aDHv+tAfZ1bGObUoElutdj9Y="/>
+        <field:datetime dateTimePattern="${salon_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Salon_fechaModificacion" z="nMdT8rE2MzqATg0dlLzav7DZs8U="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Salon_activo" z="wwuK0/XdLZ7PXRXXaVc7NslQw2I="/>
+    </form:update>
+</div>

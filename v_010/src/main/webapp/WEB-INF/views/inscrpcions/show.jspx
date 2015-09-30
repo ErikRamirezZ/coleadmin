@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Inscrpcion" object="${inscrpcion}" path="/inscrpcions" z="RrTLLfWK+93sT4jeXUYQ6MeaSmE=">
+        <field:display field="escuela" id="s_com_raze_coleadmin_domain_Inscrpcion_escuela" object="${inscrpcion}" z="a3O4GwfUpQDEUuYnWFNn7tsw0lQ="/>
+        <field:display field="cicloEscolar" id="s_com_raze_coleadmin_domain_Inscrpcion_cicloEscolar" object="${inscrpcion}" z="eb+GGb7CEjSQFLawy32SrE9yuOs="/>
+        <field:display field="curso" id="s_com_raze_coleadmin_domain_Inscrpcion_curso" object="${inscrpcion}" z="hdHRo8FM8AbGkg9SSYB7+hM6jcE="/>
+        <field:display field="grupo" id="s_com_raze_coleadmin_domain_Inscrpcion_grupo" object="${inscrpcion}" z="deQJMGV1we6Pm62K+JacBq7R2LY="/>
+        <field:display field="alumno" id="s_com_raze_coleadmin_domain_Inscrpcion_alumno" object="${inscrpcion}" z="Tx1WiSkB+Js9zvFNegInh0feYsg="/>
+        <field:display field="padre" id="s_com_raze_coleadmin_domain_Inscrpcion_padre" object="${inscrpcion}" z="gBkrf/pf8MOM7FIVhEfeWnY6+Mo="/>
+        <field:display field="estatus" id="s_com_raze_coleadmin_domain_Inscrpcion_estatus" object="${inscrpcion}" z="tFTxJCN0M8yYsMT6WmNUrchl/6c="/>
+        <field:display field="descuentoInscripcion" id="s_com_raze_coleadmin_domain_Inscrpcion_descuentoInscripcion" object="${inscrpcion}" z="h6a+zj3kn4pg8rF83bGERXWRH/E="/>
+        <field:display field="descuentoColegiatura" id="s_com_raze_coleadmin_domain_Inscrpcion_descuentoColegiatura" object="${inscrpcion}" z="7lNhVGh+Y2piPNr/OpZz4jZSYh0="/>
+        <field:display field="enviarRecordatorios" id="s_com_raze_coleadmin_domain_Inscrpcion_enviarRecordatorios" object="${inscrpcion}" z="uRqiiT5CmZ8IqDyunQWiUGaZi9k="/>
+        <field:display field="saldoActual" id="s_com_raze_coleadmin_domain_Inscrpcion_saldoActual" object="${inscrpcion}" z="U5lx6fqSjbLqnQKSBtQEWSG4IgQ="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Inscrpcion_usuarioCrea" object="${inscrpcion}" z="Sqh/EmTtoIDbwWzb0wXrNKFOEcA="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Inscrpcion_usuarioModifica" object="${inscrpcion}" z="+6vF0CgaJ+gh0zXjsFw9vZ6K3VE="/>
+        <field:display date="true" dateTimePattern="${inscrpcion_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Inscrpcion_fechaCreacion" object="${inscrpcion}" z="os/ynuEVXyUPbELM2IeY/Y6lVCs="/>
+        <field:display date="true" dateTimePattern="${inscrpcion_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Inscrpcion_fechaModificacion" object="${inscrpcion}" z="GGoVvhzy5oX9iN0rRfnoNFpCmn0="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Inscrpcion_activo" object="${inscrpcion}" z="XqJWl5zrfU1NY1hD/h515Ey09e8="/>
+    </page:show>
+</div>

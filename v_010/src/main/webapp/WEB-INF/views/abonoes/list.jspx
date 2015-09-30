@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Abono" items="${abonoes}" z="yC255B6PC0k551oNaJKll8unPQY=">
+        <table:table data="${abonoes}" id="l_com_raze_coleadmin_domain_Abono" path="/abonoes" z="oTm4XnDrhiWzRfJzkBI5Mtdx+9c=">
+            <table:column id="c_com_raze_coleadmin_domain_Abono_alumno" property="alumno" z="JW6SXSQ8A2mdmMMIMGw4V0L6G/w="/>
+            <table:column id="c_com_raze_coleadmin_domain_Abono_cargo" property="cargo" z="uXhFP2HE1nvb8bcdSOmL6WctIy0="/>
+            <table:column id="c_com_raze_coleadmin_domain_Abono_metodoPago" property="metodoPago" z="3M48TMDbGe9eHqT9ji60CUvuBME="/>
+            <table:column id="c_com_raze_coleadmin_domain_Abono_total" property="total" z="3wIPF7cok8GFsqgC/VJeaxY5nwM="/>
+            <table:column id="c_com_raze_coleadmin_domain_Abono_usuarioCrea" property="usuarioCrea" z="l3jSsVp+BgHVORyKoAmdx+7XEpU="/>
+            <table:column id="c_com_raze_coleadmin_domain_Abono_usuarioModifica" property="usuarioModifica" z="6yLFlwRX+MRjgMRIqnTjot/ypF8="/>
+        </table:table>
+    </page:list>
+</div>

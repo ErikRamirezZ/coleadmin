@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_coleadmin_catalog_Contacto" modelAttribute="contacto" path="/contactoes" render="${empty dependencies}" z="FDpbK9j52nzwGtjqKBVpN49PLn0=">
+        <field:input field="tipoContacto" id="c_com_raze_coleadmin_catalog_Contacto_tipoContacto" required="true" z="EvxMiEeSuIBSikLg5mGHgRWlZ+I="/>
+        <field:input field="valor" id="c_com_raze_coleadmin_catalog_Contacto_valor" z="OMhId3FJ7aoTE4KbbonzHP/1QPM="/>
+        <field:select field="usuarioCrea" id="c_com_raze_coleadmin_catalog_Contacto_usuarioCrea" itemValue="id" items="${usuarios}" path="/usuarios" z="+BaKPzbN6BoR+w8NHfM/Ous6GdA="/>
+        <field:select field="usuarioModifica" id="c_com_raze_coleadmin_catalog_Contacto_usuarioModifica" itemValue="id" items="${usuarios}" path="/usuarios" z="wqXnVECrGGjFNfXQbqJYhc2PYY4="/>
+        <field:datetime dateTimePattern="${contacto_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_Contacto_fechaCreacion" z="zhO7CnHQypd3bgPxb7s3qFuGLbg="/>
+        <field:datetime dateTimePattern="${contacto_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_Contacto_fechaModificacion" z="kDVIabDkYNowDiQlSlrK8eZ6758="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_Contacto_activo" z="nGpDdxykVnJJT7tXn4H0Hls53V0="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_catalog_Contacto" render="${not empty dependencies}" z="P7OhXLkIInRnn5RusDvzIHDBLx0="/>
+</div>

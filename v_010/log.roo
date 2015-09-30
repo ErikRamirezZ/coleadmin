@@ -1,0 +1,329 @@
+// Spring Roo 1.3.0.RELEASE [rev f425090] log opened at 2015-09-28 12:14:40
+project --topLevelPackage com.raze.coleadmin --projectName coleadmin
+jpa setup --provider HIBERNATE --database MYSQL --databaseName coleadmin --userName root
+entity jpa --class ~.domain.Escuela --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.domain.CicloEscolar --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.domain.Curso --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.domain.ConceptoInscripcionCurso --activeRecord false --versionField ""
+entity jpa --class ~.domain.Grupo --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.domain.Salon --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.domain.Domicilio --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.domain.Usuario --abstract --versionField ""
+entity jpa --class ~.domain.Alumno --activeRecord false --extends ~.domain.Usuario --testAutomatically --versionField ""
+entity jpa --class ~.domain.Padre --activeRecord false --extends ~.domain.Usuario --testAutomatically --versionField ""
+entity jpa --class ~.domain.Personal --activeRecord false --extends ~.domain.Usuario --testAutomatically --versionField ""
+entity jpa --class ~.domain.Cargo --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.domain.Abono --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.domain.Inscrpcion --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.domain.Asistencia --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.CorreoNotificaciones --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.Concepto --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.Rol --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.Permiso --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.NivelEducativo --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.TipoNivelEducativo --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.Categoria --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.MetodoPago --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.EstatusInscripcion --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.EstatusCargo --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.TipoAsistencia --activeRecord false --testAutomatically --versionField ""
+entity jpa --class ~.catalog.Contacto --activeRecord false --testAutomatically --versionField ""
+field string --fieldName nombre --class ~.domain.Escuela --notNull
+field file --fieldName logo --contentType JPG --autoUpload
+field string --fieldName web
+field string --fieldName razonSocial
+field reference --fieldName domicilio --type ~.domain.Domicilio
+field set --fieldName contactos --type ~.catalog.Contacto
+field reference --fieldName correo --type ~.catalog.CorreoNotificaciones
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field reference --fieldName escuela --type ~.domain.Escuela --notNull --class ~.domain.CicloEscolar
+field string --fieldName nombreCiclo
+field date --fieldName fechaInicio --type java.util.Date 
+field date --fieldName fechaFin --type java.util.Date 
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName nombreCurso --notNull --class ~.domain.Curso 
+field reference --fieldName cicloEscolar --notNull --type ~.domain.CicloEscolar
+field number --fieldName colegiatura --type java.lang.Double
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field reference --fieldName curso --type ~.domain.Curso --notNull --class ~.domain.ConceptoInscripcionCurso 
+field reference --fieldName concepto --notNull --type ~.catalog.Concepto
+field number --fieldName cantidad --type java.lang.Double
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field reference --fieldName curso --type ~.domain.Curso --notNull --class ~.domain.Grupo
+field string --fieldName nombreGrupo
+field reference --fieldName salon --type ~.domain.Salon
+field string --fieldName descripcion
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName nombreSalon --notNull --class ~.domain.Salon
+field reference --fieldName escuela --type ~.domain.Escuela --notNull
+field string --fieldName descripcion
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName correoE  --class ~.domain.Usuario 
+field string --fieldName password
+field string --fieldName nombre --notNull --sizeMax 30
+field string --fieldName primerApellido --notNull --sizeMax 30
+field string --fieldName segundoApellido --sizeMax 30
+field date --fieldName fechaNacimiento --type java.util.Date
+field file --fieldName foto --contentType JPG --autoUpload
+field string --fieldName observaciones --sizeMax 250
+field number --fieldName usuarioCrea --type java.lang.Long
+field number --fieldName usuarioModifica --type java.lang.Long
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field reference --fieldName escuela --type ~.domain.Escuela --notNull --class ~.domain.Alumno
+field reference --fieldName domicilio --type ~.domain.Domicilio
+field set --fieldName contactos --type ~.catalog.Contacto
+field set --fieldName roles --type ~.catalog.Rol
+field set --fieldName permisos --type ~.catalog.Permiso
+field string --fieldName curp
+field string --fieldName tipoSangre
+field string --fieldName talla
+field string --fieldName peso
+field string --fieldName alergias
+field string --fieldName folio
+field reference --fieldName escuela --type ~.domain.Escuela --notNull --class ~.domain.Padre
+field reference --fieldName domicilio --type ~.domain.Domicilio
+field set --fieldName contactos --type ~.catalog.Contacto
+field set --fieldName roles --type ~.catalog.Rol
+field set --fieldName permisos --type ~.catalog.Permiso
+field reference --fieldName escuela --type ~.domain.Escuela --notNull --class ~.domain.Personal
+field reference --fieldName domicilio --type ~.domain.Domicilio
+field set --fieldName contactos --type ~.catalog.Contacto
+field set --fieldName roles --type ~.catalog.Rol
+field set --fieldName permisos --type ~.catalog.Permiso
+field reference --fieldName alumno --type ~.domain.Alumno --notNull --class ~.domain.Cargo
+field reference --fieldName concepto --type ~.catalog.Concepto --notNull
+field number --fieldName cantidad --notNull --type java.lang.Double
+field number --fieldName subtotal --notNull --type java.lang.Double
+field number --fieldName descuentoPorcentaje --type java.lang.Double
+field number --fieldName descuentoPesos --type java.lang.Double
+field number --fieldName total --notNull --type java.lang.Double
+field reference --fieldName estatusCargo --type ~.catalog.EstatusCargo
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field reference --fieldName alumno --type ~.domain.Alumno --notNull --class ~.domain.Abono
+field set --fieldName cargo --type ~.domain.Cargo
+field reference --fieldName metodoPago --type ~.catalog.MetodoPago
+field number --fieldName total --type java.lang.Double
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field reference --fieldName escuela --type ~.domain.Escuela --notNull --class ~.domain.Inscrpcion
+field reference --fieldName cicloEscolar --type ~.domain.CicloEscolar
+field reference --fieldName curso --type ~.domain.Curso 
+field reference --fieldName grupo --type ~.domain.Grupo
+field reference --fieldName alumno --type ~.domain.Alumno
+field reference --fieldName padre --type ~.domain.Padre
+field reference --fieldName estatus --type ~.catalog.EstatusInscripcion
+field number --fieldName descuentoInscripcion --type java.lang.Double
+field number --fieldName descuentoColegiatura --type java.lang.Double
+field boolean --fieldName enviarRecordatorios
+field number --fieldName saldoActual --type java.lang.Double
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field reference --fieldName alumno --type ~.domain.Alumno --notNull --class ~.domain.Asistencia
+field reference --fieldName tipoAsistencia --notNull --type ~.catalog.TipoAsistencia
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName calle --notNull --class ~.domain.Domicilio
+field string --fieldName numeroInt
+field string --fieldName numeroExt
+field string --fieldName colonia
+field string --fieldName cp
+field string --fieldName municipio
+field string --fieldName estado
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field reference --fieldName escuela --type ~.domain.Escuela --notNull --class ~.catalog.CorreoNotificaciones
+field string --fieldName email
+field string --fieldName password
+field string --fieldName host
+field string --fieldName port
+field string --fieldName protocol
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field reference --fieldName escuela --type ~.domain.Escuela --notNull --class ~.catalog.Concepto
+field reference --fieldName categoria --type ~.catalog.Categoria
+field string --fieldName nombreConcepto
+field number --fieldName monto --type java.lang.Double
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName nombreRol --notNull --class ~.catalog.Rol
+field string --fieldName descripcion
+field boolean --fieldName activo
+field string --fieldName nombrePermiso --notNull --class ~.catalog.Permiso
+field string --fieldName descripcion
+field boolean --fieldName activo
+field reference --fieldName tipoNivelEducativo --type ~.catalog.TipoNivelEducativo --class ~.catalog.NivelEducativo
+field reference --fieldName escuela --type ~.domain.Escuela --notNull 
+field string --fieldName nombreNivelEducativo
+field string --fieldName clave
+field string --fieldName descripcion
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName nombreTipoNivelEducativo --notNull --class ~.catalog.TipoNivelEducativo
+field string --fieldName descripcion
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName nombreCategoria --notNull --class ~.catalog.Categoria
+field string --fieldName descripcion
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName nombreMetodoPago --notNull --class ~.catalog.MetodoPago
+field string --fieldName descripcion
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName nombreEstatusInscripcion --notNull --class ~.catalog.EstatusInscripcion
+field string --fieldName descripcion
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName nombreEstatusCargo --notNull --class ~.catalog.EstatusCargo
+field string --fieldName descripcion
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName nombreTipoAsistencia --notNull --class ~.catalog.TipoAsistencia
+field string --fieldName descripcion
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+field string --fieldName tipoContacto --notNull --class ~.catalog.Contacto
+field string --fieldName valor
+field reference --fieldName usuarioCrea --type ~.domain.Usuario
+field reference --fieldName usuarioModifica --type ~.domain.Usuario
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field boolean --fieldName activo
+repository jpa --interface ~.repository.EscuelaRepository --entity ~.domain.Escuela
+repository jpa --interface ~.repository.CicloEscolarRepository --entity ~.domain.CicloEscolar
+repository jpa --interface ~.repository.CursoRepository --entity ~.domain.Curso
+repository jpa --interface ~.repository.ConceptoInscripcionCursoRepository --entity ~.domain.ConceptoInscripcionCurso
+repository jpa --interface ~.repository.GrupoRepository --entity ~.domain.Grupo
+repository jpa --interface ~.repository.SalonRepository --entity ~.domain.Salon
+repository jpa --interface ~.repository.DomicilioRepository --entity ~.domain.Domicilio
+repository jpa --interface ~.repository.UsuarioRepository --entity ~.domain.Usuario
+repository jpa --interface ~.repository.AlumnoRepository --entity ~.domain.Alumno
+repository jpa --interface ~.repository.PadreRepository --entity ~.domain.Padre
+repository jpa --interface ~.repository.PersonalRepository --entity ~.domain.Personal
+repository jpa --interface ~.repository.CargoRepository --entity ~.domain.Cargo
+repository jpa --interface ~.repository.AbonoRepository --entity ~.domain.Abono
+repository jpa --interface ~.repository.InscrpcionRepository --entity ~.domain.Inscrpcion
+repository jpa --interface ~.repository.AsistenciaRepository --entity ~.domain.Asistencia
+repository jpa --interface ~.repository.CorreoNotificacionesRepository --entity ~.catalog.CorreoNotificaciones
+repository jpa --interface ~.repository.ConceptoRepository --entity ~.catalog.Concepto
+repository jpa --interface ~.repository.RolRepository --entity ~.catalog.Rol
+repository jpa --interface ~.repository.PermisoRepository --entity ~.catalog.Permiso
+repository jpa --interface ~.repository.NivelEducativoRepository --entity ~.catalog.NivelEducativo
+repository jpa --interface ~.repository.TipoNivelEducativoRepository --entity ~.catalog.TipoNivelEducativo
+repository jpa --interface ~.repository.CategoriaRepository --entity ~.catalog.Categoria
+repository jpa --interface ~.repository.MetodoPagoRepository --entity ~.catalog.MetodoPago
+repository jpa --interface ~.repository.EstatusInscripcionRepository --entity ~.catalog.EstatusInscripcion
+repository jpa --interface ~.repository.EstatusCargoRepository --entity ~.catalog.EstatusCargo
+repository jpa --interface ~.repository.TipoAsistenciaRepository --entity ~.catalog.TipoAsistencia
+repository jpa --interface ~.repository.ContactoRepository --entity ~.catalog.Contacto
+service type --interface ~.service.EscuelaService  --entity ~.domain.Escuela
+service type --interface ~.service.CicloEscolarService  --entity ~.domain.CicloEscolar
+service type --interface ~.service.CursoService  --entity ~.domain.Curso
+service type --interface ~.service.ConceptoInscripcionCursoService  --entity ~.domain.ConceptoInscripcionCurso
+service type --interface ~.service.GrupoService  --entity ~.domain.Grupo
+service type --interface ~.service.SalonService  --entity ~.domain.Salon
+service type --interface ~.service.DomicilioService  --entity ~.domain.Domicilio
+service type --interface ~.service.UsuarioService  --entity ~.domain.Usuario
+service type --interface ~.service.AlumnoService  --entity ~.domain.Alumno
+service type --interface ~.service.PadreService  --entity ~.domain.Padre
+service type --interface ~.service.PersonalService  --entity ~.domain.Personal
+service type --interface ~.service.CargoService  --entity ~.domain.Cargo
+service type --interface ~.service.AbonoService  --entity ~.domain.Abono
+service type --interface ~.service.InscrpcionService  --entity ~.domain.Inscrpcion
+service type --interface ~.service.AsistenciaService  --entity ~.domain.Asistencia
+service type --interface ~.service.CorreoNotificacionesService  --entity ~.catalog.CorreoNotificaciones
+service type --interface ~.service.ConceptoService  --entity ~.catalog.Concepto
+service type --interface ~.service.RolService  --entity ~.catalog.Rol
+service type --interface ~.service.PermisoService  --entity ~.catalog.Permiso
+service type --interface ~.service.NivelEducativoService  --entity ~.catalog.NivelEducativo
+service type --interface ~.service.TipoNivelEducativoService  --entity ~.catalog.TipoNivelEducativo
+service type --interface ~.service.CategoriaService  --entity ~.catalog.Categoria
+service type --interface ~.service.MetodoPagoService  --entity ~.catalog.MetodoPago
+service type --interface ~.service.EstatusInscripcionService  --entity ~.catalog.EstatusInscripcion
+service type --interface ~.service.EstatusCargoService  --entity ~.catalog.EstatusCargo
+service type --interface ~.service.TipoAsistenciaService  --entity ~.catalog.TipoAsistencia
+service type --interface ~.service.ContactoService  --entity ~.catalog.Contacto
+json all --deepSerialize
+web mvc json setup
+web mvc json all --package ~.controller
+web mvc setup
+web mvc all --package ~.controller
+web mvc language --code es
+security setup
+interface --class ~.email.NotificationService
+class --class ~.email.NotificationServiceImpl
+email sender setup --hostServer smtp.gmail.com --protocol SMTP --port 587 --username erik.ramirezz --password C0ntr43r1k
+properties list --name email.properties --path SPRING_CONFIG_ROOT
+email template setup --from erik.ramirezz@gmail.com --subject "Prueba de Correo desde aplicacion"
+field email template --fieldName mailTemplate --class ~.email.NotificationServiceImpl
+logging setup --level INFO
+// script --file v_010.roo

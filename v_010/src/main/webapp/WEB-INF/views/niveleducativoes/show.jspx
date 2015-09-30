@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_catalog_NivelEducativo" object="${niveleducativo}" path="/niveleducativoes" z="95O55LsLMCEQqo80L5c72CdF/9A=">
+        <field:display field="tipoNivelEducativo" id="s_com_raze_coleadmin_catalog_NivelEducativo_tipoNivelEducativo" object="${niveleducativo}" z="hFGqDc4iZMj3cVxfLPqTi0K4K3c="/>
+        <field:display field="escuela" id="s_com_raze_coleadmin_catalog_NivelEducativo_escuela" object="${niveleducativo}" z="MU/91/PxzZSuvOTg6D9UPs0NeWk="/>
+        <field:display field="nombreNivelEducativo" id="s_com_raze_coleadmin_catalog_NivelEducativo_nombreNivelEducativo" object="${niveleducativo}" z="EulGfNTdTjxm9UKjFObiFO3geJU="/>
+        <field:display field="clave" id="s_com_raze_coleadmin_catalog_NivelEducativo_clave" object="${niveleducativo}" z="bQqyCe9to0grsHdnQtMlLVl/0oo="/>
+        <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_NivelEducativo_descripcion" object="${niveleducativo}" z="6kt4A3ZnbgUqrcx2WT8IMOuSM3o="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_NivelEducativo_usuarioCrea" object="${niveleducativo}" z="CkTZ3XVYytE+sac1yYMed6ZGNjU="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_NivelEducativo_usuarioModifica" object="${niveleducativo}" z="uYqQuGdbcQrxPFXBXht64yhAQ90="/>
+        <field:display date="true" dateTimePattern="${nivelEducativo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_NivelEducativo_fechaCreacion" object="${niveleducativo}" z="BulOg1fw5/eyTrjvn6oUtrz1rUU="/>
+        <field:display date="true" dateTimePattern="${nivelEducativo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_NivelEducativo_fechaModificacion" object="${niveleducativo}" z="4vX2JFWLBpH4bWmiNVNWVQgGJZk="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_NivelEducativo_activo" object="${niveleducativo}" z="SbI63E6UA2SGB/9l+aCE0cxyQvQ="/>
+    </page:show>
+</div>

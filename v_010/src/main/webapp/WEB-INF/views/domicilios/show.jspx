@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Domicilio" object="${domicilio}" path="/domicilios" z="dbpyog1c8bVbcR9pLJBkUiUwWHQ=">
+        <field:display field="calle" id="s_com_raze_coleadmin_domain_Domicilio_calle" object="${domicilio}" z="a2WDS50hgCP2+Cnd/RvJYaVXQEc="/>
+        <field:display field="numeroInt" id="s_com_raze_coleadmin_domain_Domicilio_numeroInt" object="${domicilio}" z="wHpfSs3pIlNe71T8Gz6zQnQKBHk="/>
+        <field:display field="numeroExt" id="s_com_raze_coleadmin_domain_Domicilio_numeroExt" object="${domicilio}" z="LXPXzIbNbDc8dxlegxN5H+6W7B4="/>
+        <field:display field="colonia" id="s_com_raze_coleadmin_domain_Domicilio_colonia" object="${domicilio}" z="pTypEsIeUW+oJ6BS8ddAg/RsJjA="/>
+        <field:display field="cp" id="s_com_raze_coleadmin_domain_Domicilio_cp" object="${domicilio}" z="1xa1CNaB7Q4NEID9WPlWk7CqkxI="/>
+        <field:display field="municipio" id="s_com_raze_coleadmin_domain_Domicilio_municipio" object="${domicilio}" z="EqG/L8ty0y7R5E6V+hzC5ZSLX4E="/>
+        <field:display field="estado" id="s_com_raze_coleadmin_domain_Domicilio_estado" object="${domicilio}" z="BqhRpYJwCw924D0wH4rxW03j50A="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Domicilio_usuarioCrea" object="${domicilio}" z="chMNOcaxqv4aub+q2Tl8fIbywyY="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Domicilio_usuarioModifica" object="${domicilio}" z="Og/Q+yHW43P1DoRLiEy/Gp7S9GE="/>
+        <field:display date="true" dateTimePattern="${domicilio_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Domicilio_fechaCreacion" object="${domicilio}" z="mR1CoBoW2WaBCZkBp4huAfsS3uw="/>
+        <field:display date="true" dateTimePattern="${domicilio_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Domicilio_fechaModificacion" object="${domicilio}" z="7Z9eQ10SJeuwncgoNZcFE0GxcdU="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Domicilio_activo" object="${domicilio}" z="RBQHpOns/BufkquK6m0PDynMjEY="/>
+    </page:show>
+</div>

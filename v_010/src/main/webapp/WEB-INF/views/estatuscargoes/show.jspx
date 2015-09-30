@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_catalog_EstatusCargo" object="${estatuscargo}" path="/estatuscargoes" z="w4cIDFGLoJE18hCb1opwvIgLb4s=">
+        <field:display field="nombreEstatusCargo" id="s_com_raze_coleadmin_catalog_EstatusCargo_nombreEstatusCargo" object="${estatuscargo}" z="itnzHVHCsBr7X5/g5u0U7g8geOA="/>
+        <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_EstatusCargo_descripcion" object="${estatuscargo}" z="JlPM+mqkZTCSpBJhlp934PuQC30="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_EstatusCargo_usuarioCrea" object="${estatuscargo}" z="acJE6PSL8qe1xfPjZR9rbOLDo5g="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_EstatusCargo_usuarioModifica" object="${estatuscargo}" z="LUWUswwg6KBAZb57PUuAKz1kkfU="/>
+        <field:display date="true" dateTimePattern="${estatusCargo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_EstatusCargo_fechaCreacion" object="${estatuscargo}" z="+6E5BLmJPa0I6EcuD/4+mnxLSG8="/>
+        <field:display date="true" dateTimePattern="${estatusCargo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_EstatusCargo_fechaModificacion" object="${estatuscargo}" z="odEXsQt5jmMH/3X0SaH0/F6+DKQ="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_EstatusCargo_activo" object="${estatuscargo}" z="y29DjN9OS4GI3GyiQfoxxyQ6e+k="/>
+    </page:show>
+</div>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Padre" modelAttribute="padre" path="/padres" versionField="none" z="JrPs8n46VrFU3QxmrS7VqkscriY=">
+        <field:input field="correoE" id="c_com_raze_coleadmin_domain_Padre_correoE" z="tL9bztclhTwh4awje/Na/yrrpnc="/>
+        <field:input field="password" id="c_com_raze_coleadmin_domain_Padre_password" z="nJDu4mbzzf2XoOTHJU6LI56wLGo="/>
+        <field:input field="nombre" id="c_com_raze_coleadmin_domain_Padre_nombre" max="30" required="true" z="WYbZKEFfsHma3Z+zCcpEm6Yo+Bs="/>
+        <field:input field="primerApellido" id="c_com_raze_coleadmin_domain_Padre_primerApellido" max="30" required="true" z="JfbDkB/qR02+oJkc2s2Lr1HJQ9I="/>
+        <field:input field="segundoApellido" id="c_com_raze_coleadmin_domain_Padre_segundoApellido" max="30" z="xkSJRgQh3YMD87X9Yg77IFUrB5I="/>
+        <field:datetime dateTimePattern="${padre_fechanacimiento_date_format}" field="fechaNacimiento" id="c_com_raze_coleadmin_domain_Padre_fechaNacimiento" z="7KUBDwv02/tu13YU9BjFxPbsMok="/>
+        <field:textarea field="foto" id="c_com_raze_coleadmin_domain_Padre_foto" z="iaJcEAYvpDxZX0KILyuqYfb27iI="/>
+        <field:textarea field="observaciones" id="c_com_raze_coleadmin_domain_Padre_observaciones" z="cgS92EzLKIHPPnFf+r5bdkIzvfU="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Padre_usuarioCrea" validationMessageCode="field_invalid_integer" z="r2gK2z2g3bpqKKsAk8qnsH2Bgug="/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Padre_usuarioModifica" validationMessageCode="field_invalid_integer" z="13YuflLU0i5foUtMYgB9iR8nH3o="/>
+        <field:datetime dateTimePattern="${padre_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Padre_fechaCreacion" z="Gq0UPvg1d4CwWLsvB+8RNNaIe0g="/>
+        <field:datetime dateTimePattern="${padre_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Padre_fechaModificacion" z="d5xuBLt0pf7Mi/iNk08KrPz6zu0="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Padre_activo" z="0bc+KuGCesDDPatnJTJl5i47ErM="/>
+        <field:select field="escuela" id="c_com_raze_coleadmin_domain_Padre_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="cAflH/8YmNetcWQIrMql0VrsqDE="/>
+        <field:select field="domicilio" id="c_com_raze_coleadmin_domain_Padre_domicilio" itemValue="id" items="${domicilios}" path="/domicilios" z="C0nZlh1fKEsyz3zNqgp+Y1YYNy8="/>
+        <field:select field="contactos" id="c_com_raze_coleadmin_domain_Padre_contactos" itemValue="id" items="${contactoes}" multiple="true" path="/contactoes" z="vVXQ00XOvrR1o1t2j38/fKU+0uM="/>
+        <field:select field="roles" id="c_com_raze_coleadmin_domain_Padre_roles" itemValue="id" items="${rols}" multiple="true" path="/rols" z="vPYKHNxHiz7hZqP35oOFntqOsu8="/>
+        <field:select field="permisos" id="c_com_raze_coleadmin_domain_Padre_permisos" itemValue="id" items="${permisoes}" multiple="true" path="/permisoes" z="pGx7cY6yHBoLgT9ybNjhPu6MpkQ="/>
+    </form:update>
+</div>

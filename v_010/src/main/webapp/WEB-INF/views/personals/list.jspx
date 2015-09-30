@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Personal" items="${personals}" z="XWSjUIRJRNH/N1fW/HhumNJYXGE=">
+        <table:table data="${personals}" id="l_com_raze_coleadmin_domain_Personal" path="/personals" z="nbUY2zU0oMTrv6BqfcnrwrFQJTo=">
+            <table:column id="c_com_raze_coleadmin_domain_Personal_correoE" property="correoE" z="KV2Toi4Ty52v2mM7PwOkTZGFe+Y="/>
+            <table:column id="c_com_raze_coleadmin_domain_Personal_password" property="password" z="dsHKT9sUV3UgyRcjNy9vrXgdPPQ="/>
+            <table:column id="c_com_raze_coleadmin_domain_Personal_nombre" property="nombre" z="ngSgvAJmBI+fVzJoA9SpVxuH4AI="/>
+            <table:column id="c_com_raze_coleadmin_domain_Personal_primerApellido" property="primerApellido" z="Jv1C1mmZgQxTAuYs8/5ov3NCDjI="/>
+            <table:column id="c_com_raze_coleadmin_domain_Personal_segundoApellido" property="segundoApellido" z="AO+yCbNkLDrtd8MatviroXyZyuk="/>
+            <table:column date="true" dateTimePattern="${personal_fechanacimiento_date_format}" id="c_com_raze_coleadmin_domain_Personal_fechaNacimiento" property="fechaNacimiento" z="dOZgttYA6j/w1GJimJWvcIUDdiI="/>
+        </table:table>
+    </page:list>
+</div>

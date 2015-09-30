@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_catalog_Contacto" items="${contactoes}" z="lbiXhTZAF/LzSJPeJssiPUCqCZY=">
+        <table:table data="${contactoes}" id="l_com_raze_coleadmin_catalog_Contacto" path="/contactoes" z="rc2JcGWnCwepizLowmdTNH3kgOk=">
+            <table:column id="c_com_raze_coleadmin_catalog_Contacto_tipoContacto" property="tipoContacto" z="n8VRox1PgGAMScExmy5w+SpozOU="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Contacto_valor" property="valor" z="yPtwiMDhhVDaSJ6vN3O2bLyFaWY="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Contacto_usuarioCrea" property="usuarioCrea" z="p/sM04XRsB5x6JWkT+pn8dqZEkQ="/>
+            <table:column id="c_com_raze_coleadmin_catalog_Contacto_usuarioModifica" property="usuarioModifica" z="flxasyXMtEDFbX37M2rB0WJVhN0="/>
+            <table:column date="true" dateTimePattern="${contacto_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_Contacto_fechaCreacion" property="fechaCreacion" z="/493bxxaSKBGo9RoVidxsIpe11A="/>
+            <table:column date="true" dateTimePattern="${contacto_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_Contacto_fechaModificacion" property="fechaModificacion" z="ZQR9VemZxmFKarhv4GcQU3RRxyo="/>
+        </table:table>
+    </page:list>
+</div>

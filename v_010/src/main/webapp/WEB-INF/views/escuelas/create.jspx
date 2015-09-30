@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_coleadmin_domain_Escuela" modelAttribute="escuela" path="/escuelas" render="${empty dependencies}" z="KiBveXN6lPP/4chmNnXmdy8JCnQ=">
+        <field:input field="nombre" id="c_com_raze_coleadmin_domain_Escuela_nombre" required="true" z="Wae2qaVOGTYmzgQyJNMrAJJHphs="/>
+        <field:textarea field="logo" id="c_com_raze_coleadmin_domain_Escuela_logo" z="j2zUNAhXZ1XZGCl8XVuouVx5qps="/>
+        <field:input field="web" id="c_com_raze_coleadmin_domain_Escuela_web" z="k1X5MLoEUVrASdnmEesVoI7+Oj8="/>
+        <field:input field="razonSocial" id="c_com_raze_coleadmin_domain_Escuela_razonSocial" z="Wi2s1wCmXIOvMMdLausqhMGtlek="/>
+        <field:select field="domicilio" id="c_com_raze_coleadmin_domain_Escuela_domicilio" itemValue="id" items="${domicilios}" path="/domicilios" z="TsNeTBvY38qdD1lfA60Ak/8lP1A="/>
+        <field:select field="contactos" id="c_com_raze_coleadmin_domain_Escuela_contactos" itemValue="id" items="${contactoes}" multiple="true" path="/contactoes" z="YucdHCzPTjnLOXvIGnmzUNzze8o="/>
+        <field:select field="correo" id="c_com_raze_coleadmin_domain_Escuela_correo" itemValue="id" items="${correonotificacioneses}" path="/correonotificacioneses" z="UWJXuYHyky+L0Tbb1195N2H0nZw="/>
+        <field:select field="usuarioCrea" id="c_com_raze_coleadmin_domain_Escuela_usuarioCrea" itemValue="id" items="${usuarios}" path="/usuarios" z="QoYqDZ1eXbViRexPL8ycn8fkXvM="/>
+        <field:select field="usuarioModifica" id="c_com_raze_coleadmin_domain_Escuela_usuarioModifica" itemValue="id" items="${usuarios}" path="/usuarios" z="lmJhLHlRwEp3l+/kAGA3THItFRA="/>
+        <field:datetime dateTimePattern="${escuela_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Escuela_fechaCreacion" z="5w4iP533uBscUwtPymVoTdwEwAA="/>
+        <field:datetime dateTimePattern="${escuela_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Escuela_fechaModificacion" z="X5lB2t6b7ikCxHVoK6XqrIrT3+4="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Escuela_activo" z="+KiGe8965HNo+mSpsvVWhANVPdc="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Escuela" render="${not empty dependencies}" z="AK8UZEH9d85U62A8RBF4Wo2h34g="/>
+</div>

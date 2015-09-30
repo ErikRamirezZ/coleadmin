@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_asistencia" z="U8KUS4G/hRPnQKlf5U+8tptB5nM=">
+            <menu:item id="i_asistencia_new" messageCode="global_menu_new" url="/asistencias?form" z="B/2X8L/bhAilMmFb2uqYN5vzmOM="/>
+            <menu:item id="i_asistencia_list" messageCode="global_menu_list" url="/asistencias?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nwuXsP9yXNynlVDpFcaeXkicias="/>
+        </menu:category>
+        <menu:category id="c_contacto" z="hBkvx/0fo1w7N+2eKKyRmHraKyA=">
+            <menu:item id="i_contacto_new" messageCode="global_menu_new" url="/contactoes?form" z="zdespq5tJ+FqS04xPOB/h4q/+mE="/>
+            <menu:item id="i_contacto_list" messageCode="global_menu_list" url="/contactoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Dgb9u68WMSpRLucUcKYaYrSzP8w="/>
+        </menu:category>
+        <menu:category id="c_personal" z="qksA8Df2tqc0i9fnaKGFhQPc3RM=">
+            <menu:item id="i_personal_new" messageCode="global_menu_new" url="/personals?form" z="76pSySg9QYkBB4EZrDiiTsErILQ="/>
+            <menu:item id="i_personal_list" messageCode="global_menu_list" url="/personals?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ShzaiNBcZEHNxu/tOdXerSPaT60="/>
+        </menu:category>
+        <menu:category id="c_inscrpcion" z="QNQKdfjPk6OLDxCj2YbTEoXzbTU=">
+            <menu:item id="i_inscrpcion_new" messageCode="global_menu_new" url="/inscrpcions?form" z="FOFFneo1g55S7x557s+4G1qy2cI="/>
+            <menu:item id="i_inscrpcion_list" messageCode="global_menu_list" url="/inscrpcions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="JPYKAyPsfeDzFzQ40jKKlplxZmM="/>
+        </menu:category>
+        <menu:category id="c_permiso" z="GjOcLJULUFLTGAG6VeC89U2LrSQ=">
+            <menu:item id="i_permiso_new" messageCode="global_menu_new" url="/permisoes?form" z="FfouOBI/iV+OHhQpUNAEQa8Tlsk="/>
+            <menu:item id="i_permiso_list" messageCode="global_menu_list" url="/permisoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Qnrb+3ivgrhgP/wmtZF76HR1O/c="/>
+        </menu:category>
+        <menu:category id="c_tiponiveleducativo" z="xoE0ZBKhIdE+1AKMAnblzsWzAos=">
+            <menu:item id="i_tiponiveleducativo_new" messageCode="global_menu_new" url="/tiponiveleducativoes?form" z="IatIO2L+M+szxHFLvIkHCkGN81Y="/>
+            <menu:item id="i_tiponiveleducativo_list" messageCode="global_menu_list" url="/tiponiveleducativoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Pwvipnm7PjqPdn0elja8ZLzO+BQ="/>
+        </menu:category>
+        <menu:category id="c_domicilio" z="9Kv0zBq8wBFZL3R7DQJ9c4VTqSo=">
+            <menu:item id="i_domicilio_new" messageCode="global_menu_new" url="/domicilios?form" z="yLFo/3gnPwJoJgT3GoGFiD2bf0E="/>
+            <menu:item id="i_domicilio_list" messageCode="global_menu_list" url="/domicilios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="mbVXPYopHcvB18aGLGKYUd91zDk="/>
+        </menu:category>
+        <menu:category id="c_conceptoinscripcioncurso" z="YKI5XN8Aayaii52lV8hRGt5pXfY=">
+            <menu:item id="i_conceptoinscripcioncurso_new" messageCode="global_menu_new" url="/conceptoinscripcioncursoes?form" z="H9LQus2hm8rQS9o4hD1JHyytOlc="/>
+            <menu:item id="i_conceptoinscripcioncurso_list" messageCode="global_menu_list" url="/conceptoinscripcioncursoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="KrEnCKLPgoX6wMWyywOS+zpRqDg="/>
+        </menu:category>
+        <menu:category id="c_grupo" z="aEc7CUb6jPdvenY+zZYtXPTsF6A=">
+            <menu:item id="i_grupo_new" messageCode="global_menu_new" url="/grupoes?form" z="w/Bv5V+m4clKPWr5NSSRzQPz8Nc="/>
+            <menu:item id="i_grupo_list" messageCode="global_menu_list" url="/grupoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="O3uVN41ElSwPLWcQ8uEDcvkEyRc="/>
+        </menu:category>
+        <menu:category id="c_escuela" z="2Nf+C4gkpQtPjkcLTqCteNCgFCw=">
+            <menu:item id="i_escuela_new" messageCode="global_menu_new" url="/escuelas?form" z="0qciJEbxOLmZwIzH9yLTQ3Y5GSE="/>
+            <menu:item id="i_escuela_list" messageCode="global_menu_list" url="/escuelas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="YXVU8rW0TRFgXRzRP9tBiFA7Nhs="/>
+        </menu:category>
+        <menu:category id="c_correonotificaciones" z="bEE+/aGqpbH8UJ2mZkx7mmMfJzo=">
+            <menu:item id="i_correonotificaciones_new" messageCode="global_menu_new" url="/correonotificacioneses?form" z="uzqiycyuZK4BibWVD3x4raO05YM="/>
+            <menu:item id="i_correonotificaciones_list" messageCode="global_menu_list" url="/correonotificacioneses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="22ejwd58zl4QMM4F6Xd2b+BZzQk="/>
+        </menu:category>
+        <menu:category id="c_rol" z="WyJ0DN0p4cfPsGF7WGHEFk6Ok1k=">
+            <menu:item id="i_rol_new" messageCode="global_menu_new" url="/rols?form" z="pci13zJkyKMJXhGhbCY9f9yBMb4="/>
+            <menu:item id="i_rol_list" messageCode="global_menu_list" url="/rols?page=1&amp;size=${empty param.size ? 10 : param.size}" z="GQHH+mdvcxfHlFAlkR2gFwHsv1s="/>
+        </menu:category>
+        <menu:category id="c_niveleducativo" z="3UYxf93kDOKiZU58kohA1mj4oBc=">
+            <menu:item id="i_niveleducativo_new" messageCode="global_menu_new" url="/niveleducativoes?form" z="h6kzIIFWrY1/sqD1dlasyD52mds="/>
+            <menu:item id="i_niveleducativo_list" messageCode="global_menu_list" url="/niveleducativoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kAHsPqJqE5qSuTOuK/z72RAysIg="/>
+        </menu:category>
+        <menu:category id="c_alumno" z="nHbgP7LBxRMoFKFcN1FUCPv0Zso=">
+            <menu:item id="i_alumno_new" messageCode="global_menu_new" url="/alumnoes?form" z="AD6Q5BvysLZFNs3u5P/gQvQQVi4="/>
+            <menu:item id="i_alumno_list" messageCode="global_menu_list" url="/alumnoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="8BJn7mkV4787yUBFwYY/ZR+urjU="/>
+        </menu:category>
+        <menu:category id="c_estatuscargo" z="am2fSJIUvhG8Dfxpn1srfsb2c80=">
+            <menu:item id="i_estatuscargo_new" messageCode="global_menu_new" url="/estatuscargoes?form" z="S5J3PaQJGTSr3qNSUXkWuN6iWLs="/>
+            <menu:item id="i_estatuscargo_list" messageCode="global_menu_list" url="/estatuscargoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Fdlu7iVTPetd/8jokAxnjRmTGl4="/>
+        </menu:category>
+        <menu:category id="c_salon" z="EGl0AtAnyZVC60v+PPUOSJUmqoI=">
+            <menu:item id="i_salon_new" messageCode="global_menu_new" url="/salons?form" z="9xJZ+dKsWaT2ZMYHDcAB88v8WNo="/>
+            <menu:item id="i_salon_list" messageCode="global_menu_list" url="/salons?page=1&amp;size=${empty param.size ? 10 : param.size}" z="0jX4jgaMuabEApyAfRO0qfI6rDY="/>
+        </menu:category>
+        <menu:category id="c_abono" z="1rq/0DZ2QlAFLA9GH9ShzVTKVQo=">
+            <menu:item id="i_abono_new" messageCode="global_menu_new" url="/abonoes?form" z="/g1rZOnFPzWqiiyzFQro0JGlZt8="/>
+            <menu:item id="i_abono_list" messageCode="global_menu_list" url="/abonoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="5c3kFvwPzQwPgR6qoD3BFQFkpzI="/>
+        </menu:category>
+        <menu:category id="c_padre" z="66ZYpJkoJQJz+L9255GsxdIF9KI=">
+            <menu:item id="i_padre_new" messageCode="global_menu_new" url="/padres?form" z="+TwTxs2bNQSYtHpq1aJkj3gO5HI="/>
+            <menu:item id="i_padre_list" messageCode="global_menu_list" url="/padres?page=1&amp;size=${empty param.size ? 10 : param.size}" z="RjE9Q0Uu/NCy9W3W3sOOaw/kI/g="/>
+        </menu:category>
+        <menu:category id="c_tipoasistencia" z="38tK3Wjsy5CTELJwkmmDos76eL4=">
+            <menu:item id="i_tipoasistencia_new" messageCode="global_menu_new" url="/tipoasistencias?form" z="3F2WXcP8WClG5/AgfR9e2jDZtbA="/>
+            <menu:item id="i_tipoasistencia_list" messageCode="global_menu_list" url="/tipoasistencias?page=1&amp;size=${empty param.size ? 10 : param.size}" z="61JSAWVWzMCfEUYpUz76F6VksUM="/>
+        </menu:category>
+        <menu:category id="c_cicloescolar" z="+oDzKw5fDHInKANyJXffljrska8=">
+            <menu:item id="i_cicloescolar_new" messageCode="global_menu_new" url="/cicloescolars?form" z="vNk0r00IzMoRwBQ8KqCdcLWpNBg="/>
+            <menu:item id="i_cicloescolar_list" messageCode="global_menu_list" url="/cicloescolars?page=1&amp;size=${empty param.size ? 10 : param.size}" z="UB3moWDLbHtsexAQrtbTCkecak0="/>
+        </menu:category>
+        <menu:category id="c_curso" z="HZkpr/mFg3Jt16a6Bb8jg2ec7GA=">
+            <menu:item id="i_curso_new" messageCode="global_menu_new" url="/cursoes?form" z="i5hb6h9BZQgF9RE9iqqRTA+wGak="/>
+            <menu:item id="i_curso_list" messageCode="global_menu_list" url="/cursoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="H5eRx2vxkuAYrT5z65L2KRROpNs="/>
+        </menu:category>
+        <menu:category id="c_cargo" z="RkgM1RFJmYcsCrUrSD/Wv8nbL2A=">
+            <menu:item id="i_cargo_new" messageCode="global_menu_new" url="/cargoes?form" z="qMLzugfFynKkMvazLt0WjeDGg/0="/>
+            <menu:item id="i_cargo_list" messageCode="global_menu_list" url="/cargoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="szKeASlLTApTFwfZGlrE8sQ2teI="/>
+        </menu:category>
+        <menu:category id="c_metodopago" z="ivaY1Ww5zsZQWJ84p4lPq713Nf0=">
+            <menu:item id="i_metodopago_new" messageCode="global_menu_new" url="/metodopagoes?form" z="zD6WNqrEpRlwtGZvb/9F1ylZ5jA="/>
+            <menu:item id="i_metodopago_list" messageCode="global_menu_list" url="/metodopagoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="v3V2nLlh/mJtkbUyrWKGzbA5f8Q="/>
+        </menu:category>
+        <menu:category id="c_estatusinscripcion" z="ZKUvr9tyx97m5Kq6GCbop2/m5CY=">
+            <menu:item id="i_estatusinscripcion_new" messageCode="global_menu_new" url="/estatusinscripcions?form" z="L+sJVpsYwVKTwHcebDtjndjGT0A="/>
+            <menu:item id="i_estatusinscripcion_list" messageCode="global_menu_list" url="/estatusinscripcions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="BmCKup/bdidth2GGCDv4IjvbZKA="/>
+        </menu:category>
+        <menu:category id="c_concepto" z="q47+yZIsplMoAi2nkzl6/2quZ2U=">
+            <menu:item id="i_concepto_new" messageCode="global_menu_new" url="/conceptoes?form" z="vmndKLfQWGkbYjJV7pdoP22m/Y8="/>
+            <menu:item id="i_concepto_list" messageCode="global_menu_list" url="/conceptoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="J68xpxrIKe8vv9ZK7sWZLB4Bikw="/>
+        </menu:category>
+        <menu:category id="c_categoria" z="XLnDEGJehr8l3YDLxVdbfHBP/oo=">
+            <menu:item id="i_categoria_new" messageCode="global_menu_new" url="/categorias?form" z="NYUpuLrfC7kdwPOtEghuKRyaHNA="/>
+            <menu:item id="i_categoria_list" messageCode="global_menu_list" url="/categorias?page=1&amp;size=${empty param.size ? 10 : param.size}" z="eydey0ZEQOKp1zkf+5SxUGiZeC8="/>
+        </menu:category>
+    </menu:menu>
+</div>

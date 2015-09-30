@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Alumno" object="${alumno}" path="/alumnoes" z="W+hAgINI6G/GKe4HQGbwxjwwWgM=">
+        <field:display field="correoE" id="s_com_raze_coleadmin_domain_Alumno_correoE" object="${alumno}" z="SM3FxUUvUOwWx6E5L2KjHkolsmg="/>
+        <field:display field="password" id="s_com_raze_coleadmin_domain_Alumno_password" object="${alumno}" z="U5aOigrSyYNE43fW6b9X2PXEuNI="/>
+        <field:display field="nombre" id="s_com_raze_coleadmin_domain_Alumno_nombre" object="${alumno}" z="hWKKsPDpHCCg7s6V5YYmkuEFMoI="/>
+        <field:display field="primerApellido" id="s_com_raze_coleadmin_domain_Alumno_primerApellido" object="${alumno}" z="qxfCgEkwC8UI49n0HUmqoEp0qOU="/>
+        <field:display field="segundoApellido" id="s_com_raze_coleadmin_domain_Alumno_segundoApellido" object="${alumno}" z="BNkjf3S01H9epZcVuKv03PBEIP4="/>
+        <field:display date="true" dateTimePattern="${alumno_fechanacimiento_date_format}" field="fechaNacimiento" id="s_com_raze_coleadmin_domain_Alumno_fechaNacimiento" object="${alumno}" z="vtSV0pkZjxWXjvEQ3Zq3VLWdxro="/>
+        <field:display field="foto" id="s_com_raze_coleadmin_domain_Alumno_foto" object="${alumno}" z="60Kax0/Zty4Tn9i0G/J5JnhKQ04="/>
+        <field:display field="observaciones" id="s_com_raze_coleadmin_domain_Alumno_observaciones" object="${alumno}" z="K/RJ6PbHzWRhjiO2+jMKWYmetoo="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Alumno_usuarioCrea" object="${alumno}" z="AsIbI2TdeNxvtDSS8mTYLxTYic0="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Alumno_usuarioModifica" object="${alumno}" z="2CVxzFme+1Bx5evhlPlQSyArpGQ="/>
+        <field:display date="true" dateTimePattern="${alumno_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Alumno_fechaCreacion" object="${alumno}" z="Nkecdmtlo9pOQjRjqb3jjHvf9Yw="/>
+        <field:display date="true" dateTimePattern="${alumno_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Alumno_fechaModificacion" object="${alumno}" z="F53D6RcUtNuWfI6q8OoDeCQrGUE="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Alumno_activo" object="${alumno}" z="FTKYOY15ug24hoeXK71zUZj1hI0="/>
+        <field:display field="escuela" id="s_com_raze_coleadmin_domain_Alumno_escuela" object="${alumno}" z="7z40MxU0tviDhP1ev0+jlbDpWLM="/>
+        <field:display field="domicilio" id="s_com_raze_coleadmin_domain_Alumno_domicilio" object="${alumno}" z="NaSepviWK1LjKlqaaJB3ka9kKkw="/>
+        <field:display field="contactos" id="s_com_raze_coleadmin_domain_Alumno_contactos" object="${alumno}" z="TgtIGMsIK640nX+CZjABZqbcBW4="/>
+        <field:display field="roles" id="s_com_raze_coleadmin_domain_Alumno_roles" object="${alumno}" z="8iB6mzCdaZWrWZYkwzXZDeb6R00="/>
+        <field:display field="permisos" id="s_com_raze_coleadmin_domain_Alumno_permisos" object="${alumno}" z="GoI5d3fNQY0WLVZvtNE7zQHc0a0="/>
+        <field:display field="curp" id="s_com_raze_coleadmin_domain_Alumno_curp" object="${alumno}" z="QsPTDXV0J6HJJp7SUC0Oec1iSy8="/>
+        <field:display field="tipoSangre" id="s_com_raze_coleadmin_domain_Alumno_tipoSangre" object="${alumno}" z="HrTmX0jOsvbfDqchF+kaKAkxr90="/>
+        <field:display field="talla" id="s_com_raze_coleadmin_domain_Alumno_talla" object="${alumno}" z="BRVUxmS8aZYwihA2Nih8jHPfEUk="/>
+        <field:display field="peso" id="s_com_raze_coleadmin_domain_Alumno_peso" object="${alumno}" z="gHMwRJf6wIWjDa2PPipj8QnWnOA="/>
+        <field:display field="alergias" id="s_com_raze_coleadmin_domain_Alumno_alergias" object="${alumno}" z="D/CEjaO7N2zdC+KJVb1WLR0J+pI="/>
+        <field:display field="folio" id="s_com_raze_coleadmin_domain_Alumno_folio" object="${alumno}" z="J7LZmFai1j54feIZiup6lY0yWdI="/>
+    </page:show>
+</div>

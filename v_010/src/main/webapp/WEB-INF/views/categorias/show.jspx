@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_catalog_Categoria" object="${categoria}" path="/categorias" z="EHl42gpLrOTpE5f95ZY9nIIHJxo=">
+        <field:display field="nombreCategoria" id="s_com_raze_coleadmin_catalog_Categoria_nombreCategoria" object="${categoria}" z="SkrrFGjSafSCDbrVNJUVLclegdE="/>
+        <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_Categoria_descripcion" object="${categoria}" z="p+2jqPub043tNNNjkB3FdlPek+U="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Categoria_usuarioCrea" object="${categoria}" z="uX0N3Y9VzWd8cuS0Ej3+hZ8TW/8="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Categoria_usuarioModifica" object="${categoria}" z="lcfo0lZHJGGiHEMc3/JtymW/GKw="/>
+        <field:display date="true" dateTimePattern="${categoria_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Categoria_fechaCreacion" object="${categoria}" z="uXD/BDxR6zw/xBczuQ2uHTT/GqA="/>
+        <field:display date="true" dateTimePattern="${categoria_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Categoria_fechaModificacion" object="${categoria}" z="ruQI+pw5BRrdJ0vkoEWcEZ+9e+4="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Categoria_activo" object="${categoria}" z="uBLxfphIqA6/6zISMxM3ak8z8Bo="/>
+    </page:show>
+</div>

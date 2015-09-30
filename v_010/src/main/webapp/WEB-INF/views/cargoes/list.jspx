@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_Cargo" items="${cargoes}" z="aV1+uXxF4SCgxP/S6vK6pyNJb58=">
+        <table:table data="${cargoes}" id="l_com_raze_coleadmin_domain_Cargo" path="/cargoes" z="8UDz5NherjH7bq5NPyEKWvg93wY=">
+            <table:column id="c_com_raze_coleadmin_domain_Cargo_alumno" property="alumno" z="R9JmwC2rYlrzcABtfaWWpQ63nxY="/>
+            <table:column id="c_com_raze_coleadmin_domain_Cargo_concepto" property="concepto" z="rlw+DvnkGi5ZsCKZ4Hf5F1mmkh4="/>
+            <table:column id="c_com_raze_coleadmin_domain_Cargo_cantidad" property="cantidad" z="B2IUle22LYbyBoIbpQLV8Zu8Cjc="/>
+            <table:column id="c_com_raze_coleadmin_domain_Cargo_subtotal" property="subtotal" z="6c63wusks/7Aj/JjbdK+2LUO/Kc="/>
+            <table:column id="c_com_raze_coleadmin_domain_Cargo_descuentoPorcentaje" property="descuentoPorcentaje" z="Hl3K9Fkmz6IQvKuU5Nc4Xp70G2A="/>
+            <table:column id="c_com_raze_coleadmin_domain_Cargo_descuentoPesos" property="descuentoPesos" z="9ta1jFx+oHpGs6dPPTV3QLFKTPg="/>
+        </table:table>
+    </page:list>
+</div>

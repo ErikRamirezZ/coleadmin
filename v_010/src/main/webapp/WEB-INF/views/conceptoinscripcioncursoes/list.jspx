@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_domain_ConceptoInscripcionCurso" items="${conceptoinscripcioncursoes}" z="fSy/oDuHy9gb9+0RPMz/wJZQkXc=">
+        <table:table data="${conceptoinscripcioncursoes}" id="l_com_raze_coleadmin_domain_ConceptoInscripcionCurso" path="/conceptoinscripcioncursoes" z="LVXhU4BI13WbnrITFR9+QwRLWLQ=">
+            <table:column id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_curso" property="curso" z="Q+msa/peiTODtpLg1aG+pGCBalw="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_concepto" property="concepto" z="PY8y0hdBuiz+cZlyO6Whk0muwI0="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_cantidad" property="cantidad" z="k42AASV5szH537rbJz6Q0iPrmdY="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_usuarioCrea" property="usuarioCrea" z="QxbKCzQk9PjI4QvCdpxih9iD1do="/>
+            <table:column id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_usuarioModifica" property="usuarioModifica" z="orDUmkPZETvhjv9Qu1B4ggXrJYE="/>
+            <table:column date="true" dateTimePattern="${conceptoInscripcionCurso_fechacreacion_date_format}" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_fechaCreacion" property="fechaCreacion" z="vndDLeVq2Pu4bsTjRNNWt8zkeOE="/>
+        </table:table>
+    </page:list>
+</div>

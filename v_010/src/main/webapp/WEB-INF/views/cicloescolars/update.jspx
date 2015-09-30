@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_CicloEscolar" modelAttribute="cicloEscolar" path="/cicloescolars" versionField="none" z="0487B5eAKoCoKOYrnyrpcuncZSY=">
+        <field:select field="escuela" id="c_com_raze_coleadmin_domain_CicloEscolar_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="Qy9K1JxrT+/aety2ykYhwuxP7bM="/>
+        <field:input field="nombreCiclo" id="c_com_raze_coleadmin_domain_CicloEscolar_nombreCiclo" z="8ZSgbgpRXofI6QgC/SC6Q9QfFoE="/>
+        <field:datetime dateTimePattern="${cicloEscolar_fechainicio_date_format}" field="fechaInicio" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaInicio" z="LvVVXMD6PHY2xDY5TD0rDCdgRsg="/>
+        <field:datetime dateTimePattern="${cicloEscolar_fechafin_date_format}" field="fechaFin" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaFin" z="LwoBIbGQszVM+sVVAnN89RyrJu0="/>
+        <field:select field="usuarioCrea" id="c_com_raze_coleadmin_domain_CicloEscolar_usuarioCrea" itemValue="id" items="${usuarios}" path="/usuarios" z="FwY0R+/3WQ58J89/fr7NV7ZxDA4="/>
+        <field:select field="usuarioModifica" id="c_com_raze_coleadmin_domain_CicloEscolar_usuarioModifica" itemValue="id" items="${usuarios}" path="/usuarios" z="yEdxG9Yn1abAPmRbFLIXeLIuGQA="/>
+        <field:datetime dateTimePattern="${cicloEscolar_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaCreacion" z="TPdLail6Vz+wwPj6S/5hQM1c+k0="/>
+        <field:datetime dateTimePattern="${cicloEscolar_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_CicloEscolar_fechaModificacion" z="rX0ulyz3nB/8Hn2IeYn9PD5IYwk="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_CicloEscolar_activo" z="69jnS6c0pQMBSytJDHBj3kpBLpM="/>
+    </form:update>
+</div>

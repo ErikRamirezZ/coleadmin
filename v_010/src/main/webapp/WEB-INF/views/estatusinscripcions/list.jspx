@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_coleadmin_catalog_EstatusInscripcion" items="${estatusinscripcions}" z="lA9UALpYGqw5NP8mx5d9/ZInwsw=">
+        <table:table data="${estatusinscripcions}" id="l_com_raze_coleadmin_catalog_EstatusInscripcion" path="/estatusinscripcions" z="iG1Ul4IcF2gGmTyO81hc9q6TSmg=">
+            <table:column id="c_com_raze_coleadmin_catalog_EstatusInscripcion_nombreEstatusInscripcion" property="nombreEstatusInscripcion" z="7KWeCgdjJO8CjLxg2kooAry5jMY="/>
+            <table:column id="c_com_raze_coleadmin_catalog_EstatusInscripcion_descripcion" property="descripcion" z="oJ69LFU/eqVm6AqaFzefPjd0gi4="/>
+            <table:column id="c_com_raze_coleadmin_catalog_EstatusInscripcion_usuarioCrea" property="usuarioCrea" z="iVl6ynpf7ondWEFBLgbDrye9UJg="/>
+            <table:column id="c_com_raze_coleadmin_catalog_EstatusInscripcion_usuarioModifica" property="usuarioModifica" z="tULq4wFFFhOJiOczQR54CCelRco="/>
+            <table:column date="true" dateTimePattern="${estatusInscripcion_fechacreacion_date_format}" id="c_com_raze_coleadmin_catalog_EstatusInscripcion_fechaCreacion" property="fechaCreacion" z="Hx0aftyPYa2Ekh42BQrGGo8lb20="/>
+            <table:column date="true" dateTimePattern="${estatusInscripcion_fechamodificacion_date_format}" id="c_com_raze_coleadmin_catalog_EstatusInscripcion_fechaModificacion" property="fechaModificacion" z="mHTQwSbTuDtJWL3GHDk5mmsdJOs="/>
+        </table:table>
+    </page:list>
+</div>

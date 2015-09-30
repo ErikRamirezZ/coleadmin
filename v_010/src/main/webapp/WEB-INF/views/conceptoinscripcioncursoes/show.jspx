@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_ConceptoInscripcionCurso" object="${conceptoinscripcioncurso}" path="/conceptoinscripcioncursoes" z="8g8frWvn3YAFut0zEV3TZekPMoY=">
+        <field:display field="curso" id="s_com_raze_coleadmin_domain_ConceptoInscripcionCurso_curso" object="${conceptoinscripcioncurso}" z="/8s/vTEiyQRFv31tS5D2URZrtqQ="/>
+        <field:display field="concepto" id="s_com_raze_coleadmin_domain_ConceptoInscripcionCurso_concepto" object="${conceptoinscripcioncurso}" z="lRvII3uZWh0eYkchpTVGJx/Y+7k="/>
+        <field:display field="cantidad" id="s_com_raze_coleadmin_domain_ConceptoInscripcionCurso_cantidad" object="${conceptoinscripcioncurso}" z="v2NqLGdqveKC59oFNKad3hdDgaU="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_ConceptoInscripcionCurso_usuarioCrea" object="${conceptoinscripcioncurso}" z="BwFFE0hnOcfEM+eIOCoCPaE+RkE="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_ConceptoInscripcionCurso_usuarioModifica" object="${conceptoinscripcioncurso}" z="bRNub1C0Di+/cQfgMBaA8jVTFl0="/>
+        <field:display date="true" dateTimePattern="${conceptoInscripcionCurso_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_ConceptoInscripcionCurso_fechaCreacion" object="${conceptoinscripcioncurso}" z="E+5v0/DEvavgI0rDP17XSN7KEV4="/>
+        <field:display date="true" dateTimePattern="${conceptoInscripcionCurso_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_ConceptoInscripcionCurso_fechaModificacion" object="${conceptoinscripcioncurso}" z="ooYZvNmk6v4qRRu/zMHBBpNRyYY="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_ConceptoInscripcionCurso_activo" object="${conceptoinscripcioncurso}" z="ZWAzLDlGJWDf1BLYcTXZL6GlM/8="/>
+    </page:show>
+</div>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_coleadmin_domain_Alumno" modelAttribute="alumno" path="/alumnoes" versionField="none" z="4VISJafeTGfkdGdvIVbS1bzfh8c=">
+        <field:input field="correoE" id="c_com_raze_coleadmin_domain_Alumno_correoE" z="h2zjitWK1aVI5/XJiCeNbTqc+mE="/>
+        <field:input field="password" id="c_com_raze_coleadmin_domain_Alumno_password" z="kQLQqIEjs8oKQ8iQoNEa0iimrPw="/>
+        <field:input field="nombre" id="c_com_raze_coleadmin_domain_Alumno_nombre" max="30" required="true" z="SLAXG7VH+i3BTjzs378GY8qBGmY="/>
+        <field:input field="primerApellido" id="c_com_raze_coleadmin_domain_Alumno_primerApellido" max="30" required="true" z="ypmv5JmSrmE5Ai82W5lGAebQmDQ="/>
+        <field:input field="segundoApellido" id="c_com_raze_coleadmin_domain_Alumno_segundoApellido" max="30" z="zqawr/xUoIBk4pkHvdVGd4VfutM="/>
+        <field:datetime dateTimePattern="${alumno_fechanacimiento_date_format}" field="fechaNacimiento" id="c_com_raze_coleadmin_domain_Alumno_fechaNacimiento" z="9Wo/BHJU3DKp1A3Cad43yMzPymM="/>
+        <field:textarea field="foto" id="c_com_raze_coleadmin_domain_Alumno_foto" z="HRP+KDcYuW1MVTw7DCpngjVAINY="/>
+        <field:textarea field="observaciones" id="c_com_raze_coleadmin_domain_Alumno_observaciones" z="v7BEu+u00td+MUcNKwLLeG1XlaQ="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Alumno_usuarioCrea" validationMessageCode="field_invalid_integer" z="blfoWw4J6Mx1JGYKLOMNNU8onbI="/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Alumno_usuarioModifica" validationMessageCode="field_invalid_integer" z="CQUzrPZCikrWPDjrA/XrEr9M5XM="/>
+        <field:datetime dateTimePattern="${alumno_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Alumno_fechaCreacion" z="EkD6vCWGDb7JANSH1mo97znZoJo="/>
+        <field:datetime dateTimePattern="${alumno_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Alumno_fechaModificacion" z="CSl7aiNGuT3UUiUjZ1LInSoAgYk="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Alumno_activo" z="C3nNTCgjWjCpVFDRWGhk0K7xcf8="/>
+        <field:select field="escuela" id="c_com_raze_coleadmin_domain_Alumno_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="3+1D3Qqlptxm81a62f0qXNVAJn0="/>
+        <field:select field="domicilio" id="c_com_raze_coleadmin_domain_Alumno_domicilio" itemValue="id" items="${domicilios}" path="/domicilios" z="R3tzItu+hsNcq7R0u5/SDN5jcLM="/>
+        <field:select field="contactos" id="c_com_raze_coleadmin_domain_Alumno_contactos" itemValue="id" items="${contactoes}" multiple="true" path="/contactoes" z="voK5pPDNo7GXXNcOjOVBWoC09aI="/>
+        <field:select field="roles" id="c_com_raze_coleadmin_domain_Alumno_roles" itemValue="id" items="${rols}" multiple="true" path="/rols" z="jsBMVDS1oQhoN88yzbs9cAEi3rw="/>
+        <field:select field="permisos" id="c_com_raze_coleadmin_domain_Alumno_permisos" itemValue="id" items="${permisoes}" multiple="true" path="/permisoes" z="AW3VfTeHy7/n5S81/FSaDrhKIOM="/>
+        <field:input field="curp" id="c_com_raze_coleadmin_domain_Alumno_curp" z="v3rjjq1Re7ja6v3seF8DHgF7mWc="/>
+        <field:input field="tipoSangre" id="c_com_raze_coleadmin_domain_Alumno_tipoSangre" z="DmqqzEPkLTTrKVm69icbK/PQEbU="/>
+        <field:input field="talla" id="c_com_raze_coleadmin_domain_Alumno_talla" z="XQbenk/oTjkRpLc7PPWwaClEjTA="/>
+        <field:input field="peso" id="c_com_raze_coleadmin_domain_Alumno_peso" z="8oXyDfnxLcsHXqlW+33FOZ+/WfY="/>
+        <field:input field="alergias" id="c_com_raze_coleadmin_domain_Alumno_alergias" z="PWIwKuJ8wRDIGqEanHM+mooHloc="/>
+        <field:input field="folio" id="c_com_raze_coleadmin_domain_Alumno_folio" z="12uOiLuNvbFZ5F2l6CiM5dXZ29c="/>
+    </form:update>
+</div>

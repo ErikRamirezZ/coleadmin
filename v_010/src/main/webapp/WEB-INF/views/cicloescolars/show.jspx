@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_CicloEscolar" object="${cicloescolar}" path="/cicloescolars" z="qkyTh6BEGtrnSqikb5ThHNiOwbI=">
+        <field:display field="escuela" id="s_com_raze_coleadmin_domain_CicloEscolar_escuela" object="${cicloescolar}" z="KRs/MGHkQCr2KLZJP8sTGChRNNw="/>
+        <field:display field="nombreCiclo" id="s_com_raze_coleadmin_domain_CicloEscolar_nombreCiclo" object="${cicloescolar}" z="Ps1/Q4URfXRypBlT95SEqUJc0nk="/>
+        <field:display date="true" dateTimePattern="${cicloEscolar_fechainicio_date_format}" field="fechaInicio" id="s_com_raze_coleadmin_domain_CicloEscolar_fechaInicio" object="${cicloescolar}" z="PxIBqI0LHLPiCRRP4s/44Ds2R84="/>
+        <field:display date="true" dateTimePattern="${cicloEscolar_fechafin_date_format}" field="fechaFin" id="s_com_raze_coleadmin_domain_CicloEscolar_fechaFin" object="${cicloescolar}" z="jfniSNTdIBroArmECMDSQYUan6E="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_CicloEscolar_usuarioCrea" object="${cicloescolar}" z="dXd/GwI3dYjJ0NjHpjbtqKNa56M="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_CicloEscolar_usuarioModifica" object="${cicloescolar}" z="FjJFjZWATbQKahZlFfgeQHMBrSM="/>
+        <field:display date="true" dateTimePattern="${cicloEscolar_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_CicloEscolar_fechaCreacion" object="${cicloescolar}" z="z8id1mP67BuVafErtuVbEXYhOHs="/>
+        <field:display date="true" dateTimePattern="${cicloEscolar_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_CicloEscolar_fechaModificacion" object="${cicloescolar}" z="JBf5Fhvzg2v642XKVJVDNFrfoCQ="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_CicloEscolar_activo" object="${cicloescolar}" z="z+2Qp7gUWuxwybPOTE6EfKyyq7w="/>
+    </page:show>
+</div>

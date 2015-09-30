@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Salon" object="${salon}" path="/salons" z="O22Iushtx3J3q8QalZ7btrSOEDQ=">
+        <field:display field="nombreSalon" id="s_com_raze_coleadmin_domain_Salon_nombreSalon" object="${salon}" z="iNzhAICWwRZ73hcgbF52mpJYbsY="/>
+        <field:display field="escuela" id="s_com_raze_coleadmin_domain_Salon_escuela" object="${salon}" z="YIA/9df5cs4+THKdHQqVf0eP3aY="/>
+        <field:display field="descripcion" id="s_com_raze_coleadmin_domain_Salon_descripcion" object="${salon}" z="nflOugATt3rVpIm3N10rCWtk+DE="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Salon_usuarioCrea" object="${salon}" z="+2reubxC7GJ/rDxnrmCDtuxWBiQ="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Salon_usuarioModifica" object="${salon}" z="uCiVgW+agnwISl+q+Inz/l6mD9I="/>
+        <field:display date="true" dateTimePattern="${salon_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Salon_fechaCreacion" object="${salon}" z="qlR5qZ8/qE83jEm6Ga3t/w6OPbY="/>
+        <field:display date="true" dateTimePattern="${salon_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Salon_fechaModificacion" object="${salon}" z="IL+UmzRb25nzwRZtnryen6QJWYg="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Salon_activo" object="${salon}" z="lXAOQjNvHWr04DqeIG2nzgcFlp8="/>
+    </page:show>
+</div>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_catalog_CorreoNotificaciones" object="${correonotificaciones}" path="/correonotificacioneses" z="VOwbR/Gb0nc1jhnqHQDR0S8WMk0=">
+        <field:display field="escuela" id="s_com_raze_coleadmin_catalog_CorreoNotificaciones_escuela" object="${correonotificaciones}" z="jRvHcZ7E6gqylUDJmYRvxCpKozg="/>
+        <field:display field="email" id="s_com_raze_coleadmin_catalog_CorreoNotificaciones_email" object="${correonotificaciones}" z="VwL8eDtE+omhazw7ziCVQsQ6C9U="/>
+        <field:display field="password" id="s_com_raze_coleadmin_catalog_CorreoNotificaciones_password" object="${correonotificaciones}" z="nv/cSEFIcV93YOGr0esns9R4GeQ="/>
+        <field:display field="host" id="s_com_raze_coleadmin_catalog_CorreoNotificaciones_host" object="${correonotificaciones}" z="aJxn2j0jdPa7YlmO0aGwKpeeV2o="/>
+        <field:display field="port" id="s_com_raze_coleadmin_catalog_CorreoNotificaciones_port" object="${correonotificaciones}" z="+APy2zE6ealfyDdpiPmm/NviEN4="/>
+        <field:display field="protocol" id="s_com_raze_coleadmin_catalog_CorreoNotificaciones_protocol" object="${correonotificaciones}" z="o7Fxr79ZSvXs7P6zu7nUKT3nycI="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_CorreoNotificaciones_usuarioCrea" object="${correonotificaciones}" z="6vugp/ish7vVsMt4WAgWBF5Ppn0="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_CorreoNotificaciones_usuarioModifica" object="${correonotificaciones}" z="IjmfGTpBSFQ9X8ZaFQLhOw8AA2M="/>
+        <field:display date="true" dateTimePattern="${correoNotificaciones_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_CorreoNotificaciones_fechaCreacion" object="${correonotificaciones}" z="hbI7VOcpWzGmdwce1qle+nlnbws="/>
+        <field:display date="true" dateTimePattern="${correoNotificaciones_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_CorreoNotificaciones_fechaModificacion" object="${correonotificaciones}" z="wTXr65AMHMfzAOuKSrlM3MxmXhI="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_CorreoNotificaciones_activo" object="${correonotificaciones}" z="QnSMgO3BP5MHdu+Gu6Rr5BcD3bo="/>
+    </page:show>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_coleadmin_domain_ConceptoInscripcionCurso" modelAttribute="conceptoInscripcionCurso" path="/conceptoinscripcioncursoes" render="${empty dependencies}" z="RCBGnbMOgGStp6A0X4rvZGqtM00=">
+        <field:select field="curso" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_curso" itemValue="id" items="${cursoes}" path="/cursoes" required="true" z="DQyC08roET6ChG6L5aVNv+Gy6kI="/>
+        <field:select field="concepto" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_concepto" itemValue="id" items="${conceptoes}" path="/conceptoes" required="true" z="H2zMS/ud1TIQ+v+vHTTmiBgSpsE="/>
+        <field:input field="cantidad" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_cantidad" validationMessageCode="field_invalid_number" z="riCpooVfQFpyGfqTV99Cyvumxxs="/>
+        <field:select field="usuarioCrea" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_usuarioCrea" itemValue="id" items="${usuarios}" path="/usuarios" z="o5et/P0M8BL9M/ryXVpBsl96Rwo="/>
+        <field:select field="usuarioModifica" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_usuarioModifica" itemValue="id" items="${usuarios}" path="/usuarios" z="PnS7ByBkOWzOT9hDIjPGrLt/TT8="/>
+        <field:datetime dateTimePattern="${conceptoInscripcionCurso_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_fechaCreacion" z="mqdtqaaKHlCC0tkfZvgebpTzXUE="/>
+        <field:datetime dateTimePattern="${conceptoInscripcionCurso_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_fechaModificacion" z="jtcPEt8nvuOYftCOHejpWRIcs9E="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_activo" z="iaZzHlYvIWA5IcS1qsVNrpYBiqA="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_ConceptoInscripcionCurso" render="${not empty dependencies}" z="I4/Hrt7SCpvLUbqRxw9BhBaKg+k="/>
+</div>

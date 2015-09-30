@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_catalog_MetodoPago" object="${metodopago}" path="/metodopagoes" z="CA6TF170TSsiKp8F8fHyQRnJ3iQ=">
+        <field:display field="nombreMetodoPago" id="s_com_raze_coleadmin_catalog_MetodoPago_nombreMetodoPago" object="${metodopago}" z="FMeLV0jLQu11bKmaJhNApmN7fZM="/>
+        <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_MetodoPago_descripcion" object="${metodopago}" z="0h1a5yg5rSDZQMxdR77QH4tvvEc="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_MetodoPago_usuarioCrea" object="${metodopago}" z="X9CVvb9C0jZBtdr2Bb5+HHv3WMg="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_MetodoPago_usuarioModifica" object="${metodopago}" z="NtuF9W0AClv4re1Wnf5qLoM1k6s="/>
+        <field:display date="true" dateTimePattern="${metodoPago_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_MetodoPago_fechaCreacion" object="${metodopago}" z="2qSnnyI1/H5s9s+s3873OXWaQWg="/>
+        <field:display date="true" dateTimePattern="${metodoPago_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_MetodoPago_fechaModificacion" object="${metodopago}" z="hS8+nhF+s9oyuWbZbP/rBVvm5HQ="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_MetodoPago_activo" object="${metodopago}" z="8G7eMyAsAjILOuMjlojxtpKs3J4="/>
+    </page:show>
+</div>

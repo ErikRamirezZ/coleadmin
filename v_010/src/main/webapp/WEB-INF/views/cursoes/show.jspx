@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_domain_Curso" object="${curso}" path="/cursoes" z="NdbuqrwcfvRZMH76lAaCSR7hIg4=">
+        <field:display field="nombreCurso" id="s_com_raze_coleadmin_domain_Curso_nombreCurso" object="${curso}" z="li/IfJRC4SEyW3a19eK6H55kfG4="/>
+        <field:display field="cicloEscolar" id="s_com_raze_coleadmin_domain_Curso_cicloEscolar" object="${curso}" z="sqlPSo8WApsYXU8lyuFOH609UPo="/>
+        <field:display field="colegiatura" id="s_com_raze_coleadmin_domain_Curso_colegiatura" object="${curso}" z="N+C9dH+W0rR8iW3hi755V4Nwt1o="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Curso_usuarioCrea" object="${curso}" z="nawiZu4/5RJMmgTAfNQK+NUqE3A="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Curso_usuarioModifica" object="${curso}" z="EmDYqALUA/tbU4Qkt0C/nsTTEM8="/>
+        <field:display date="true" dateTimePattern="${curso_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_domain_Curso_fechaCreacion" object="${curso}" z="hlrh64YOi7h03iZ6skH5zspIleo="/>
+        <field:display date="true" dateTimePattern="${curso_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_domain_Curso_fechaModificacion" object="${curso}" z="m3wTwInc2QjT2rANKrzea5RI+g8="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_domain_Curso_activo" object="${curso}" z="wyRKliGHpSoJBwZYOaxyNh0hULI="/>
+    </page:show>
+</div>

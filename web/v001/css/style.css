@@ -32,8 +32,12 @@ body {
 	text-align: center;
 }
 
-#title_lema h1, #title_lema h3  {
+#title_lema h3, #title_lema h4  {
 	margin: 3px;
+}
+
+#title_lema h3 {
+	font-size: 25px;
 }
 
 #content_head {
@@ -46,13 +50,27 @@ body {
 	float: left;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	color: #efefef;
-	width: 75%;
+	width: 67%;
 }
 
 #img_logo {
 	float: left;
-	width: 20%;
+	width: 161px;
 	margin: 7px;
+	padding: 2px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 3px solid rgba(255, 255, 255, 0.37);
+
+	background: rgba(237,237,237,0.4);
+	background: -moz-linear-gradient(left, rgba(237,237,237,0.4) 0%, rgba(246,246,246,0.4) 47%, rgba(237,237,237,0.4) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,0.4)), color-stop(47%, rgba(246,246,246,0.4)), color-stop(100%, rgba(237,237,237,0.4)));
+	background: -webkit-linear-gradient(left, rgba(237,237,237,0.4) 0%, rgba(246,246,246,0.4) 47%, rgba(237,237,237,0.4) 100%);
+	background: -o-linear-gradient(left, rgba(237,237,237,0.4) 0%, rgba(246,246,246,0.4) 47%, rgba(237,237,237,0.4) 100%);
+	background: -ms-linear-gradient(left, rgba(237,237,237,0.4) 0%, rgba(246,246,246,0.4) 47%, rgba(237,237,237,0.4) 100%);
+	background: linear-gradient(to right, rgba(237,237,237,0.4) 0%, rgba(246,246,246,0.4) 47%, rgba(237,237,237,0.4) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed', GradientType=1 );
 }
 
 .section_nosotros {

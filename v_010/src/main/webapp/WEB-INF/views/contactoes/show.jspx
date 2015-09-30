@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_catalog_Contacto" object="${contacto}" path="/contactoes" z="jySftth673TXrGLN49O5wamSSWA=">
+        <field:display field="tipoContacto" id="s_com_raze_coleadmin_catalog_Contacto_tipoContacto" object="${contacto}" z="6nTiGvfFCayEIm09z7t0+opCjWM="/>
+        <field:display field="valor" id="s_com_raze_coleadmin_catalog_Contacto_valor" object="${contacto}" z="LrkwU26CIqXOpnzQEjaTN5xgN/M="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_Contacto_usuarioCrea" object="${contacto}" z="ehKnf3CnXDCJmkimO/bT4PDbiqU="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_Contacto_usuarioModifica" object="${contacto}" z="xVXordf5PL+kQPVdFdzlxoir7UM="/>
+        <field:display date="true" dateTimePattern="${contacto_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_Contacto_fechaCreacion" object="${contacto}" z="ioDLlZiB5bD7b0hOA9dItvv7F+g="/>
+        <field:display date="true" dateTimePattern="${contacto_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_Contacto_fechaModificacion" object="${contacto}" z="9jElclBqv5+jKzPQq5Cu8TV54MQ="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_Contacto_activo" object="${contacto}" z="NFZVhZgAbLGtS72cLTx9WJYfkPc="/>
+    </page:show>
+</div>

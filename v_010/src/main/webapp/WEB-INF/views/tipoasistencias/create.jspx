@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_coleadmin_catalog_TipoAsistencia" modelAttribute="tipoAsistencia" path="/tipoasistencias" render="${empty dependencies}" z="g82gJ7Iy70+cnb3XhCei943Kc4Q=">
+        <field:input field="nombreTipoAsistencia" id="c_com_raze_coleadmin_catalog_TipoAsistencia_nombreTipoAsistencia" required="true" z="XFk7Q7xM26+Zr9h2C1uK9vrfuSA="/>
+        <field:input field="descripcion" id="c_com_raze_coleadmin_catalog_TipoAsistencia_descripcion" z="ijZ/skBK67x4x0ouhbqEHI0OFY0="/>
+        <field:select field="usuarioCrea" id="c_com_raze_coleadmin_catalog_TipoAsistencia_usuarioCrea" itemValue="id" items="${usuarios}" path="/usuarios" z="0ABTuNdLgB/pR1kK8/7DoB+HQr0="/>
+        <field:select field="usuarioModifica" id="c_com_raze_coleadmin_catalog_TipoAsistencia_usuarioModifica" itemValue="id" items="${usuarios}" path="/usuarios" z="8tUWV0QxfjXDUmxKesFTYYnheok="/>
+        <field:datetime dateTimePattern="${tipoAsistencia_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_catalog_TipoAsistencia_fechaCreacion" z="KXrkRX9/lmV7qa3bDqA/JdBczok="/>
+        <field:datetime dateTimePattern="${tipoAsistencia_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_catalog_TipoAsistencia_fechaModificacion" z="77wQ0Nti+shPhb0PVwGfql3yKmU="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_catalog_TipoAsistencia_activo" z="iskDkJEwnlJJOpEzuNE/VJfompc="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_catalog_TipoAsistencia" render="${not empty dependencies}" z="m1MeFgoHnGj14ck6DkUlg8SMNgY="/>
+</div>

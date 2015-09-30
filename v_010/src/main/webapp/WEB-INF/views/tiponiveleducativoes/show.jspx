@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_coleadmin_catalog_TipoNivelEducativo" object="${tiponiveleducativo}" path="/tiponiveleducativoes" z="irArJCUUfzpiumvsRv7reb5jpUA=">
+        <field:display field="nombreTipoNivelEducativo" id="s_com_raze_coleadmin_catalog_TipoNivelEducativo_nombreTipoNivelEducativo" object="${tiponiveleducativo}" z="AWHoQrMqhJgOV1b06sHqhs3GlHQ="/>
+        <field:display field="descripcion" id="s_com_raze_coleadmin_catalog_TipoNivelEducativo_descripcion" object="${tiponiveleducativo}" z="Y1wkyM/Yw/zo9m6Z4rguJaYO/P0="/>
+        <field:display field="usuarioCrea" id="s_com_raze_coleadmin_catalog_TipoNivelEducativo_usuarioCrea" object="${tiponiveleducativo}" z="LCQgI1W20dIu1vtk3TpdLmd7hts="/>
+        <field:display field="usuarioModifica" id="s_com_raze_coleadmin_catalog_TipoNivelEducativo_usuarioModifica" object="${tiponiveleducativo}" z="fi38KpCBZyUcCB3pk7zCVpphOko="/>
+        <field:display date="true" dateTimePattern="${tipoNivelEducativo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_coleadmin_catalog_TipoNivelEducativo_fechaCreacion" object="${tiponiveleducativo}" z="G7X7nWlQptFXCTu1X7+WjvE3Qwc="/>
+        <field:display date="true" dateTimePattern="${tipoNivelEducativo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_coleadmin_catalog_TipoNivelEducativo_fechaModificacion" object="${tiponiveleducativo}" z="0eCmrXxGVVZRdy4hBuiCTf8YmbE="/>
+        <field:display field="activo" id="s_com_raze_coleadmin_catalog_TipoNivelEducativo_activo" object="${tiponiveleducativo}" z="FGuGJDN9MBcwOpIa+khla0il5Jw="/>
+    </page:show>
+</div>

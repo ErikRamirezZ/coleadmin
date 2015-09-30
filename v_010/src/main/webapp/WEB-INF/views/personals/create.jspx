@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_coleadmin_domain_Personal" modelAttribute="personal" path="/personals" render="${empty dependencies}" z="pRr0MPAiJyP5bCpAIrk522au/88=">
+        <field:input field="correoE" id="c_com_raze_coleadmin_domain_Personal_correoE" z="gkxxpQXMerw/W2g+ImS0zE6DgB8="/>
+        <field:input field="password" id="c_com_raze_coleadmin_domain_Personal_password" z="QCvJSqAmUr1I0u7RvPKqTUYQph8="/>
+        <field:input field="nombre" id="c_com_raze_coleadmin_domain_Personal_nombre" max="30" required="true" z="VDCuZgCTKEwwpo7/WCuqLuwJ3dg="/>
+        <field:input field="primerApellido" id="c_com_raze_coleadmin_domain_Personal_primerApellido" max="30" required="true" z="5+Tdr4h+DId35bsfF6zLJz+UdTo="/>
+        <field:input field="segundoApellido" id="c_com_raze_coleadmin_domain_Personal_segundoApellido" max="30" z="Y918w5ffCO1tGS0kGHJks54ixy8="/>
+        <field:datetime dateTimePattern="${personal_fechanacimiento_date_format}" field="fechaNacimiento" id="c_com_raze_coleadmin_domain_Personal_fechaNacimiento" z="Z/BTH3RvAJZwpwgw9l0Tnczn3uI="/>
+        <field:textarea field="foto" id="c_com_raze_coleadmin_domain_Personal_foto" z="TurWEDycx5RfjGtRmQjDm9Wb008="/>
+        <field:textarea field="observaciones" id="c_com_raze_coleadmin_domain_Personal_observaciones" z="AymeYn40Z7oEs59QWoNnuXiYYkY="/>
+        <field:input field="usuarioCrea" id="c_com_raze_coleadmin_domain_Personal_usuarioCrea" validationMessageCode="field_invalid_integer" z="Ydl6gbwrkS2S4uaSeFnBYxykilg="/>
+        <field:input field="usuarioModifica" id="c_com_raze_coleadmin_domain_Personal_usuarioModifica" validationMessageCode="field_invalid_integer" z="/yim/bPJYWaKj+WQGOuqNdvLFiI="/>
+        <field:datetime dateTimePattern="${personal_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_coleadmin_domain_Personal_fechaCreacion" z="5xziI5020G5MUvPWHY61i3h3/Rk="/>
+        <field:datetime dateTimePattern="${personal_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_coleadmin_domain_Personal_fechaModificacion" z="1PrBmzMOUwsBrtsqyHKxCERBUyg="/>
+        <field:checkbox field="activo" id="c_com_raze_coleadmin_domain_Personal_activo" z="ph7kAB2mjkBBRnV/K8lU9o8SLq0="/>
+        <field:select field="escuela" id="c_com_raze_coleadmin_domain_Personal_escuela" itemValue="id" items="${escuelas}" path="/escuelas" required="true" z="TnknUTUR6qj46JtvqaJVr8Y/7eY="/>
+        <field:select field="domicilio" id="c_com_raze_coleadmin_domain_Personal_domicilio" itemValue="id" items="${domicilios}" path="/domicilios" z="AHFUhhv4MB7ExRP/kfqGY1xhKCE="/>
+        <field:select field="contactos" id="c_com_raze_coleadmin_domain_Personal_contactos" itemValue="id" items="${contactoes}" multiple="true" path="/contactoes" z="Zfhx6+pcmBVTmRREGuKPtK2nYNg="/>
+        <field:select field="roles" id="c_com_raze_coleadmin_domain_Personal_roles" itemValue="id" items="${rols}" multiple="true" path="/rols" z="yiSHqeheEdjbdlRB05cMGEfHkbQ="/>
+        <field:select field="permisos" id="c_com_raze_coleadmin_domain_Personal_permisos" itemValue="id" items="${permisoes}" multiple="true" path="/permisoes" z="D5dOVFHBOUMJxzpNF5yZL5lu+LU="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_coleadmin_domain_Personal" render="${not empty dependencies}" z="N+tXESUW+SapRbnwvpuF3nTvFOk="/>
+</div>
