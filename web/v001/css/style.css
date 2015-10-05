@@ -32,7 +32,7 @@ body {
 	text-align: center;
 }
 
-#title_lema h3, #title_lema h4  {
+#title_lema h2, #title_lema h3  {
 	margin: 3px;
 }
 
@@ -41,9 +41,10 @@ body {
 }
 
 #content_head {
-	display: inline-block;
+	display: flex;
 	margin-right: auto;
 	margin-left: auto;
+	width: 75%;
 }
 
 #title_lema {
@@ -51,6 +52,8 @@ body {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	color: #efefef;
 	width: 67%;
+	margin-bottom: auto;
+  margin-top: auto;
 }
 
 #img_logo {
@@ -209,3 +212,26 @@ body {
 	margin-right: auto;
 }
 
+
+#googleMap {
+	width:500px;
+	height:380px;
+	margin-left: 40px;
+	
+}
+
+address {
+	margin-bottom: auto;
+  margin-top: auto;
+}
+
+#map_address {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#panel-body-contact {
+	display: flex;
+}
