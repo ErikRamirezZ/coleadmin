@@ -4,7 +4,6 @@ import org.springframework.roo.addon.jpa.entity.RooJpaEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
-import com.raze.coleadmin.catalog.Concepto;
 import java.util.Date;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -26,8 +25,7 @@ public class ConceptoInscripcionCurso {
     /**
      */
     @NotNull
-    @ManyToOne
-    private Concepto concepto;
+    private String concepto;
 
     /**
      */

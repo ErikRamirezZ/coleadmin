@@ -69,6 +69,7 @@ field boolean --fieldName activo
 //Curso
 field string --fieldName nombreCurso --notNull --class ~.domain.Curso 
 field reference --fieldName cicloEscolar --notNull --type ~.domain.CicloEscolar
+field number --fieldName inscripcion --type java.lang.Double
 field number --fieldName colegiatura --type java.lang.Double
 
 field reference --fieldName usuarioCrea --type ~.domain.Usuario
@@ -80,7 +81,7 @@ field boolean --fieldName activo
 
 //ConceptoInscripcionCurso
 field reference --fieldName curso --type ~.domain.Curso --notNull --class ~.domain.ConceptoInscripcionCurso 
-field reference --fieldName concepto --notNull --type ~.catalog.Concepto
+field string --fieldName concepto --notNull
 field number --fieldName cantidad --type java.lang.Double
 
 field reference --fieldName usuarioCrea --type ~.domain.Usuario

@@ -5,6 +5,7 @@
     <page:show id="ps_com_raze_coleadmin_domain_Curso" object="${curso}" path="/cursoes" z="NdbuqrwcfvRZMH76lAaCSR7hIg4=">
         <field:display field="nombreCurso" id="s_com_raze_coleadmin_domain_Curso_nombreCurso" object="${curso}" z="li/IfJRC4SEyW3a19eK6H55kfG4="/>
         <field:display field="cicloEscolar" id="s_com_raze_coleadmin_domain_Curso_cicloEscolar" object="${curso}" z="sqlPSo8WApsYXU8lyuFOH609UPo="/>
+        <field:display field="inscripcion" id="s_com_raze_coleadmin_domain_Curso_inscripcion" object="${curso}" z="Ip/KcFQotKrHBFkA2NufDtcITAU="/>
         <field:display field="colegiatura" id="s_com_raze_coleadmin_domain_Curso_colegiatura" object="${curso}" z="N+C9dH+W0rR8iW3hi755V4Nwt1o="/>
         <field:display field="usuarioCrea" id="s_com_raze_coleadmin_domain_Curso_usuarioCrea" object="${curso}" z="nawiZu4/5RJMmgTAfNQK+NUqE3A="/>
         <field:display field="usuarioModifica" id="s_com_raze_coleadmin_domain_Curso_usuarioModifica" object="${curso}" z="EmDYqALUA/tbU4Qkt0C/nsTTEM8="/>

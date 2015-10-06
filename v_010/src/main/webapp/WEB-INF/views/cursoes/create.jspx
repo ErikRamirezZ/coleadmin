@@ -5,6 +5,7 @@
     <form:create id="fc_com_raze_coleadmin_domain_Curso" modelAttribute="curso" path="/cursoes" render="${empty dependencies}" z="tWCgSnptlXoa3Kj4KQy2HIAh/8o=">
         <field:input field="nombreCurso" id="c_com_raze_coleadmin_domain_Curso_nombreCurso" required="true" z="0XlhsDAMiWTF/3gwC1bOR4pbtFk="/>
         <field:select field="cicloEscolar" id="c_com_raze_coleadmin_domain_Curso_cicloEscolar" itemValue="id" items="${cicloescolars}" path="/cicloescolars" required="true" z="F1odMbK8xHwhqCtiqdWkWnoWAFM="/>
+        <field:input field="inscripcion" id="c_com_raze_coleadmin_domain_Curso_inscripcion" validationMessageCode="field_invalid_number" z="YNWspJky4T/rUwz5cahrukzZKfc="/>
         <field:input field="colegiatura" id="c_com_raze_coleadmin_domain_Curso_colegiatura" validationMessageCode="field_invalid_number" z="eOtmmSA5YmMb0EUqh2s3HuGMAfs="/>
         <field:select field="usuarioCrea" id="c_com_raze_coleadmin_domain_Curso_usuarioCrea" itemValue="id" items="${usuarios}" path="/usuarios" z="FG57JYimmzUUEYd3Tvy5ZveHj7o="/>
         <field:select field="usuarioModifica" id="c_com_raze_coleadmin_domain_Curso_usuarioModifica" itemValue="id" items="${usuarios}" path="/usuarios" z="VFzgl/sRV52LTF8CyQOsA8It6J0="/>

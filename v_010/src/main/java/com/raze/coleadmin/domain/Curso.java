@@ -29,6 +29,10 @@ public class Curso {
 
     /**
      */
+    private Double inscripcion;
+
+    /**
+     */
     private Double colegiatura;
 
     /**

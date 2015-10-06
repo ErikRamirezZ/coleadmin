@@ -26,6 +26,14 @@ privileged aspect Curso_Roo_JavaBean {
         this.cicloEscolar = cicloEscolar;
     }
     
+    public Double Curso.getInscripcion() {
+        return this.inscripcion;
+    }
+    
+    public void Curso.setInscripcion(Double inscripcion) {
+        this.inscripcion = inscripcion;
+    }
+    
     public Double Curso.getColegiatura() {
         return this.colegiatura;
     }

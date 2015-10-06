@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_com_raze_coleadmin_domain_ConceptoInscripcionCurso" modelAttribute="conceptoInscripcionCurso" path="/conceptoinscripcioncursoes" versionField="none" z="Wq0kUt0vcssGbjKvBlw1WvDWxNc=">
         <field:select field="curso" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_curso" itemValue="id" items="${cursoes}" path="/cursoes" required="true" z="DQyC08roET6ChG6L5aVNv+Gy6kI="/>
-        <field:select field="concepto" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_concepto" itemValue="id" items="${conceptoes}" path="/conceptoes" required="true" z="H2zMS/ud1TIQ+v+vHTTmiBgSpsE="/>
+        <field:input field="concepto" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_concepto" required="true" z="Clsm937p007AXDTRW2f5GP9vitg="/>
         <field:input field="cantidad" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_cantidad" validationMessageCode="field_invalid_number" z="riCpooVfQFpyGfqTV99Cyvumxxs="/>
         <field:select field="usuarioCrea" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_usuarioCrea" itemValue="id" items="${usuarios}" path="/usuarios" z="o5et/P0M8BL9M/ryXVpBsl96Rwo="/>
         <field:select field="usuarioModifica" id="c_com_raze_coleadmin_domain_ConceptoInscripcionCurso_usuarioModifica" itemValue="id" items="${usuarios}" path="/usuarios" z="PnS7ByBkOWzOT9hDIjPGrLt/TT8="/>

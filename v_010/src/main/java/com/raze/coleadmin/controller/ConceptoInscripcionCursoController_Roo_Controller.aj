@@ -3,12 +3,10 @@
 
 package com.raze.coleadmin.controller;
 
-import com.raze.coleadmin.catalog.Concepto;
 import com.raze.coleadmin.controller.ConceptoInscripcionCursoController;
 import com.raze.coleadmin.domain.ConceptoInscripcionCurso;
 import com.raze.coleadmin.domain.Curso;
 import com.raze.coleadmin.service.ConceptoInscripcionCursoService;
-import com.raze.coleadmin.service.ConceptoService;
 import com.raze.coleadmin.service.CursoService;
 import com.raze.coleadmin.service.UsuarioService;
 import java.io.UnsupportedEncodingException;
@@ -34,9 +32,6 @@ privileged aspect ConceptoInscripcionCursoController_Roo_Controller {
     CursoService ConceptoInscripcionCursoController.cursoService;
     
     @Autowired
-    ConceptoService ConceptoInscripcionCursoController.conceptoService;
-    
-    @Autowired
     ConceptoInscripcionCursoService ConceptoInscripcionCursoController.conceptoInscripcionCursoService;
     
     @Autowired
@@ -59,9 +54,6 @@ privileged aspect ConceptoInscripcionCursoController_Roo_Controller {
         List<String[]> dependencies = new ArrayList<String[]>();
         if (cursoService.countAllCursoes() == 0) {
             dependencies.add(new String[] { "curso", "cursoes" });
-        }
-        if (conceptoService.countAllConceptoes() == 0) {
-            dependencies.add(new String[] { "concepto", "conceptoes" });
         }
         uiModel.addAttribute("dependencies", dependencies);
         return "conceptoinscripcioncursoes/create";
@@ -125,7 +117,6 @@ privileged aspect ConceptoInscripcionCursoController_Roo_Controller {
     void ConceptoInscripcionCursoController.populateEditForm(Model uiModel, ConceptoInscripcionCurso conceptoInscripcionCurso) {
         uiModel.addAttribute("conceptoInscripcionCurso", conceptoInscripcionCurso);
         addDateTimeFormatPatterns(uiModel);
-        uiModel.addAttribute("conceptoes", conceptoService.findAllConceptoes());
         uiModel.addAttribute("cursoes", cursoService.findAllCursoes());
         uiModel.addAttribute("usuarios", usuarioService.findAllUsuarios());
     }

@@ -47,6 +47,7 @@ privileged aspect CursoDataOnDemand_Roo_DataOnDemand {
         setColegiatura(obj, index);
         setFechaCreacion(obj, index);
         setFechaModificacion(obj, index);
+        setInscripcion(obj, index);
         setNombreCurso(obj, index);
         setUsuarioCrea(obj, index);
         setUsuarioModifica(obj, index);
@@ -76,6 +77,11 @@ privileged aspect CursoDataOnDemand_Roo_DataOnDemand {
     public void CursoDataOnDemand.setFechaModificacion(Curso obj, int index) {
         Date fechaModificacion = new GregorianCalendar(Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH), Calendar.getInstance().get(Calendar.DAY_OF_MONTH), Calendar.getInstance().get(Calendar.HOUR_OF_DAY), Calendar.getInstance().get(Calendar.MINUTE), Calendar.getInstance().get(Calendar.SECOND) + new Double(Math.random() * 1000).intValue()).getTime();
         obj.setFechaModificacion(fechaModificacion);
+    }
+    
+    public void CursoDataOnDemand.setInscripcion(Curso obj, int index) {
+        Double inscripcion = new Integer(index).doubleValue();
+        obj.setInscripcion(inscripcion);
     }
     
     public void CursoDataOnDemand.setNombreCurso(Curso obj, int index) {

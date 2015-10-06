@@ -3,7 +3,6 @@
 
 package com.raze.coleadmin.domain;
 
-import com.raze.coleadmin.catalog.Concepto;
 import com.raze.coleadmin.domain.ConceptoInscripcionCurso;
 import com.raze.coleadmin.domain.Curso;
 import com.raze.coleadmin.domain.Usuario;
@@ -19,11 +18,11 @@ privileged aspect ConceptoInscripcionCurso_Roo_JavaBean {
         this.curso = curso;
     }
     
-    public Concepto ConceptoInscripcionCurso.getConcepto() {
+    public String ConceptoInscripcionCurso.getConcepto() {
         return this.concepto;
     }
     
-    public void ConceptoInscripcionCurso.setConcepto(Concepto concepto) {
+    public void ConceptoInscripcionCurso.setConcepto(String concepto) {
         this.concepto = concepto;
     }
     

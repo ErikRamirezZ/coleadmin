@@ -554,7 +554,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<ConceptoInscripcionCurso, String> ApplicationConversionServiceFactoryBean.getConceptoInscripcionCursoToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.raze.coleadmin.domain.ConceptoInscripcionCurso, java.lang.String>() {
             public String convert(ConceptoInscripcionCurso conceptoInscripcionCurso) {
-                return new StringBuilder().append(conceptoInscripcionCurso.getCantidad()).append(' ').append(conceptoInscripcionCurso.getFechaCreacion()).append(' ').append(conceptoInscripcionCurso.getFechaModificacion()).toString();
+                return new StringBuilder().append(conceptoInscripcionCurso.getConcepto()).append(' ').append(conceptoInscripcionCurso.getCantidad()).append(' ').append(conceptoInscripcionCurso.getFechaCreacion()).append(' ').append(conceptoInscripcionCurso.getFechaModificacion()).toString();
             }
         };
     }
@@ -578,7 +578,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Curso, String> ApplicationConversionServiceFactoryBean.getCursoToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.raze.coleadmin.domain.Curso, java.lang.String>() {
             public String convert(Curso curso) {
-                return new StringBuilder().append(curso.getNombreCurso()).append(' ').append(curso.getColegiatura()).append(' ').append(curso.getFechaCreacion()).append(' ').append(curso.getFechaModificacion()).toString();
+                return new StringBuilder().append(curso.getNombreCurso()).append(' ').append(curso.getInscripcion()).append(' ').append(curso.getColegiatura()).append(' ').append(curso.getFechaCreacion()).toString();
             }
         };
     }

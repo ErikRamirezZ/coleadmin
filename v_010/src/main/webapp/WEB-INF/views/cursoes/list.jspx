@@ -6,10 +6,10 @@
         <table:table data="${cursoes}" id="l_com_raze_coleadmin_domain_Curso" path="/cursoes" z="2H0ULLONhU9X5nwm8Wr3v5IYh1w=">
             <table:column id="c_com_raze_coleadmin_domain_Curso_nombreCurso" property="nombreCurso" z="wBB6oWt2HS7fc1hxrpZ1xIlhA5Y="/>
             <table:column id="c_com_raze_coleadmin_domain_Curso_cicloEscolar" property="cicloEscolar" z="6l0u2JugCVHNvBjRR4CgYl4U6vY="/>
+            <table:column id="c_com_raze_coleadmin_domain_Curso_inscripcion" property="inscripcion" z="vlIIlnZZyY0mbx0HiOTcN+10go4="/>
             <table:column id="c_com_raze_coleadmin_domain_Curso_colegiatura" property="colegiatura" z="2X6RhtsWu5dG3H4soL4cmJNGikY="/>
             <table:column id="c_com_raze_coleadmin_domain_Curso_usuarioCrea" property="usuarioCrea" z="l8oc+l0Vad8Kmfc2C0g3sQ0nSIA="/>
             <table:column id="c_com_raze_coleadmin_domain_Curso_usuarioModifica" property="usuarioModifica" z="FdzqPFWrsGIx25wnRkK/PuzIQbY="/>
-            <table:column date="true" dateTimePattern="${curso_fechacreacion_date_format}" id="c_com_raze_coleadmin_domain_Curso_fechaCreacion" property="fechaCreacion" z="9oO2Vk0ArvHrxdaWgPFiTmYAJ8k="/>
         </table:table>
     </page:list>
 </div>
